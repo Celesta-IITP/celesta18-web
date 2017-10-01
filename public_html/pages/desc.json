@@ -1,0 +1,183 @@
+{
+	"clubs": {
+		"SCME": {
+			"name": "Student Council of Mechanical Engineers",
+			"desc": "SCME organises events and workshops, funds projects in fields ranging from Mechanical Operations of machinery to Designing and Robotics.",
+			"events": [
+				{
+					"name": "Robowars",
+					"poster": "./images/poster/events/SCME_robowars.jpg",
+					"desc": "./pages/desc/robowars.html"
+				},
+				{
+					"name": "Finding Nemo",
+					"poster": "./images/poster/events/SCME_nemo.jpg",
+					"desc": "./pages/desc/nemo.html"
+				}
+			]
+		},
+		"NJACK": {
+			"name": "Not Just Anyother Computer Klub",
+			"desc": "NJACK organises events and workshops, funds projects in fields of Computer Science.",
+			"events": [
+				{
+					"name": "NJATH",
+					"desc": "./pages/desc/njath.html",
+					"poster": "./images/poster/events/NJACK_njath.jpg"
+				},
+				{
+					"name": "Mind benders",
+					"desc": "./pages/desc/mindbenders.html",
+					"poster": "./images/poster/events/NJACK_mindbenders.jpg"
+				},
+				{
+					"name": "Byterace",
+					"desc": "./pages/desc/byterace.html",
+					"poster": "./images/poster/events/NJACK_bytrace.jpg"
+				}
+			]
+		},
+		"THC": {
+			"name": "Threshold Club",
+			"desc": "THC organises events and workshops, funds projects in fields of Chemical engineering.",
+			"events": [
+				{
+					"name": "Rocket Propulsion",
+					"desc": "./pages/desc/rocket.html",
+					"poster": "./images/poster/events/THC_rocpro.jpg"
+				},
+				{
+					"name": "Are you updated",
+					"desc": "./pages/desc/updated.html",
+					"poster": "./images/poster/events/THC_areuupdated.jpg"
+				},
+				{
+					"name": "Chem Charades",
+					"desc": "./pages/desc/charades.html",
+					"poster": "./images/poster/events/THC_chem.jpg"
+				}
+			]
+		},
+		"ACE": {
+			"name": "Association of Civil Engineering",
+			"desc": "ACE organises events and workshops, funds projects in fields associated with civil engineering.",
+			"events": [
+				{
+					"name": "Spageridge",
+					"desc": "./pages/desc/spagerige.html",
+					"poster": "./images/poster/events/ACE_spardige.jpg"
+				},
+				{
+					"name": "Civil maestro",
+					"desc": "./pages/desc/maestro.html",
+					"poster": "../images/poster/events/avatar.png"
+				},
+				{
+					"name": "Cad masters",
+					"desc": "./pages/desc/cad.html",
+					"poster": "../images/poster/clubs/avatar.png"
+				}
+			]
+		},
+		"ECLUB": {
+			"name": "Entrepreneurship Club",
+			"desc": "One of biggest clubs in IIT Patna taking care of Entrepreneur Activities along with Organising Guest lectures.",
+			"events": [
+				{
+					"name": "Monopoly",
+					"desc": "./pages/desc/mono.html",
+					"poster": "../images/poster/events/ECLUB_mono.jpg"
+				},
+				{
+					"name": "Stockmart",
+					"desc": "./pages/desc/stock.html",
+					"poster": "../images/poster/events/ECLUB_stock.jpg"
+				},
+				{
+					"name": "IPL Auction",
+					"desc": "./pages/desc/ipl.html",
+					"poster": "../images/poster/events/ECLUB_ipl.jpg"
+				},
+				{
+					"name": "Vendre",
+					"desc": "./pages/desc/vendre.html",
+					"poster": "../images/poster/events/ECLUB_vendre.jpg"
+				},
+				{
+					"name": "B-Quiz",
+					"desc": "./pages/desc/bquiz.html",
+					"poster": "../images/poster/events/ECLUB_bquiz.jpg"
+				}
+			]
+		},
+		"SPARKONICS": {
+			"name": "SPARKONICS",
+			"desc": "Electrical and Electronics Club of IIT Patna , is responsible for the various competition and activities related to circuits , electronics etc.",
+			"events": [
+				{
+					"name": "Static Rush",
+					"desc": "./pages/desc/static.html",
+					"poster": "./images/poster/events/SPARKONICS_static.jpg"
+				},
+				{
+					"name": "Decode",
+					"desc": "./pages/desc/decode.html",
+					"poster": "./images/poster/events/SPARKONICS_decode.jpg"
+				},
+				{
+					"name": "Electro Exquisite",
+					"desc": "./pages/desc/electro.html",
+					"poster": "./images/poster/events/SPARKONICS_electroexuisite.jpg"
+				}
+			]
+		},
+		"SAE": {
+			"name": "Society of Automotive Engineers",
+			"desc": "Special club for events related to automobiles.",
+			"events": [
+				{
+					"name": " Virtual Auto Expo",
+					"desc": "./pages/desc/expo.html",
+					"poster": "./images/poster/events/SAE_autoexpo.jpg"
+				},
+				{
+					"name": "Auto Quiz",
+					"desc": "./pages/desc/autoquiz.html",
+					"poster": "./images/poster/events/SAE_autoquiz.jpg"
+				}
+			]
+		},
+		"RTDC": {
+			"name": "Rural Technology Development Club",
+			"desc": "",
+			"poster": "../images/poster/clubs/avatar.png",
+			"events": [
+				{
+					"name": "Explora",
+					"desc": "./pages/desc/explora.html",
+					"poster": "./images/poster/events/RTDC_explora.jpg"
+				},
+				{
+					"name": "Adhyayan",
+					"desc": "./pages/desc/adhyayan.html",
+					"poster": "./images/poster/events/RTDC_adhyayan.jpg"
+				},
+				{
+					"name": "The Innovation Challenge",
+					"desc": "./pages/desc/innovation.html",
+					"poster": "./images/poster/events/RTDC_innovation.jpg"
+				},
+				{
+					"name": "Parliament Debate",
+					"desc": "./pages/desc/debate.html",
+					"poster": "./images/poster/events/RTDC_parliament.jpg"
+				},
+				{
+					"name": "Science Exhibition",
+					"desc": "./pages/desc/exhibition.html",
+					"poster": "./images/poster/events/exhibition.jpg"
+				}
+			]
+		}
+	}
+}

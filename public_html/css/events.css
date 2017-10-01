@@ -1,0 +1,111 @@
+.evCard {
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+.evCard:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.desc {
+	padding: 2px 16px;
+}
+@font-face {
+     font-family: "Fatality's Edge";
+     src: url("../fonts/Fatalitys-Edge.ttf");
+}
+@font-face {
+     font-family: "Space Age";
+     src: url("../fonts/space age.ttf");
+}
+#gallery:after{clear: both;}
+#gallery {
+	display: block;
+	width: 100%;
+	height: 40%;
+	overflow: hidden;
+}
+#boxContent {
+	display: block;
+	width: 100%;
+	height: 60%;
+}
+#leftsld,#rightsld {
+    position: absolute;
+    color: black;
+    width: 5%;
+    height: 40%;
+    top: 0;
+    text-align: center;
+}
+#leftsld{left:0;} #rightsld{right:0;}
+#leftsld span,#rightsld span {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+#leftsld span:hover,#rightsld span:hover {
+	background-color: rgba(255,255,255,0.5);
+}
+/****************************************************************/
+.gallery {
+	width: 100%;
+	height: 40%;
+	position: relative;
+}
+.gallery div {
+  background-color: white;
+  width: 33.3333%;
+  height: 100%;
+  display: none;
+  float: left;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+.demo button {
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #000;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  top: 45%;
+  z-index: 1;
+}
+.demo {padding: 0;}
+#lb,#rb {position: absolute;height: 40%;width: 50px;}
+#rb {right: 0;} #lb {left: 0;}
+.next {
+  right: 5px;
+}
+.prev {
+  left: 5px;
+}
+.next:hover{background-color: rgba(176,176,176,0.4);border: none;}
+.prev:hover{background-color: rgba(176,176,176,0.4);border: none;}
+.display {display: inline-block;}
+/****************************************************************/
+
+
+
+@media only screen and (min-width: 600px) {
+	#gallery {
+	display: block;
+	width: 100%;
+	height: 40%;
+	background-color: rgba(255,255,255,0.5);
+	}
+}
+@media only screen and (min-width: 786px) {
+	#gallery {
+	display: block;
+	width: 100%;
+	height: 40%;
+	}
+}

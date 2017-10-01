@@ -1,0 +1,288 @@
+          html *{
+            font-family: Raleway;
+          }
+
+          body{
+            margin: 0;
+            background-color: #222;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+            background-repeat: repeat;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+          }
+          
+          #grid{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+          }
+
+          ul.links {
+
+            list-style-type: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            overflow: hidden;
+
+            background-color: black;
+
+          }
+
+          ul.links li {float: left;}
+
+          ul.links li a {
+
+            display: inline-block;
+
+            color: #f2f2f2;
+
+            text-align: center;
+
+            padding: 14px 16px;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+
+            font-size: 17px;
+
+          }
+
+          ul.links li a:hover {background-color: #555;}
+
+          ul.links li.icon {display: none;}
+
+          ul.links li {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            position: relative;
+            overflow: hidden;
+            height: 48px;
+          }
+          ul.links li:before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #2098D1;
+            height: 4px;
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+          }
+          ul.links li:hover:before, ul.links li:focus:before, ul.links li:active:before {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+
+
+          #eventsTab {
+              display: inline-block;
+
+              color: #fff;
+
+              text-align: center;
+
+              vertical-align: middle;
+
+              padding: 12px 16px;
+
+              text-decoration: none;
+
+              transition: 0.3s;
+
+              font-size: 22px;
+
+              height: 20px;
+
+              font-weight: bolder;
+
+          }
+
+          #eventsTab:hover {
+            background-color: #555;
+          }
+          
+          .text332{display: none;}
+          .text2222{display: none;}
+          .text111{display: none;}
+
+          @media screen and (min-width: 1330px){
+
+            #img10 {left:90px;}
+            #img11 {right: 90px;}
+
+            .text2222{display: none !important;}
+            .text111{display: none !important;}
+
+          .text332 {
+            width: 100%;
+            display: none;
+            background-color:#020202  ;
+          }
+        
+          .navpane {
+            width: 200px;
+            float: left;
+            height: 100%;
+            background-color: white;
+          }
+
+          .navpane ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              width: 200px;
+              background-color: #f1f1f1;
+          }
+
+          .navpane ul li a, .navpane ul li span {
+              display: block;
+              color: #000;
+              padding: 8px 16px;
+              text-decoration: none;
+          }
+
+          .navpane ul li a.active {
+              background-color: #4CAF50;
+              color: white;
+          }
+
+          .navpane ul li a:hover:not(.active){
+              background-color: #4CAF50;
+              color: white;
+          }
+
+          .navpane ul li span{
+              background-color: #5D5A5A  ;
+              color: #fff;
+              font-size: 28px;
+          }
+} 
+
+
+@media (min-width: 892px) and (max-width: 1330px){
+          
+          .text332{display: none !important;}
+          .text111{display: none !important;}
+
+          .text2222 {
+            width: 100%;
+            display: none;
+            background-color:#020202  ;
+          }
+
+          .navpane {
+            width: 200px;
+            float: left;
+          }
+
+          .navpane ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              width: 200px;
+              background-color: #f1f1f1;
+          }
+
+          .navpane ul li a, .navpane ul li span {
+              display: block;
+              color: #000;
+              padding: 8px 16px;
+              text-decoration: none;
+          }
+
+          .navpane ul li a.active {
+              background-color: #4CAF50;
+              color: white;
+          }
+
+          .navpane ul li a:hover:not(.active){
+              background-color: #4CAF50;
+              color: white;
+          }
+
+          .navpane ul li span{
+              background-color: #5D5A5A  ;
+              color: #fff;
+              font-size: 28px;
+          }
+
+}
+
+
+
+@media screen and (max-width: 892px){
+
+
+            .text332{display: none !important;}
+            .text2222{display: none !important;}
+
+            .text111 {
+                width: 100%;
+                display: none;
+                background-color:#020202  ;
+          }
+
+          .text332 {
+            width: 100%;
+            display: none;
+            background-color:#020202  ;
+          }
+        
+          .navpane {
+            width: 200px;
+            float: left;
+          }
+
+          .navpane ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              width: 200px;
+              background-color: #f1f1f1;
+          }
+
+          .navpane ul li a, .navpane ul li span {
+              display: block;
+              color: #000;
+              padding: 8px 16px;
+              text-decoration: none;
+          }
+
+          .navpane ul li a.active {
+              background-color: #4CAF50;
+              color: white;
+          }
+
+          .navpane ul li a:hover:not(.active){
+              background-color: #4CAF50;
+              color: white;
+          }
+
+          .navpane ul li span{
+              background-color: #5D5A5A  ;
+              color: #fff;
+              font-size: 28px;
+          }
+
+
+} 

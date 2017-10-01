@@ -1,0 +1,38 @@
+input {
+    border: none;
+    border-bottom: #cac5c5 solid 1px;
+    font-family: sans-serif;
+    height: 40px;
+    width: 100%;
+    background: #fefefe;
+    padding: 10px;
+    font-size: 15px;
+}
+form {
+    width: 50%;
+    margin: auto;
+    box-shadow: #e5e5e5 3px 8px 10px 4px;
+}
+body {
+    background: white;
+    box-sizing: border-box;
+}
+form textarea {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-family: sans-serif;
+}
+button {
+    font-size: 20px;
+    border: #1f59b7 solid 1px;
+    background-color: #377be8;
+    border-radius: 2px;
+    width:100px;
+    height: 35px;
+    margin:10px 0 10px 100%;
+    position:relative;
+    right:110px;
+}
+
+/* Created via Magic CSS extension for Edge - https://webextensions.org/ */

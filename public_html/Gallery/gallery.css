@@ -1,0 +1,198 @@
+* {
+    font-family: Raleway, sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* Css for header block with  title*/
+header {
+    background-color: #472098;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0 100px;
+    box-shadow: 0px 4px 15px 3px #3f268a;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#heading {
+    font-family: Raleway, sans-serif;
+    font-size: 70px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#subheading {
+    font-size: 35px;
+}
+
+#subtext {
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Hover effects for images */
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    margin: 40px 0 0 0;
+    box-shadow: 8px 8px 4px 0px #828282;
+}
+
+.hovereffect .img-overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .img-overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 0.4em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.bigimg h2 {
+    font-size: 20px;
+    padding: 1em;
+}
+
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    
+    z-index: 15;
+    /* Sit on top */
+    
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: fixed;
+    width: 100%;
+    /* 100% width */
+    
+    text-align: center;
+    /* Centered text/links */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the closebtn, it changes color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 60px;
+    z-index: 20;
+}
+
+/* Center fotorama gallery */
+.fotorama__wrap {
+    margin: 0 auto;
+}
+
+/* Code for captions in overlay gallery */
+.fotorama__caption__wrap {
+    font-size: 50px;
+    opacity: 0.9;
+    margin: 24px 12px;
+}
+
+/* When the height of the screen is less than 600 pixels,
+   position the close button again, so it doesn't overlap with the caption text */
+@media screen and (max-height: 500px) {
+    .overlay .closebtn {
+        font-size: 50px
+    }
+    .fotorama__caption__wrap {
+        font-size: 30px;
+        opacity: 0.9;
+        margin: 24px 12px;
+    }
+    
+}
