@@ -515,23 +515,25 @@ display: none;
 
       </script>
 
-      <nav>
+      <nav style="position: fixed;z-index: 10;width: 100%">
 
         <ul class="links" id="nav">
 
           <li><a data-page="home" href="#">Home</a></li>
 
-          <li><a data-page="events" href="Events.html">Events</a></li>
+          <li><a data-page="events" href="Events.php">Events</a></li>
 
-          <li><a data-page="sponsers" href="#">Schedule</a></li>
+          <li><a data-page="spons" href="#">Schedule</a></li>
 
           <li><a data-page="contacts" href="#">Team</a></li>
 
           <li><a data-page="contacts" href="#">Sponsors</a></li>
 
-          <li><a data-page="contacts" href="Gallery/gallery.html">Gallery</a></li>
+          <li><a data-page="contacts" href="Gallery/gallery.php">Gallery</a></li>
+          
+          <li><a onclick="document.getElementById('id01').style.display='block'" class="cd-signup" data-page="register" href="#">Login</a></li>
 
-          <li><a onclick="document.getElementById('id01').style.display='block'" class="cd-signup" data-page="register" href="#">My Profile</a></li>
+          <li><a onclick="document.getElementById('id01').style.display='block'" class="cd-signup" data-page="register" href="#">Register</a></li>
 
           <li><a data-page="contacts" href="#">About</a></li>
 
@@ -542,299 +544,7 @@ display: none;
       </nav>
 
       <script type="text/javascript"></script>
-
-      <!-- ========================================= Modal Form Start =================================================-->
-
-      <div id="id01" class="modal">  
-
-      <form id="rf" class="modal-content animate" action="" autocomplete="off">
-
-        <div class="con">
-
-          <label><b>Full Name</b></label>
-
-          <input type="text" placeholder="Enter Full Name" name="fname" required>
-
-          <span class="error">*Enter Valid Name<br></span>
-
-          <label><b>College</b></label>
-
-          <input type="text" placeholder="Enter College" name="college" required>
-
-          <span class="error">*Enter Valid College Name<br></span>
-
-          <label><b>Email</b></label>
-
-          <input type="text" placeholder="Enter Email" name="email" required>
-
-          <span class="error">*Enter Valid Email<br></span>
-
-          <label><b>Phone</b></label>
-
-          <input type="text" placeholder="Enter 10 digit mobile number" name="phone" required>
-
-          <span class="error">*Enter Valid Phone No.<br></span>
-
-          <label><b>City</b></label>
-
-          <input type="text" placeholder="Enter City" name="city" required>
-
-          <span class="error">*Enter Valid City Name<br></span>
-
-          <button class="submit" type="submit">Register</button>
-
-        </div>
-
-        <div class="con" style="background-color:#f1f1f1">
-
-          <button type="reset" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-
-          <span class="psw">Already <a href="#">Registered?</a></span>
-
-        </div>
-
-      </form>
-
-      </div>
-
-    <div id="id02" class="modal success">  
-
-      <div class="modal-content animate">
-
-
-
-    <div id="greet" class="con">
-
-      <h2>Registration Succesful!</h2>
-
-    </div>
-
-    <div class="con" style="background-color:#f1f1f1">
-
-      <button type="reset" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Close</button>
-
-    </div>
-
-</div>
-
-</div>
-
-<script>
-
-  function nav() {
-
-      var x = document.getElementById("nav");
-
-      if (x.className === "links") {
-
-        x.className += " responsive";
-
-      } else {
-
-        x.className = "links";
-
-      }
-
-  }
-
-  function nav2() {
-
-    var x = document.getElementById("nav");
-
-    x.className = "links";
-
-  }
-
-  function nav3() {
-
-    var x = $("leftBox");
-
-    x.className = "opened";
-
-  }
-
-// Get the modal
-
-var id01 = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-
-window.onclick = function(event) {
-
-    if (event.target == id01) {
-
-        id01.style.display = "none";
-
-    }
-
-}
-
-var id02 = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it
-
-function check(value, pattern){
-
-  if(value.match(pattern)){
-
-    return true;
-
-  } else {
-
-    return false;
-
-  }
-
-}
-
-function validate(fname, email, city, college, phone) {
-
-  $(".error").hide();
-
-  //match email address
-
-var emailRegex = '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}.[A-Za-z]{2,4}$'; 
-
-//match full name
-
-var fnameRegex = "^[a-zA-Z-.' ]{6,32}$";
-
-//match city
-
-var cityRegex = "^[a-zA-Z-. ]{3,20}$";
-
-//match college
-
-var collegeRegex = "^[a-zA-Z ]+$";
-
-//match phone
-
-var phoneRegex = '^([(\+91)][0-9]{12}|[0-9]{10})$';
-
-  bfname = check(fname, fnameRegex);
-
-  if(!bfname){
-
-    $("input[name=fname]").focus();
-
-    $(".error")[0].style.display = "block";
-
-    return false;
-
-  }
-
-  bcollege = check(college, collegeRegex);
-
-  if(!bcollege){
-
-    $("input[name=college]").focus();
-
-    $(".error")[1].style.display = "block";
-
-    return false;
-
-  }
-
-  bemail = check(email, emailRegex);
-
-  if(!bemail){
-
-    $("input[name=email]").focus();
-
-    $(".error")[2].style.display = "block";
-
-    return false;
-
-  }
-
-  bphone = check(phone, phoneRegex);
-
-  if(!bphone){
-
-    $("input[name=phone]").focus();
-
-    $(".error")[3].style.display = "block";
-
-    return false;
-
-  }
-
-  bcity = check(city, cityRegex);
-
-  if(!bcity){
-
-    $("input[name=city]").focus();
-
-    $(".error")[4].style.display = "block";
-
-    return false;
-
-  }
-
-  return true;
-
-}
-
-$(function() {
-
-  $("#rf").submit(function(e) {
-
-    // validate and process form here
-
-    e.preventDefault();
-
-    var fname = $("input[name=fname]").val().trim();
-
-    var email = $("input[name=email]").val().trim();
-
-    var city = $("input[name=city]").val().trim();
-
-    var college = $("input[name=college]").val().trim();
-
-    var phone = $("input[name=phone]").val().trim();
-
-    if (validate(fname, email, city, college, phone)) {
-
-      var dataString = 'fname='+ fname + '&email=' + email + '&phone=' + phone + '&city=' + city + '&college=' + college;
-
-      $.ajax({
-
-        type: "POST",
-
-        url: "pages/register.php",
-
-        data: dataString,
-
-        success: function(data) {
-
-          $("#rf")[0].reset();
-
-          $('.success').show();
-
-          if(data!=1){
-
-            $('#greet').html('<h2>Registration Successful</h2><br/>'+data);
-
-          	id01.style.display = "none";
-
-          } else {
-
-            $('#greet').html('<h2>Registration Unsuccessful</h2>');
-
-          }
-
-        }
-
-      });
-
-    }
-
-  });
-
-});
-
-      </script><!-- =========================================  Modal Form End  =================================================-->
-
+    <?php include 'reg.php'; ?>
         <article class="kontext capable animate">
 
           <div id="particles" class="layer one right show">
@@ -857,9 +567,9 @@ $(function() {
 
           <div class="layer three right hide">
 
-            <div class="content" id="sponsers">
+            <div class="content" id="spons">
 
-          <?php include './pages/Sponsers.php'; ?>
+          <?php include './pages/spons.php'; ?>
 
           </div>
 
@@ -897,9 +607,9 @@ $(function() {
 
             $('#particles').particleground({
 
-              dotColor: 'rgba(255,255,255,0.16)',
+              dotColor: 'rgba(0,0,255,0.16)',
 
-              lineColor: 'rgba(255,255,255,0.12)',
+              lineColor: 'rgba(255,0,0,0.12)',
 
               density: 7500
 
@@ -917,7 +627,7 @@ $(function() {
 
             var events = links.eq(1);
 
-            var sponsers = links.eq(2);
+            var spons = links.eq(2);
 
             var contacts = links.eq(3);
 
@@ -939,7 +649,7 @@ $(function() {
 
             });
 
-            sponsers.on("click",function() {
+            spons.on("click",function() {
 
               nav2();
 
