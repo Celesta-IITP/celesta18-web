@@ -559,7 +559,7 @@ display: none;
 
             <div id="events" class="content">
 
-              <?php include './pages/Events.php'; ?>
+              
 
             </div>
 
@@ -569,7 +569,7 @@ display: none;
 
             <div class="content" id="spons">
 
-          <?php include './pages/spons.php'; ?>
+         
 
           </div>
 
@@ -579,7 +579,7 @@ display: none;
 
             <div class="content" id="contacts">
 
-          <?php include './pages/Contacts.php'; ?>
+         
 
           </div>
 
