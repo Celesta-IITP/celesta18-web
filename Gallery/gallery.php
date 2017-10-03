@@ -27,16 +27,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="gallery.html" style="color: #f1f1f1; text-decoration: none;"><b>CELESTA &nbsp  GALLERY</b></a>
+                    <a class="navbar-brand" href="gallery.php" style="color: #f1f1f1; text-decoration: none;"><b>CELESTA &nbsp;  GALLERY</b></a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../Events.html">Events</a></li>
+                        <li><a href="../index.php">Home</a></li>
+                        <li><a href="../Events.php">Events</a></li>
                         <li><a href="#">Schedule</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Register</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </div>
