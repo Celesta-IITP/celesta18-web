@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTP-8" lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Njack IITP</title>
+        <title>Celesta IITP</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400, 700" rel="stylesheet" type="text/css">
