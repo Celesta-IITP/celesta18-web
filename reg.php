@@ -30,15 +30,21 @@
           <input type="text" placeholder="Enter 10 digit mobile number" name="phone" required>
 
           <span class="error">*Enter Valid Phone No.<br></span>
+          <label><b>Password</b></label>
+
+          <input type="password" placeholder="*****" name="password" required>
+
+          <span class="error">*Enter Valid Password.<br></span>
 <!-- 
           <label><b>City</b></label>
 
           <input type="text" placeholder="Enter City" name="city" required>
 
           <span class="error">*Enter Valid City Name<br></span> -->
-
-          <button class="submit" type="submit">Register</button>
-
+          <button class="submit" type="submit">Register</button><center >
+            <div id="errorBanner" style="color:#FF0000;display: none;"></div>
+        <img id="loader_gif" style="display: none" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
+</center>
         </div>
 
         <div class="con" style="background-color:#f1f1f1">
@@ -143,7 +149,7 @@ function check(value, pattern){
 
 }
 
-function validate(fname, email, college, phone) {
+function validate(fname, email, college, phone, password) {
 
   $(".error").hide();
 
@@ -210,7 +216,10 @@ var phoneRegex = '^([(\+91)][0-9]{12}|[0-9]{10})$';
     return false;
 
   }
-
+  if(!password){
+    $(".error")[4].style.display = "block";
+    return false;
+  }
   return true;
 
 }
@@ -218,9 +227,9 @@ var phoneRegex = '^([(\+91)][0-9]{12}|[0-9]{10})$';
 $(function() {
 
   $("#rf").submit(function(e) {
-
+$("#loader_gif").fadeIn();
     // validate and process form here
-
+console.log("clicked");
     e.preventDefault();
 
     var fname = $("input[name=fname]").val().trim();
@@ -228,42 +237,56 @@ $(function() {
     var email = $("input[name=email]").val().trim();
 
     var college = $("input[name=college]").val().trim();
+    var password = $("input[name=password]").val();
 
     var phone = $("input[name=phone]").val().trim();
 
-    if (validate(fname, email, college, phone)) {
+    if (validate(fname, email, college, phone,password)) {
 
-      var dataString = 'fname='+ fname + '&email=' + email + '&phone=' + phone + '&college=' + college;
+     
+      $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/register",
+            {                   
+              name: fname,
+              emailid:email,
+              password:password,
+              mobile:phone,
+              college:college
+            },
+            function(data, status){
+              console.log("Response");
+              console.log("Data: " + data + "\nStatus: " + status);
+              if(status=='success'){//$("#myloader").fadeOut();
+              $("#loader_gif").fadeOut();
 
-      $.ajax({
+                console.log(data);
 
-        type: "POST",
+                if(data["status"]=="200"){
+                  $('.success').show();            
+                  $("#greet").html('<center><b>Registration Successful</b><br>A confirmation email has been sent.</center>');
+                  $("#greet").fadeIn();
+                  // $("#greet").css('background','#5FAB22');
+                  id01.style.display = "none";
+                }else{
+                  console.log("err");
+              $("#loader_gif").fadeOut();
+                  $("#errorBanner").fadeIn();
+                   $("#errorBanner").html('<center><b>Error occured<br>'+data["message"]+'</center>');
+              }
+//              $('html, body').animate({
+//                      scrollTop: $("#header").offset().top
+//                  }, 500);
+ 
+              }else{//$("#myloader").fadeOut();
+                  $("#errorBanner").fadeIn();
+              $("#loader_gif").fadeOut();
+                  $("#errorBanner").fadeIn();
+                  $("#errorBanner").html('An error occured.<br> Please try again.');
+                  
+                  console.log("Failed "+data);
 
-        url: "pages/register.php",
-
-        data: dataString,
-
-        success: function(data) {
-
-          $("#rf")[0].reset();
-
-          $('.success').show();
-
-          if(data!=1){
-
-            $('#greet').html('<h2>Registration Successful</h2><br/>'+data);
-
-          	id01.style.display = "none";
-
-          } else {
-
-            $('#greet').html('<h2>Registration Unsuccessful</h2>');
-
-          }
-
-        }
-
-      });
+                }
+                },"json");
+      
 
     }
 
