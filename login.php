@@ -23,15 +23,17 @@ session_start();
 $(document).ready(function () {
 <?php
 
-if(isset($_SESSION['uid'])){
-
-  echo"$('.login').hide();$('body').html('Already Logged In.<br><a style=\'color:#FFFFFF\' href=\'login.php?act=logout\' id=\'logout\'>Logout here</a>');$('#logout').fadeIn();";
-}
 if(isset($_get['act'])){
   if($_GET['act']=='logout'){
-    session_unset();
+    session_destroy();
   }
 }
+
+if(isset($_SESSION['uid'])){
+
+  echo"$('.login').hide();$('body').html('Already Logged In as ".$_SESSION['name']."-".$_SESSION['uid'].".<br><a style=\'color:#FFFFFF\' href=\'login.php?act=logout\' id=\'logout\'>Logout here</a>');$('#logout').fadeIn();";
+}
+
  ?>
 function check(value, pattern){
 
