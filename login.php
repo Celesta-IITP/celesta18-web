@@ -15,8 +15,13 @@ if(isset($_GET['act'])){
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Login</title>
   <style>
+      a:visited
+      {
+        color:#fff ;
+      }
     #logout{
       /*display: none;*/
     }
@@ -144,6 +149,12 @@ console.log("clicked");
 </head>
 
 <body>
+
+<div class="cross" style="position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
+<a class="cross_me" href="//celesta.org.in" >
+<i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
+</a>
+</div>
   
 <div class='login'>
   <div class='login_title'>
