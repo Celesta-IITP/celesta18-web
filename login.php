@@ -6,12 +6,40 @@
   
   
   <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link rel="stylesheet" href="style.css">
 <script>
   
-$(function() {
+$(document).ready(function () {
 
+function check(value, pattern){
+
+  if(value.match(pattern)){
+
+    return true;
+
+  } else {
+
+    return false;
+
+  }
+
+}
+function validate(email,pass){
+
+var emailRegex = '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}.[A-Za-z]{2,4}$'; 
+
+  bemail = check(email, emailRegex);
+
+  if(!bemail){
+
+    $("#errorBanner").text("Invalid email");
+
+    return false;
+
+  }
+  return true;
+}
   $("#submit").click(function(e) {
 $("#loader_gif").fadeIn();
     // validate and process form here
@@ -66,10 +94,15 @@ console.log("clicked");
                 },"json");
       
 
+    }else{
+              $("#loader_gif").fadeOut();
+
+      
     }
 
-  });
 
+  });
+  
 });
 
       </script>
@@ -83,26 +116,25 @@ console.log("clicked");
   </div>
   <div class='login_fields'>
     <div class='login_fields__user'>
-      <div class='icon'>
+      <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Email:</span>
+      <!-- <div class='icon'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
-      </div>
-      <input placeholder='email-ID' id="email" type='text'>
+      </div>Email
+       --><input autocomplete="off" placeholder='email-ID' id="email" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
       </input>
     </div>
     <div class='login_fields__password'>
-      <div class='icon'>
-        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
-      </div>
-      <input id="pass" placeholder='Password' type='password'>
+      <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Password:</span>
+      <input autocomplete="off" id="pass" placeholder='Password' type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
     </div>
     <div class='login_fields__submit'>
-      <div id="errorBanner">
+      <div id="errorBanner" style="color: #FF0000">
     
   </div>
 
