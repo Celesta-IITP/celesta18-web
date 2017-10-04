@@ -1,5 +1,8 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-
+ 
 <html lang="en">
 
 	<head>
@@ -601,10 +604,18 @@ display: none;
           <li><a data-page="contacts" href="#">Sponsors</a></li>
 
           <li><a data-page="contacts" href="Gallery/gallery.php">Gallery</a></li>
-          
-          <li><a  href="login.php">Login</a></li>
+          <?php
+            if(isset($_SESSION['uid'])){
+              $name = explode(" ",$_SESSION['name']) ;
 
-          <li><a onclick="document.getElementById('id01').style.display='block'" class="cd-signup" data-page="register" href="#">Register</a></li>
+              echo "<li>Hi ".$name[0]."! <a  href=\"login.php?act=logout\">Log Out</a></li>";
+            }else{
+              echo "<li><a  href=\"login.php\">Login</a></li>
+              <li><a onclick=\"document.getElementById('id01').style.display='block'\" class=\"cd-signup\" data-page=\"register\" href=\"#\">Register</a></li>
+              ";
+            }
+          ?>
+          
 
           <li><a data-page="contacts" href="#">About</a></li>
 
