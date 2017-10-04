@@ -24,7 +24,7 @@ $(document).ready(function () {
 <?php
 
 if(isset($_SESSION['uid'])){
-  echo"$('.login').hide();$('body').html('Already Logged In.<br><a href='login.php?act=logout' id='logout'>Logout here</a>');$('#logout').fadeIn();";
+  echo"$('.login').hide();$('body').html('Already Logged In.<br><a style='color:#FFFFFF' href='login.php?act=logout' id='logout'>Logout here</a>');$('#logout').fadeIn();";
 }
 if(isset($_POST['act'])){
   if($_GET['act']=='logout'){
@@ -132,7 +132,7 @@ console.log("clicked");
 </head>
 
 <body>
-  <a href='login.php?act=logout' id='logout'>Logout here</a>
+  
 <div class='login'>
   <div class='login_title'>
     <span>Login to your account</span>
