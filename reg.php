@@ -6,31 +6,31 @@
       <form id="rf" class="modal-content animate" action="" >
 
         <div class="con">
-
-          <label><b>Full Name</b></label>
+          <h2 style="color:#000000;text-align:center;">Register</h2>
+          <!-- <label><b>Full Name</b></label> -->
 
           <input type="text" placeholder="Enter Full Name" name="fname" required>
 
           <span class="error">*Enter Valid Name<br></span>
 
-          <label><b>College</b></label>
+          <!-- <label><b>College</b></label> -->
 
           <input type="text" placeholder="Enter College" name="college" required>
 
           <span class="error">*Enter Valid College Name<br></span>
 
-          <label><b>Email</b></label>
+          <!-- <label><b>Email</b></label> -->
 
           <input type="text" placeholder="Enter Email" name="email" required>
 
           <span class="error">*Enter Valid Email<br></span>
 
-          <label><b>Phone</b></label>
+          <!-- <label><b>Phone</b></label> -->
 
           <input type="text" placeholder="Enter 10 digit mobile number" name="phone" required>
 
           <span class="error">*Enter Valid Phone No.<br></span>
-          <label><b>Password</b></label>
+          <!-- <label><b>Password</b></label> -->
 
           <input type="password" placeholder="*****" name="password" required>
 
