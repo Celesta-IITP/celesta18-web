@@ -1,5 +1,16 @@
 <?php
 session_start();
+
+if(isset($_GET['act'])){
+  if($_GET['act']=='logout'){
+    $_SESSION['uid']=null;
+    $_SESSION['name']=null;
+    session_destroy();
+  header( "refresh:0; url=http://celesta.org.in" );
+    
+  }
+}
+
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -22,14 +33,6 @@ session_start();
   
 $(document).ready(function () {
 <?php
-
-if(isset($_GET['act'])){
-  if($_GET['act']=='logout'){
-    $_SESSION['uid']=null;
-    $_SESSION['name']=null;
-    session_destroy();
-  }
-}
 
 if(isset($_SESSION['uid'])){
 
