@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?><!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -19,7 +21,7 @@
   
 $(document).ready(function () {
 <?php
-session_start();
+
 if(isset($_SESSION['uid'])){
   echo"$('.login').hide();$('body').text('Already Logged In.');$('#logout').fadeIn();";
 }
@@ -29,8 +31,6 @@ if(isset($_POST['act'])){
   }
 }
  ?>
-}
-}
 function check(value, pattern){
 
   if(value.match(pattern)){
