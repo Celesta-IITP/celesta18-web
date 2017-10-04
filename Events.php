@@ -361,7 +361,7 @@ display: none;
           <li><a data-page="contacts" href="#">Sponsors</a></li>
 
           <li><a data-page="contacts" href="Gallery/gallery.php">Gallery</a></li>
-          <li><a  href="login.html">Login</a></li>
+          <li><a  href="login.php">Login</a></li>
 
           <li><a onclick="document.getElementById('id01').style.display='block'" class="cd-signup" data-page="register" href="#">Register</a></li>
 
