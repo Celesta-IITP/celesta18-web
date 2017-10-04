@@ -605,7 +605,7 @@ display: none;
 
           <li><a data-page="contacts" href="Gallery/gallery.php">Gallery</a></li>
           <?php
-            if(isset($_SESSION['name'])){
+            if(isset($_SESSION['uid'])){
               echo "<li>Hi ".$_SESSION['name']."! <a  href=\"login.php?act=logout\">Log Out</a></li>";
             }else{
               echo "<li><a  href=\"login.php\">Login</a></li>
