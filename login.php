@@ -7,10 +7,11 @@ session_start();
   <title>Login</title>
   <style>
     #logout{
-      display: none;
+      /*display: none;*/
     }
     body{
       color:#FFFFFF;
+      background: #000000;
     }
   </style>
   
@@ -23,7 +24,7 @@ $(document).ready(function () {
 <?php
 
 if(isset($_SESSION['uid'])){
-  echo"$('.login').hide();$('body').text('Already Logged In.');$('#logout').fadeIn();";
+  echo"$('.login').hide();$('body').html('Already Logged In.<br><a href='login.php?act=logout' id='logout'>Logout here</a>');$('#logout').fadeIn();";
 }
 if(isset($_POST['act'])){
   if($_GET['act']=='logout'){
@@ -131,7 +132,7 @@ console.log("clicked");
 </head>
 
 <body>
-  <a href="login.php?act=logout" id="logout">Logout here</a>
+  <a href='login.php?act=logout' id='logout'>Logout here</a>
 <div class='login'>
   <div class='login_title'>
     <span>Login to your account</span>
