@@ -37,6 +37,7 @@
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Sponsors</a></li>
                         <li><a href="#">Register</a></li>
+                        <li><a  href="../login.html">Login</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </div>
