@@ -16,6 +16,330 @@
         <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
         <script src="gallery.js"></script>
+                <style type="text/css">
+            
+
+         /* Add Zoom Animation */
+
+          .animate {
+
+            -webkit-animation: animatezoom 0.6s;
+
+            animation: animatezoom 0.6s
+
+          }
+         
+                /*=====================================================================*/
+
+    /*=============================== Modal ===============================*/
+
+    /* Full-width input fields */
+
+    input[type=text], input[type=password] {
+
+        width: 100%;
+
+        padding: 12px 20px;
+
+        margin: 8px 0;
+
+        display: inline-block;
+
+        border: 1px solid #ccc;
+
+        box-sizing: border-box;
+
+      }
+
+    /* Set a style for all buttons */
+
+    .con button {
+
+        background-color: #4CAF50;
+
+        color: white;
+
+        padding: 14px 20px;
+
+        margin: 8px 0;
+
+        border: none;
+
+        cursor: pointer;
+
+        width: 100%;
+
+      }
+
+    /* Extra styles for the cancel button */
+
+    .cancelbtn {
+
+        width: auto;
+
+        max-width: 100px;
+
+        padding: 10px 18px;
+
+        background-color: #f44336;
+
+      }
+
+    /* Center the image and position the close button */
+
+    .imgcontainer {
+
+        text-align: center;
+
+        margin: 24px 0 12px 0;
+
+        position: relative;
+
+      }
+
+    img.avatar {
+
+        width: 40%;
+
+        border-radius: 50%;
+
+      }
+
+    .con {
+
+        padding: 16px;
+
+      }
+
+    span.psw {
+
+        float: right;
+
+        padding-top: 16px;
+
+      }
+
+    /* The Modal (background) */
+
+    .modal {
+
+        display: none; /* Hidden by default */
+
+        position: fixed; /* Stay in place */
+
+        z-index: 1; /* Sit on top */
+
+        left: 0;
+
+        top: 0;
+
+        width: 100%; /* Full width */
+
+        height: 100%; /* Full height */
+
+        overflow: auto; /* Enable scroll if needed */
+
+        background-color: rgb(0,0,0); /* Fallback color */
+
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+        padding-top: 60px;
+
+      }
+    
+    #id01{overflow:auto;}
+
+    /* Modal Content/Box */
+
+    .modal-content {
+
+      max-width: 500px;
+
+      background-color: #fefefe;
+
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+
+      border: 1px solid #888;
+
+      width: 80%; /* Could be more or less, depending on screen size */
+
+    }
+
+    /* The Close Button (x) */
+
+    .close {
+
+        position: absolute;
+
+        right: 25px;
+
+        top: 0;
+
+        color: #000;
+
+        font-size: 35px;
+
+        font-weight: bold;
+
+      }
+
+    .close:hover,
+
+    .close:focus {
+
+        color: red;
+
+        cursor: pointer;
+
+      }
+
+.clsbtn {
+display: none;
+}
+
+      .error {display: none;color: red;}
+
+    /*======================================================================*/
+
+    /*============================== Key Frames ============================*/
+
+    @-webkit-keyframes animatezoom {
+
+        from {-webkit-transform: scale(0)}
+
+        to {-webkit-transform: scale(1)}
+
+      }
+
+
+
+    @keyframes animatezoom {
+
+        from {transform: scale(0)}
+
+        to {transform: scale(1)}
+
+      }
+
+    /*======================================================================*/
+
+    /*=========================== Media Queries ============================*/
+
+    @media screen and (max-width:680px) {
+
+      ul.links li:not(:first-child) {display: none;}
+
+      ul.links li.icon {
+
+        float: right;
+
+        display: inline-block;
+
+      }
+
+      body {
+
+        font-size: 120%;
+
+      }
+
+    }
+
+    @media screen and (max-width:768px) {
+
+      body {
+
+        font-size: 120%;
+      }
+
+    }
+
+    @media screen and (max-width:680px) {
+
+      ul.links.responsive {position: relative;}
+
+      ul.links.responsive li.icon {
+
+        position: absolute;
+
+        right: 0;
+
+        top: 0;
+
+      }
+
+      ul.links.responsive li {
+
+        float: none;
+
+        display: inline;
+
+      }
+
+      ul.links.responsive li a {
+
+        display: block;
+
+        text-align: left;
+
+      }
+
+      .modal-content {
+
+          width: 75%;
+
+      }
+
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+
+    @media screen and (max-width: 400px) {
+
+        .modal-content {
+
+          width: 95%;
+
+        }
+
+        span.psw {
+
+           display: block;
+
+           float: none;
+
+        }
+
+        .cancelbtn {
+
+           width: 100%;
+
+        }
+         .clsbtn {
+           position: fixed;
+           top:0;
+           right:0;
+           display: block;
+           cursor: pointer;
+           width: 30px;
+           height:30px;
+        }
+        .opened {
+           display: block;
+           position: fixed;
+           height: 100%;
+           width: 100%;
+
+        }
+       
+
+
+      }
+
+    /*======================================================================*/
+
+        </style>
+
     </head>
 
     <body>
@@ -36,7 +360,8 @@
                         <li><a href="#">Schedule</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">Register</a></li>
+                                  <li><a onclick="document.getElementById('id01').style.display='block'" class="cd-signup" data-page="register" href="#">Register</a></li>
+
                         <li><a  href="../login.html">Login</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
@@ -173,5 +498,9 @@
 
         <br>
         <br>
+
+           <script type="text/javascript"></script>
+        <?php include '../reg.php'; ?>
+
     </body>
 </html>
