@@ -245,7 +245,7 @@ console.log("clicked");
 
      
       $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/register",
-            {                   
+            {
               name: fname,
               emailid:email,
               password:password,
