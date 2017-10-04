@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  
+  <style>
+    #logout{
+      display: none;
+    }
+    body{
+      color:#FFFFFF;
+    }
+  </style>
   
   <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -11,7 +18,19 @@
 <script>
   
 $(document).ready(function () {
-
+<?php
+session_start();
+if(isset($_SESSION['uid'])){
+  echo"$('.login').hide();$('body').text('Already Logged In.');$('#logout').fadeIn();";
+}
+if(isset($_POST['act'])){
+  ($_GET['act']=='logout'){
+    session_unset();
+  }
+}
+ ?>
+}
+}
 function check(value, pattern){
 
   if(value.match(pattern)){
@@ -72,6 +91,9 @@ console.log("clicked");
                   $(".success").fadeIn();
                   // $("#greet").css('background','#5FAB22');
                   $(".login_fields").fadeOut();
+                }else if(data["status"]=="403"){
+                  $("#errorBanner").fadeIn();
+                   $("#errorBanner").html('<center><b>Invalid Credentials<br>');
                 }else{
                   console.log("err");
               $("#loader_gif").fadeOut();
@@ -97,7 +119,7 @@ console.log("clicked");
     }else{
               $("#loader_gif").fadeOut();
 
-      
+
     }
 
 
@@ -109,7 +131,7 @@ console.log("clicked");
 </head>
 
 <body>
-  
+  <a href="login.php?act=logout" id="logout">Logout here</a>
 <div class='login'>
   <div class='login_title'>
     <span>Login to your account</span>
