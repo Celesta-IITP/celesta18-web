@@ -24,7 +24,7 @@ if(isset($_SESSION['uid'])){
   echo"$('.login').hide();$('body').text('Already Logged In.');$('#logout').fadeIn();";
 }
 if(isset($_POST['act'])){
-  ($_GET['act']=='logout'){
+  if($_GET['act']=='logout'){
     session_unset();
   }
 }
