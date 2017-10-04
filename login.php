@@ -30,8 +30,11 @@ if(isset($_GET['act'])){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link rel="stylesheet" href="style.css">
 <script>
-  
+  function goHome(){
+    window.location="http://celesta.org.in";
+  }
 $(document).ready(function () {
+
 <?php
 
 if(isset($_SESSION['uid'])){
@@ -98,6 +101,7 @@ console.log("clicked");
                   $('.success').show();            
                   
                   $(".success").fadeIn();
+                  setTimeout(function(){goHome();},1000);
                   // $("#greet").css('background','#5FAB22');
                   $(".login_fields").fadeOut();
                 }else if(data["status"]=="403"){
@@ -177,7 +181,8 @@ console.log("clicked");
   </div>
   <div class='success'>
     <h2>Authentication Success</h2>
-    <p>Welcome back</p>
+    <p>Welcome back<br>Redirecting...</p>
+    
   </div>
   
 <div class='authent'>
