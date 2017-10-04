@@ -46,7 +46,6 @@ html *{
 #navigation li a:hover
 {
 	background-color: black;
-
 }
 
 #eventtag
@@ -55,9 +54,10 @@ html *{
     font-family: courier;
     font-size: 2.6em;
     position: absolute;
-    top: -30px;
+    top: -15px;
     z-index: 1;
     text-shadow: 3px 3px 10px  white, 4px 5px 8px rgb(0,0,255);
+    transition: top 0.5s;
 }
 
 #poster
@@ -168,4 +168,13 @@ nav li a:hover
 	padding-left: 20%;
 	padding-top: 3%;
 	padding-right: 2%;
+}
+
+@media screen and (max-width: 600px){
+
+	#eventtag{
+		transition: top 0.5s;
+		top:12px !important;
+	}
+
 }
