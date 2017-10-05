@@ -554,7 +554,14 @@ display: none;
       }
 
     /*======================================================================*/
-
+#live a{
+  text-decoration: none;
+  color:#FFFFFF;
+}
+#live a:hover{
+  text-decoration: none;
+  color:#3cfff9;
+}
     </style>
 
       </head>
@@ -625,6 +632,16 @@ display: none;
 
       </nav>
 
+<div id="live" style="
+    top: 50px;
+    position: absolute;
+    z-index: 10;
+    font-size: 20px;
+    background: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+">Live online events:<br><a href="http://sparkfun.celesta.org.in">->SparkFun</a><br><a href="http://ctf.celesta.org.in">->CTF</a></div>
       <script type="text/javascript"></script>
     <?php include 'reg.php'; ?>
         <article class="kontext capable animate">
