@@ -603,13 +603,13 @@ display: none;
           <li><a data-page="home" href="#">Home</a></li>
 
           <li><a data-page="events" href="Events.php">Events</a></li>
-
+          <li><a   href="Workshop/ai.htm"  >Workshop</a> </li>
           <li><a data-page="spons" href="#">Schedule</a></li>
 
           <li><a data-page="contacts" href="#">Team</a></li>
 
           <li><a data-page="contacts" href="#">Sponsors</a></li>
-
+          
           <li><a data-page="contacts" href="Gallery/gallery.php">Gallery</a></li>
           <?php
             if(isset($_SESSION['uid'])){
