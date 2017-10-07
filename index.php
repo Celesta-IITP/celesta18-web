@@ -604,7 +604,7 @@ display: none;
 
           <li><a data-page="events" href="Events.php">Events</a></li>
           <li><a   href="Workshop/ai.htm"  >Workshop</a> </li>
-          <li><a data-page="spons" href="#">Schedule</a></li>
+          <li><a data-page="spons" href="images/schedule.png" download >Schedule</a></li>
 
           <li><a data-page="contacts" href="#">Team</a></li>
 
@@ -641,7 +641,7 @@ display: none;
     padding: 10px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-">Live online events:<br><a href="http://sparkfun.celesta.org.in">->SparkFun</a><br><a href="http://ctf.celesta.org.in">->CTF</a></div>
+">Live online events:<br><a href="http://sparkfun.celesta.org.in">->SparkFun</a><br><a href="images/schedule.png" download >->Schedule</a></div>
       <script type="text/javascript"></script>
     <?php include 'reg.php'; ?>
         <article class="kontext capable animate">
