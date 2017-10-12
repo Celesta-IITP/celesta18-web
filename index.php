@@ -641,7 +641,7 @@ display: none;
     padding: 10px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-">Live online events:<br><a href="http://sparkfun.celesta.org.in">->SparkFun</a><br><a href="images/schedule.png" download >->Schedule</a></div>
+">Live online events:<br><a href="Workshop/ai.htm" >->Workshop</a></div>
       <script type="text/javascript"></script>
     <?php include 'reg.php'; ?>
         <article class="kontext capable animate">
