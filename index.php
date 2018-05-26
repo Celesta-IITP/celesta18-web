@@ -28,78 +28,7 @@ session_start();
     <link rel="stylesheet" href="./css/loader.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  <script>
-$(function() {
 
-  $("#rf").submit(function(e) {
-$("#loader_gif").fadeIn();
-    // validate and process form here
-console.log("clicked");
-    e.preventDefault();
-
-    var fname = $("input[name=fname]").val().trim();
-
-    var email = $("input[name=email]").val().trim();
-
-    var college = $("input[name=college]").val().trim();
-    var password = $("input[name=password]").val();
-
-    var phone = $("input[name=phone]").val().trim();
-
-    if (validate(fname, email, college, phone,password)) {
-
-     
-      $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/register",
-            {
-              name: fname,
-              emailid:email,
-              password:password,
-              mobile:phone,
-              college:college
-            },
-            function(data, status){
-              console.log("Response");
-              console.log("Data: " + data + "\nStatus: " + status);
-              if(status=='success'){//$("#myloader").fadeOut();
-              $("#loader_gif").fadeOut();
-
-                console.log(data);
-
-                if(data["status"]=="200"){
-                  $('.success').show();            
-                  $("#greet").html('<center><b>Registration Successful</b><br>A confirmation email has been sent.</center>');
-                  $("#greet").fadeIn();
-                  // $("#greet").css('background','#5FAB22');
-                  id01.style.display = "none";
-                }else{
-                  console.log("err");
-              $("#loader_gif").fadeOut();
-                  $("#errorBanner").fadeIn();
-                   $("#errorBanner").html('<center><b>Error occured<br>'+data["message"]+'</center>');
-              }
-//              $('html, body').animate({
-//                      scrollTop: $("#header").offset().top
-//                  }, 500);
- 
-              }else{//$("#myloader").fadeOut();
-                  $("#errorBanner").fadeIn();
-              $("#loader_gif").fadeOut();
-                  $("#errorBanner").fadeIn();
-                  $("#errorBanner").html('An error occured.<br> Please try again.');
-                  
-                  console.log("Failed "+data);
-
-                }
-                },"json");
-      
-
-    }
-
-  });
-
-});
-
-      </script>
     <style type="text/css">
 
 /*=============================== Basic ===============================*/
@@ -618,7 +547,7 @@ display: none;
               echo "<li>Hi ".$name[0]."! <a  href=\"login.php?act=logout\">Log Out</a></li>";
             }else{
               echo "<li><a  href=\"login.php\">Login</a></li>
-              <li><a onclick=\"document.getElementById('id01').style.display='block'\" class=\"cd-signup\" data-page=\"register\" href=\"#\">Register</a></li>
+              <li><a class=\"cd-signup\" data-page=\"register\" href=\"Register.php\">Register</a></li>
               ";
             }
           ?>

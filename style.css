@@ -6,20 +6,7 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: 'Gudea', sans-serif;
-  background:   #0d0d0d;
-  /* Old browsers */
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,   #0d0d0d), color-stop(100%, #262626));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg,   #0d0d0d 0%, #262626 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: -webkit-linear-gradient(315deg,   #0d0d0d 0%, #262626 100%);
-  background: linear-gradient(135deg,   #0d0d0d 0%, #262626 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #0d0d0d ', endColorstr='#262626',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  
 }
 body ::-webkit-input-placeholder {
   color: #4E546D;
@@ -98,35 +85,29 @@ body .login {
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg);
   position: relative;
-  width: 240px;
+  width: 340px;
   border-top: 2px ;
   height: 300px;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
+  border: dashed;
+  border-color: #727272;
+  border-width: 5px;
   top: 0;
   bottom: 0;
-  padding: 100px 40px 40px 40px;
-  background: #35394a;
+  padding: 80px 40px 60px 40px;
+  background: url("images/login_part.jpg") repeat center fixed;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, #1f222e));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+ 
 }
 body .login .validation {
   position: absolute;
   z-index: 1;
   right: 10px;
-  top: 6px;
+  top: 26px;
   opacity: 0;
 }
 body .login .disclaimer {
@@ -137,9 +118,9 @@ body .login .disclaimer {
 }
 body .login_title {
   color: #afb1be;
-  height: 60px;
-  text-align: left;
-  font-size: 16px;
+  height: 80px;
+  text-align: center;
+  font-size: 20px;
 }
 body .login_fields {
   height: 208px;
@@ -151,16 +132,16 @@ body .login_fields .icon {
   z-index: 1;
   left: 36px;
   top: 8px;
-  opacity: .5;
+  opacity: 0.5;
 }
 body .login_fields input[type='password'] {
   color: #DC6180 !important;
 }
 body .login_fields input[type='text'], body .login_fields input[type='password'] {
   color: #afb1be;
-  width: 190px;
+  width: 290px;
   margin-top: -2px;
-  background: #32364a;
+  background: #32364a url("images/input.jpg") repeat center fixed;
   left: 0;
   padding: 10px 65px;
   border-top: 2px solid #393d52;
@@ -171,12 +152,29 @@ body .login_fields input[type='text'], body .login_fields input[type='password']
   font-family: 'Gudea', sans-serif;
   box-shadow: none;
 }
+
+input::-webkit-input-placeholder {
+color: #a9a9a9 !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #a9a9a9 !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #a9a9a9 !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #a9a9a9 !important;  
+}
+
 body .login_fields__user, body .login_fields__password {
   position: relative;
 }
 body .login_fields__submit {
   position: relative;
-  top: 35px;
+  top: 18px;
   left: 0;
   width: 80%;
   right: 0;
@@ -250,4 +248,20 @@ body .login_fields__submit input:hover {
 }
 .brand img {
   width: 30px;
+}
+
+.error {
+  display: none;
+  color: red;
+  padding-left: 15px;
+}
+
+#greet {
+  top: 200px;
+  padding: 50px 20px 40px 20px;
+  background: black;
+  font-size: 2em;
+  color: white; 
+  height: 300px;
+  display: none;
 }

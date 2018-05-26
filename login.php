@@ -15,8 +15,9 @@ if(isset($_GET['act'])){
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Login</title>
+  <title>Celesta2k18 Login</title>
   <style>
       a:visited
       {
@@ -27,73 +28,87 @@ if(isset($_GET['act'])){
     }
     body{
       color:#FFFFFF;
-      background: #000000;
+      background: #000000 url("images/bg_login.png") no-repeat center fixed;
+      background-size: 100% auto;
     }
+
+    
+    // ------------------ Media Queries ---------------------------------
+
+    // ------------------------------------------------------------------    
+
   </style>
   
   <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link rel="stylesheet" href="style.css">
-<script>
+<script type="text/javascript">
   function goHome(){
-    window.location="http://celesta.org.in";
+      window.location="http://celesta.org.in";
   }
-$(document).ready(function () {
+  
+  $(document).ready(function () {
 
-<?php
+  <?php
 
-if(isset($_SESSION['uid'])){
+      if(isset($_SESSION['uid'])){
 
-  echo"$('.login').hide();$('body').html('Already Logged In as ".$_SESSION['name']."-".$_SESSION['uid'].".<br><a style=\'color:#FFFFFF\' href=\'login.php?act=logout\' id=\'logout\'>Logout here</a>');$('#logout').fadeIn();";
-}
+      echo"$('.login').hide(); $('body').html('Already Logged In as ".$_SESSION['name']."-".$_SESSION['uid'].".<br><a style=\'color:#FFFFFF\' href=\'login.php?act=logout\' id=\'logout\'>Logout here</a>'); $('#logout').fadeIn();";
+      }
 
- ?>
-function check(value, pattern){
+  ?>
 
-  if(value.match(pattern)){
+  function check(value, pattern){
 
-    return true;
+      if(value.match(pattern)){
 
-  } else {
+         return true;
 
-    return false;
+      } else {
 
-  }
+          return false;
 
-}
-function validate(email,pass){
-
-var emailRegex = '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}.[A-Za-z]{2,4}$'; 
-
-  bemail = check(email, emailRegex);
-
-  if(!bemail){
-
-    $("#errorBanner").text("Invalid email");
-
-    return false;
+      }
 
   }
-  return true;
-}
+  
+  function validate(email,pass){
+
+      var emailRegex = '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}.[A-Za-z]{2,4}$'; 
+
+      bemail = check(email, emailRegex);
+
+      if(!bemail){
+
+          $("#errorBanner").text("Invalid email");
+
+          return false;
+
+      }
+      return true;
+      
+  }
+  
   $("#submit").click(function(e) {
-$("#loader_gif").fadeIn();
-    // validate and process form here
-console.log("clicked");
-    e.preventDefault();
+      
+      $("#loader_gif").fadeIn();
 
-    var email = $("#email").val().trim();
+      // validate and process form here
 
-    var pass = $("#pass").val().trim();
+      console.log("clicked");
+      e.preventDefault();
 
-    if (validate( email,pass)) {
+      var email = $("#email").val().trim();
 
-     
-      $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/login",
+      var pass = $("#pass").val().trim();
+
+      if (validate( email,pass)) {
+
+        $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/login",
             {
               emailid:email,
               password:pass
-           },
+            },
             function(data, status){
               console.log("Response");
               console.log("Data: " + data + "\nStatus: " + status);
@@ -134,39 +149,40 @@ console.log("clicked");
                 },"json");
       
 
-    }else{
-              $("#loader_gif").fadeOut();
+      }else{
 
+          $("#loader_gif").fadeOut();
 
     }
-
 
   });
   
 });
+   
+</script>
 
-      </script>
 </head>
 
 <body>
 
-<div class="cross" style="position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
+<div class="cross" style="z-index: 50; position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
 <a class="cross_me" href="//celesta.org.in" >
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-  
+<div style="text-align: center; font-family: monospace; font-size: 6em; padding-top: 4%;" id="header" >Celesta 2k18</div>  
 <div class='login'>
-  <div class='login_title'>
-    <span>Login to your account</span>
+  <div style="text-align: center;" class='login_title'>
+    <span><h2 style="margin-bottom: -1px;">Welcome!!</h2>Login to Celesta2k18</span>
   </div>
+  <br>
   <div class='login_fields'>
     <div class='login_fields__user'>
-      <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Email:</span>
+      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Email:</span><br>
       <!-- <div class='icon'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
       </div>Email
-       --><input autocomplete="off" placeholder='email-ID' id="email" type='text'>
+       --><input style="margin-top: 2px;" autocomplete="off" placeholder='Email-ID' id="email" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -174,7 +190,7 @@ console.log("clicked");
     </div>
     <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Password:</span>
-      <input autocomplete="off" id="pass" placeholder='Password' type='password'>
+      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='Password' type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
@@ -184,10 +200,13 @@ console.log("clicked");
     
   </div>
 
-      <input id="submit" type='submit' value='Log In'><img id="loader_gif" style="display: none" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
-      <!-- <div class='forgot'>
-        <a href='#'>Forgotten password?</a>
-      </div> -->
+      <input id="submit" type='submit' value='Log In'><img id="loader_gif" style="display: none;" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
+      <div class='forgot'>
+          <a href='reset.php' style="font-size: 1.4em; color: white;">Forgot Password?</a>
+      </div>
+      <div class="create_accnt" style="padding-top: 10px; color: pink;">
+          Dont have an account? <a style="color: white;" href="Register.php">Create Account</a>
+      </div>
     </div>
   </div>
   <div class='success'>
@@ -203,7 +222,32 @@ console.log("clicked");
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 
-    <script  src="js/login.js"></script>
+<script>
+    $("#email").focus(function(){
+        $("#email").css("color","white");
+        $("#email").css("transition-property","background");
+        $("#email").css("transition","0.6s");
+        $("#email").css("background","black");
+    });      
+    $("#email").focusout(function(){
+        $("#email").css("color","#a9a9a9");
+        $("#email").css("background","#32364a url('input.jpg') no-repeat center fixed");
+    });      
+    
+    $("#pass").focus(function(){
+        $("#pass").css("color","white");
+        $("#pass").css("transition-property","background");
+        $("#pass").css("transition","0.6s");
+        $("#pass").css("background","black");
+    });      
 
+    $("#pass").focusout(function(){
+        $("#pass").css("color","#a9a9a9");
+        $("#pass").css("background","#32364a url('input.jpg') no-repeat center fixed");
+    });      
+
+  
+</script>
+</div>
 </body>
 </html>
