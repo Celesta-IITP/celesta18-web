@@ -51,19 +51,6 @@ session_start();
 
     }
 
-    .content {
-
-      display: block;
-
-      width: 100%;
-
-      height: 100%;
-
-      overflow: auto;
-
-      margin: 0 auto;
-
-    }
 
     #home {padding: 0;}
 
@@ -603,7 +590,8 @@ body{
         <div class="inner">
           <div class="content">
             <h1>Home</h1>
-            <h2><a href="#">Events</a><br>
+            <h2>
+            <a href="#">Events</a><br>
             <a href="#">Workshop</a><br>
             <a data-page="schedule" href="images/schedule.png" download>Schedule</a><br>
             <a href="#">Team</a><br>
