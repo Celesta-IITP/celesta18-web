@@ -1263,7 +1263,7 @@
 				#header .inner .content h1 {
 					font-size: 3.5em;
 					font-family: 'Pattaya', sans-serif;
-					margin: 0 0 0.1em 0;
+					margin: 0 0 0 0;
 					color: #fff;
 				}
 
@@ -1291,15 +1291,28 @@
 				}
 
 			#header .inner .button {
-				-moz-transition: background 1s ease-in-out;
-				-webkit-transition: background 1s ease-in-out;
-				-ms-transition: background 1s ease-in-out;
-				transition: background 1s ease-in-out;
+				-moz-transition: background .5s ease-in-out;
+				-webkit-transition: background .5s ease-in-out;
+				-ms-transition: background .5s ease-in-out;
+				transition: background .5s ease-in-out;
+				-moz-transition: color .5s ease-in-out;
+				-webkit-transition: color .5s ease-in-out;
+				-ms-transition: color .5s ease-in-out;
+				transition: color .5s ease-in-out;
 				margin: 0;
 				border-radius: 30px;
 			}
 
+			#header .button:hover{
+				color: white;
+				background: red;
+			}
+
 			#header .close{
+				-moz-transition: color .5s ease-in-out;
+				-webkit-transition: color .5s ease-in-out;
+				-ms-transition: color .5s ease-in-out;
+				transition: color .5s ease-in-out;
 				top: -0.2em;
 				right: 0.1em;
 				font-size: 10em;
@@ -1309,6 +1322,7 @@
 
 			#header .close:hover{
 				cursor: pointer;
+				color: red;
 			}
 
 				#header .inner .button.hidden {
