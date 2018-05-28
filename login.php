@@ -75,7 +75,7 @@ if(isset($_GET['act'])){
       e.preventDefault();
       var id = $("#email").val().trim();
       var pass = $("#pass").val().trim();
-      if (validate( email,pass)) {
+      if (validate( id,pass)) {
         $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/login/",
             {
                 username: id,
