@@ -32,7 +32,10 @@ session_start();
 
 /*=============================== Basic ===============================*/
 
-    body {background-image: url("../img/bg.png");}
+    body {
+      background-image: url("../img/bg.png");
+      overflow: hidden;
+    }
 
     .visible {display: block;}
 
@@ -500,7 +503,7 @@ display: none;
 body{
 	background: linear-gradient(to right, #bab9b9,#bab9b9,blue,white,white,blue,#bab9b9,#bab9b9);
 	background : white;
-	background-size: auto 100%;
+	background-size: 100% auto;
   overflow: hidden;
 }
 
@@ -675,7 +678,7 @@ body{
         </article>
 
         <!-- Footer -->
-      <footer id="footer" style="display: none;">
+      <footer id="footer">
         <a href="#" class="info fa fa-info-circle"><span>About</span></a>
         <div class="inner">
           <div class="content">
