@@ -32,7 +32,10 @@ session_start();
 
 /*=============================== Basic ===============================*/
 
-    body {background-image: url("../img/bg.png");}
+    body {
+      background-image: url("../img/bg.png");
+      overflow: hidden;
+    }
 
     .visible {display: block;}
 
@@ -48,19 +51,6 @@ session_start();
 
     }
 
-    .content {
-
-      display: block;
-
-      width: 100%;
-
-      height: 100%;
-
-      overflow: auto;
-
-      margin: 0 auto;
-
-    }
 
     #home {padding: 0;}
 
@@ -500,7 +490,7 @@ display: none;
 body{
 	background: linear-gradient(to right, #bab9b9,#bab9b9,blue,white,white,blue,#bab9b9,#bab9b9);
 	background : white;
-	background-size: auto 100%;
+	background-size: 100% auto;
   overflow: hidden;
 }
 
@@ -600,7 +590,8 @@ body{
         <div class="inner">
           <div class="content">
             <h1>Home</h1>
-            <h2><a href="#">Events</a><br>
+            <h2>
+            <a href="#">Events</a><br>
             <a href="#">Workshop</a><br>
             <a data-page="schedule" href="images/schedule.png" download>Schedule</a><br>
             <a href="#">Team</a><br>
@@ -675,7 +666,7 @@ body{
         </article>
 
         <!-- Footer -->
-      <footer id="footer" style="display: none;">
+      <footer id="footer">
         <a href="#" class="info fa fa-info-circle"><span>About</span></a>
         <div class="inner">
           <div class="content">
