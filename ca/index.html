@@ -43,19 +43,30 @@
 	<header>
 		<section class="main_section_agile">
 			<div class="agileits_w3layouts_banner_nav">
+			
 				<div class="header-bar">
 					<div class="container">
-						<nav class="nav navbar navbar-expand-lg navbar-light navbar-right">
-							<div class="hedder-up">
-								<h1>
-									<a class="navbar-brand" href="index.html">Campus Ambassador</a>
-								</h1>
-							</div>
-						</nav>
-					</div>
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+							<ul class="navbar-nav">
+								<li class="nav-item active">
+									<div class="hedder-up">
+									<h1><a class="navbar-brand" href="index.html"></a>Campus Ambassador</a></h1>
+									</div>
+								 </li>
+								 <li class="nav-item">
+									<a href="about.html" class="nav-link">Register</a>
+								 </li>
+							</ul>
+				   </div>
+				</nav>				
+			</div>
 				</div>
-				<!-- //Navigation -->
-
+			 <!-- //Navigation -->
+	
 			</div>
 		</section>
 	</header>
@@ -75,7 +86,7 @@
 				<!-- Slideshow 3 Pager -->
 				<ul id="slider3-pager">
 					<li>
-						<a href="#"><img src="images/bg_img.jpg" data-selector="img" alt=""></a>
+						<a href="#"><img src="images/bg_img.jpg" data-selector="img" id="backimg" alt=""></a>
 					</li>
 
 				</ul>
@@ -91,11 +102,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="row w3-services-grids">
-			
-				<div class="col-lg-4 w3-services-left-grid">
-					<img src="images/1.jpg" class="img-fluid" alt="">
-				</div>
-				<div class="col-lg-8 w3-services-right-grid">
+				<div class="col-lg-12 w3-services-right-grid">
 					<div class="row w3-icon-grid-gap1">
 						<div class="col-md-6 w3-icon-grid1">
 							<i class="fas fa-paint-brush"></i>
@@ -317,31 +324,29 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="row about-main">
-				<div class="col-md-7 about-right">
+				<div class="col-md-10 offset-md-1 justify-content-center">
 					<!-- stats -->
-					<div class="stats">
+					<div class="">
 						<div class="row stats_inner">
-							<div class="col-md-4 col-sm-6 col-xs-6 stat-grids">
+							<div class="col-md-3 col-sm-6 col-xs-6 stat-grids">
 								<p class="counter-agileits-w3layouts">32</p>
 								<div class="stats-text-wthree">
-									<h3>Awards</h3>
+									<h3>CA's Registered</h3>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-6 stat-grids">
+							<div class="col-md-3 col-sm-6 col-xs-6 stat-grids">
 								<p class="counter-agileits-w3layouts">45</p>
 								<div class="stats-text-wthree">
 									<h3>Featured Programs</h3>
 								</div>
 							</div>
-						<!-- </div>
-						<div class="row stats_inner"> -->
-							<div class="col-md-4 col-sm-6 col-xs-6 stat-grids">
+							<div class="col-md-3 col-sm-6 col-xs-6 stat-grids">
 								<p class="counter-agileits-w3layouts">20</p>
 								<div class="stats-text-wthree">
-									<h3> Certified Teachers</h3>
+									<h3>Certified Teachers</h3>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-6 stat-grids">
+							<div class="col-md-3 col-sm-6 col-xs-6 stat-grids">
 								<p class="counter-agileits-w3layouts">598</p>
 								<div class="stats-text-wthree">
 									<h3>Points Earned</h3>
@@ -360,8 +365,8 @@
 		</div>
 	</section>
 	<section class="typo">
-		<div class="container col-md-10 offset-md-1">
-			<div class="bs-docs-example col-md-10 col-md-offset-6">
+		<div class="container justify-content-center">
+			<div class="bs-docs-example">
 				<h1 class="w3l_header">
 					Leaderboard
 				</h1>
@@ -370,24 +375,14 @@
 						<tr>
 							<th>#</th>
 							<th>Name</th>
-							<th>Username</th>
+							<th>Points</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>1</td>
 							<td>Mark</td>
-							<td>@mdo</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Jacob</td>
-							<td>@fat</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Larry</td>
-							<td>@twitter</td>
+							<td>70</td>
 						</tr>
 					</tbody>
 				</table>
