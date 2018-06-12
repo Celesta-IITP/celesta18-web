@@ -34,6 +34,34 @@
 	<!--//stylesheets-->
 	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script>
+		 $.scrollify({
+			section: "section",
+			sectionName: "section-name",
+			interstitialSection: "",
+			easing: "easeOutExpo",
+			scrollSpeed: 1100,
+			offset: 0,
+			scrollbars: true,
+			standardScrollElements: "",
+			setHeights: true,
+			overflowScroll: true,
+			updateHash: true,
+			touchScroll: true,
+			before: function () { },
+			after: function () { },
+			afterResize: function () { },
+			afterRender: function () { }
+		});
+		$(function () {
+			$.scrollify({
+				section: ".container",
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -46,7 +74,7 @@
 			
 				<div class="header-bar">
 					<div class="container">
-					<nav class="navbar navbar-expand-lg navbar-light">
+					<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
@@ -54,19 +82,18 @@
 							<ul class="navbar-nav">
 								<li class="nav-item active">
 									<div class="hedder-up">
-									<h1><a class="navbar-brand" href="index.html"></a>Campus Ambassador</a></h1>
+									<h1><span id="ca-header">Campus Ambassador</span></h1>
 									</div>
 								 </li>
-								 <li class="nav-item">
+								 <!-- <li class="nav-item">
 									<a href="about.html" class="nav-link">Register</a>
-								 </li>
+								 </li> -->
 							</ul>
-				   </div>
-				</nav>				
-			</div>
+						</div>
+					</nav>				
+					</div>
 				</div>
 			 <!-- //Navigation -->
-	
 			</div>
 		</section>
 	</header>
@@ -75,21 +102,21 @@
 			<div class="wrapper">
 
 				<!-- Slideshow 3 -->
-				<!-- <ul class="rslides" id="slider">
+				<ul class="rslides" id="slider">
 					<li>
 						<div class="agile_banner_text_info">
-							<h3>The Best Learning Institution </h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+							<h3><a href="index.html"><button class="sim-button button5 btn btn-lg btn-primary"><span id="reg-btn">Register</span></button></a></h3>
+							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
 						</div>
 					</li>
-				</ul> -->
+				</ul>
 				<!-- Slideshow 3 Pager -->
-				<ul id="slider3-pager">
+				<!-- <ul id="slider3-pager">
 					<li>
 						<a href="#"><img src="images/bg_img.jpg" data-selector="img" id="backimg" alt=""></a>
 					</li>
 
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 	</section>
@@ -253,7 +280,6 @@
 						<div class="row agile">
 							<div class="col-md-6 test-grid">
 								<div class="test-grid1-agileinfo hrms">
-									<!-- <img src="images/ts1.jpg" alt="" class="img-r"> -->
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
 									<h4>Shane Watson</h4>
@@ -262,7 +288,6 @@
 							</div>
 							<div class="col-md-6 test-grid">
 								<div class="test-grid1-agileinfo">
-									<!-- <img src="images/ts2.jpg" alt="" class="img-r"> -->
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor.</p>
 									<h4>Steve Smith</h4>
@@ -273,7 +298,6 @@
 						<div class="row agile">
 							<div class="col-md-6 test-grid">
 								<div class="test-grid1-agileinfo hrms">
-									<img src="images/ts3.jpg" alt="" class="img-r">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor.</p>
 									<h4>James Franklin</h4>
@@ -282,7 +306,6 @@
 							</div>
 							<div class="col-md-6 test-grid">
 								<div class="test-grid1-agileinfo">
-									<img src="images/ts1.jpg" alt="" class="img-r">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
 									<h4>Mitchel Starc</h4>
@@ -293,7 +316,6 @@
 						<div class="row agile">
 							<div class="col-md-6 test-grid">
 								<div class="test-grid1-agileinfo hrms">
-									<img src="images/ts2.jpg" alt="" class="img-r">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
 									<h4>Colling Wood</h4>
@@ -302,7 +324,6 @@
 							</div>
 							<div class="col-md-6 test-grid">
 								<div class="test-grid1-agileinfo">
-									<img src="images/ts3.jpg" alt="" class="img-r">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
 									<h4>Mark Henry</h4>
@@ -370,7 +391,12 @@
 				<h1 class="w3l_header">
 					Leaderboard
 				</h1>
-				<table class="table table-striped">
+				<table class="table table-striped col-md-8">
+					<colgroup>
+						<col align="right">
+						<col align="right">
+						<col align="right">
+					</colgroup>
 					<thead>
 						<tr>
 							<th>#</th>
