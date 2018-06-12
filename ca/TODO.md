@@ -2,5 +2,6 @@
 
 1. ~~Align stats divs containing numbers~~
 2. ~~Align leaderboard table~~
-3. Navbar transparency on scroll
-4. Background blur on scroll and inscrease navbar opacity
+3. ~~Set background~~
+4. Apply scrollify plugin
+5. Navbar opacity increases on scroll.
