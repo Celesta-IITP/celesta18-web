@@ -12,8 +12,8 @@ html, body {
     font-family: 'PT Sans', sans-serif;
 }
 
-section{
-    background-image: url("../../images/background/newbg1.png");
+section {
+    background-image: url("../../images/background/newbg1-min-compressed.jpg");
     background-repeat: repeat;
 }
 
@@ -481,37 +481,7 @@ a.rslides_nav.rslides1_nav.next {
 }
 
 ul#slider li:nth-child(1) {
-    background: url(../images/bg_img.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    min-height: 800px;
-}
-
-ul#slider li:nth-child(2) {
-    background: url(../images/bg1.jpg)no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    min-height: 800px;
-}
-
-ul#slider li:nth-child(3) {
-    background: url(../images/bg2.jpg)no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    min-height: 800px;
-}
-
-ul#slider li:nth-child(4) {
-    background: url(../images/bg3.jpg)no-repeat 0px 0px;
+    background: url('../images/cover2-comepressed.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
