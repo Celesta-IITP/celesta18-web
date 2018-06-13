@@ -603,13 +603,13 @@ body{
                       
                       $name = explode(" ",$_SESSION['name']) ;
 
-                      echo "Hi ".$name[0]."! <a class="button big alt" href=\"login.php?act=logout\"><span>Log Out</span></a>";
+                      echo "Hi ".$name[0]."! <a class=\"button big alt\" href=\"login.php?act=logout\"><span>Log Out</span></a>";
                     
                     }
                     
                     else {
                       
-                        echo "<a class="button big alt" href=\"login.php\"><span>Login</span></a>
+                        echo "<a class=\"button big alt\" href=\"login.php\"><span>Login</span></a>
                         <b><br>Haven't registered yet <a class=\"cd-signup\" data-page=\"register\" href=\"Register.php\">Register</a></b>";
                     
                     }
