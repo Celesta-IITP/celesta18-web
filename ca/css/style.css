@@ -481,7 +481,8 @@ a.rslides_nav.rslides1_nav.next {
 }
 
 ul#slider li:nth-child(1) {
-    background: url('../images/cover2-comepressed.png') no-repeat 0px 0px;
+    background: url('../images/bg_img.jpg') no-repeat 0px 0px;
+    max-width: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
