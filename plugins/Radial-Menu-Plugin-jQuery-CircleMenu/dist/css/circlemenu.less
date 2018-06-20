@@ -1,0 +1,147 @@
+.cm-container {
+	@CM_COLOR: #4bd187;
+	@SIZE_CONTAINER: 550px;
+
+	position: relative;
+
+	width: @SIZE_CONTAINER;
+	height: @SIZE_CONTAINER;
+	border: solid 2px @CM_COLOR;
+
+	left: -@SIZE_CONTAINER / 1.25px;
+
+	-khtml-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+
+	box-sizing: border-box;
+
+	.cm-items {
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		width: 100%;
+		height: auto;
+		left: (@SIZE_CONTAINER / 2) - 11px;
+		top: (@SIZE_CONTAINER / 2) - 11px;
+		box-sizing: border-box;
+
+		.cm-item {
+			position: absolute;
+			list-style: none;
+			width: 150px;
+			box-sizing: border-box;
+
+			&.selected {
+				display: none;
+			}
+
+			a {
+				position: relative;
+				color: @CM_COLOR;
+				// font-weight: 700;
+				padding-left: 30px;
+				text-decoration: none;
+
+				-webkit-transition: all 0.2s ease-out;
+				-moz-transition: all 0.2s ease-out;
+				-o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+
+				box-sizing: border-box;
+
+				&:hover {
+					color: lighten(@CM_COLOR, 10%);
+					padding-left: 32px;
+				}
+
+				&:before {
+					content: '';
+					width: 15px;
+					height: 15px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background-color: @CM_COLOR;
+
+					-khtml-border-radius: 100%;
+					-webkit-border-radius: 100%;
+					-moz-border-radius: 100%;
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+
+	.cm-selected-container {
+		@SIZE_SELECTED_CONTAINER: 100px;
+
+		position: absolute;
+
+		width: @SIZE_SELECTED_CONTAINER;
+		height: @SIZE_SELECTED_CONTAINER;
+		border: solid 3px @CM_COLOR;
+		-khtml-border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+		background-color: #fff;
+
+		right: -@SIZE_SELECTED_CONTAINER / 2;
+		top: (@SIZE_CONTAINER / 2) - (@SIZE_SELECTED_CONTAINER / 2);
+
+		text-align: center;
+		padding: 10px;
+
+		box-shadow: 0 0 10px fade(#000, 10%);
+
+		box-sizing: border-box;
+
+		.cm-selected-label {
+			height: 74px;
+			width: 74px;
+			overflow: hidden;
+			font-weight: 700;
+			color: @CM_COLOR;
+			font-size: 85%;
+
+			box-sizing: border-box;
+
+			span {
+				display: table-cell;
+				vertical-align: middle;
+				height: inherit;
+				width: inherit;
+			}
+		}
+
+		.cm-button {
+			position: absolute;
+			width: 28px;
+			height: 28px;
+			font-size: 20px;
+			cursor: pointer;
+			top: (100px / 2) - (28px / 2);
+			color: @CM_COLOR;
+
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;
+
+			&:hover { color: lighten(@CM_COLOR, 10%); }
+
+			&.cm-button-prev {
+				left: -32px;
+
+				&:hover { left: -32px - 2px; }
+			}
+			&.cm-button-next {
+				right: -32px;
+
+				&:hover { right: -32px - 2px; }
+			}
+		}
+	}
+}
