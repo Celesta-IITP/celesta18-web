@@ -4,29 +4,17 @@ session_start();
 <!DOCTYPE html>
  
 <html lang="en">
-
 	<head>
-
     <meta name="google-site-verification" content="qUmyqM9K6PlBm7mKg3Rpk0JniY6W5_stkbtOFozfgAo" />
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <title>Celesta</title>
-
     <meta name="description" content="Celesta, IIT Patna Technical Fest">
-
     <meta name="author" content="Creatives IIT Patna">
-
     <meta name="keywords" content="celesta iitp, celesta iit patna, celesta.org.in, Celesta, IITP, IIT Patna, Indian Institute of Technology Patna, Technical Fest IIT Patna">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
    	<link rel="stylesheet" href="assets/css/main.css" />
-
     <link rel="stylesheet" href="./css/animation.css">
-
     <link rel="stylesheet" href="./css/demo.css">
-
     <link rel="stylesheet" href="./css/loader.css">
     <style type="text/css">
 
@@ -42,13 +30,9 @@ session_start();
     .layer {display: none;}
 
     .layer.one {
-
       display: block;
-
       background: url("images/bg_img.jpg");
-
       background-size: cover;
-
     }
 
 
@@ -57,74 +41,46 @@ session_start();
     #home canvas {}
 
           #particles {
-
             width: 100%;
-
             height: 100%;
-
             overflow: hidden;
-
           }
 
           #intro {
-
             position: absolute;
-
             left: 0;
-
             top: 50%;
-
             padding: 0 20px;
-
             width: 100%;
-
             text-align: center;
-
           }
 
           /* Add Zoom Animation */
 
           .animate {
-
             -webkit-animation: animatezoom 0.6s;
-
             animation: animatezoom 0.6s
-
           }
           /*============= Top Link Bar ============*/
 
           ul.links {
-
             list-style-type: none;
-
             margin: 0;
-
             padding: 0;
-
             overflow: hidden;
-
             background-color: #333;
-
           }
 
           ul.links li {float: left;}
 
           ul.links li a {
-
             display: inline-block;
-
             color: #f2f2f2;
-
             text-align: center;
-
             padding: 14px 16px;
-
             text-decoration: none;
-
             transition: 0.3s;
-
             font-size: 17px;
-
           }
 
           ul.links li a:hover {background-color: #555;}
@@ -137,115 +93,71 @@ session_start();
     /* Full-width input fields */
 
     input[type=text], input[type=password] {
-
         width: 100%;
-
         padding: 12px 20px;
-
         margin: 8px 0;
-
         display: inline-block;
-
         border: 1px solid #ccc;
-
         box-sizing: border-box;
-
       }
 
     /* Set a style for all buttons */
 
     .con button {
-
         background-color: #4CAF50;
-
         color: white;
-
         padding: 14px 20px;
-
         margin: 8px 0;
-
         border: none;
-
         cursor: pointer;
-
         width: 100%;
-
       }
 
     /* Extra styles for the cancel button */
 
     .cancelbtn {
-
         width: auto;
-
         max-width: 100px;
-
         padding: 10px 18px;
-
         background-color: #f44336;
-
       }
 
     /* Center the image and position the close button */
 
     .imgcontainer {
-
         text-align: center;
-
         margin: 24px 0 12px 0;
-
         position: relative;
-
       }
 
     img.avatar {
-
         width: 40%;
-
         border-radius: 50%;
-
       }
 
     .con {
-
         padding: 16px;
-
       }
 
     span.psw {
-
         float: right;
-
         padding-top: 16px;
-
       }
 
     /* The Modal (background) */
 
     .modal {
-
         display: none; /* Hidden by default */
-
         position: fixed; /* Stay in place */
-
         z-index: 1; /* Sit on top */
-
         left: 0;
-
         top: 0;
-
         width: 100%; /* Full width */
-
         height: 100%; /* Full height */
-
         overflow: auto; /* Enable scroll if needed */
-
         background-color: rgb(0,0,0); /* Fallback color */
-
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
         padding-top: 60px;
-
       }
     /*========================== Footer ==========================*/
       #sfooter {
