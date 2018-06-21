@@ -2,12 +2,12 @@
     font-family: Raleway, sans-serif;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
 /* Css for header block with  title*/
+
 header {
     background-color: #472098;
     color: #fff;
@@ -36,6 +36,7 @@ header {
 }
 
 /* Hover effects for images */
+
 .hovereffect {
     width: 100%;
     height: 100%;
@@ -113,38 +114,36 @@ header {
 }
 
 /* The Overlay (background) */
+
 .overlay {
     height: 100%;
     width: 0;
     position: fixed;
     /* Stay in place */
-    
     z-index: 15;
     /* Sit on top */
-    
     left: 0;
     top: 0;
     background-color: rgb(0, 0, 0);
     /* Black fallback color */
-    
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/opacity */
-    
     overflow-x: hidden;
     /* Disable horizontal scroll */
 }
 
 /* Position the content inside the overlay */
+
 .overlay-content {
     position: fixed;
     width: 100%;
     /* 100% width */
-    
     text-align: center;
     /* Centered text/links */
 }
 
 /* The navigation links inside the overlay */
+
 .overlay a {
     padding: 0;
     margin: 0;
@@ -156,13 +155,14 @@ header {
 }
 
 /* When you mouse over the closebtn, it changes color */
-.overlay a:hover,
-.overlay a:focus {
+
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
     text-decoration: none;
 }
 
 /* Position the close button (top right corner) */
+
 .overlay .closebtn {
     position: absolute;
     top: 0px;
@@ -172,11 +172,13 @@ header {
 }
 
 /* Center fotorama gallery */
+
 .fotorama__wrap {
     margin: 0 auto;
 }
 
 /* Code for captions in overlay gallery */
+
 .fotorama__caption__wrap {
     font-size: 50px;
     opacity: 0.9;
@@ -185,6 +187,7 @@ header {
 
 /* When the height of the screen is less than 600 pixels,
    position the close button again, so it doesn't overlap with the caption text */
+
 @media screen and (max-height: 500px) {
     .overlay .closebtn {
         font-size: 50px
@@ -194,5 +197,209 @@ header {
         opacity: 0.9;
         margin: 24px 12px;
     }
-    
 }
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+/*=====================================================================*/
+
+/*=============================== Modal ===============================*/
+
+/* Full-width input fields */
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+.con button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    max-width: 100px;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.con {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+#id01 {
+    overflow: auto;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    max-width: 500px;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.clsbtn {
+    display: none;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+/*======================================================================*/
+
+/*============================== Key Frames ============================*/
+
+@-webkit-keyframes animatezoom {
+@keyframes animatezoom {
+/*======================================================================*/
+@media screen and (max-width: 680px) {
+    ul.links li:not(:first-child) {
+        display: none;
+    }
+    ul.links li.icon {
+        float: right;
+        display: inline-block;
+    }
+    body {
+        font-size: 120%;
+    }
+}
+@media screen and (max-width:768px) {
+    body {
+        font-size: 120%;
+    }
+}
+@media screen and (max-width:680px) {
+    ul.links.responsive {
+        position: relative;
+    }
+    ul.links.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.links.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.links.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    .modal-content {
+        width: 75%;
+    }
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 400px) {
+    .modal-content {
+        width: 95%;
+    }
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+    .clsbtn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+    .opened {
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+}
+/*======================================================================*/
