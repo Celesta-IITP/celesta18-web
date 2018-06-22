@@ -9,3 +9,6 @@
 - [ ] Schedule, Team, Spons, About page unlinked
 - [ ] Particles recolor
 - [ ] Register not working on Gallery
+
+## Resources
+[See here](https://github.com/Celesta-IITP/celesta18-web/blob/master/RESOURCES.md)
