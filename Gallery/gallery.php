@@ -6,13 +6,13 @@
         <title>Celesta IITP</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400, 700" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="gallery.css">
-        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400, 700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
+        <link rel="stylesheet" href="gallery.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
         <script src="gallery.js"></script>
 
@@ -174,8 +174,8 @@
         <br>
         <br>
 
-        <script type="text/javascript"></script>
-        <?php include '../reg.php'; ?>
+        <!-- <script type="text/javascript"></script> -->
+        <!-- <?php include '../reg.php'; ?> -->
 
     </body>
 </html>

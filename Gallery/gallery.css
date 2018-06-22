@@ -9,11 +9,12 @@ ol, ul {
 /* Css for header block with  title*/
 
 header {
-    background-color: #472098;
     color: #fff;
     text-align: center;
     padding: 150px 0 100px;
-    box-shadow: 0px 4px 15px 3px #3f268a;
+    background-color: #0e489f;
+    background-image: linear-gradient(45deg, #0e489f, #00de73)!important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
     width: 100%;
     margin-bottom: 10px;
 }
@@ -334,72 +335,72 @@ span.psw {
 /*============================== Key Frames ============================*/
 
 @-webkit-keyframes animatezoom {
-@keyframes animatezoom {
-/*======================================================================*/
-@media screen and (max-width: 680px) {
-    ul.links li:not(:first-child) {
-        display: none;
-    }
-    ul.links li.icon {
-        float: right;
-        display: inline-block;
-    }
-    body {
-        font-size: 120%;
-    }
-}
-@media screen and (max-width:768px) {
-    body {
-        font-size: 120%;
-    }
-}
-@media screen and (max-width:680px) {
-    ul.links.responsive {
-        position: relative;
-    }
-    ul.links.responsive li.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    ul.links.responsive li {
-        float: none;
-        display: inline;
-    }
-    ul.links.responsive li a {
-        display: block;
-        text-align: left;
-    }
-    .modal-content {
-        width: 75%;
-    }
-}
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 400px) {
-    .modal-content {
-        width: 95%;
-    }
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
-    .clsbtn {
-        position: fixed;
-        top: 0;
-        right: 0;
-        display: block;
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-    }
-    .opened {
-        display: block;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-    }
-}
-/*======================================================================*/
+    @keyframes animatezoom {
+        /*======================================================================*/
+        @media screen and (max-width: 680px) {
+            ul.links li:not(:first-child) {
+                display: none;
+            }
+            ul.links li.icon {
+                float: right;
+                display: inline-block;
+            }
+            body {
+                font-size: 120%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            body {
+                font-size: 120%;
+            }
+        }
+        @media screen and (max-width:680px) {
+            ul.links.responsive {
+                position: relative;
+            }
+            ul.links.responsive li.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            ul.links.responsive li {
+                float: none;
+                display: inline;
+            }
+            ul.links.responsive li a {
+                display: block;
+                text-align: left;
+            }
+            .modal-content {
+                width: 75%;
+            }
+        }
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 400px) {
+            .modal-content {
+                width: 95%;
+            }
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+            .clsbtn {
+                position: fixed;
+                top: 0;
+                right: 0;
+                display: block;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+            }
+            .opened {
+                display: block;
+                position: fixed;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        /*======================================================================*/
