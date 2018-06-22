@@ -1275,7 +1275,7 @@
 					text-decoration: none;
 				}
 
-				#header .inner .content h2 a:hover{
+				#header .inner .content h2 div:hover{
 					color: black;
 				}
 
@@ -1286,8 +1286,13 @@
 					margin: 0 0 1em 0;
 				}
 
-				#header .inner .content b a{
+				#header .inner .content b p{
 					color: orange;
+				}
+
+
+				#header .inner .content b p:hover{
+					color: black;
 				}
 
 			#header .inner .button {
@@ -1300,6 +1305,7 @@
 				-ms-transition: color .5s ease-in-out;
 				transition: color .5s ease-in-out;
 				margin: 0;
+				margin-top: -50px;
 				border-radius: 30px;
 			}
 
