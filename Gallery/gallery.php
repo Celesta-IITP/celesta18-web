@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
         <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" type="text/css" href="../plugins/fullPage.js-master/jquery.fullPage.css" />
+        <script src="../plugins/fullPage.js-master/vendors/jquery.easings.min.js" type="text/javascript"></script>
+        <script src="../plugins/fullPage.js-master/vendors/scrolloverflow.min.js" type="text/javascript"></script>
+        <script src="../plugins/fullPage.js-master/jquery.fullPage.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
@@ -45,7 +49,7 @@
 
             <!-- The gallery overlay -->
             <div id="myNav" style="display: none; width: 100%;" class="overlay">
-                <p><a href="#" class="closebtn"">&times;</a></p>
+                <p><a href="#" class="closebtn">&times;</a></p>
                 <div class="overlay-content">
                     <div class="fotorama"
                         data-click="true"
@@ -161,7 +165,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)0">
+                    <a href="javascript:void(0)">
                         <div class="hovereffect" id="9">
                             <img class="img-responsive" src="../Posters/sparkfun.jpg" alt="">
                            
@@ -169,12 +173,28 @@
                     </a>
                 </div>
             </div>
+            <br>
+
+            <div class="section">
+                <?php
+                    $dirname = "gallery_pics/";
+                    $images = glob($dirname."*.JPG");
+    
+                    foreach($images as $image) {
+                        echo '<div class="slide">
+                                    <div>
+                                        <img src="'.$image.'">
+                                    </div>
+                                </div><br>';
+                    }
+                ?>
+            </div>
         </div>
-
         <br>
         <br>
-
-        <!-- <script type="text/javascript"></script> -->
+                    
+        <!-- Header background gradient -->
+        <script type="text/javascript" src="changingGradient.js"></script>
         <!-- <?php include '../reg.php'; ?> -->
 
     </body>
