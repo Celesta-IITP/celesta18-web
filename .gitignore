@@ -22,9 +22,3 @@ ca/about.html
 ca/galery.html
 plugins/Radial-Menu-Plugin-jQuery-CircleMenu.zip
 plugins/fullPage.js-master/*
-!*plugins/fullPage.js-master/jquery.fullPage.js
-!*plugins/fullPage.js-master/jquery.fullPage.css
-!*plugins/fullPage.js-master/vendors
-plugins/fullPage.js-master/vendors/jquery.easings.min.js
-plugins/fullPage.js-master/vendors/scrolloverflow.min.js.map
-plugins/fullPage.js-master/vendors/scrolloverflow.js

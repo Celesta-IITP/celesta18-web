@@ -11,14 +11,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
         <link rel="stylesheet" href="gallery.css">
-        <link rel="stylesheet" type="text/css" href="../plugins/fullPage.js-master/jquery.fullPage.css" />
-        <script src="../plugins/fullPage.js-master/vendors/jquery.easings.min.js" type="text/javascript"></script>
-        <script src="../plugins/fullPage.js-master/vendors/scrolloverflow.min.js" type="text/javascript"></script>
-        <script src="../plugins/fullPage.js-master/jquery.fullPage.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="flickity_styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
         <script src="gallery.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     </head>
 
@@ -85,14 +84,15 @@
             </div>
         </nav>
 
-        <header>
+        <div class="wrapper">
+        <header class="section">
             <p id="heading"> Celesta </p>
             <p id="subheading">Photo Gallery</p>
             <p id="subtext">Pictures captured by Celesta IITP</p>
         </header>
 
         <div class="container">
-            <div class="row">
+            <div class="row section">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <a href="javascript:void(0)">
                         <div class="hovereffect" id="0">
@@ -175,19 +175,15 @@
             </div>
             <br>
 
-            <div class="section">
-                <?php
-                    $dirname = "gallery_pics/";
-                    $images = glob($dirname."*.JPG");
-    
-                    foreach($images as $image) {
-                        echo '<div class="slide">
-                                    <div>
-                                        <img src="'.$image.'">
-                                    </div>
-                                </div><br>';
-                    }
-                ?>
+            <!-- Slider div -->
+            <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+            <?php
+                $dirname = "gallery_pics/";
+                $images = glob($dirname."*.JPG");
+                foreach($images as $image) {
+                    echo '<img src="'.$image.'">';
+                }
+            ?>
             </div>
         </div>
         <br>
@@ -196,6 +192,5 @@
         <!-- Header background gradient -->
         <script type="text/javascript" src="changingGradient.js"></script>
         <!-- <?php include '../reg.php'; ?> -->
-
     </body>
 </html>
