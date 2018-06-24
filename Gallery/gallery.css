@@ -1,3 +1,7 @@
+.row{
+    display: none;
+}
+
 * {
     font-family: Raleway, sans-serif;
 }
