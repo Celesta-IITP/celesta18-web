@@ -85,105 +85,106 @@
         </nav>
 
         <div class="wrapper">
-        <header class="section">
-            <p id="heading"> Celesta </p>
-            <p id="subheading">Photo Gallery</p>
-            <p id="subtext">Pictures captured by Celesta IITP</p>
-        </header>
+            <header class="section">
+                <p id="heading"> Celesta </p>
+                <p id="subheading">Photo Gallery</p>
+                <p id="subtext">Pictures captured by Celesta IITP</p>
+            </header>
 
-        <div class="container">
-            <div class="row section">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="0">
-                            <img class="img-responsive" src="../Posters/Aqua Soccer.jpg" alt="">
+            <div class="container">
+                <div class="row section">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="0">
+                                <img class="img-responsive" src="../Posters/Aqua Soccer.jpg" alt="">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="1">
+                                <img class="img-responsive" src="../Posters/capture the flag.jpg" alt="">
+                                </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="2">
+                                <img class="img-responsive" src="../Posters/chem charades.jpg" alt="">
                             
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="1">
-                            <img class="img-responsive" src="../Posters/capture the flag.jpg" alt="">
-                             </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="2">
-                            <img class="img-responsive" src="../Posters/chem charades.jpg" alt="">
-                           
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="3">
-                            <img class="img-responsive" src="../Posters/Lensart FINAL.JPG" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="3">
+                                <img class="img-responsive" src="../Posters/Lensart FINAL.JPG" alt="">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect bigimg" id="4">
+                                <img class="img-responsive" src="../Posters/Tech Exhibition.jpg" alt="">
                             
-                        </div>
-                    </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect bigimg" id="5">
+                                <img class="img-responsive" src="../Posters/Robowars.jpg" alt="">
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="6">
+                                <img class="img-responsive" src="../Posters/rocket propulsion.jpg" alt="">
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="7">
+                                <img class="img-responsive" src="../Posters/parliamentary debatenew.jpg" alt="">
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="8">
+                                <img class="img-responsive" src="../Posters/chem-e-switch.jpg" alt="">
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)">
+                            <div class="hovereffect" id="9">
+                                <img class="img-responsive" src="../Posters/sparkfun.jpg" alt="">
+                            
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect bigimg" id="4">
-                            <img class="img-responsive" src="../Posters/Tech Exhibition.jpg" alt="">
-                           
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect bigimg" id="5">
-                            <img class="img-responsive" src="../Posters/Robowars.jpg" alt="">
-                           
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="6">
-                            <img class="img-responsive" src="../Posters/rocket propulsion.jpg" alt="">
-                           
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="7">
-                            <img class="img-responsive" src="../Posters/parliamentary debatenew.jpg" alt="">
-                           
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="8">
-                            <img class="img-responsive" src="../Posters/chem-e-switch.jpg" alt="">
-                           
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a href="javascript:void(0)">
-                        <div class="hovereffect" id="9">
-                            <img class="img-responsive" src="../Posters/sparkfun.jpg" alt="">
-                           
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <br>
+                <br>
 
-            <!-- Slider div -->
-            <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-            <?php
-                $dirname = "gallery_pics/";
-                $images = glob($dirname."*.JPG");
-                foreach($images as $image) {
-                    echo '<img src="'.$image.'">';
-                }
-            ?>
+                <!-- Slider div -->
+                <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+                <?php
+                    $dirname = "gallery_pics/";
+                    $images = glob($dirname."*.JPG");
+                    foreach($images as $image) {
+                        echo '<img src="'.$image.'">';
+                    }
+                ?>
+                </div>
             </div>
         </div>
         <br>

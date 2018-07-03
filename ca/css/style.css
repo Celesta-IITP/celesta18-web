@@ -10,16 +10,24 @@ html, body {
     margin: 0;
     letter-spacing: 1px;
     font-family: 'PT Sans', sans-serif;
+    background-image: url("../../images/background/newbg1-min-compressed.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 section {
-    background-image: url("../../images/background/newbg1-min-compressed.jpg");
     background-repeat: repeat;
 }
 
+#logo {
+    height: 100px;
+    width: 100px;
+}
 #ca-header {
     font-family: 'Nova Flat';
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 #reg-tn {
@@ -315,6 +323,7 @@ nav.navbar.navbar-toggleable-md.navbar-light {
 
 .navbar {
     padding: 0;
+    background:rgba(255, 255, 255, .5);
 }
 
 /*-- //nav --*/
@@ -324,7 +333,7 @@ nav.navbar.navbar-toggleable-md.navbar-light {
 /*--/banner --*/
 
 .main_section_agile.inner {
-    background: url(../images/banner1.jpg)no-repeat 0px 0px;
+    background: url("../images/banner1.jpg") no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -703,7 +712,7 @@ section.what_you {
 /*-- //what we do --*/
 
 .w3_agileits_header.two {
-    color: ##2c363e;
+    color: #2c363e;
 }
 
 /*--classes --*/
@@ -1068,7 +1077,7 @@ h6.footer-logo a:hover, h6.footer-logo a:focus {
 /*-- //Footer --*/
 
 .banner1 {
-    background: url(../images/bg.jpg) no-repeat 0px 0px;
+    background: url("../images/bg.jpg") no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1087,7 +1096,7 @@ h6.footer-logo a:hover, h6.footer-logo a:focus {
 }
 
 .about-agile {
-    background: url(../images/3.jpg)no-repeat;
+    background: url("../images/3.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -2010,7 +2019,11 @@ h2.typoh2 {
     }
 }
 
-@media(max-width:1366px) {}
+@media(max-width:1366px) {
+    ul#slider li:nth-child(1), ul#slider li:nth-child(2), ul#slider li:nth-child(3), ul#slider li:nth-child(4) {
+        background-size: cover;
+    }
+}
 
 @media(max-width:1280px) {
     .agile_banner_text_info p {

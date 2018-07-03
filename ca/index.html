@@ -37,57 +37,34 @@
 	<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script>
-		 $.scrollify({
-			section: "section",
-			sectionName: "section-name",
-			interstitialSection: "",
-			easing: "easeOutExpo",
-			scrollSpeed: 1100,
-			offset: 0,
-			scrollbars: true,
-			standardScrollElements: "",
-			setHeights: true,
-			overflowScroll: true,
-			updateHash: true,
-			touchScroll: true,
-			before: function () { },
-			after: function () { },
-			afterResize: function () { },
-			afterRender: function () { }
-		});
-		$(function () {
-			$.scrollify({
-				section: ".container",
-			});
-		});
-	</script>
 </head>
 
 <body>
 
-	<!--/banner-->
 	<!-- banner -->
 	<header>
 		<section class="main_section_agile">
 			<div class="agileits_w3layouts_banner_nav">
-			
 				<div class="header-bar">
 					<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+						<!-- <a class="navbar-brand" href="../images/logo.svg"><img src=".." alt=""></a> -->
+						<div class="container-fluid navbar-container">
+							<img class="navbar-brand" src="../images/logo.svg" alt="logo" id="logo">
+						</div>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
+						<div class="attr-nav">
+						</div>
+						<div class="navbar-header">
+							<h1><span id="ca-header">Campus Ambassador</span></h1>
+						</div>
 						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 							<ul class="navbar-nav">
 								<li class="nav-item active">
-									<div class="hedder-up">
-									<h1><span id="ca-header">Campus Ambassador</span></h1>
-									</div>
-								 </li>
-								 <!-- <li class="nav-item">
-									<a href="about.html" class="nav-link">Register</a>
-								 </li> -->
+									<a href="about.html" class="nav-link"><button class="btn" id="reg-btn">Register</button></a>
+								</li>
 							</ul>
 						</div>
 					</nav>				
@@ -105,7 +82,7 @@
 				<ul class="rslides" id="slider">
 					<li>
 						<div class="agile_banner_text_info">
-							<h3><a href="index.html"><button class="sim-button button5 btn btn-lg btn-primary"><span id="reg-btn">Register</span></button></a></h3>
+							<!-- <h3><a href="index.html"><button class="sim-button button5 btn btn-lg btn-primary"><span id="reg-btn">Register</span></button></a></h3> -->
 							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
 						</div>
 					</li>
@@ -268,75 +245,6 @@
 		</div>
 	</section>
 	<!-- //what we do -->
-	<!-- testimonials -->
-	<section class="test">
-		<div class="container">
-			<div class="wthree_head_section">
-				<h3 class="w3l_header w3_agileits_header two">CA'S Experience</h3>
-			</div>
-			<div class=" test-gr">
-				<div class=" test-gri1">
-					<div id="owl-demo2" class="owl-carousel">
-						<div class="row agile">
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1-agileinfo hrms">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
-									<h4>Shane Watson</h4>
-									<span>Student</span>
-								</div>
-							</div>
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1-agileinfo">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor.</p>
-									<h4>Steve Smith</h4>
-									<span>Student</span>
-								</div>
-							</div>
-						</div>
-						<div class="row agile">
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1-agileinfo hrms">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor.</p>
-									<h4>James Franklin</h4>
-									<span>Student</span>
-								</div>
-							</div>
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1-agileinfo">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
-									<h4>Mitchel Starc</h4>
-									<span>Student</span>
-								</div>
-							</div>
-						</div>
-						<div class="row agile">
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1-agileinfo hrms">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
-									<h4>Colling Wood</h4>
-									<span>Student</span>
-								</div>
-							</div>
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1-agileinfo">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor .</p>
-									<h4>Mark Henry</h4>
-									<span>Student</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- testimonials -->
 	<!-- features -->
 	<section class="features">
 		<div class="container">
