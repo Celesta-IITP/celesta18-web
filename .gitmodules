@@ -1,3 +1,7 @@
 [submodule "api"]
 	path = api
 	url = https://github.com/Celesta-IITP/celesta-backend.git
+[submodule "apiLe"]
+	path = apiLe
+	url = git@github.com:Celesta-IITP/celesta-backend-legacy.git
+	branch = master

@@ -326,11 +326,11 @@ body{
             <h1>Events</h1><br>
             <h2>
             <div id="home">Home</div>
-            <div id="Workshop">Workshop</div>
+            <!-- <div id="Workshop">Workshop</div>
             <div id="Schedule">Schedule</div>
             <div id="Team">Team</div>
-            <div id="Sponsers">Sponsers</div>
-            <div id="Gallery">Gallery</div>
+            <div id="Sponsors">Sponsors</div>
+            <div id="Gallery">Gallery</div> -->
             </h2><br>
             <?php
                     if(isset($_SESSION['uid'])){
@@ -343,8 +343,8 @@ body{
                     
                     else {
                       
-                        echo "<div class=\"button big alt\" id=\"login\"><span>Login</span></div>
-                        <b><br>Haven't registered yet <p class=\"cd-signup\" data-page=\"register\" id=\"register\">Register</p></b>";
+                         echo "<div class=\"button big alt\" id=\"login\"><span>Login</span></div>
+                        <b><br>Haven't registered yet <br><div class=\"button big alt cd-signup\" data-page=\"register\" id=\"register\"><span>Register</span></div></b>";
                     
                     }
                 ?> 
@@ -559,7 +559,7 @@ body{
             });
 
 
-            $("#Sponsers").on("click",function() {
+            $("#Sponsors").on("click",function() {
                 transit(5);
                 setTimeout(function() {
                   load_page("event.html");
@@ -661,6 +661,15 @@ body{
         }
 
         </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121974846-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121974846-1');
+</script>
 
 </body>
 </html>
