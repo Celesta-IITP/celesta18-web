@@ -53,7 +53,6 @@ if(isset($_GET['act'])){
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div id="header" style="text-align: center; font-family: monospace; font-size: 6em; padding-top: 4%;" >Celesta 2k18</div>  
 <div class='login' style=" padding: 30px 40px 80px 40px; height: 450px; top: 42px;">
   <div style="text-align: center;" class='login_title'>
     <span><h2 style="margin-bottom: -1px;">Welcome!!</h2>Register to Celesta2k18</span>
