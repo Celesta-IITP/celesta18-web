@@ -76,7 +76,7 @@ if(isset($_GET['act'])){
       var id = $("#email").val().trim();
       var pass = $("#pass").val().trim();
       if (validate( id,pass)) {
-        $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/login/",
+        $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/login/",
             {
                 username: id,
                 password: pass
@@ -166,7 +166,7 @@ if(isset($_GET['act'])){
           <a href='reset.php' style="font-size: 1.4em; color: white;">Forgot Password?</a>
       </div>
       <div class="create_accnt" style="padding-top: 10px; color: pink;">
-          Dont have an account? <a style="color: white;" href="Register.php">Create Account</a>
+          Dont have an account? <a style="color: white;" href="register.php">Create Account</a>
       </div>
     </div>
   </div>

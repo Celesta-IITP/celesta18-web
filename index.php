@@ -544,7 +544,7 @@ body{
             $("#register").on("click",function() {
                 transit(1);
                 setTimeout(function() {
-                  load_page("Register.php");
+                  load_page("register.php");
                 },400);
             });
 

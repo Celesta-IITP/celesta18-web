@@ -7,7 +7,7 @@ if(isset($_GET['act'])){
     $_SESSION['name']=null;
     session_destroy();
   header( "refresh:0; url=http://celesta.org.in" );
-    
+    die()
   }
 }
 
@@ -297,7 +297,7 @@ $("#submit").click(function(e) {
     if (validate(fname, email, college, phone,password)) {
 
      
-        $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/api/register",
+        $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/register",
             {
               name: fname,
               emailid:email,
