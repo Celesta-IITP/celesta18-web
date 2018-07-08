@@ -132,7 +132,6 @@ if(isset($_GET['act'])){
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div style="text-align: center; font-family: monospace; font-size: 6em; padding-top: 4%;" id="header" >Celesta 2k18</div>  
 <div class='login'>
   <div style="text-align: center;" class='login_title'>
     <span><h2 style="margin-bottom: -1px;">Welcome!!</h2>Login to Celesta2k18</span>
