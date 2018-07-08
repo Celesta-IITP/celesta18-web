@@ -7,7 +7,6 @@ if(isset($_GET['act'])){
     $_SESSION['name']=null;
     session_destroy();
   header( "refresh:0; url=http://celesta.org.in" );
-    die()
   }
 }
 
