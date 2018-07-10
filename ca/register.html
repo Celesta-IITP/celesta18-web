@@ -57,18 +57,7 @@
 							 <li class="nav-item">
 								<a href="about.html" class="nav-link">Judging Criteria</a>
 							 </li>
-							  <li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										Pages
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="codes.html">Codes</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="about.html">About</a>
-									</div>
-								</li>
-							 <li class="nav-item active">
+							 <li class="nav-item">
 								<a href="contact.html" class="nav-link">Contact</a>
 							 </li>
 						  </ul>
@@ -109,10 +98,15 @@
 				</div>
 				<div class="contact-middle">
 					<h4>Sign Up with email</h4>
-					<form action="#" method="post">
+					<!--<form name="form" method="post">
+					-->	<div class="step1">
 						<div class="form-fields-agileinfo">
 							<p>Full Name</p>
 							<input type="text" name="name" placeholder="John Doe" required="" />
+						</div>
+						<div class="form-fields-agileinfo">
+							<p>Contact Number(preferably whatsapp no.)</p>
+							<input type="text" name="mobile" placeholder="1234567890" required="" />
 						</div>
 						<div class="form-fields-agileinfo">
 							<p>Email</p>
@@ -120,14 +114,24 @@
 						</div>
 						<div class="form-fields-agileinfo">
 							<p>Password</p>
-							<input type="password" name="pass" placeholder="********" pattern=".{6,}" required="" />
+							<input type="password" name="password" placeholder="******" required="" />
 						</div>
 						<div class="form-fields-agileinfo">
-							<p>Confirm Password</p>
-							<input type="password" name="cpass" placeholder="********" pattern=".{6,}" required="" />
+							<p>College Name</p>
+							<input type="text" name="college" placeholder="IIT Patna" required="" />
 						</div>
-						<input type="submit" value="Register">
-					</form>
+						</div>
+						<div class="Referal" style="display: none;">
+						<strong>A 4-digit Referal Code has been sent to your Email id</strong>
+						To complete registration with Celesta Enter the referal code sent to you and click the Register button
+						<div class="form-fields-agileinfo">
+							<p>Enter your Referal Code</p>
+							<input type="text" name="referal" placeholder="1234" />
+						</div>
+						</div>
+						<div id="errorBanner" style="color: red;"></div>
+						<input type="submit" class="next" value="Next">
+						<input style="display: none;" class="Register" type="submit" value="Register">
 				</div>
 			</div>
 		</div>
@@ -138,52 +142,53 @@
 	<footer>
 	<section class="w3ls_address_mail_footer_grids">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 w3ls_footer_grid_left">
-					<h5 class="sub-head">Address</h5>
-					<p>Northways Rd Churchill VIC
-						<span>3842 Australia.</span>
-					</p>
-				</div>
-				<div class="col-sm-4 w3ls_footer_grid_left">
-					<h5 class="sub-head">Contact Us</h5>
-					<p>+(012) 345 6789
-						<span>+(012) 678 3459</span>
-					</p>
-				</div>
-				<div class="col-sm-4 w3ls_footer_grid_left">
-					<h5 class="sub-head">Mail Us</h5>
-					<p>
-						<a href="mailto:info@example.com">info@example1.com</a>
-						<span>
-							<a href="mailto:info@example.com">info@example2.com</a>
-						</span>
-					</p>
-				</div>
-			</div>	
+		<div class="row">
+			<div class="col-sm-4 w3ls_footer_grid_left">
+				<h5 class="sub-head">Address</h5>
+				<p>	Indian Institute of Technology Patna, Bihta
+					<span>Patna-801106 (Bihar)</span>
+				</p>
+			</div>
+			<div class="col-sm-4 w3ls_footer_grid_left">
+				<h5 class="sub-head">Contact Us</h5>
+				<p>+(012) 345 6789
+					<span>+(012) 678 3459</span>
+				</p>
+			</div>
+			<div class="col-sm-4 w3ls_footer_grid_left">
+				<h5 class="sub-head">Mail Us</h5>
+				<p>
+					<a href="mailto:info@example.com">info@example1.com</a>
+					<span>
+						<a href="mailto:info@example.com">info@example2.com</a>
+					</span>
+				</p>
+			</div>
+			</div>
+			
 		</div>
 	</section>
 	</footer>
 	<section class="copyright-wthree">
 		<div class="container">
 			<div class="w3l-social">
-				<ul>
-					<li>
-						<a href="https://www.facebook.com/CelestaIITP/" class="fab fa-facebook"></a>
-					</li>
-					<li>
-						<a href="https://twitter.com/celesta_iitp" class="fab fa-twitter"></a>
-					</li>
-					<!-- <li>
-						<a href="#" class="fab fa-google-plus-g"></a>
-					</li> -->
-					<li>
-						<a href="https://www.instagram.com/celestaiitp_official/" class="fab fa-instagram"></a>
-					</li>
-					<li>
-						<a href="#" class="fab fa-linkedin-in"></a>
-					</li>
-				</ul>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/CelestaIITP/" class="fab fa-facebook"></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/celesta_iitp" class="fab fa-twitter"></a>
+						</li>
+						<!-- <li>
+							<a href="#" class="fab fa-google-plus-g"></a>
+						</li> -->
+						<li>
+							<a href="https://www.instagram.com/celestaiitp_official/" class="fab fa-instagram"></a>
+						</li>
+						<li>
+							<a href="#" class="fab fa-linkedin-in"></a>
+						</li>
+					</ul>
 			</div>
 		</div>
 	</section>
@@ -199,7 +204,8 @@
 	<script type="text/javascript" src="js/easing.js"></script>
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
-		$(document).ready(function() {
+
+$(document).ready(function() {
 			/*
 				var defaults = {
 				containerID: 'toTop', // fading element id
@@ -207,11 +213,153 @@
 				scrollSpeed: 1200,
 				easingType: 'linear' 
 				};
-			*/
-								
+			*/					
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+});
+
+
+	// Register
+
+	var name = "",
+		email = "",
+		password = "",
+		contact = "",
+		college = "",
+		referal = "";
+
+	function check(value, pattern){
+        if(value.match(pattern)){
+           return true;
+        } else {
+        	return false;
+        }
+    }
+
+	function validate(fname, email, college, phone) {
+     	//match email address
+        var emailRegex = '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}.[A-Za-z]{2,4}$'; 
+   	    //match full name
+        var fnameRegex = "^[a-zA-Z-.' ]{6,32}$";
+        //match college
+        var collegeRegex = "^[a-zA-Z ]+$";
+        //match phone
+        var phoneRegex = '^([(\+91)][0-9]{12}|[0-9]{10})$';
+
+        bfname = check(fname, fnameRegex);
+        if(!bfname){
+           	$("#errorBanner").text("Invalid Name");
+            return false;
+        }
+
+        bcollege = check(college, collegeRegex);
+        if(!bcollege){
+        	$("#errorBanner").text("Invalid College Name");
+        	return false;
+        }
+
+        bemail = check(email, emailRegex);
+        if(!bemail){
+			$("#errorBanner").text("Invalid Email");
+            return false;
+        } 
+
+        bphone = check(phone, phoneRegex);
+        if(!bphone){
+        	$("#errorBanner").text("Invalid Contact Number");
+            return false;
+        }
+        return true;
+    }
+
+	// To generate and send the referal code via email
+			$(".next").click(function(){
+				name = $("input[name=name]").val().trim();
+				email = $("input[name=email]").val().trim();
+				contact = $("input[name=mobile]").val().trim();
+				college = $("input[name=college]").val().trim();
+				password = $("input[name=password]").val().trim(); 
+				if(validate(name,email,college,contact)){
+
+					$.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/ca/generateReferalCode",
+            			{
+              				name: name,
+              				emailid:email,
+              				password:password,
+              				mobile:contact,
+              				college:college
+            			},
+            			function(data, status){
+              				console.log("Response");
+              				console.log("Data: " + data + "\nStatus: " + status);
+              				if(status=='success'){
+              					console.log(data);
+
+                				if(data["status"]=="200"){         
+                  	        		$(".step1").css("display", "none");
+              						$(".next").css("display", "none");
+              						$("#errorBanner").fadeOut();
+              						$(".Referal").css("display","block");
+              						$(".Register").css("display","block");	
+                  	        	}else{
+                  					console.log("err");
+              					    $("#errorBanner").fadeIn();
+                   					$("#errorBanner").html('<center><b>Error occured<br>'+data["message"]+'</center>');
+              					}
+				            }else{
+				            	$("#errorBanner").fadeIn();
+              					$("#errorBanner").html('An error occured.<br> Please try again.');
+                  				console.log("Failed "+data);
+                			}
+       					},"json");
+    			}
 			});
+
+	// Referal code generation done
+
+	// After entering the sent referal code 
+
+			$(".Register").click(function(){
+				referal =$("input[name=referal]").val().trim();
+				if(check(referal,'^[0-9]{4}$')){
+
+					$.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/register",
+            			{
+              				name: name,
+              				emailid:email,
+              				password:password,
+              				mobile:contact,
+              				college:college,
+              				referal:referal
+            			},
+            			function(data, status){
+              				console.log("Response");
+              				console.log("Data: " + data + "\nStatus: " + status);
+              				if(status=='success'){
+              					console.log(data);
+
+                				if(data["status"]=="200"){         
+                  	        		$(".Referal").css("display","none");
+                  	        		$("#errorBanner").css("color", "black");
+                  	        		$("#errorBanner").fadeIn();
+                   					$("#errorBanner").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent.</center>');
+                   					$(".Register").css("display","none");
+                  	        	}else{
+                  					console.log("err");
+              					    $("#errorBanner").fadeIn();
+                   					$("#errorBanner").html('<center><b>Error occured<br>'+data["message"]+'</center>');
+              					}
+				            }else{
+				            	$("#errorBanner").fadeIn();
+              					$("#errorBanner").html('An error occured.<br> Please try again.');
+                  				console.log("Failed "+data);
+                			}
+       					},"json");
+    			}else{
+    				$("#errorBanner").fadeIn();
+					$("#errorBanner").text("Invalid Referal code");                   
+    			}
+			});
+
 	</script>
 	<!-- //here ends scrolling icon -->
 <!-- //smooth scrolling -->
