@@ -261,6 +261,7 @@ a.w3l_header_contact_details_agile-info_inner, .w3l_header_contact_details_agile
     z-index: 99;
     text-align: center;
     padding: 0em;
+    height: 50%;
 }
 
 ul.navbar-nav {
@@ -276,7 +277,7 @@ ul.navbar-nav {
 h1 a.navbar-brand {
     padding-top: 0px;
     font-size: 43px;
-    color: #0bffea !important;
+    color: black !important;
     text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 2px;
@@ -310,11 +311,11 @@ a.navbar-brand span {
 
 nav.navbar.navbar-toggleable-md.navbar-light {
     padding: 0em;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(140, 140, 140, 0.3);
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #0bffea;
+    color: #D4E872;
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
@@ -322,8 +323,8 @@ nav.navbar.navbar-toggleable-md.navbar-light {
 }
 
 .navbar {
-    padding: 0;
-    background:rgba(255, 255, 255, .5);
+    padding: 2px;
+    background:rgba(0, 0, 0, .5);
 }
 
 /*-- //nav --*/
@@ -1576,7 +1577,7 @@ div#contact h3 {
     color: #e7e3e3;
 }
 
-.contact-middle input[type="text"], .contact-middle input[type="email"], textarea {
+.contact-middle input[type="text"], .contact-middle input[type="email"], .contact-middle input[type="password"] textarea {
     width: 100%;
     padding: 11px 20px;
     border: 1px solid #777;
@@ -1594,7 +1595,7 @@ div#contact h3 {
     margin: 1.2em 0;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus textarea:focus {
     outline: none;
 }
 
