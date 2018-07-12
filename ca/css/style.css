@@ -21,10 +21,19 @@ section {
     background-repeat: repeat;
 }
 
+.points {
+    font-weight: bold!important;
+}
+
+.sp-points {
+    font-weight: bolder!important;
+}
+
 #logo {
     height: 100px;
     width: 100px;
 }
+
 #ca-header {
     font-family: 'Nova Flat';
     font-size: 4vw;
@@ -324,7 +333,7 @@ nav.navbar.navbar-toggleable-md.navbar-light {
 
 .navbar {
     padding: 2px;
-    background:rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .5);
 }
 
 /*-- //nav --*/
@@ -1584,7 +1593,7 @@ div#contact h3 {
 }
 
 .contact-middle p {
-    color: #cecece;
+    color: #050505fa;
     font-weight: bold;
     margin-bottom: 4px;
     margin-left: 5px;
@@ -1802,7 +1811,6 @@ section#tables p {
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
     font-size: 0.9em;
-    color: #999;
     border-top: none !important;
 }
 

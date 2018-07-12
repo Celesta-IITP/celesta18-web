@@ -42,9 +42,9 @@
 <div class="banner1">
 	<div class="header-bar">
 		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top">
                <div class="hedder-up">
-				<h1><a class="navbar-brand" href="index.html">CA Registration</a></h1>
+				<h1><a class="navbar-brand" href="index.html">Registration</a></h1>
 			   </div>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -54,11 +54,14 @@
 							 <li class="nav-item">
 								<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 							 </li>
+							<li class="nav-item active">
+								<a href="register.html" class="nav-link">Register</a>
+							</li>
 							 <li class="nav-item">
-								<a href="about.html" class="nav-link">Judging Criteria</a>
+								<a href="judging.html" class="nav-link">Judging Criteria</a>
 							 </li>
 							 <li class="nav-item">
-								<a href="contact.html" class="nav-link">Contact</a>
+								<a href="#bottom" class="nav-link">Contact</a>
 							 </li>
 						  </ul>
                </div>
@@ -74,7 +77,6 @@
 		<div class="container">
 			<div class="wthree_head_section">
 				<h2 class="w3l_header">Register</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
 			</div>
 			<div id="reg-msg">
 				<strong>
@@ -215,6 +217,11 @@ $(document).ready(function() {
 				};
 			*/					
 			$().UItoTop({ easingType: 'easeOutQuart' });
+			var $target = $('html,body');
+			$("a[href='#bottom']").click(function() {
+				// $target.animate({scrollTop: $target.height()}, 1000);
+				$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+			});​
 });
 
 
