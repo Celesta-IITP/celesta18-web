@@ -338,6 +338,7 @@ body{
             <!-- <div id="Team">Team</div> -->
             <!-- <div id="Sponsors">Sponsors</div> -->
             <!-- <div id="Gallery">Gallery</div> -->
+            <div id="ca">Campus Ambassador</div>
             </h2><br>
             <?php
                     if(isset($_SESSION['uid'])){
@@ -523,7 +524,13 @@ body{
                   load_page("event.html");
                 },400);
             });
-
+           
+            $("#Gallery").on("click",function() {
+                transit(1);
+                setTimeout(function() {
+                  load_page("ca/index.html");
+                },400);
+            }); 
             
             $("#logout").on("click",function() {
                 transit(1);
