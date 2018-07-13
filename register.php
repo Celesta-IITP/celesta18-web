@@ -101,7 +101,13 @@ if(isset($_GET['act'])){
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
-        <span class="error">*Enter Valid Password<br></span>
+      <div class='login_fields__user'>
+      <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Campus Ambassador ID:</span>
+      <input style="margin-top: 2px;" autocomplete="off" id="refID" placeholder='1234' name="refID" type='number' >
+      <div class='validation'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+      </div>
+        <span class="error"><br></span>
     </div>
     <div class='login_fields__submit'>
       <div id="errorBanner" style="color: #FF0000">
@@ -201,7 +207,7 @@ if(isset($_GET['act'])){
 
     }
 
-    function validate(fname, email, college, phone, password) {
+    function validate(fname, email, college, phone, password, refID) {
 
         $(".error").hide();
 
@@ -220,7 +226,12 @@ if(isset($_GET['act'])){
         //match phone
 
         var phoneRegex = '^([(\+91)][0-9]{12}|[0-9]{10})$';
+        
+        //match refID
 
+        var refIDRegex = '^[0-9]+$';
+        brefID = check(refID, refIDRegex);
+      
         bfname = check(fname, fnameRegex);
 
         if(!bfname){
@@ -232,7 +243,7 @@ if(isset($_GET['act'])){
         }
 
         bcollege = check(college, collegeRegex);
-
+        
         if(!bcollege){
 
             $("input[name=college]").focus();
@@ -290,9 +301,9 @@ $("#submit").click(function(e) {
     var password = $("input[name=password]").val();
 
     var phone = $("input[name=phone]").val().trim();
+    var refID = $("#refID").val().trim();
 
-
-    if (validate(fname, email, college, phone,password)) {
+    if (validate(fname, email, college, phone,password, refID)) {
 
      
         $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/register",
@@ -301,7 +312,8 @@ $("#submit").click(function(e) {
               emailid:email,
               password:password,
               mobile:phone,
-              college:college
+              college:college,
+              caID:refID
             },
             function(data, status){
               console.log("Response");
