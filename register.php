@@ -95,15 +95,18 @@ if(isset($_GET['act'])){
       </input>
       <span class="error">*Enter Valid Mobile Number<br></span>
     </div>
+    <div class="login_fields__user email">
+      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">CA referral ID (optional):</span><br>
+      <input style="margin-top: 2px;" autocomplete="off" id="refID" placeholder='1234' name="refID" type='number' >
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+      <span class="error">*Enter Valid Ref ID : 4 digits<br></span>
+    </div>
     <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Password:</span>
       <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='Password' name="password" type='password'>
-      <div class='validation'>
-        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-      </div>
-      <div class='login_fields__user'>
-      <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Campus Ambassador ID:</span>
-      <input style="margin-top: 2px;" autocomplete="off" id="refID" placeholder='1234' name="refID" type='number' >
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
