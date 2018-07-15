@@ -53,10 +53,11 @@ if(isset($_GET['act'])){
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div class='login' style=" padding: 30px 40px 80px 40px; height: 450px; top: 42px;">
+<div class='login' style=" padding: 30px 40px 80px 40px; height: 550px; top: 42px;">
   <div style="text-align: center;" class='login_title'>
     <span><h2 style="margin-bottom: -1px;">Welcome!!</h2>Register to Celesta2k18</span>
   </div>
+  <span style="color:red">Make sure you enter both, your email ID and your phone number correctly as you will need both to confirm your account.</span>
   <br>
   <div class='login_fields'>
     <div class='login_fields__user name'>
