@@ -338,7 +338,7 @@ body{
             <!-- <div id="Team">Team</div> -->
             <!-- <div id="Sponsors">Sponsors</div> -->
             <!-- <div id="Gallery">Gallery</div> -->
-            <div id="ca">Campus Ambassador</div>
+            <a href="/ca/"><div id="ca">Campus Ambassador</div></a>
             </h2><br>
             <?php
                     if(isset($_SESSION['uid'])){
