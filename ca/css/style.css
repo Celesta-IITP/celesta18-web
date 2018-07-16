@@ -1586,7 +1586,10 @@ div#contact h3 {
     color: #e7e3e3;
 }
 
-.contact-middle input[type="text"], .contact-middle input[type="email"], .contact-middle input[type="password"] textarea {
+.contact-middle input[type="text"],
+.contact-middle input[type="email"],
+.contact-middle input[type="password"],
+.contact-middle textarea {
     width: 100%;
     padding: 11px 20px;
     border: 1px solid #777;

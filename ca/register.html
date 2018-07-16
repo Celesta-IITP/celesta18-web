@@ -76,28 +76,31 @@
 	<section class="contact-agile contact-page">
 		<div class="container">
 			<div class="wthree_head_section">
-				<h2 class="w3l_header">Register</h2>
+				<h2 class="w3l_header">Register</h2><br><div class="alert alert-warning" role="alert">
+				  Already registered from the celesta home page? Click <a href="../switch.php">here</a> to switch your regular account to Campus Ambassador
+				</div> 
 			</div>
 			<div id="reg-msg">
 				<strong>
 					After completing your registration process, our media and public relation team will contact you soon and discuss about the
-					work in detail
+					work in detail.
+					<span style="color:red">Make sure you enter both, your email ID and your phone number correctly as you will need both to confirm your account.</span>
 				</strong>
 			</div>
 			<div class="contact-eql">
-				<div class="contact-left">
+				<!-- <div class="contact-left">
 					<h4>Sign Up with Facebook or Google</h4>
-					<!-- <p class="para-w3-agileits">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor est, malesuada at nulla in.</p> -->
-					<!-- Facebook Oauth -->
+					
+					
 					<div id="fb-oauth">
 						<button>FB Oauth</button>
 					</div>
 					<br>
-					<!-- Google oauth -->
+					
 					<div id="g-oauth">
 						<button>Google Oauth</button>
 					</div>
-				</div>
+				</div> -->
 				<div class="contact-middle">
 					<h4>Sign Up with email</h4>
 					<!--<form name="form" method="post">
@@ -123,17 +126,15 @@
 							<input type="text" name="college" placeholder="IIT Patna" required="" />
 						</div>
 						</div>
-						<div class="Referal" style="display: none;">
-						<strong>A 4-digit Referal Code has been sent to your Email id</strong>
-						To complete registration with Celesta Enter the referal code sent to you and click the Register button
-						<div class="form-fields-agileinfo">
-							<p>Enter your Referal Code</p>
-							<input type="text" name="referal" placeholder="1234" />
-						</div>
-						</div>
+							<div id="subm">
+								<input class="Register" type="submit" value="Register">
+							</div>
 						<div id="errorBanner" style="color: red;"></div>
-						<input type="submit" class="next" value="Next">
-						<input style="display: none;" class="Register" type="submit" value="Register">
+						<img id="loader_gif" style="display: none;" src="../Gallery/loading.gif" alt=""
+						 height="60">
+						</div>
+						
+				</div>	
 				</div>
 			</div>
 		</div>
@@ -207,22 +208,7 @@
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 
-$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/					
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			var $target = $('html,body');
-			$("a[href='#bottom']").click(function() {
-				// $target.animate({scrollTop: $target.height()}, 1000);
-				$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-			});​
-});
+
 
 
 	// Register
@@ -230,7 +216,7 @@ $(document).ready(function() {
 	var name = "",
 		email = "",
 		password = "",
-		contact = "",
+		mobile = "",
 		college = "",
 		referal = "";
 
@@ -278,65 +264,24 @@ $(document).ready(function() {
         return true;
     }
 
-	// To generate and send the referal code via email
-			$(".next").click(function(){
-				name = $("input[name=name]").val().trim();
-				email = $("input[name=email]").val().trim();
-				contact = $("input[name=mobile]").val().trim();
-				college = $("input[name=college]").val().trim();
-				password = $("input[name=password]").val().trim(); 
-				if(validate(name,email,college,contact)){
-
-					$.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/ca/generateReferalCode",
-            			{
-              				name: name,
-              				emailid:email,
-              				password:password,
-              				mobile:contact,
-              				college:college
-            			},
-            			function(data, status){
-              				console.log("Response");
-              				console.log("Data: " + data + "\nStatus: " + status);
-              				if(status=='success'){
-              					console.log(data);
-
-                				if(data["status"]=="200"){         
-                  	        		$(".step1").css("display", "none");
-              						$(".next").css("display", "none");
-              						$("#errorBanner").fadeOut();
-              						$(".Referal").css("display","block");
-              						$(".Register").css("display","block");	
-                  	        	}else{
-                  					console.log("err");
-              					    $("#errorBanner").fadeIn();
-                   					$("#errorBanner").html('<center><b>Error occured<br>'+data["message"]+'</center>');
-              					}
-				            }else{
-				            	$("#errorBanner").fadeIn();
-              					$("#errorBanner").html('An error occured.<br> Please try again.');
-                  				console.log("Failed "+data);
-                			}
-       					},"json");
-    			}
-			});
-
-	// Referal code generation done
-
 	// After entering the sent referal code 
 
 			$(".Register").click(function(){
-				referal =$("input[name=referal]").val().trim();
-				if(check(referal,'^[0-9]{4}$')){
-
-					$.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/register",
+				$("#loader_gif").fadeIn();
+				name = $("input[name=name]").val().trim();
+				email = $("input[name=email]").val().trim();
+				mobile = $("input[name=mobile]").val().trim();
+				college = $("input[name=college]").val().trim();
+				password = $("input[name=password]").val().trim(); 
+				if(validate(name, email, college, mobile, password , 0)){
+					$.post("http://celesta.org.in/apiLe/register",
             			{
               				name: name,
               				emailid:email,
               				password:password,
-              				mobile:contact,
+              				mobile: mobile,
               				college:college,
-              				referal:referal
+							isCa:1
             			},
             			function(data, status){
               				console.log("Response");
@@ -348,14 +293,17 @@ $(document).ready(function() {
                   	        		$(".Referal").css("display","none");
                   	        		$("#errorBanner").css("color", "black");
                   	        		$("#errorBanner").fadeIn();
-                   					$("#errorBanner").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent.</center>');
-                   					$(".Register").css("display","none");
+									$("#loader_gif").fadeOut();
+                   					$("#errorBanner").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>Check your email "'+email+'" for the confirmation email. Your Campus Ambassador referral ID is "'+data.id+'". and your celesta ID is "CLST'+data.id+'". You can ask people to register using this four digit code as the CA referral code when they register for Celesta.</center>');
+                   					$(".Register,.step1").css("display","none");
                   	        	}else{
                   					console.log("err");
+									$("#loader_gif").fadeOut();
               					    $("#errorBanner").fadeIn();
                    					$("#errorBanner").html('<center><b>Error occured<br>'+data["message"]+'</center>');
               					}
 				            }else{
+								$("#loader_gif").fadeOut();
 				            	$("#errorBanner").fadeIn();
               					$("#errorBanner").html('An error occured.<br> Please try again.');
                   				console.log("Failed "+data);
@@ -363,7 +311,7 @@ $(document).ready(function() {
        					},"json");
     			}else{
     				$("#errorBanner").fadeIn();
-					$("#errorBanner").text("Invalid Referal code");                   
+					$("#loader_gif").fadeOut();
     			}
 			});
 

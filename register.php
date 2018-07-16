@@ -53,10 +53,11 @@ if(isset($_GET['act'])){
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div class='login' style=" padding: 30px 40px 80px 40px; height: 450px; top: 42px;">
+<div class='login' style=" padding: 30px 40px 80px 40px; height: 550px; top: 42px;">
   <div style="text-align: center;" class='login_title'>
     <span><h2 style="margin-bottom: -1px;">Welcome!!</h2>Register to Celesta2k18</span>
   </div>
+  <span style="color:red">Make sure you enter both, your email ID and your phone number correctly as you will need both to confirm your account.</span>
   <br>
   <div class='login_fields'>
     <div class='login_fields__user name'>
@@ -95,13 +96,22 @@ if(isset($_GET['act'])){
       </input>
       <span class="error">*Enter Valid Mobile Number<br></span>
     </div>
+    <div class="login_fields__user email">
+      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">CA referral ID (optional):</span><br>
+      <input style="margin-top: 2px;" autocomplete="off" id="refID" placeholder='1234' name="refID" type='number' >
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+      <span class="error">*Enter Valid Ref ID : 4 digits<br></span>
+    </div>
     <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Password:</span>
       <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='Password' name="password" type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
-        <span class="error">*Enter Valid Password<br></span>
+        <span class="error"><br></span>
     </div>
     <div class='login_fields__submit'>
       <div id="errorBanner" style="color: #FF0000">
@@ -201,7 +211,7 @@ if(isset($_GET['act'])){
 
     }
 
-    function validate(fname, email, college, phone, password) {
+    function validate(fname, email, college, phone, password, refID) {
 
         $(".error").hide();
 
@@ -220,7 +230,12 @@ if(isset($_GET['act'])){
         //match phone
 
         var phoneRegex = '^([(\+91)][0-9]{12}|[0-9]{10})$';
+        
+        //match refID
 
+        var refIDRegex = '^[0-9]+$';
+        brefID = check(refID, refIDRegex);
+      
         bfname = check(fname, fnameRegex);
 
         if(!bfname){
@@ -232,7 +247,7 @@ if(isset($_GET['act'])){
         }
 
         bcollege = check(college, collegeRegex);
-
+        
         if(!bcollege){
 
             $("input[name=college]").focus();
@@ -290,9 +305,9 @@ $("#submit").click(function(e) {
     var password = $("input[name=password]").val();
 
     var phone = $("input[name=phone]").val().trim();
+    var refID = $("#refID").val().trim();
 
-
-    if (validate(fname, email, college, phone,password)) {
+    if (validate(fname, email, college, phone,password, refID)) {
 
      
         $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/register",
@@ -301,7 +316,8 @@ $("#submit").click(function(e) {
               emailid:email,
               password:password,
               mobile:phone,
-              college:college
+              college:college,
+              caID:refID
             },
             function(data, status){
               console.log("Response");
