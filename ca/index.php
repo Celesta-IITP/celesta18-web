@@ -274,15 +274,38 @@
 						<tr>
 							<th>#</th>
 							<th>Name</th>
+							<th>ID</th>
 							<th>Points</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Mark</td>
-							<td>70</td>
-						</tr>
+					<?php
+					include '../apiLe/dbConfig.php';
+					function SQLInjFilter(&$unfilteredString){
+						$unfilteredString = mb_convert_encoding($unfilteredString, 'UTF-8', 'UTF-8');
+						$unfilteredString = htmlentities($unfilteredString, ENT_QUOTES, 'UTF-8');
+						// return $unfilteredString;
+					}
+					$sql = "SELECT name,CA.caID AS ID,(SELECT count(*) FROM users P2 WHERE P2.caID = CA.caID AND P2.isCA<>0)*20 + (SELECT COALESCE(SUM(score),0) AS score FROM cascore P3 WHERE P3.pID = CA.caID) + 20 AS Score FROM users CA WHERE CA.isCA<>0 AND CA.name NOT LIKE 'test%' ORDER BY Score DESC,name LIMIT 15";
+					if($link =mysqli_connect($servername, $username, $password, $dbname)){
+						$result = mysqli_query($link,$sql);
+					if(!$result || mysqli_num_rows($result)<1){
+						$error="Error fetching result.";
+							errorLog(mysqli_errno($link)." ".mysqli_error($link)." ".$error);
+						echo "<tr><td>-</td><td>-</td><td>-</td><td>-</td></tr>";
+					}
+					else{
+						$index = 1;
+						while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+						echo "<tr><td>".$index."</td><td>".$row['name']."</td><td>".$row['ID']."</td><td>".$row['Score']."</td></tr>";
+							$index++;
+						}
+					}
+					}else{
+						echo "Error connecting to database.";
+					}
+
+	    			?>
 					</tbody>
 				</table>
 			</div>
