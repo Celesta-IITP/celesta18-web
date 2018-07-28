@@ -1,7 +1,7 @@
 <!--A Design by W3layouts
    Author: W3layout
    Author URL: http://w3layouts.com
-   License: Creative Commons Attribution 3.0 Unported
+   License: Creative Commons Attribution 3.0</span>Unported
    License URL: http://creativecommons.org/licenses/by/3.0/
    -->
 <!DOCTYPE html>
@@ -13,7 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Preparation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/jquery-main.js"></script>
     <script type="application/x-javascript">
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -79,80 +81,316 @@
 <section class="typo">
     <div class="container">
         <div id="mpr">
-            <p>Enter the Celesta ID of the CA for which you want to check or add points and then click the search button</p>
+            <div>
+                <h1>Instructions</h1>
+                <ul>
+                    <li>Enter any one of the fields below to search for a particular CA. More prefereably Celesta id</li>
+                    <li>Modify the points as desired</li>
+                    <li>Click the submit button only when you</li>
+                </ul>
+            </div>
             <div class="form-fields-agileinfo form-inline">
                 <label class="label">Celesta ID</label>
                 <input type="text" name="CLST_ID" id="CLST_ID" placeholder="CLST911911">
                 <label class="label">Name</label>
                 <input type="text" name="name" id="caName" placeholder="John Doe">
-                <button class="btn btn-success">Search</button>
+                <label class="label">Contact</label>
+                <input type="number" name="contact" id="contactNum" placeholder="9876543210"></label>
+                <button class="btn btn-primary">Search</button>
             </div>
             <div id="ca-info col-md-6">
-                <h3 id="ca-name">Piyush Chauhan</h3>
+                <h3 id="ca-name">John Doe</h3>
                 <h4 id="ca-id">CLST911911</h4>
                 <h4 id="ca-clg">IIT Patna</h4>
                 <h4 id="ca-email">something@somewhere.com</h4>
                 <h4 id="ca-contact">9876543210</h4>
+                <h4>Total Points:<span class="ca-points">400</span></h4>
+
             </div>
+            <button class="btn btn-outline-success"> Sumbit Points</button>
         </div>
         <div class="bs-docs-example">
             <table class="table table-striped">
                 <tbody>
-                    <tr>
-                        <td>Online registration from your referral ID would earn you
-                            <span class="points">20 points</span>.</td>
+                    <tr style="text-decoration-line: underline">
+                        <td>Remarks</td>
+                        <td>Points</td>
+                        <td>Points earned from this criteria</td>
                     </tr>
                     <tr>
-                        <td>Offline registration from your referral ID would grant you
-                            <span class="sp-points">20 special points</span> !!</td>
+                        <td>Online registration from referral ID</td>
+                        <td><span class="points"><span class="cap">20</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Upgrading your profile picture/cover photo on Facebook with Celesta frame would earn you
-                            <span class="points">50 points</span>.</td>
+                        <td>Offline registration from referral ID</td>
+                        <td>
+                            <span class="sp-points">
+                                <span class="cap">20</span> special points</span> !!</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Sharing posts on Facebook (public post) would let you
-                            <span class="points">20 points</span> per share.</td>
+                        <td>Upgrading profile picture/cover photo on Facebook</td>
+                        <td>
+                            <span class="points">
+                                <span class="cap">50</span> points</span>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Sharing posts on College Facebook group would reward you
-                            <span class="points">15 points</span> per share.</td>
+                        <td>Facebook (public post)</td>
+                        <td><span class="points"><span class="cap">20</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Putting stories on Facebook would grant you
-                            <span class="sp-points">10 special points</span> !!</td>
+                        <td>Post on College Facebook group</td>
+                        <td><span class="points"><span class="cap">15</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Updating your WhatsApp profile picture would let you
-                            <span class="sp-points">10 special points</span> !!</td>
+                        <td>Facebook stories</td>
+                        <td><span class="sp-points"><span class="cap">10</span> special points</span> !!</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Sharing posts on College WhatsApp group will gift you
-                            <span class="points">30 points</span> each.</td>
+                        <td>Updating WhatsApp profile picture</td>
+                        <td><span class="sp-points"><span class="cap">10</span> special points</span> !!</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>For each WhatsApp stories you will be given
-                            <span class="points">20 points</span> each.</td>
+                        <td>Posts on College WhatsApp group</td>
+                        <td><span class="points"><span class="cap">30</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Sharing posts on Instagram would let you
-                            <span class="sp-points">10 special points</span> !!</td>
+                        <td>WhatsApp stories</td>
+                        <td><span class="points"><span class="cap">20</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Putting stories on Instagram would gift you
-                            <span class="sp-points">20 special points</span> !!</td>
+                        <td>Instagram post</td>
+                        <td><span class="sp-points"><span class="cap">10</span> special points</span> !!</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Tagging your friends on any social media (not recommended on guest post) would earn you
-                            <span class="sp-points">5 special points</span> each !!</td>
+                        <td>Instagram stories</td>
+                        <td><span class="sp-points"><span class="cap">20</span> special points</span> !!</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Giving contact details of Student Bodies along with there special field of interest would let you
-                            <span class="points">10 points</span> each</td>
+                        <td>Social Media tag</td>
+                        <td><span class="sp-points"><span class="cap">5</span> special points</span>  !!</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Mailer’s forward in college group would let you
-                            <span class="sp-points">50 special points</span> !!</td>
+                        <td>Contact  of Student Bodies details</td>
+                        <td><span class="points"><span class="cap">10</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mailer’s forward in college group</td>
+                        <td><span class="sp-points"><span class="cap">50</span> special points</span> !!</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Overall participation from your referral ID in our event</td>
+                        <td><span class="sp-points"><span class="cap">5</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Outside Patna</td>
+                        <td><span class="sp-points"><span class="cap">5</span> points</span></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Post caption</td>
+                        <td>Undefined</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Others</td>
+                        <td>Undefined</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">-</button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">+</button>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
