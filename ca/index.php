@@ -211,7 +211,7 @@
 
 	<!-- //what we do -->
 	<!-- features -->
-	<section class="features">
+	<!-- <section class="features">
 		<div class="container">
 			<div class="wthree_head_section">
 				<h3 class="w3l_header">Statistics</h3>
@@ -257,7 +257,7 @@
 				</div> -->
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<section class="typo">
 		<div class="container justify-content-center">
 			<div class="bs-docs-example">
