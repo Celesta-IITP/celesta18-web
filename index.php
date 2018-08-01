@@ -66,17 +66,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 				<span onclick="myFunction()" class="right" id="user1" style="background-color: rgba(0,0,0,0.8);"><a class="codrops-icon"><span>
 				<?php
                     if(isset($_SESSION['uid'])){
-                      
                       $name = explode(" ",$_SESSION['name']) ;
-
-                      echo "Hi ".$name[0]."!<a href="login.php?act=logout" id="signup">Logout</a>";
-                    
+                      echo "Hi ".$name[0]."!<a href=\"login.php?act=logout\" id=\"signup\">Logout</a>";
                     }
-                    
                     else {
-                      
-                        echo "<a href="login.php" id="login">login</a><a href="register.php" id="signup">signup</a>";
-                    
+                        echo "<a href=\"login.php\" id=\"login\">login</a><a href=\"register.ph\" id=\"signup\">signup</a>";
                     }
                 ?>  
             	</span></a></span>
