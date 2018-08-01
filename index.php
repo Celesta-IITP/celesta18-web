@@ -70,7 +70,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                       echo "Hi ".$name[0]."!<a href=\"login.php?act=logout\" id=\"signup\">Logout</a>";
                     }
                     else {
-                        echo "<a href=\"login.php\" id=\"login\">login</a><a href=\"register.ph\" id=\"signup\">signup</a>";
+                        echo "<a href=\"login.php\" id=\"login\">login</a><a href=\"/register\" id=\"signup\">signup</a>";
                     }
                 ?>  
             	</span></a></span>
@@ -90,8 +90,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 				      <li><a id="gallery" href="gallery.php"><span class="icon-picture"></span></a></li>
 				      <li><a id="ca" href="ca/index.php"><span class="icon-star"></span></a></li>
 				      <li><a id="home" href="index.html"><span class="icon-home"></span></a></li>
-				      <li><a id="events" href="event.php"><span class="icon-calendar"></span></a></li>
-				      <li><a id="about" href="about.html"><span class="icon-envelope-alt"></span></a></li>
+				      <li><a id="events" href="#"><span class="icon-calendar"></span></a></li>
+				      <li><a id="about" href="#"><span class="icon-envelope-alt"></span></a></li>
 				     </ul>
 				</div>
 				<div id="cn-overlay" class="cn-overlay" style="padding-top: 2%;"></div>
