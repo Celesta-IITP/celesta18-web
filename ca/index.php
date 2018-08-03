@@ -216,10 +216,10 @@
 			<div class="wthree_head_section">
 				<h3 class="w3l_header">Statistics</h3>
 				<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
--->			</div>
+		</div>
 			<div class="row about-main">
 				<div class="col-md-10 offset-md-1 justify-content-center">
-					<!-- stats -->
+					stats
 					<div class="">
 						<div class="row stats_inner">
 							<div class="col-md-3 col-sm-6 col-xs-6 stat-grids">
@@ -249,12 +249,12 @@
 
 						</div>
 					</div>
-					<!-- //stats -->
+					//stats
 
 				</div>
-				<!-- <div class="col-md-5 about-left">
+				<div class="col-md-5 about-left">
 					<img src="images/g1.jpg" class="img-fluid" alt="">
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</section> -->
