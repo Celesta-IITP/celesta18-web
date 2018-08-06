@@ -87,7 +87,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 				<button class="cn-button" id="cn-button">MENU</button>
 				<div class="cn-wrapper" id="cn-wrapper">
 				    <ul>
-				      <li><a id="gallery" href="gallery.php"><span class="icon-picture"></span></a></li>
+				      <li><a id="gallery" href="/Gallery"><span class="icon-picture"></span></a></li>
 				      <li><a id="ca" href="ca/index.php"><span class="icon-star"></span></a></li>
 				      <li><a id="home" href="index.php"><span class="icon-home"></span></a></li>
 				      <li><a id="events" href="event.html"><span class="icon-calendar"></span></a></li>

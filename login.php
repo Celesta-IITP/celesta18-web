@@ -160,7 +160,7 @@ if(isset($_GET['act'])){
       <div id="errorBanner" style="color: #FF0000">
     
   </div>
-      <input id="submit" type='submit' value='Log In'><img id="loader_gif" style="display: none;" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
+      <input id="submit" type='submit' value='Log In'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class='forgot'>
           <a href='reset.php' style="font-size: 1.4em; color: white;">Forgot Password?</a>
       </div>
@@ -179,8 +179,8 @@ if(isset($_GET['act'])){
   <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
   <p>Authenticating...</p>
 </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <script>
     $("#email").focus(function(){
         $("#email").css("color","white");
