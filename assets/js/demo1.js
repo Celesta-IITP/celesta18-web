@@ -75,7 +75,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 			open = true;
 		    button.innerHTML = "CANCEL";
 		    classie.add(overlay, 'on-overlay');
-		    overlay.innerHTML = "<div><h2><a href='index.php'>HOME</a></h2><h2><a href='#'>EVENTS</a></h2><h2><a href='ca/index.php'>CAMPUS AMBASSADOR</a></h2><h2 style='display: none;'><a href='gallery.html'>GALLERY</a></h2><h2><a href='#'>ABOUT</a></h2></div>"
+		    overlay.innerHTML = "<div><h2><a href='index.php'>HOME</a></h2><h2><a href='event.html'>EVENTS</a></h2><h2><a href='ca/index.php'>CAMPUS AMBASSADOR</a></h2><h2 style='display: none;'><a href='gallery.html'>GALLERY</a></h2><h2><a href='about.html'>ABOUT</a></h2></div>"
 		}
 		function closeNav(){
 			open = false;

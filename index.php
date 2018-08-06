@@ -90,7 +90,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 				      <li><a id="gallery" href="gallery.php"><span class="icon-picture"></span></a></li>
 				      <li><a id="ca" href="ca/index.php"><span class="icon-star"></span></a></li>
 				      <li><a id="home" href="index.php"><span class="icon-home"></span></a></li>
-				      <li><a id="events" href="#"><span class="icon-calendar"></span></a></li>
+				      <li><a id="events" href="event.html"><span class="icon-calendar"></span></a></li>
 				      <li><a id="about" href="#"><span class="icon-envelope-alt"></span></a></li>
 				     </ul>
 				</div>
