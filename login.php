@@ -34,7 +34,7 @@ if(isset($_GET['act'])){
     // ------------------------------------------------------------------    
   </style>
   
-  <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  <link rel='stylesheet prefetch' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link rel="stylesheet" href="style.css">
 <script type="text/javascript">
@@ -76,7 +76,7 @@ if(isset($_GET['act'])){
       var id = $("#email").val().trim();
       var pass = $("#pass").val().trim();
       if (validate( id,pass)) {
-        $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/login/",
+        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/login/",
             {
                 username: id,
                 password: pass

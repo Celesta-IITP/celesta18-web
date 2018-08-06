@@ -118,7 +118,7 @@ if(isset($_GET['act'])){
     
   </div>
 
-      <input id="submit" type='submit' value='Register'><img id="loader_gif" style="display: none;" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
+      <input id="submit" type='submit' value='Register'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class="log" style="padding-top: 10px; color: pink;">
           Already have an account? <a style="color: white;" href="login.php">Login</a>
       </div>
@@ -310,7 +310,7 @@ $("#submit").click(function(e) {
     if (validate(fname, email, college, phone,password, refID)) {
 
      
-        $.post("http://<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/register",
+        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/register",
             {
               name: fname,
               emailid:email,
