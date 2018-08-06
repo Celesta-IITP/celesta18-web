@@ -34,13 +34,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="../index.php">Home</a></li>
-                        <li><a href="../Events.php">Events</a></li>
-                        <li><a href="#">Schedule</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Sponsors</a></li>
-                        <li><a onclick="document.getElementById('id01').style.display='block'" class="cd-signup" data-page="register" href="#">Register</a></li>
-                        <li><a  href="../login.html">Login</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <!-- <li><a href="#">Schedule</a></li> -->
+                        <!-- <li><a href="#">Team</a></li> -->
+                        <!-- <li><a href="#">Sponsors</a></li> -->
+                        <li><a href="/reg">Register</a></li>
+                        <li><a  href="/login">Login</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </div>
