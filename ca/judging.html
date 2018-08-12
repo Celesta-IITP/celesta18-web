@@ -235,6 +235,10 @@
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
+		$("a[href='#bottom']").click(function() {
+			$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+			return false;
+		});​
 	});
 </script> 
 <!-- //scrolling script -->

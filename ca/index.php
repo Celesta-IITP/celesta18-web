@@ -74,6 +74,11 @@
 									<a href="judging.html" class="nav-link">Judging Criteria</a>
 								</li>
 							</ul>
+							<ul class="navbar-nav" style="margin-left: 5px; margin-right: 5px;">
+								<li class="nav-item">
+									<a href="#bottom" class="nav-link">Contact Us</a>
+								</li>
+							</ul>
 						</div>
 						
 					</nav>				
@@ -426,6 +431,10 @@
 				event.preventDefault();
 				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
 			});
+			$("a[href='#bottom']").click(function() {
+				$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+				return false;
+			});​
 		});
 	</script>
 	<!-- //scrolling script -->
