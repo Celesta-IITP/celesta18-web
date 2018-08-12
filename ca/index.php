@@ -215,7 +215,7 @@
 		<div class="container">
 			<div class="wthree_head_section">
 				<h3 class="w3l_header">Statistics</h3>
-				<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
 		</div>
 			<div class="row about-main">
 				<div class="col-md-10 offset-md-1 justify-content-center">

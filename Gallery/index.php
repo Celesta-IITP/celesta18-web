@@ -18,10 +18,11 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
         <script src="gallery.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+        <link rel="stylesheet" href="../plugins/html5up-parallelism/assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../plugins/html5up-parallelism/assets/css/noscript.css" /></noscript>
     </head>
 
-    <body>
+    <body class="is-preload">
         <nav class="navbar navbar-fixed-top navbar-inverse" style="margin:0px;">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -45,46 +46,9 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- The gallery overlay -->
-            <div id="myNav" style="display: none; width: 100%;" class="overlay">
-                <p><a href="#" class="closebtn">&times;</a></p>
-                <div class="overlay-content">
-                    <div class="fotorama"
-                        data-click="true"
-                        data-swipe="false"
-                        data-width="100%"
-                        data-height="97%"
-                        data-minwidth="400"
-                        data-minheight="300"
-                        data-transition="slide"
-                        data-arrows="true"
-                        data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down": true}'
-                        data-fit="cover"
-                        data-clicktransition="crossfade"
-                        data-keyboard="true"
-                        data-nav="thumbs"
-                        data-hash="true"
-                        data-loop="true"
-                        data-startindex="0"
-                        data-auto="false">
-
-                        <img src="../Posters/Aqua Soccer.jpg" data-caption="">
-                        <img src="../Posters/capture the flag.jpg" data-caption="">
-                        <img src="../Posters/chem charades.jpg" data-caption="">
-                        <img src="../Posters/Lensart FINAL.JPG" data-caption="">
-                        <img src="../Posters/Tech Exhibition.jpg" data-caption="">
-                        <img src="../Posters/Robowars.jpg" data-caption="">
-                        <img src="../Posters/rocket propulsion.jpg" data-caption="">
-                        <img src="../Posters/parliamentary debatenew.jpg" data-caption="">
-                        <img src="../Posters/chem-e-switch.jpg" data-caption="">
-                        <img src="../Posters/sparkfun.jpg" data-caption="">
-                    </div>
-                </div>
-            </div>
         </nav>
 
-        <div class="wrapper">
+        <div class="wrapper" id="wrapper">
             <header class="section">
                 <p id="heading"> Celesta </p>
                 <p id="subheading">Photo Gallery</p>
@@ -92,88 +56,6 @@
             </header>
 
             <div class="container">
-                <div class="row section">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="0">
-                                <img class="img-responsive" src="../Posters/Aqua Soccer.jpg" alt="">
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="1">
-                                <img class="img-responsive" src="../Posters/capture the flag.jpg" alt="">
-                                </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="2">
-                                <img class="img-responsive" src="../Posters/chem charades.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="3">
-                                <img class="img-responsive" src="../Posters/Lensart FINAL.JPG" alt="">
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect bigimg" id="4">
-                                <img class="img-responsive" src="../Posters/Tech Exhibition.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect bigimg" id="5">
-                                <img class="img-responsive" src="../Posters/Robowars.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="6">
-                                <img class="img-responsive" src="../Posters/rocket propulsion.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="7">
-                                <img class="img-responsive" src="../Posters/parliamentary debatenew.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="8">
-                                <img class="img-responsive" src="../Posters/chem-e-switch.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <a href="javascript:void(0)">
-                            <div class="hovereffect" id="9">
-                                <img class="img-responsive" src="../Posters/sparkfun.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <br>
 
                 <!-- Slider div -->
                 <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -185,6 +67,49 @@
                     }
                 ?>
                 </div>
+                
+                <!-- Parrallelism section -->
+                <section>
+                    <div class="items">
+                        <?php
+                            $dirname = "gallery_pics/1";
+                            $images = glob($dirname."*_min.JPG");
+                            foreach($images as $image) {
+                                echo '<article class="item thumb span-1">'
+                                    echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
+                                        echo '<img src="'.$image.'">';
+                                    echo '</a>';
+                                echo '</article>';
+                            }
+                        ?>
+                    </div>
+                    <div class="item">
+                        <?php
+                            $dirname = "gallery_pics/2";
+                            $images = glob($dirname."*_thumb.JPG");
+                            foreach($images as $image) {
+                                echo '<article class="item thumb span-1">'
+                                    echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
+                                        echo '<img src="'.$image.'">';
+                                    echo '</a>';
+                                echo '</article>';
+                            }
+                        ?>
+                    </div>
+                    <div class="item">
+                        <?php
+                            $dirname = "gallery_pics/3";
+                            $images = glob($dirname."*_thumb.JPG");
+                            foreach($images as $image) {
+                                echo '<article class="item thumb span-1">'
+                                    echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
+                                        echo '<img src="'.$image.'">';
+                                    echo '</a>';
+                                echo '</article>';
+                            }
+                        ?>
+                    </div>
+                </section>
             </div>
         </div>
         <br>
@@ -192,6 +117,15 @@
                     
         <!-- Header background gradient -->
         <script type="text/javascript" src="changingGradient.js"></script>
+
+        <!-- Parrallelism Scripts -->
+        <script src="../plugins/html5up-parallelism/assets/js/jquery.min.js"></script>
+        <script src="../plugins/html5up-parallelism/assets/js/jquery.poptrox.min.js"></script>
+        <script src="../plugins/html5up-parallelism/assets/js/browser.min.js"></script>
+        <script src="../plugins/html5up-parallelism/assets/js/breakpoints.min.js"></script>
+        <script src="../plugins/html5up-parallelism/assets/js/util.js"></script>
+        <script src="../plugins/html5up-parallelism/assets/js/main.js"></script>
+
         <!-- <?php include '../reg.php'; ?> -->
     </body>
 </html>
