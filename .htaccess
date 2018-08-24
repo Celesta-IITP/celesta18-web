@@ -1,1 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 ErrorDocument 404 /404.html
