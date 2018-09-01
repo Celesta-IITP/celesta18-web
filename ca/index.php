@@ -279,7 +279,7 @@
 						<tr>
 							<th>#</th>
 							<th>Name</th>
-							<th>ID</th>
+							<th>Celesta ID</th>
 							<th>Points</th>
 						</tr>
 					</thead>
@@ -302,7 +302,7 @@
 					else{
 						$index = 1;
 						while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-						echo "<tr><td>".$index."</td><td>".$row['name']."</td><td>".$row['ID']."</td><td>".$row['Score']."</td></tr>";
+						echo "<tr><td>".$index."</td><td>".$row['name']."</td><td>CLST".$row['ID']."</td><td>".$row['Score']."</td></tr>";
 							$index++;
 						}
 					}
