@@ -78,7 +78,7 @@ if(isset($_GET['act'])){
       if (validate( id,pass)) {
         $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/login/",
             {
-                username: id,
+                emailid: id,
                 password: pass
             },
             function(data, status){
