@@ -78,7 +78,7 @@ if(isset($_GET['act'])){
       var id = $("#email").val().trim();
       var pass = $("#pass").val().trim();
       if (validate( id,pass)) {
-        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/switchtoCA/",
+        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/switchtoCA",
             {
                 username: id,
                 password: pass
