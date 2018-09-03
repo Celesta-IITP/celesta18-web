@@ -75,7 +75,7 @@
                             $dirname = "gallery_pics/1";
                             $images = glob($dirname."*_min.JPG");
                             foreach($images as $image) {
-                                echo '<article class="item thumb span-1">'
+                                echo '<article class="item thumb span-1">';
                                     echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
                                         echo '<img src="'.$image.'">';
                                     echo '</a>';
@@ -88,7 +88,7 @@
                             $dirname = "gallery_pics/2";
                             $images = glob($dirname."*_thumb.JPG");
                             foreach($images as $image) {
-                                echo '<article class="item thumb span-1">'
+                                echo '<article class="item thumb span-1">';
                                     echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
                                         echo '<img src="'.$image.'">';
                                     echo '</a>';
@@ -101,7 +101,7 @@
                             $dirname = "gallery_pics/3";
                             $images = glob($dirname."*_thumb.JPG");
                             foreach($images as $image) {
-                                echo '<article class="item thumb span-1">'
+                                echo '<article class="item thumb span-1">';
                                     echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
                                         echo '<img src="'.$image.'">';
                                     echo '</a>';
