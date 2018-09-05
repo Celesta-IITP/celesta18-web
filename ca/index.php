@@ -5,7 +5,7 @@
    License URL: http://creativecommons.org/licenses/by/3.0/
    -->
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
 	<title>Campus Ambassador</title>
@@ -37,11 +37,76 @@
 	<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="shortcut icon" href="images/logo_bbb.svg">
+	<script type="text/javascript">
+
+			var TxtRotate = function(el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = '';
+			this.tick();
+			this.isDeleting = false;
+			};
+
+			TxtRotate.prototype.tick = function() {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+
+			this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+			var that = this;
+			var delta = 300 - Math.random() * 100;
+
+			if (this.isDeleting) { delta /= 2; }
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(function() {
+				that.tick();
+			}, delta);
+			};
+
+			window.onload = function() {
+			var elements = document.getElementsByClassName('txt-rotate');
+			for (var i=0; i<elements.length; i++) {
+				var toRotate = elements[i].getAttribute('data-rotate');
+				var period = elements[i].getAttribute('data-period');
+				if (toRotate) {
+				new TxtRotate(elements[i], JSON.parse(toRotate), period);
+				}
+			}
+			// INJECT CSS
+			var css = document.createElement("style");
+			css.type = "text/css";
+			css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+			document.body.appendChild(css);
+			};
+
+	</script>
+	
+
+  
+<link rel="stylesheet" href="css/style2.css">
+		
 </head>
 
 <body>
-
 	<!-- banner -->
 	<header>
 		<section class="main_section_agile">
@@ -49,34 +114,44 @@
 				<div class="header-bar">
 					<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-						<a class="navbar-brand" href="index.html">
-							<img src="../images/logo_bbb.svg" alt="">
-						</a>
+						
 						<!-- <div class="container-fluid navbar-container">
 							<img class="navbar-brand" src="../images/logo_bbb.svg" alt="logo" id="logo">
 						</div> -->
-						<div class="navbar-header" >
-							<h1><span id="ca-header">Campus Ambassador</span></h1>
+						<div>
+							
+							<!-- <h1><span id="ca-header">CAMPUS AMBASSADOR</span></h1> -->
+
+							<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+							<h1><span id="ca-header">CA&nbsp;<span
+								class="txt-rotate"
+								data-period="1000"
+								data-rotate='[ "CELESTA", "REMASTERED"]'></span>
+							</span></h1>
 						</div>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="attr-nav">
-						</div>
+						
 						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
-							<ul class="navbar-nav" style="margin-right: 5px; margin-left: 5px;">
+							<ul class="navbar-nav">
 								<li class="nav-item">
 									<a href="register.html" class="nav-link">Register</a>
 								</li>
 							</ul>
-							<ul class="navbar-nav" style="margin-left: 5px; margin-right: 5px;">
+							<ul class="navbar-nav">
 								<li class="nav-item">
 									<a href="judging.html" class="nav-link">Judging Criteria</a>
 								</li>
 							</ul>
-							<ul class="navbar-nav" style="margin-left: 5px; margin-right: 5px;">
+							<ul class="navbar-nav">
 								<li class="nav-item">
 									<a href="#bottom" class="nav-link">Contact Us</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a href="../index.php" class="nav-link">Celesta Home</a>
 								</li>
 							</ul>
 						</div>
@@ -90,23 +165,47 @@
 	</header>
 	<section class="banner_top">
 		<div class="slider">
+		
 			<div class="wrapper">
-
-				<!-- Slideshow 3 -->
-				<ul class="rslides" id="slider">
-					<li>
-						<div class="agile_banner_text_info">
-							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+			
+				<div>
+					<!-- Slideshow 3 -->
+					<ul class="rslides" id="slider">
+						<li>
+						<svg class="intro" viewbox="0 0 200 86">
+						<text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text1)">CELESTA</text>
+						<text text-anchor="start" x="10" y="50" class="text text-stroke" clip-path="url(#text2)">CAMPUS</text>
+						<text text-anchor="start" x="10" y="70" class="text text-stroke" clip-path="url(#text3)">AMBASSADOR.</text>
+						<text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text1)">CELESTA</text>
+						<text text-anchor="start" x="10" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text2)">CAMPUS</text>
+						<text text-anchor="start" x="10" y="70" class="text text-stroke text-stroke-2" clip-path="url(#text3)">AMBASSADOR.</text>
+						<defs>
+							<clipPath id="text1">
+							<text text-anchor="start" x="10" y="30" class="text">CELESTA</text>
+							</clipPath>
+							<clipPath id="text2">
+							<text text-anchor="start" x="10" y="50" class="text">CAMPUS</text>
+							</clipPath>
+							<clipPath id="text3">
+							<text text-anchor="start" x="10" y="70" class="text">AMBASSADOR.</text>
+							</clipPath>
+						</defs>
+						</svg>
+						<div>
+						
 						</div>
-					</li>
-				</ul>
-				<!-- Slideshow 3 Pager -->
-				<!-- <ul id="slider3-pager">
-					<li>
-						<a href="#"><img src="images/bg_img.jpg" data-selector="img" id="backimg" alt=""></a>
-					</li>
+						<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+							<script  src="js/index.js"></script>
+						</li>
+					</ul>
+					<!-- Slideshow 3 Pager -->
+					<!-- <ul id="slider3-pager">
+						<li>
+							<a href="#"><img src="images/bg_img.jpg" data-selector="img" id="backimg" alt=""></a>
+						</li>
 
-				</ul> -->
+					</ul> -->
+				</div>
 			</div>
 		</div>
 	</section>
@@ -185,7 +284,8 @@
 					<p>Celesta is the annual techno-management festival of IIT Patna. The promulgation of the fest is assigned to the campus ambassadors. They serve as a liaison between their college and our campus i.e, as a nodal point for any kind of communication or promotion. This is a deeply rewarding opportunity both on a personal level and also in terms of career prospects as, being a campus ambassador helps in pesonality development besides, enhancing your managerial skills.</p>
 				</div>
 			</div>
-			<div class="bord"><h3 class="w3l_header">What You Get</h3></div>
+			<div class="bord"></div><br>
+			<h3 class="w3l_header">What You Get</h3><br>
 			<div class="row about-info-grids">
 				<div class="col-md-4 about-info about-info1">
 					<i class="fas fa-university"></i>
@@ -194,22 +294,22 @@
 					<p>Official certificate from Celesta, IIT Patna.</p>
 				</div>
 				<div class="col-md-4 about-info about-info2">
-					<i class="fas fa-folder"></i>
-					<h4>Goodies</h4>
-					<div class="h4-underline"></div>
-					<p>Chance to win Celesta T-shirt, goodies and perks.</p>
-				</div>
-				<div class="col-md-4 about-info about-info3">
 					<i class="fas fa-graduation-cap"></i>
 					<h4>Workshops</h4>
 					<div class="h4-underline"></div>
 					<p>Free passes to renowned technical workshops.</p>
 				</div>
+				<div class="col-md-4 about-info about-info3">
+					<i class="fas fa-folder"></i>
+					<h4>Goodies</h4>
+					<div class="h4-underline"></div>
+					<p>Chance to win Celesta T-shirt, goodies and perks.</p>
+				</div>
 			</div>
 		</div>
 	</section>
 	<div class="container">
-			<div class="wthree_head_section">
+			<div class="wthree_head_section highlighter">
 				<h3 class="w3l_header">Your Work</h3>
 				<p>Represent CELESTA in your college and encourage people to be a part of this Techno-Management fest.</p>
 			</div>
@@ -291,7 +391,7 @@
 						$unfilteredString = htmlentities($unfilteredString, ENT_QUOTES, 'UTF-8');
 						// return $unfilteredString;
 					}
-					$sql = "SELECT name,CA.regID AS ID,(SELECT count(*) FROM users P2 WHERE P2.caID = CA.regID AND P2.isCA=0)*20 + (SELECT COALESCE(SUM(score),0) AS score FROM cascore P3 WHERE P3.pID = CA.regID) + 20 AS Score FROM users CA WHERE CA.isCA<>0 AND CA.name NOT LIKE 'test%' ORDER BY Score DESC,name LIMIT 15";
+					$sql = "SELECT name,CA.regID AS ID,(SELECT count(*) FROM users P2 WHERE P2.caID = CA.regID AND P2.isCA=0)*20 + (SELECT COALESCE(SUM(score),0) AS score FROM cascore P3 WHERE P3.pID = CA.regID) + 20 AS Score FROM users CA WHERE CA.isCA<>0 AND CA.name NOT LIKE 'test%' AND CA.confID IS NOT NULL ORDER BY Score DESC,name LIMIT 15";
 					if($link =mysqli_connect($servername, $username, $password, $dbname)){
 						$result = mysqli_query($link,$sql);
 					if(!$result || mysqli_num_rows($result)<1){
@@ -316,6 +416,7 @@
 			</div>
 		</div>
 	</section>
+				</div>
 	<!-- //features -->
 
 	<!-- Footer -->
@@ -324,19 +425,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 w3ls_footer_grid_left">
-						<h5 class="sub-head">Address</h5>
-						<p>	Indian Institute of Technology Patna, Bihta
+						<h5 class="sub-head">Reach to us at</h5>
+						<p class="coloring-text-gray">	Indian Institute of Technology Patna, Bihta
 							<span>Patna-801106 (Bihar)</span>
 						</p>
 					</div>
 					<div class="col-sm-4 w3ls_footer_grid_left">
-						<h5 class="sub-head">Contact Us</h5>
+						<h5 class="sub-head">Ring us at</h5>
 						<p>
-							<span>9955532583</span>
+							<span class="coloring-text-gray">+91 9955532583</span>
 						</p>
 					</div>
 					<div class="col-sm-4 w3ls_footer_grid_left">
-						<h5 class="sub-head">Mail Us</h5>
+						<h5 class="sub-head">Write to us at</h5>
 						<p>
 							<a href="mailto:mpr@celesta.org.in">mpr@celesta.org.in</a>
 						</p>

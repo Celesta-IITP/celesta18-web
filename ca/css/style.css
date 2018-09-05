@@ -5,6 +5,8 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 html, body {
     padding: 0;
     margin: 0;
@@ -35,8 +37,10 @@ section {
 }
 
 #ca-header {
-    font-family: 'Nova Flat';
-    font-size: 4vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.6em;
+    color: #aaa;
+    padding-left: 1em;
 }
 
 #reg-tn {
@@ -324,16 +328,17 @@ nav.navbar.navbar-toggleable-md.navbar-light {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #D4E872;
+    color: black;
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
     color: #0bffea;
 }
 
-.navbar {
+.navbar{
     padding: 2px;
-    background: rgba(0, 0, 0, .5);
+    background: #222;
+    color: #aaa;
 }
 
 /*-- //nav --*/
@@ -500,7 +505,7 @@ a.rslides_nav.rslides1_nav.next {
 }
 
 ul#slider li:nth-child(1) {
-    background: url('../images/bg_img.jpg') no-repeat 0px 0px;
+    background: url('../images/bg_img\ \(copy\).jpg') no-repeat 0px 0px;
     max-width: 100%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -660,6 +665,15 @@ ul#slider li:nth-child(1) {
     font-size: 3em;
     color: #2c363e;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    margin-top:0.4em;
+}
+.coloring-text-gray{
+    color: rgb(153, 153, 153) !important;
+
+}
+
+#margin-top-extra{
+    margin-top: 0.5em;
 }
 
 .wthree_head_section p {
@@ -687,7 +701,11 @@ ul#slider li:nth-child(1) {
     width: 75%;
     margin: 3em auto;
 }
-
+.highlighter{
+    background-color: #f5cc96;
+    padding:1em;
+    border-radius: 5px;
+}
 .about-info.about-info2 {
     border-left: 1px solid #e8e8e8;
     border-right: 1px solid #e8e8e8;
@@ -888,9 +906,10 @@ h3.subheading-w3-agile {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 3px;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     text-transform: capitalize;
     line-height: 45px;
+    margin-top:1em;
 }
 
 .w3layouts_newsletter_right input[type="email"], .w3layouts_newsletter_right input[type="text"] {
@@ -1064,6 +1083,11 @@ h6.footer-logo a:hover, h6.footer-logo a:focus {
 .copyright-wthree {
     background: #191919;
     padding: 1.5em 0;
+    width: 100%;
+}
+
+footer{
+    width:100%;
 }
 
 .copyright-wthree p {
@@ -1940,6 +1964,9 @@ h2.typoh2 {
     .grid_3.grid_4.w3layouts {
         margin-top: 25px;
     }
+    #ca-header{
+        font-size: 0.5em;
+    }
 }
 
 @media (max-width: 320px) {
@@ -2118,40 +2145,47 @@ h2.typoh2 {
 
 @media(max-width:991px) {
     div#navbarSupportedContent {
-        position: absolute;
-        width: 97%;
+        position:absolute;
+        width: 100%;
         left: 0px;
-        top: 49px;
+        top: 52px;
         z-index: 999;
         background: #000000;
+        opacity:0.8;
     }
     ul.navbar-nav {
         width: 100%;
         left: 0px;
         text-align: center;
-        padding: 1em 0em;
+        padding: 1.4em 0em;
     }
+    ul.navbar-nav:hover{
+        background: white; 
+        color:black; 
+    }
+    
     li.nav-item {
         margin: 10px 0px;
     }
     .navbar-light .navbar-toggler {
-        border-color: #0bffea;
-        background: #0bffea;
+        background: #f4d03e;
         padding: 2px 6px;
-        margin-top: 5px;
+        margin-top: 2px;
         outline: none;
-        margin-right: 0px;
+        margin-right: 1rem;
         z-index: 9999;
         cursor: pointer;
-        border-radius: 0px;
+        border-radius: 2px;
         transition: 0.5s all;
         -webkit-transition: 0.5s all;
         -moz-transition: 0.5s all;
         -o-transition: 0.5s all;
         -ms-transition: 0.5s all;
+        margin-bottom:2px;
+        
     }
     .navbar-light .navbar-toggler:hover {
-        background: #0bffea;
+        background: #f4d03e;
     }
     .dropdown-menu.show {
         text-align: center;
@@ -2568,6 +2602,7 @@ h2.typoh2 {
         width: 295px;
         height: 320px;
     }
+    
 }
 
 @media(max-width:320px) {
@@ -2578,9 +2613,7 @@ h2.typoh2 {
         font-size: 30px;
         letter-spacing: 0;
     }
-    .navbar-toggler-right {
-        right: 0rem !important;
-    }
+    
     .header-bar {
         padding: 0.5em 0em;
     }
@@ -2769,3 +2802,21 @@ h2.typoh2 {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+.color-overwrite{
+    color:white;
+}
+
+ul.navbar-nav:hover{
+    background: white; 
+    color:black; 
+}
+ul{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+ul:hover{  
+    color: black; 
+}
+
+
