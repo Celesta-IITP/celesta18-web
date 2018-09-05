@@ -329,7 +329,7 @@ $("#submit").click(function(e) {
 
                 if(data["status"]=="200"){         
                   $('.login').fadeOut();
-                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent.</center>');
+                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent. If the mail does not appear in your inbox, please check your spam folder.</center>');
                   $("#greet").delay(500).fadeIn();
                 }else{
                   console.log("err");
