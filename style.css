@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Source+Code+Pro');
+
 body {
-  -webkit-perspective: 800px;
-          perspective: 800px;
-  height: 100vh;
   margin: 0;
-  overflow: hidden;
   font-family: 'Gudea', sans-serif;
+
   
 }
 body ::-webkit-input-placeholder {
@@ -92,7 +92,7 @@ body .login {
   left: 0;
   right: 0;
   margin: auto;
-  border: dashed;
+  border: double;
   border-color: #727272;
   border-width: 5px;
   top: 0;
@@ -139,8 +139,10 @@ body .login_fields input[type='password'] {
 }
 body .login_fields input[type='text'], body .login_fields input[type='password'] , body .login_fields input[type='number'] {
   color: #afb1be;
+  color: #DC6180 !important;
   width: 290px;
-  margin-top: -2px;
+  margin-top:0.2em;
+  margin-bottom: 0.2em;
   background: #32364a url("images/input.jpg") repeat center fixed;
   left: 0;
   padding: 10px 65px;
@@ -149,7 +151,7 @@ body .login_fields input[type='text'], body .login_fields input[type='password']
   border-right: none;
   border-left: none;
   outline: none;
-  font-family: 'Gudea', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   box-shadow: none;
 }
 
@@ -196,7 +198,8 @@ body .login_fields__submit input {
   border: 2px solid #DC6180;
   color: #DC6180;
   text-transform: uppercase;
-  font-size: 11px;
+  margin:5px auto;
+  font-size: 12px;
   -webkit-transition-property: background,color;
   transition-property: background,color;
   -webkit-transition-duration: .2s;
@@ -210,6 +213,7 @@ body .login_fields__submit input:hover {
   color: white;
   background: #DC6180;
   cursor: pointer;
+  border-color:white;
   -webkit-transition-property: background,color;
   transition-property: background,color;
   -webkit-transition-duration: .2s;

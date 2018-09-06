@@ -15,7 +15,7 @@ if(isset($_GET['act'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Celesta2k18 Login</title>
+  <title>Log in | Celesta</title>
   <style>
       a:visited
       {
@@ -26,8 +26,8 @@ if(isset($_GET['act'])){
     }
     body{
       color:#FFFFFF;
-      background: #000000 url("images/bg_login.png") no-repeat center fixed;
-      background-size: 100% auto;
+      background: #000000 url("images/login_background_2.jpg") no-repeat center fixed;
+      
     }
     
  
@@ -126,14 +126,14 @@ if(isset($_GET['act'])){
 </script>
 </head>
 <body>
-<div class="cross" style="z-index: 50; position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
-<a class="cross_me" href="index.php" >
-<i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
+<div class="cross" style="z-index: 50; position: absolute;top: 10px; right:0px;;margin-right: 10px;text-decoration: none;" >
+  <a class="cross_me" href="index.php" >
+    <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
 <div class='login'>
   <div style="text-align: center;" class='login_title'>
-    <span><h2 style="margin-bottom: -1px;">Welcome!!</h2>Login to Celesta2k18</span>
+    <span style = "font-family: 'Dancing Script', cursive;"><h2 style="margin-top: -20px;margin-bottom: 20px;font-size:2em;">Welcome</h2>Log in to Celesta</span>
   </div>
   <br>
   <div class='login_fields'>
@@ -142,15 +142,15 @@ if(isset($_GET['act'])){
       <!-- <div class='icon'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
       </div>Email
-       --><input style="margin-top: 2px;" autocomplete="off" placeholder='ID: CLST1234' id="email" type='text'>
+       --><input style="margin-top: 2px;" autocomplete="off" placeholder='CLST1234' id="email" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
       </input>
     </div>
     <div class='login_fields__password'>
-      <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Password:</span>
-      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='Password' type='password'>
+      <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;;">Password:</span>
+      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='password' type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
@@ -159,12 +159,12 @@ if(isset($_GET['act'])){
       <div id="errorBanner" style="color: #FF0000">
     
   </div>
-      <input id="submit" type='submit' value='Log In'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
+      <input id="submit" type='submit' value='log in'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class='forgot'>
-          <a href='reset.php' style="font-size: 1.4em; color: white;">Forgot Password?</a>
+          <a href='reset.php' style="font-size: 1.4em; color: gray;">Forgot Password?</a>
       </div>
-      <div class="create_accnt" style="padding-top: 10px; color: pink;">
-          Dont have an account? <a style="color: white;" href="register.php">Create Account</a>
+      <div class="create_accnt" style="padding-top: 12px; color: white;"><br>
+          Don't have an account? <a style="color: #DC6180;" href="register.php">Create Account</a>
       </div>
     </div>
   </div>
@@ -189,7 +189,7 @@ if(isset($_GET['act'])){
     });      
     $("#email").focusout(function(){
         $("#email").css("color","#a9a9a9");
-        $("#email").css("background","#32364a url('input.jpg') no-repeat center fixed");
+        $("#email").css("background","#32364a url('images/input.jpg') no-repeat center fixed");
     });      
     
     $("#pass").focus(function(){
@@ -200,7 +200,7 @@ if(isset($_GET['act'])){
     });      
     $("#pass").focusout(function(){
         $("#pass").css("color","#a9a9a9");
-        $("#pass").css("background","#32364a url('input.jpg') no-repeat center fixed");
+        $("#pass").css("background","#32364a url('images/input.jpg') no-repeat center fixed");
     });      
   
 </script>
