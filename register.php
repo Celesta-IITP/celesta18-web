@@ -31,9 +31,7 @@ if(isset($_GET['act'])){
       background-size: 100% auto;
     }
 
-    // ------------------ Media Queries ---------------------------------
-
-    // ------------------------------------------------------------------    
+  
   </style>
   
   <link rel='stylesheet prefetch' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
@@ -49,7 +47,7 @@ if(isset($_GET['act'])){
 <body>
 
 <div class="cross" style="position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
-<a class="cross_me" href="//celesta.org.in" >
+<a class="cross_me" href="index.php" >
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
@@ -62,7 +60,7 @@ if(isset($_GET['act'])){
   <div class='login_fields'>
     <div class='login_fields__user name'>
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Full Name:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder="Full Name" id="name" name="fname" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder="Full Name" id="name" name="fname" type="text">
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>

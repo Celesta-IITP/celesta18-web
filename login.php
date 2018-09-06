@@ -30,8 +30,7 @@ if(isset($_GET['act'])){
       background-size: 100% auto;
     }
     
-    // ------------------ Media Queries ---------------------------------
-    // ------------------------------------------------------------------    
+ 
   </style>
   
   <link rel='stylesheet prefetch' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
@@ -128,7 +127,7 @@ if(isset($_GET['act'])){
 </head>
 <body>
 <div class="cross" style="z-index: 50; position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
-<a class="cross_me" href="//celesta.org.in" >
+<a class="cross_me" href="index.php" >
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
