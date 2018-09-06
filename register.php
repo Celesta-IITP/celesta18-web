@@ -51,7 +51,7 @@ if(isset($_GET['act'])){
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div class="login" style=" padding: 30px 40px 80px 40px; height: 580px; top: 42px;">
+<div class="login" style=" padding: 30px 40px 80px 40px; height: 580px; top: 300px;">
   <div style="text-align: center;" class='login_title'>
     <span style = "font-family: 'Dancing Script', cursive;"><h2 style="margin-top:-15px;margin-bottom: -1px;font-size:2em;">Welcome</h2>Register to Celesta</span><br>
   </div>
