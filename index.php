@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
+		<link rel="shortcut icon" href="./images/CLST_logo.ico">
 		<meta name="google-site-verification" content="qUmyqM9K6PlBm7mKg3Rpk0JniY6W5_stkbtOFozfgAo" />
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     	<title>Celesta</title>

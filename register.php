@@ -15,6 +15,7 @@ if(isset($_GET['act'])){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/CLST_logo.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Register | Celesta</title>
   <style>
@@ -60,7 +61,7 @@ if(isset($_GET['act'])){
   <div class='login_fields'>
     <div class='login_fields__user name'>
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Full Name:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder="full name" id="name" name="fname" type="text">
+      <input style="margin-top: 2px;" autocomplete="off" placeholder="John Doe" id="name" name="fname" type="text">
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -69,7 +70,7 @@ if(isset($_GET['act'])){
     </div>
     <div class="login_fields__user email">
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Institute Name:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder='institute name' id="college" name="college" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder='IIT Patna' id="college" name="college" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -78,7 +79,7 @@ if(isset($_GET['act'])){
     </div>
     <div class="login_fields__user email">
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Email:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder='email' id="email" name="email" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder='abc@xyz.com' id="email" name="email" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -87,7 +88,7 @@ if(isset($_GET['act'])){
     </div>
     <div class="login_fields__user email">
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Phone Number:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder="phone number" id="phone" name="phone" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder="987654XXXX" id="phone" name="phone" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -105,7 +106,7 @@ if(isset($_GET['act'])){
     </div>
     <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Password:</span>
-      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='password' name="password" type='password'>
+      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='******' name="password" type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
@@ -327,7 +328,7 @@ $("#submit").click(function(e) {
 
                 if(data["status"]=="200"){         
                   $('.login').fadeOut();
-                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent.</center>');
+                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent. If the mail does not appear in your inbox, please check your spam folder.</center>');
                   $("#greet").delay(500).fadeIn();
                 }else{
                   console.log("err");

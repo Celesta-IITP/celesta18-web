@@ -14,6 +14,7 @@ if(isset($_GET['act'])){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/CLST_logo.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Log in | Celesta</title>
   <style>
@@ -150,7 +151,7 @@ if(isset($_GET['act'])){
     </div>
     <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;;">Password:</span>
-      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='password' type='password'>
+      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='Password' type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>

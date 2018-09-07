@@ -11,6 +11,7 @@
 	<title>Campus Ambassador | Celesta</title>
 	<!-- Meta Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/CLST_logo.ico">
 	<meta charset="utf-8">
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
@@ -391,7 +392,7 @@
 						$unfilteredString = htmlentities($unfilteredString, ENT_QUOTES, 'UTF-8');
 						// return $unfilteredString;
 					}
-					$sql = "SELECT name,CA.regID AS ID,(SELECT count(*) FROM users P2 WHERE P2.caID = CA.regID AND P2.isCA=0)*20 + (SELECT COALESCE(SUM(score),0) AS score FROM cascore P3 WHERE P3.pID = CA.regID) + 20 AS Score FROM users CA WHERE CA.isCA<>0 AND CA.name NOT LIKE 'test%' ORDER BY Score DESC,name LIMIT 15";
+					$sql = "SELECT name,CA.regID AS ID,(SELECT count(*) FROM users P2 WHERE P2.caID = CA.regID AND P2.isCA=0)*20 + (SELECT COALESCE(SUM(score),0) AS score FROM cascore P3 WHERE P3.pID = CA.regID) + 20 AS Score FROM users CA WHERE CA.isCA<>0 AND CA.name NOT LIKE 'test%' AND CA.confID IS NOT NULL ORDER BY Score DESC,name LIMIT 15";
 					if($link =mysqli_connect($servername, $username, $password, $dbname)){
 						$result = mysqli_query($link,$sql);
 					if(!$result || mysqli_num_rows($result)<1){
