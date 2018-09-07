@@ -15,8 +15,9 @@ if(isset($_GET['act'])){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/CLST_logo.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Celesta2k18 Registration</title>
+  <title>Register | Celesta</title>
   <style>
       a:visited
       {
@@ -27,13 +28,11 @@ if(isset($_GET['act'])){
     }
     body{
       color:#FFFFFF;
-      background: #000000 url("images/bg_login.png") no-repeat center fixed;
-      background-size: 100% auto;
+      background: #000000 url("images/login_background_1.jpg") no-repeat center fixed;
+      
     }
 
-    // ------------------ Media Queries ---------------------------------
-
-    // ------------------------------------------------------------------    
+  
   </style>
   
   <link rel='stylesheet prefetch' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
@@ -49,20 +48,20 @@ if(isset($_GET['act'])){
 <body>
 
 <div class="cross" style="position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
-<a class="cross_me" href="//celesta.org.in" >
+<a class="cross_me" href="index.php" >
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div class='login' style=" padding: 30px 40px 80px 40px; height: 550px; top: 42px;">
+<div class="login" style=" padding: 30px 40px 80px 40px; height: 580px; top: 300px;">
   <div style="text-align: center;" class='login_title'>
-    <span><h2 style="margin-bottom: -1px;">Welcome!!</h2>Register to Celesta2k18</span>
+    <span style = "font-family: 'Dancing Script', cursive;"><h2 style="margin-top:-15px;margin-bottom: -1px;font-size:2em;">Welcome</h2>Register to Celesta</span><br>
   </div>
-  <span style="color:red">Make sure you enter both, your email ID and your phone number correctly as you will need both to confirm your account.</span>
+  
   <br>
   <div class='login_fields'>
     <div class='login_fields__user name'>
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Full Name:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder="Full Name" id="name" name="fname" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder="John Doe" id="name" name="fname" type="text">
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -70,17 +69,17 @@ if(isset($_GET['act'])){
       <span class="error">*Enter Valid Name<br></span>
     </div>
     <div class="login_fields__user email">
-      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">College:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder='College Name' id="college" name="college" type='text'>
+      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Institute Name:</span><br>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder='IIT Patna' id="college" name="college" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
       </input>
-      <span class="error">*Enter Valid College Name<br></span>
+      <span class="error">*Enter Valid Institute Name<br></span>
     </div>
     <div class="login_fields__user email">
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Email:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder='Email-ID' id="email" name="email" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder='abc@xyz.com' id="email" name="email" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -88,8 +87,8 @@ if(isset($_GET['act'])){
       <span class="error">*Enter Valid Email<br></span>
     </div>
     <div class="login_fields__user email">
-      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Mobile:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder="Mobile Number" id="phone" name="phone" type='text'>
+      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Phone Number:</span><br>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder="987654XXXX" id="phone" name="phone" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -97,17 +96,17 @@ if(isset($_GET['act'])){
       <span class="error">*Enter Valid Mobile Number<br></span>
     </div>
     <div class="login_fields__user email">
-      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">CA referral ID (optional):</span><br>
+      <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">CA Referral ID (optional):</span><br>
       <input style="margin-top: 2px;" autocomplete="off" id="refID" placeholder='1234' name="refID" type='number' >
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
       </input>
-      <span class="error">*Enter Valid Ref ID : 4 digits<br></span>
+      <span class="error">*Enter Valid Referral ID : 4 digits<br></span>
     </div>
     <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;">Password:</span>
-      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='Password' name="password" type='password'>
+      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='******' name="password" type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
@@ -117,7 +116,7 @@ if(isset($_GET['act'])){
       <div id="errorBanner" style="color: #FF0000">
     
   </div>
-
+  <span style="color:red">Make sure you enter both, your email and your phone number correctly as you will need both to confirm your account.</span><br><br>
       <input id="submit" type='submit' value='Register'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class="log" style="padding-top: 10px; color: pink;">
           Already have an account? <a style="color: white;" href="login.php">Login</a>
@@ -148,7 +147,7 @@ if(isset($_GET['act'])){
     });      
     $("#name").focusout(function(){
         $("#name").css("color","#a9a9a9");
-        $("#name").css("background","#32364a url('input.jpg') repeat center fixed");
+        $("#name").css("background","#32364a url('images/input.jpg') repeat center fixed");
     });   
 
     $("#college").focus(function(){
@@ -159,7 +158,7 @@ if(isset($_GET['act'])){
     });      
     $("#college").focusout(function(){
         $("#college").css("color","#a9a9a9");
-        $("#college").css("background","#32364a url('input.jpg') repeat center fixed");
+        $("#college").css("background","#32364a url('images/input.jpg') repeat center fixed");
     });    
 
     $("#email").focus(function(){
@@ -170,7 +169,7 @@ if(isset($_GET['act'])){
     });      
     $("#email").focusout(function(){
         $("#email").css("color","#a9a9a9");
-        $("#email").css("background","#32364a url('input.jpg') repeat center fixed");
+        $("#email").css("background","#32364a url('images/input.jpg') repeat center fixed");
     });    
 
     $("#phone").focus(function(){
@@ -181,7 +180,7 @@ if(isset($_GET['act'])){
     });      
     $("#phone").focusout(function(){
         $("#phone").css("color","#a9a9a9");
-        $("#phone").css("background","#32364a url('input.jpg') repeat center fixed");
+        $("#phone").css("background","#32364a url('images/input.jpg') repeat center fixed");
     });    
 
     $("#pass").focus(function(){
@@ -193,7 +192,7 @@ if(isset($_GET['act'])){
 
     $("#pass").focusout(function(){
         $("#pass").css("color","#a9a9a9");
-        $("#pass").css("background","#32364a url('input.jpg') repeat center fixed");
+        $("#pass").css("background","#32364a url('images/input.jpg') repeat center fixed");
     });      
 
     // ----------------------------- Form Validation -------------------------------------------------------

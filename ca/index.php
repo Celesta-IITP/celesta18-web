@@ -8,9 +8,10 @@
 <html lang="en">
 
 <head>
-	<title>Campus Ambassador</title>
+	<title>Campus Ambassador | Celesta</title>
 	<!-- Meta Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/CLST_logo.ico">
 	<meta charset="utf-8">
 	<script type="application/x-javascript">
 		addEventListener("load", function () {

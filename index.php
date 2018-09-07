@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
+		<link rel="shortcut icon" href="./images/CLST_logo.ico">
 		<meta name="google-site-verification" content="qUmyqM9K6PlBm7mKg3Rpk0JniY6W5_stkbtOFozfgAo" />
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     	<title>Celesta</title>
@@ -70,7 +71,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                       echo "Hi ".$name[0]."!<a href=\"login.php?act=logout\" id=\"signup\">Logout</a>";
                     }
                     else {
-                        echo "<a href=\"login.php\" id=\"login\">login</a><a href=\"/register\" id=\"signup\">signup</a>";
+                        echo "<a href=\"login.php\" id=\"login\">login</a><a href=\"register.php\" id=\"signup\">signup</a>";
                     }
                 ?>  
             	</span></a></span>
