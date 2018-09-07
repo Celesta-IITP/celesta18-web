@@ -70,7 +70,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                       echo "Hi ".$name[0]."!<a href=\"login.php?act=logout\" id=\"signup\">Logout</a>";
                     }
                     else {
-                        echo "<a href=\"login.php\" id=\"login\">login</a><a href=\"/register\" id=\"signup\">signup</a>";
+                        echo "<a href=\"login.php\" id=\"login\">login</a><a href=\"register.php\" id=\"signup\">signup</a>";
                     }
                 ?>  
             	</span></a></span>
