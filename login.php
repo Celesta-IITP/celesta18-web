@@ -125,10 +125,16 @@ if(isset($_GET['act'])){
 });
    
 </script>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </head>
 <body>
 <div class="cross" style="z-index: 50; position: absolute;top: 10px; right:0px;;margin-right: 10px;text-decoration: none;" >
-  <a class="cross_me" href="index.php" >
+  <a class="cross_me" onclick = "goBack()" >
     <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
