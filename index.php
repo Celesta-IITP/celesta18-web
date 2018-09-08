@@ -8,8 +8,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Celesta2k18</title>
+	<title>Celesta 2k18</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -114,7 +115,7 @@
 			<div class="navbar-header">
 				<!-- Logo -->
 				<div class="navbar-brand">
-					<a class="logo" href="index.html">
+					<a class="logo" href="#">
 						<img class="logo-img" src="./img/logo.png" alt="logo">
 						<img class="logo-alt-img" src="./img/logo-alt.png" alt="logo">
 					</a>
@@ -271,7 +272,7 @@
           <div class="col-md-6 mb-3 element-animate">
             <h2><a href="#">CELESTA 2K18 COMING IN</a></h2>
             <div class="events-meta">
-              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Friday 04/10/2018 09:00 AM</span>
+              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Friday 27/10/2018 10:00 AM</span>
               <br>
               <span class="mr-2"><span class="fa fa-map-marker mr-2" style="margin-right: 4px;"></span>IIT Patna, Bihta</span>
             </div>
@@ -576,13 +577,9 @@
 	$(document).ready(function(){
 
 		$('#home .section-bg #particles').particleground({
-
               dotColor: 'rgba(255,255,0,0.42)',
-
               lineColor: 'rgba(255,0,0,0.37)',
-
               density: 10000
-
               });
 
 	});
