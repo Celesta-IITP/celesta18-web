@@ -271,7 +271,7 @@
           <div class="col-md-6 mb-3 element-animate">
             <h2><a href="#">CELESTA 2K18 COMING IN</a></h2>
             <div class="events-meta">
-              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Friday 04/10/2018 09:00 AM</span>
+              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Saturday 27/10/2018 10:00 AM</span>
               <br>
               <span class="mr-2"><span class="fa fa-map-marker mr-2" style="margin-right: 4px;"></span>IIT Patna, Bihta</span>
             </div>
@@ -298,16 +298,6 @@
 
 				<!-- galery owl -->
 				<div id="galery-owl" class="owl-carousel owl-theme">
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
-					</div>
-					<!-- /galery item -->
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
-					</div>
-					<!-- /galery item -->
 					<!-- galery item -->
 					<div class="galery-item">
 						<img src="./img/galery01.jpg" alt="">
