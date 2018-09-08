@@ -505,7 +505,7 @@ a.rslides_nav.rslides1_nav.next {
 }
 
 ul#slider li:nth-child(1) {
-    background: url('../images/bg_img\ \(copy\).jpg') no-repeat 0px 0px;
+    background: url('../images/background01.jpg') no-repeat 0px 0px;
     max-width: 100%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -1993,9 +1993,7 @@ h2.typoh2 {
     .nav>li>a {
         font-size: 14px;
     }
-    table.table.table-striped, .table-bordered, .bs-docs-example {
-        display: none;
-    }
+    
 }
 
 /*-- //typography --*/

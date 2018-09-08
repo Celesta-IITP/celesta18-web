@@ -494,9 +494,10 @@
 			<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Address</h3>
+						<h3>Reach To Us At</h3>
 						<p>
-						Indian Institute of Technology Patna, Bihta
+						Indian Institute of Technology Patna
+						<p>Bihta</p>
 						<span>Patna-801106 (Bihar)</span>
 						</p>
 					</div>
@@ -506,8 +507,8 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Phone</h3>
-						<p>9955532583</p>
+						<h3>Ring Us At</h3>
+						<p>+91 9955532583</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -515,11 +516,12 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Email</h3>
+						<h3>Mail Us At</h3>
 						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
 				<!-- /contact -->
+				
 			<div class="row">
 				<!-- footer logo -->
 				<!-- <div class="col-md-4 col-md-push-4">
@@ -533,6 +535,7 @@
 
 				<!-- contact social -->
 				<div class="col-md-3 col-md-push-0">
+					<br><br>
 					<div class="contact-social">
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-twitter"></i></a>

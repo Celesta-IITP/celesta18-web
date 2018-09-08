@@ -215,12 +215,20 @@
 	<section class="w3-services">
 		<div class="container">
 			<div class="wthree_head_section">
-				<h2 class="w3l_header">About Us</h2>
-				<p>Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.</p>
+				<h2 class="w3l_header">What is Celesta?</h2>
+				<p>Celesta is the annual Techno-Management Fest of IIT Patna. It's objective is to promote technical and managerial enthusiasm amongst the young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.</p>
 			</div>
 			<div class="row w3-services-grids">
 				<div class="col-lg-12 w3-services-right-grid">
 					<div class="row w3-icon-grid-gap1">
+					<div class="col-md-6 w3-icon-grid1">
+							<i class="fas fa-book"></i>
+							<div class="Supp">
+								<h3>Two whole days of FUN</h3>
+								<!-- TODO Add text -->
+								<!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit..</p> -->
+							</div>
+						</div>
 						<div class="col-md-6 w3-icon-grid1">
 							<i class="fas fa-paint-brush"></i>
 							<div class="Supp">
@@ -229,20 +237,13 @@
 								<!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit..</p> -->
 							</div>
 						</div>
-						<div class="col-md-6 w3-icon-grid1">
-							<i class="fas fa-book"></i>
-							<div class="Supp">
-								<h3>Two whole days of FUN</h3>
-								<!-- TODO Add text -->
-								<!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit..</p> -->
-							</div>
-						</div>
+						
 					</div>
 					<div class="row w3-icon-grid-gap1">
 						<div class="col-md-6 w3-icon-grid1">
 							<i class="fas fa-graduation-cap"></i>
 							<div class="Supp">
-								<h3>Workshops</h3>
+								<h3>Informational Workshops</h3>
 								<!-- TODO Add text -->
 								<!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit..</p> -->
 							</div>
@@ -251,7 +252,7 @@
 							<i class="fas fa-calendar"></i>
 							<div class="Supp">
 								<!-- TODO Add text -->
-								<h3>Events</h3>
+								<h3>Interesting Events</h3>
 								<!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit..</p> -->
 							</div>
 
@@ -266,7 +267,7 @@
 	<section class="what_you">
 		<div class="container">
 			<div class="wthree_head_section">
-				<h3 class="w3l_header">What we do</h3>
+				<h4 class="w3l_header">About Campus Ambassador Program</h3>
 				<!-- TODO Add text -->
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p> -->
 			</div>
@@ -282,7 +283,7 @@
 					<!-- <i class="fas fa-book"></i>
 					<h4>Certified Tutors</h4> -->
 					<div class="h4-underline"></div>
-					<p>Celesta is the annual techno-management festival of IIT Patna. The promulgation of the fest is assigned to the campus ambassadors. They serve as a liaison between their college and our campus i.e, as a nodal point for any kind of communication or promotion. This is a deeply rewarding opportunity both on a personal level and also in terms of career prospects as, being a campus ambassador helps in pesonality development besides, enhancing your managerial skills.</p>
+					<p>The promulgation of the fest is assigned to the campus ambassadors. They serve as a liaison between their college and our campus i.e, as a nodal point for any kind of communication or promotion. This is a deeply rewarding opportunity both on a personal level and also in terms of career prospects as, being a campus ambassador helps in pesonality development besides, enhancing your managerial skills.</p>
 				</div>
 			</div>
 			<div class="bord"></div><br>
@@ -304,7 +305,7 @@
 					<i class="fas fa-folder"></i>
 					<h4>Goodies</h4>
 					<div class="h4-underline"></div>
-					<p>Chance to win Celesta T-shirt, goodies and perks.</p>
+					<p>Chance to win Celesta T-shirt, goodies and other perks.</p>
 				</div>
 			</div>
 		</div>
@@ -368,7 +369,7 @@
 		<div class="container justify-content-center">
 			<div class="bs-docs-example">
 				<h1 class="w3l_header">
-					Leaderboard
+					CA Leaderboard
 				</h1>
 				<table class="table table-striped col-md-8">
 					<colgroup>
@@ -426,7 +427,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 w3ls_footer_grid_left">
-						<h5 class="sub-head">Reach to us at</h5>
+						<h5 class="sub-head"><a name = "bottom">Reach to us at</a></h5>
 						<p class="coloring-text-gray">	Indian Institute of Technology Patna, Bihta
 							<span>Patna-801106 (Bihar)</span>
 						</p>
