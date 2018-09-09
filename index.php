@@ -172,7 +172,7 @@
 	<!-- /Header -->
 
 	<!-- event modal -->
-	<<?php if($set==1){ ?>
+	<?php if($set==1){ ?>
 	<div id="speaker-modal-1" class="speaker-modal modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -336,7 +336,7 @@
 				<!-- cta content -->
 				<div class="col-md-8 col-md-offset-2">
 					<div class="cta-content text-center">
-						<a class="video-play" href="#">
+						<a class="video-play" href="Gallery/index.php">
 							<i class="fa fa-play"></i>
 						</a>
 						<h2>Check out the complete gallery of Celesta</h2>
