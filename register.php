@@ -94,7 +94,7 @@ function goBack() {
     </div>
     <div class="login_fields__user email">
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Phone Number:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder="987654XXXX" id="phone" name="phone" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder="1234567890" id="phone" name="phone" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
