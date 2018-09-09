@@ -173,7 +173,7 @@
 	<!-- /Header -->
 
 	<!-- event modal -->
-	<<?php if($set==1){ ?>
+	<?php if($set==1){ ?>
 	<div id="speaker-modal-1" class="speaker-modal modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -272,7 +272,11 @@
           <div class="col-md-6 mb-3 element-animate">
             <h2><a href="#">CELESTA 2K18 COMING IN</a></h2>
             <div class="events-meta">
+<<<<<<< HEAD
+              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Saturday 27/10/2018 10:00 AM</span>
+=======
               <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Friday 27/10/2018 10:00 AM</span>
+>>>>>>> adb073395dc3720391e11116c977e50e96a7b9ef
               <br>
               <span class="mr-2"><span class="fa fa-map-marker mr-2" style="margin-right: 4px;"></span>IIT Patna, Bihta</span>
             </div>
@@ -299,16 +303,6 @@
 
 				<!-- galery owl -->
 				<div id="galery-owl" class="owl-carousel owl-theme">
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
-					</div>
-					<!-- /galery item -->
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
-					</div>
-					<!-- /galery item -->
 					<!-- galery item -->
 					<div class="galery-item">
 						<img src="./img/galery01.jpg" alt="">
@@ -347,7 +341,7 @@
 				<!-- cta content -->
 				<div class="col-md-8 col-md-offset-2">
 					<div class="cta-content text-center">
-						<a class="video-play" href="#">
+						<a class="video-play" href="Gallery/index.php">
 							<i class="fa fa-play"></i>
 						</a>
 						<h2>Check out the complete gallery of Celesta</h2>
