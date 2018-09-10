@@ -116,6 +116,7 @@
 				<!-- Logo -->
 				<div class="navbar-brand">
 					<a class="logo" href="#">
+						<img src="./images/logo_50*50.png" alt="logo" id="logo">
 						<img class="logo-img" src="./img/logo.png" alt="logo">
 						<img class="logo-alt-img" src="./img/logo-alt.png" alt="logo">
 					</a>
