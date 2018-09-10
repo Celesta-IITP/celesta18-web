@@ -574,7 +574,7 @@
               lineColor: 'rgba(255,0,0,0.37)',
               density: 10000
               });
-
+		$(".home-wrapper").css("top","27%");
 	});
 	</script>
 	<!-- /Particle.js -->
