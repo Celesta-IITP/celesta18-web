@@ -1857,6 +1857,7 @@ section#tables p {
 }
 
 .alert {
+    z-index: 30000;
     font-size: 0.85em;
 }
 
