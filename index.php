@@ -68,6 +68,7 @@
 		$score = 0;
 		$set = 0;
 		$isca = 0;
+		$error = "";
 		// If the user is logged in -----------------------------------------------------------------
 		if(isset($_SESSION['uid'])){
             $name = explode(" ",$_SESSION['name']);
@@ -106,7 +107,7 @@
        	// /The user is logged in -------------------------------
 
     ?>  
-
+    <script type="text/javascript"> console.log("<?php echo $error; ?>")</script>
 	<!-- Header -->
 	<header id="header" class="transparent-navbar">
 		<!-- container -->
@@ -528,10 +529,10 @@
 				<div class="col-md-3 col-md-push-0">
 					<br><br>
 					<div class="contact-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/celesta_iitp"><i class="fa fa-twitter"></i></a>
 						<!-- <a href="#"><i class="fa fa-google-plus"></i></a>
-						 --><a href="#"><i class="fa fa-instagram"></i></a>
+						 --><a href="https://www.instagram.com/celestaiitp_official/"><i class="fa fa-instagram"></i></a>
 						<!-- <a href="#"><i class="fa fa-pinterest"></i></a>
 						 --><!-- <a href="#"><i class="fa fa fa-linkedin"></i></a> -->
 					</div>
