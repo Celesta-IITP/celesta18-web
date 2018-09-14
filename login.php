@@ -170,7 +170,8 @@ function goBack() {
       <div class='forgot'>
           <a href='reset.php' style="font-size: 1.4em; color: gray;">Forgot Password?</a>
       </div>
-      <div class="create_accnt" style="padding-top: 12px; color: white;"><br>
+      <div class="create_accnt" style="padding-top: 8px; color: white;"><br>
+          <span style="color:red">You can still login even if your account hasn't yet been confirmed.</span><br>
           Don't have an account? <a style="color: #DC6180;" href="register.php">Create Account</a>
       </div>
     </div>

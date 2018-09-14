@@ -107,7 +107,7 @@
        	// /The user is logged in -------------------------------
 
     ?>  
-    <script type="text/javascript"> console.log("<?php echo $error; ?>")</script>
+    <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
 	<header id="header" class="transparent-navbar">
 		<!-- container -->
@@ -157,6 +157,7 @@
 						<div class="user_nav_desk">
 							<h3><?php echo " Hi ". $name[0] ."!"; ?></h3>
 							<?php if($isca==1){ ?>
+							<a href="">Your CA referal ID is <?php echo $id; ?></a>	
 							<a href="ca/index.php#leaderboard"><?php echo " Your CA score is ". $score ."."; ?></a>
 							<?php } ?>
 							<a href="#" data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
@@ -232,7 +233,7 @@
 							<?php if($set==0){ ?>
 							<a href="register.php" class="main-btn">Register Now</a> 
 							<?php }else{ ?>
-							<a href="#" class="main-btn" data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
+							<a id="resend" class="main-btn">Resend Verification</a>
 							<?php } ?>
 						</div>
 					</div>
@@ -578,6 +579,34 @@
               });
 		$(".home-wrapper").css("top","27%");
 	});
+
+	$("#resend").on('click', function(){
+		<?php
+			if($set==1){
+		?>
+			$.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/resend",
+            {
+              id: <?php echo $id; ?>
+            },
+            function(data, status){
+              console.log("Response");
+              console.log("Data: " + data + "\nStatus: " + status);
+              if(status=='success'){
+                console.log(data);
+                if(data["status"]=="200"){         
+                	alert("Verification mail sent successfully!");  
+                }else{
+                  console.log("err");
+                  alert("Verification mail failed!");  
+              	} 
+              }else{//$("#myloader").fadeOut();
+                  alert("Verification mail failed!");
+                  console.log("Failed "+data);
+
+                }
+            },"json");
+		<?php }	?>
+	})
 	</script>
 	<!-- /Particle.js -->
 	<script src="assets/js/polyfills.js"></script>

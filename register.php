@@ -50,12 +50,12 @@ function goBack() {
 
 <body>
 
-<div class="cross" style="position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
+<div class="cross" style="position: absolute; z-index: 20; top: 10px; right: 0; margin-right: 10px; text-decoration: none;" >
 <a class="cross_me" onclick = "goBack()" >
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div class="login" style=" padding: 30px 40px 80px 40px; height: 580px; top: 300px;">
+<div class="login" style=" padding: 30px 40px 80px 40px; height: 650px; top: 150px;">
   <div style="text-align: center;" class='login_title'>
     <span style = "font-family: 'Dancing Script', cursive;"><h2 style="margin-top:-15px;margin-bottom: -1px;font-size:2em;">Welcome</h2>Register to Celesta</span><br>
   </div>
@@ -332,7 +332,7 @@ $("#submit").click(function(e) {
 
                 if(data["status"]=="200"){         
                   $('.login').fadeOut();
-                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent. If the mail does not appear in your inbox, please check your spam folder.</center>');
+                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>Your celesta ID is CLST'+data['id']+'. A confirmation email has been sent. If the mail does not appear in your inbox, please check your spam folder. If email is not recieved, login to your account and click the \'Resend Verification\' link.</center>');
                   $("#greet").delay(500).fadeIn();
                 }else{
                   console.log("err");
