@@ -120,7 +120,7 @@ function goBack() {
     
   </div>
       <span style="color:red">Make sure you enter both, your email and your phone number correctly as you will need both to confirm your account.</span><br><br>
-      <span style="color:white">For any problems during registration send a screenshot of the error to Piyush(9673582517)</span>
+      <span style="color:white">For any problems during registration send a screenshot of the error to 7044170063/9673582517</span>
       <input id="submit" type='submit' value='Register'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class="log" style="padding-top: 10px; color: pink;">
           Already have an account? <a style="color: white;" href="login.php">Login</a>
