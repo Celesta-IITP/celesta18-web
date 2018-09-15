@@ -141,8 +141,8 @@
 							<?php if($isca==1){ ?>
 							<a href="ca/index.php#leaderboard"><?php echo " Your CA score is ". $score ."."; ?></a>
 							<?php } ?>
-							<a href="#" data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
-							<a href="#">Logout</a>
+							<a data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
+							<a href="login.php?act=logout">Logout</a>
 						</ul>
 					<?php } ?>
 					<li><a href="#home">Home</a></li>
