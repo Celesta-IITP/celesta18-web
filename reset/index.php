@@ -28,7 +28,7 @@ if(isset($_GET['act'])){
     }
     body{
       color:#FFFFFF;
-      background: #000000 url("../images/login_background_1.jpg") no-repeat center fixed;
+      background: #000000 url("../images/login_background_2.jpg") no-repeat center fixed;
     }
   </style>
   
