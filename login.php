@@ -168,7 +168,7 @@ function goBack() {
   </div>
       <input id="submit" type='submit' value='log in'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class='forgot'>
-          <a href='reset.php' style="font-size: 1.4em; color: gray;">Forgot Password?</a>
+          <a href='reset/' style="font-size: 1.4em; color: gray;">Forgot Password?</a>
       </div>
       <div class="create_accnt" style="padding-top: 8px; color: white;"><br>
           <span style="color:red">You can still login even if your account hasn't yet been confirmed.</span><br>

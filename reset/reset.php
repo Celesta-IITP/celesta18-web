@@ -29,7 +29,7 @@ if(isset($_GET['act'])){
     body{
       display: none;
       color:#FFFFFF;
-      background: #000000 url("images/login_background_2.jpg") no-repeat center fixed; 
+      background: #000000 url("../images/login_background_2.jpg") no-repeat center fixed; 
     }
 
     .ok{

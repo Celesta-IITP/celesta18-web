@@ -28,7 +28,7 @@ if(isset($_GET['act'])){
     }
     body{
       color:#FFFFFF;
-      background: #000000 url("images/login_background_1.jpg") no-repeat center fixed;
+      background: #000000 url("../images/login_background_1.jpg") no-repeat center fixed;
     }
   </style>
   
@@ -55,7 +55,7 @@ function goBack() {
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div class="login" style=" padding: 30px 40px 80px 40px; height: 350px; top: 150px;">
+<div class="login" style=" padding: 30px 40px 80px 40px; height: 300px; top: 150px;">
   <div style="text-align: center;" class='login_title'>
     <span style = "font-family: 'Dancing Script', cursive;"><h2 style="margin-top:-15px;margin-bottom: -1px;font-size:2em;">Reset Password</h2>Reset your Celesta login password</span><br>
   </div>
@@ -76,7 +76,6 @@ function goBack() {
     
   </div>
       <span style="color:red">Make sure you enter the same email id you used while registering.</span><br><br>
-      <span style="color:white">For any problems during registration send a screenshot of the error to 7044170063/9673582517</span><br>
       <input id="submit" type='submit' value='Submit '><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class="log" style="padding-top: 10px; color: pink;">
           Already have an account? <a style="color: white;" href="login.php">Login</a>
