@@ -373,7 +373,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="event.html">Go to Events Page</a>
+								<a href="events.php">Go to Events Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Events</h2>
@@ -388,7 +388,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
-							<img src="./img/speaker02.jpg" alt="">
+							<img src="./img/workshop.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
@@ -407,7 +407,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
-							<img src="./img/speaker03.jpg" alt="">
+							<img src="./img/exhibition.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">

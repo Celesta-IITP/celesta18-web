@@ -175,14 +175,14 @@ function goBack() {
   <div class='login_fields'>
       <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;;">New Password:</span>
-      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='Confirm Password' type='password'>
+      <input style="margin-top: 2px;" autocomplete="off" id="pass" placeholder='New Password' type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
     </div>
       <div class='login_fields__password'>
       <span style="color: #FFFFFF;width:100%;text-align: center;transform: translateX(-50%);left: 10%;position: relative;;">Confirm Password:</span>
-      <input style="margin-top: 2px;" autocomplete="off" id="conf" placeholder='Password' type='password'>
+      <input style="margin-top: 2px;" autocomplete="off" id="conf" placeholder='Confirm Password' type='password'>
       <div class='validation'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
       </div>
