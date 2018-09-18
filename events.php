@@ -498,36 +498,18 @@
 	</div>
 	<!-- //testimonials -->
 
-	<!-- Contact -->
-	<div id="contact" class="section">
+		<!-- Footer -->
+		<footer id="footer" style="background: rgba(255,0,0,0.1);">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title" style="margin-bottom: -60px;">
-					<h3 class="title"><span>Contact</span><span style="color: #dd0a37;">Info</span></h3>
-				</div>
-				<!-- /section title -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Contact -->
-
-	<!-- Footer -->
-	<footer id="footer" style="background: rgba(255,0,0,0.1);">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
 			<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Address</h3>
+						<h3>Reach To Us At</h3>
 						<p>
-						Indian Institute of Technology Patna, Bihta
+						Indian Institute of Technology Patna
+						<p>Bihta</p>
 						<span>Patna-801106 (Bihar)</span>
 						</p>
 					</div>
@@ -537,8 +519,8 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Phone</h3>
-						<p>9955532583</p>
+						<h3>Ring Us At</h3>
+						<p>+91 9955532583</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -546,29 +528,48 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Email</h3>
+						<h3>Mail Us At</h3>
 						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
-			</div>
 				<!-- /contact -->
+				
 			<div class="row">
+				<!-- footer logo -->
+				<!-- <div class="col-md-4 col-md-push-4">
+					<div class="footer-brand">
+						<a class="logo" href="index.html">
+							<img class="logo-img" src="./imges/logo.png" alt="logo">
+						</a>
+					</div>
+				</div> -->
+				<!-- /footer logo -->
+
 				<!-- contact social -->
-				<div class="col-sm-5"></div>
-				<div class="col-sm-2">
+				<div class="col-md-3 col-md-push-0">
+					<br><br>
 					<div class="contact-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/celesta_iitp"><i class="fa fa-twitter"></i></a>
 						<!-- <a href="#"><i class="fa fa-google-plus"></i></a>
-						 --><a href="#"><i class="fa fa-instagram"></i></a>
+						 --><a href="https://www.instagram.com/celestaiitp_official/"><i class="fa fa-instagram"></i></a>
 						<!-- <a href="#"><i class="fa fa-pinterest"></i></a>
 						 --><!-- <a href="#"><i class="fa fa fa-linkedin"></i></a> -->
 					</div>
 				</div>
-				<div class="col-sm-5"></div>
 				<!-- /contact social -->
+
+				<!-- copyright -->
+				<!-- <div class="col-md-4 col-md-pull-8">
+					<span class="copyright"> --><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><!-- </span>
+				</div> -->
+				<!-- /copyright -->
+
 			</div>
 			<!-- /row -->
+		</div>
 		<!-- /container -->
 	</footer>
 	<!-- /Footer -->
