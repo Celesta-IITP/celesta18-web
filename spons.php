@@ -107,7 +107,7 @@
     ?>  
     <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
-	<header id="header" class="transparent-navbar">
+	<header id="header" class="transparent-navbar spons_nav">
 		<!-- container -->
 		<div class="container">
 			<!-- navbar header -->
@@ -146,7 +146,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
 					<li><a href="index.php#gallery">Gallery</a></li>
-					<li><a href="index.php#schedule">Schedule</a></li>
+					<li><a href="index.php#events">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<?php if($set==1){ ?>
@@ -210,22 +210,15 @@
 
 	<!-- /Common template for all pages -->
 
-	<div id="home">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background01.jpg);" data-stellar-background-ratio="0.5">
-			<!-- <div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 3;"></div>
-			 --><div class="cn-overlay"></div>	
-		</div>
-		<!-- /background image -->
-
-		<!-- home wrapper -->
-	 	<div class="home-wrapper">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="home-content">
-							<div class="section-title">
-					<h3 class="title"><span style="color: white;" >Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
+	<!-- Sponsors -->
+	<div id="sponsors" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row sponser_head">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
 				</div>
 				<!-- /section title -->
 
@@ -292,14 +285,21 @@
 					</a>
 				</div>
 				<!-- /sponsor -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> 
-		<!-- /home wrapper -->
 
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
 	</div>
+	<!-- /Sponsors -->
+
+	<section class="upcoming-events-highlight " style="background-image:url(./img/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+    </section>
+	
 	
 	<!-- Contact -->
 	<div id="contact" class="section">
@@ -312,9 +312,6 @@
 					<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Info</span></h3>
 				</div>
 				<!-- /section title -->
-
-				
-
 			</div>
 			<!-- /row -->
 		</div>

@@ -230,6 +230,10 @@ textarea.input {
   border-bottom: 1px solid #DADADA30;
 }
 
+#header.spons_nav{
+  background-color: black; 
+}
+
 #header.fixed-navbar {
   position: fixed !important;
   left: 0;
@@ -917,6 +921,10 @@ textarea.input {
 /*=========================================================
 	SPONSORS
 ===========================================================*/
+
+.sponser_head {
+    margin-top: 90px;
+}
 
 .sponsor {
   display: block;
