@@ -221,71 +221,181 @@
 					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
 				</div>
 				<!-- /section title -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./images/codingninjas.png" alt="">
-					</a>
+				<h1>Coding Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Coding Ninjas</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>HackerEarth</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./imges/ruban.png" alt="">
-					</a>
+				<h1>Health Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Ruabn</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./imges/sponsor.png" alt="">
-					</a>
+				<h1>Stationary Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Classmate</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./imges/sponsor.png" alt="">
-					</a>
+				<h1>Electronics Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Zebronics</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./imges/sponsor.png" alt="">
-					</a>
+				<h1>Radio Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Radio Mirchi</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./imges/sponsor.png" alt="">
-					</a>
+				<h1>Food Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Jain Food Stall</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Foodies</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./imges/sponsor.png" alt="">
-					</a>
+				<h1>Implementatin Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Youth India Partner</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Tech Prob Labz</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./imges/sponsor.png" alt="">
-					</a>
+				<h1>Web and SMS Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>ASAP</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
 				</div>
-				<!-- /sponsor -->
 
+				<h1>Workshop Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>What After College</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<!-- <h1>Merchandise Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Coding Ninjas</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>HackerEarth</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
+				</div> -->
+
+				<h1>Blogger OutReach Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>BlogAdda</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<h1>Magazine Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Scientific India Partner</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<h1>Online Media Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>FestPav</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>NTD Fever</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>The College Fever</p>
+						<a href="#" class="sponsor">
+							<img src="./imges/sponsor.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<h1>Printing Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>IMAX Studios</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsor.png" alt="">
+						</a>
+					</div>
+				</div>
 			</div>
 			<!-- /row -->
 		</div>
