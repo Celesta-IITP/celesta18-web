@@ -129,7 +129,7 @@ textarea.input {
 
 .section {
   position: relative;
-  padding: 90px 0px;
+  padding: 90px 20px;
 }
 
 .section-bg {
@@ -940,6 +940,7 @@ textarea.input {
 
 .sponsor>img {
   width: 100%;
+  padding: 0.5em;
 }
 
 /*=========================================================

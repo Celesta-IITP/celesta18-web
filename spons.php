@@ -226,13 +226,13 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Coding Ninjas</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/codingninjas.png" style = "width:300px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>HackerEarth</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/hackerearth_new.png" style = "margin-top:40px;" alt="">
 						</a>
 					</div>
 				</div>
@@ -240,9 +240,9 @@
 				<h1>Health Partner</h1>
 				<div class="row">
 					<div class="col-md-3 col-sm-4 col-xs-6">
-						<p>Ruabn</p>
+						<p>Ruban</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/ruban.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -252,7 +252,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Classmate</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/classmate2.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -262,7 +262,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Zebronics</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/zebronics.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -272,7 +272,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Radio Mirchi</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/radio2.jpg" alt="">
 						</a>
 					</div>
 				</div>
@@ -304,7 +304,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Tech Prob Labz</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/techprolabz.jpeg" alt="">
 						</a>
 					</div>
 				</div>
@@ -314,7 +314,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>ASAP</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/asap.png" style = "height:100px; width:100px" alt="">
 						</a>
 					</div>
 				</div>
@@ -324,7 +324,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>What After College</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/whataftercollege.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -350,7 +350,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>BlogAdda</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/blogadda2.png" style = "height:100px;width : 250px" alt="">
 						</a>
 					</div>
 				</div>
@@ -360,7 +360,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Scientific India Partner</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/scientificindia.png" style = "width:350px" alt="">
 						</a>
 					</div>
 				</div>
@@ -370,19 +370,19 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>FestPav</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/festpav.png" style = "margin-top:80px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>NTD Fever</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;margin-top:30px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>The College Fever</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/thecollegefever.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -392,7 +392,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>IMAX Studios</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
+							<img src="./images/sponsors/imaxstudios.png" alt="">
 						</a>
 					</div>
 				</div>
