@@ -222,8 +222,9 @@
 	 	<div class="home-wrapper">
 			<div class="container">
 				<div class="row">
-				<!-- section title -->
-				<div class="section-title">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="home-content">
+							<div class="section-title">
 					<h3 class="title"><span style="color: white;" >Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
 				</div>
 				<!-- /section title -->
@@ -291,10 +292,13 @@
 					</a>
 				</div>
 				<!-- /sponsor -->
+						</div>
+					</div>
 				</div>
 			</div>
 		</div> 
 		<!-- /home wrapper -->
+
 	</div>
 	
 	<!-- Contact -->
