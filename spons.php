@@ -10,7 +10,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Celesta 2k18</title>
+	<title>Sponsors | Celesta 2k18</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -225,7 +225,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./images/codingninjas.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -233,7 +233,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./imges/ruban.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -241,7 +241,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./imges/sponsor.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -249,7 +249,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./imges/sponsor.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -257,7 +257,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./imges/sponsor.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -265,7 +265,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./imges/sponsor.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -273,7 +273,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./imges/sponsor.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -281,7 +281,7 @@
 				<!-- sponsor -->
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
+						<img src="./imges/sponsor.png" alt="">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -293,7 +293,7 @@
 	</div>
 	<!-- /Sponsors -->
 
-	<section class="upcoming-events-highlight " style="background-image:url(./img/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
+	<section class="upcoming-events-highlight " style="background-image:url(./imges/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
       <div class="container">
         <div class="row">
         </div>
@@ -360,7 +360,7 @@
 				<!-- <div class="col-md-4 col-md-push-4">
 					<div class="footer-brand">
 						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/logo.png" alt="logo">
+							<img class="logo-img" src="./imges/logo.png" alt="logo">
 						</a>
 					</div>
 				</div> -->
