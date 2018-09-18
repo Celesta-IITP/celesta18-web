@@ -68,6 +68,7 @@
 		$score = 0;
 		$set = 0;
 		$isca = 0;
+		$error = "";
 		// If the user is logged in -----------------------------------------------------------------
 		if(isset($_SESSION['uid'])){
             $name = explode(" ",$_SESSION['name']);
@@ -106,7 +107,7 @@
        	// /The user is logged in -------------------------------
 
     ?>  
-
+    <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
 	<header id="header" class="transparent-navbar">
 		<!-- container -->
@@ -116,6 +117,7 @@
 				<!-- Logo -->
 				<div class="navbar-brand">
 					<a class="logo" href="#">
+						<img src="./images/logo_50*50.png" alt="logo" id="logo">
 						<img class="logo-img" src="./img/logo.png" alt="logo">
 						<img class="logo-alt-img" src="./img/logo-alt.png" alt="logo">
 					</a>
@@ -139,22 +141,23 @@
 							<?php if($isca==1){ ?>
 							<a href="ca/index.php#leaderboard"><?php echo " Your CA score is ". $score ."."; ?></a>
 							<?php } ?>
-							<a href="#" data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
-							<a href="#">Logout</a>
+							<a data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
+							<a href="login.php?act=logout">Logout</a>
 						</ul>
 					<?php } ?>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#gallery">Gallery</a></li>
 					<li><a href="#events">Events</a></li>
-					<li><a href="#schedule">Schedule</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
+					<li><a href="spons.php">Sponsers</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>
 						<div class="user_nav_desk">
 							<h3><?php echo " Hi ". $name[0] ."!"; ?></h3>
 							<?php if($isca==1){ ?>
+							<a href="">Your CA referal ID is <?php echo $id; ?></a>	
 							<a href="ca/index.php#leaderboard"><?php echo " Your CA score is ". $score ."."; ?></a>
 							<?php } ?>
 							<a href="#" data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
@@ -173,7 +176,7 @@
 	<!-- /Header -->
 
 	<!-- event modal -->
-	<<?php if($set==1){ ?>
+	<?php if($set==1){ ?>
 	<div id="speaker-modal-1" class="speaker-modal modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -230,7 +233,7 @@
 							<?php if($set==0){ ?>
 							<a href="register.php" class="main-btn">Register Now</a> 
 							<?php }else{ ?>
-							<a href="#" class="main-btn" data-toggle="modal" data-target="#speaker-modal-1">Events you registered</a>
+							<a id="resend" class="main-btn">Resend Verification</a>
 							<?php } ?>
 						</div>
 					</div>
@@ -272,7 +275,7 @@
           <div class="col-md-6 mb-3 element-animate">
             <h2><a href="#">CELESTA 2K18 COMING IN</a></h2>
             <div class="events-meta">
-              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Friday 27/10/2018 10:00 AM</span>
+              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Saturday 27/10/2018 10:00 AM</span>
               <br>
               <span class="mr-2"><span class="fa fa-map-marker mr-2" style="margin-right: 4px;"></span>IIT Patna, Bihta</span>
             </div>
@@ -299,16 +302,6 @@
 
 				<!-- galery owl -->
 				<div id="galery-owl" class="owl-carousel owl-theme">
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
-					</div>
-					<!-- /galery item -->
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
-					</div>
-					<!-- /galery item -->
 					<!-- galery item -->
 					<div class="galery-item">
 						<img src="./img/galery01.jpg" alt="">
@@ -347,7 +340,7 @@
 				<!-- cta content -->
 				<div class="col-md-8 col-md-offset-2">
 					<div class="cta-content text-center">
-						<a class="video-play" href="#">
+						<a class="video-play" href="Gallery/index.php">
 							<i class="fa fa-play"></i>
 						</a>
 						<h2>Check out the complete gallery of Celesta</h2>
@@ -380,7 +373,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="event.html">Go to Events Page</a>
+								<a href="events.php">Go to Events Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Events</h2>
@@ -395,7 +388,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
-							<img src="./img/speaker02.jpg" alt="">
+							<img src="./img/workshop.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
@@ -414,7 +407,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
-							<img src="./img/speaker03.jpg" alt="">
+							<img src="./img/exhibition.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
@@ -494,9 +487,10 @@
 			<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Address</h3>
+						<h3>Reach To Us At</h3>
 						<p>
-						Indian Institute of Technology Patna, Bihta
+						Indian Institute of Technology Patna
+						<p>Bihta</p>
 						<span>Patna-801106 (Bihar)</span>
 						</p>
 					</div>
@@ -506,8 +500,8 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Phone</h3>
-						<p>9955532583</p>
+						<h3>Ring Us At</h3>
+						<p>+91 9955532583</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -515,11 +509,12 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Email</h3>
+						<h3>Mail Us At</h3>
 						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
 				<!-- /contact -->
+				
 			<div class="row">
 				<!-- footer logo -->
 				<!-- <div class="col-md-4 col-md-push-4">
@@ -533,11 +528,12 @@
 
 				<!-- contact social -->
 				<div class="col-md-3 col-md-push-0">
+					<br><br>
 					<div class="contact-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/celesta_iitp"><i class="fa fa-twitter"></i></a>
 						<!-- <a href="#"><i class="fa fa-google-plus"></i></a>
-						 --><a href="#"><i class="fa fa-instagram"></i></a>
+						 --><a href="https://www.instagram.com/celestaiitp_official/"><i class="fa fa-instagram"></i></a>
 						<!-- <a href="#"><i class="fa fa-pinterest"></i></a>
 						 --><!-- <a href="#"><i class="fa fa fa-linkedin"></i></a> -->
 					</div>
@@ -581,8 +577,36 @@
               lineColor: 'rgba(255,0,0,0.37)',
               density: 10000
               });
-
+		$(".home-wrapper").css("top","27%");
 	});
+
+	$("#resend").on('click', function(){
+		<?php
+			if($set==1){
+		?>
+			$.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/resend",
+            {
+              id: <?php echo $id; ?>
+            },
+            function(data, status){
+              console.log("Response");
+              console.log("Data: " + data + "\nStatus: " + status);
+              if(status=='success'){
+                console.log(data);
+                if(data["status"]=="200"){         
+                	alert("Verification mail sent successfully!");  
+                }else{
+                  console.log("err");
+                  alert("Verification mail failed!");  
+              	} 
+              }else{//$("#myloader").fadeOut();
+                  alert("Verification mail failed!");
+                  console.log("Failed "+data);
+
+                }
+            },"json");
+		<?php }	?>
+	})
 	</script>
 	<!-- /Particle.js -->
 	<script src="assets/js/polyfills.js"></script>

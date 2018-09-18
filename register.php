@@ -29,10 +29,7 @@ if(isset($_GET['act'])){
     body{
       color:#FFFFFF;
       background: #000000 url("images/login_background_1.jpg") no-repeat center fixed;
-      
     }
-
-  
   </style>
   
   <link rel='stylesheet prefetch' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
@@ -53,12 +50,12 @@ function goBack() {
 
 <body>
 
-<div class="cross" style="position: absolute;top: 10px; right: 0px;margin-right: 10px;text-decoration: none;" >
+<div class="cross" style="position: absolute; z-index: 20; top: 10px; right: 0; margin-right: 10px; text-decoration: none;" >
 <a class="cross_me" onclick = "goBack()" >
 <i class="fa fa-window-close fa-4x" aria-hidden="false"></i>
 </a>
 </div>
-<div class="login" style=" padding: 30px 40px 80px 40px; height: 580px; top: 300px;">
+<div class="login" style=" padding: 30px 40px 80px 40px; height: 650px; top: 150px;">
   <div style="text-align: center;" class='login_title'>
     <span style = "font-family: 'Dancing Script', cursive;"><h2 style="margin-top:-15px;margin-bottom: -1px;font-size:2em;">Welcome</h2>Register to Celesta</span><br>
   </div>
@@ -94,7 +91,7 @@ function goBack() {
     </div>
     <div class="login_fields__user email">
       <span style="color: #FFFFFF; width:100%; text-align: center; transform: translateX(-50%); left: 10%; position: relative;">Phone Number:</span><br>
-      <input style="margin-top: 2px;" autocomplete="off" placeholder="987654XXXX" id="phone" name="phone" type='text'>
+      <input style="margin-top: 2px;" autocomplete="off" placeholder="1234567890" id="phone" name="phone" type='text'>
         <div class='validation'>
           <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
         </div>
@@ -122,7 +119,8 @@ function goBack() {
       <div id="errorBanner" style="color: #FF0000">
     
   </div>
-  <span style="color:red">Make sure you enter both, your email and your phone number correctly as you will need both to confirm your account.</span><br><br>
+      <span style="color:red">Make sure you enter both, your email and your phone number correctly as you will need both to confirm your account.</span><br><br>
+      <span style="color:white">For any problems during registration send a screenshot of the error to 7044170063/9673582517</span>
       <input id="submit" type='submit' value='Register'><img id="loader_gif" style="display: none;" src="//<?php echo $_SERVER['HTTP_HOST']; ?>/Gallery/loading.gif" alt="" height="60">
       <div class="log" style="padding-top: 10px; color: pink;">
           Already have an account? <a style="color: white;" href="login.php">Login</a>
@@ -334,7 +332,7 @@ $("#submit").click(function(e) {
 
                 if(data["status"]=="200"){         
                   $('.login').fadeOut();
-                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>A confirmation email has been sent. If the mail does not appear in your inbox, please check your spam folder.</center>');
+                  $("#greet").html('<center><h2 style="text-decoration: underlined;">Registration Succesful!</h2><b>Registration Successfully completed</b><br>Your celesta ID is CLST'+data['id']+'. A confirmation email has been sent. If the mail does not appear in your inbox, please check your spam folder. If email is not recieved, login to your account and click the \'Resend Verification\' link.</center>');
                   $("#greet").delay(500).fadeIn();
                 }else{
                   console.log("err");

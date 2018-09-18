@@ -92,7 +92,7 @@ if(isset($_GET['act'])){
                 if(data["status"]=="200"){
                    $('.success').show();            
                    $(".success").fadeIn();
-                   $(".success").html('<h2>Switching Account Successful</h2><p>Welcome back,<b>CA Registration Successfully completed</b><br>Your Campus Ambassador referral ID is "'+data['id']+'". You can ask people to register using this four digit code as the CA referral code when they register for Celesta.<br>Redirecting...</p>')
+                   $(".success").html('<h2>Switching Account Successful</h2><p>Welcome back,<b>CA Registration Successfully completed</b><br>Your Campus Ambassador referral ID is "'+data['ID']+'". You can ask people to register using this four digit code as the CA referral code when they register for Celesta.<br>Redirecting...</p>')
                    setTimeout(function(){goHome();},1000);
                    // $("#greet").css('background','#5FAB22');
                    $(".login_fields").fadeOut();

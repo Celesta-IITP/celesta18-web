@@ -34,59 +34,74 @@
 	<!--//stylesheets-->
 	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
-	<link rel="shortcut icon" href="images/logo_bbb.svg">
-   </head>
-   <body>
+	<style>
+		input{
+			padding:2px;
+			border-radius: 5px;
+		}
+	</style>
+	</head>
+<body>
 
 <!--/banner-->
 <!-- banner -->
 <header>
-<div class="banner1">
-	<div class="header-bar">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-				<div class="hedder-up">
-					<h1>
-						<img src="../images/logo_bbb.svg" alt="">
-						<a class="navbar-brand" href="#">Registration</a>
-					</h1>
+		<section class="main_section_agile">
+				<div class="agileits_w3layouts_banner_nav">
+					<div class="header-bar">
+						<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+							<!-- <div class="navbar-brand clogo">
+								<img src="../images/logo_30*30.png" alt="logo" id="logo">
+							</div>  -->
+							<div>
+								<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+								<h1><span id="ca-header">REGISTER FOR CA&nbsp;<span
+									class="txt-rotate"
+									data-period="1000"
+									data-rotate='[ "CELESTA", "REMASTERED"]'></span>
+								</span></h1>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							
+							<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a href="index.php" class="nav-link">CA Home</a>
+									</li>
+								</ul>
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a href="judging.html" class="nav-link">Judging Criteria</a>
+									</li>
+								</ul>
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a href="#bottom" class="nav-link">Contact Us</a>
+									</li>
+								</ul>
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a href="../index.php" class="nav-link">Celesta Home</a>
+									</li>
+								</ul>
+							</div>
+							
+						</nav>				
+						</div>
+					</div>
+				 <!-- //Navigation -->
 				</div>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                   <ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="index.php">CA Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item active">
-							<a href="register.html" class="nav-link">Register</a>
-						</li>
-						<li class="nav-item">
-							<a href="judging.html" class="nav-link">Judging Criteria</a>
-						</li>
-						<li class="nav-item">
-							<a href="#bottom" class="nav-link">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a href="../index.php" class="nav-link">Celesta Home</a>
-						</li>
-					</ul>
-               </div>
-            </nav>				
-		</div>
-   </div>
-         <!-- //Navigation -->
-</div>
+			</section>
 	</header>
 	<!-- //banner -->
 	<!-- contact -->
 	<section class="contact-agile contact-page">
 		<div class="container">
 			<div class="wthree_head_section">
-				<h2 class="w3l_header">Register</h2><br><div class="alert alert-warning" role="alert">
-				  Already registered from the Celesta home page? Click <a href="../switch.php">here</a> to switch your Regular account to Campus Ambassador one.
-				</div> 
+				<h2 class="w3l_header"><br><br>Register<br></h2><br>
 			</div>
 			<div id="reg-msg">
 				<strong>
@@ -96,21 +111,7 @@
 				</strong>
 			</div>
 			<div class="contact-eql">
-				<!-- <div class="contact-left">
-					<h4>Sign Up with Facebook or Google</h4>
-					
-					
-					<div id="fb-oauth">
-						<button>FB Oauth</button>
-					</div>
-					<br>
-					
-					<div id="g-oauth">
-						<button>Google Oauth</button>
-					</div>
-				</div> -->
 				<div class="contact-middle">
-					<h4>Sign Up here:</h4>
 					<!--<form name="form" method="post">
 					-->	<div class="step1">
 						<div class="form-fields-agileinfo">
@@ -118,16 +119,16 @@
 							<input type="text" name="name" placeholder="John Doe" required="" />
 						</div>
 						<div class="form-fields-agileinfo">
-							<p>Contact Number(preferably whatsapp no.)</p>
+							<p>Contact Number(Preferably Whatsapp one)</p>
 							<input type="text" name="mobile" placeholder="1234567890" required="" />
 						</div>
 						<div class="form-fields-agileinfo">
 							<p>Email</p>
-							<input type="email" name="email" placeholder="someone@somthing.com" required="" />
+							<input type="email" name="email" placeholder="abc@xyz.com" required="" />
 						</div>
 						<div class="form-fields-agileinfo">
 							<p>Password</p>
-							<input type="password" name="password" placeholder="******" required="" />
+							<input type="password" name="password" placeholder="**********" required="" />
 						</div>
 						<div class="form-fields-agileinfo">
 							<p>College Name</p>
@@ -140,58 +141,62 @@
 						<div id="errorBanner" style="color: red;"></div>
 						<img id="loader_gif" style="display: none;" src="../Gallery/loading.gif" alt=""
 						 height="60">
-						</div>
-						
-				</div>	
 				</div>
+						
 			</div>
+			<div class="wthree_head_section">
+				<br><div class="alert alert-warning" role="alert">
+				  Already registered from the Celesta home page? Click <a href="../switch.php">here</a> to switch your Regular account to Campus Ambassador one.
+				</div> 
+			</div>	
 		</div>
 	</section>
 <!-- //contact -->
 
 <!-- Footer -->
 <footer>
-	<section class="copyright-wthree">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 w3ls_footer_grid_left">
-					<h5 class="sub-head">Reach to us at</h5>
-					<p>	Indian Institute of Technology Patna, Bihta
-						<span>Patna-801106 (Bihar)</span>
-					</p>
+	
+		<section class="copyright-wthree">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 w3ls_footer_grid_left">
+						<h5 class="sub-head"><a name = "bottom">Reach to us at</a></h5>
+						<p class="coloring-text-gray">	Indian Institute of Technology Patna, Bihta
+							<span>Patna-801106 (Bihar)</span>
+						</p>
+					</div>
+					<div class="col-sm-4 w3ls_footer_grid_left">
+						<h5 class="sub-head">Ring us at</h5>
+						<p>
+							<span class="coloring-text-gray">+91 9955532583</span>
+						</p>
+					</div>
+					<div class="col-sm-4 w3ls_footer_grid_left">
+						<h5 class="sub-head">Write to us at</h5>
+						<p>
+							<a href="mailto:mpr@celesta.org.in">mpr@celesta.org.in</a>
+						</p>
+					</div>
 				</div>
-				<div class="col-sm-4 w3ls_footer_grid_left">
-					<h5 class="sub-head">Ring us at</h5>
-					<p>
-						<span>9955532583</span>
-					</p>
-				</div>
-				<div class="col-sm-4 w3ls_footer_grid_left">
-					<h5 class="sub-head">Write to us at</h5>
-					<p>
-						<a href="mailto:mpr@celesta.org.in">mpr@celesta.org.in</a>
-					</p>
+				<div class="w3l-social">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/CelestaIITP/" class="fab fa-facebook"></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/celesta_iitp" class="fab fa-twitter"></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/celestaiitp_official/" class="fab fa-instagram"></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/celesta-iit-patna-3722b6166" class="fab fa-linkedin-in"></a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="w3l-social">
-				<ul>
-					<li>
-						<a href="https://www.facebook.com/CelestaIITP/" class="fab fa-facebook"></a>
-					</li>
-					<li>
-						<a href="https://twitter.com/celesta_iitp" class="fab fa-twitter"></a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/celestaiitp_official/" class="fab fa-instagram"></a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/celesta-iit-patna-3722b6166" class="fab fa-linkedin-in"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-</footer>
+		</section>
+	</footer>
 <!-- //Footer -->
 
 
