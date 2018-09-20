@@ -293,12 +293,12 @@
 					</div>
 				</div>
 
-				<h1>Implementatin Partner</h1>
+				<h1>Implementation Partner</h1>
 				<div class="row">
 					<div class="col-md-3 col-sm-4 col-xs-6">
-						<p>Youth India Partner</p>
+						<p>Youth India Foundation</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/youthindiafoundation.png" style="height:100px; width:100px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
@@ -374,7 +374,7 @@
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
-						<p>NTD Fever</p>
+						<p>NTD India</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;margin-top:30px" alt="">
 						</a>
@@ -393,6 +393,16 @@
 						<p>IMAX Studios</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/imaxstudios.png" alt="">
+						</a>
+					</div>
+				</div>
+				
+				<h1>Gifting Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>The Souled Store</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/thesouledstore.png" alt="">
 						</a>
 					</div>
 				</div>
