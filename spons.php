@@ -298,7 +298,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Youth India Foundation</p>
 						<a href="#" class="sponsor">
-							<img src="./images/youthindiafoundation.png" style="height:100px; width:100px" alt="">
+							<img src="./images/sponsors/youthindiafoundation.jpeg" style="height:170px;width:170px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
