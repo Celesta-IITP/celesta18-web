@@ -110,6 +110,7 @@
 	<header id="header" class="transparent-navbar spons_nav">
 		<!-- container -->
 		<div class="container">
+			<center>
 			<!-- navbar header -->
 			<div class="navbar-header">
 				<!-- Logo -->
@@ -215,6 +216,7 @@
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
+		<center>
 			<div class="row sponser_head">
 				<!-- section title -->
 				<div class="section-title">
@@ -434,6 +436,7 @@
 				<!-- /section title -->
 			</div>
 			<!-- /row -->
+			</center>
 		</div>
 		<!-- /container -->
 	</div>
