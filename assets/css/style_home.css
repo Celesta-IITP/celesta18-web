@@ -933,12 +933,6 @@ textarea.input {
   transition: 0.3s opacity;
 }
 
-.row > div {
-  text-align: center;
-  display: block;
-  margin-left:auto;
-}
-
 .sponsor:hover {
   opacity: 0.5;
 }
