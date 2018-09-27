@@ -110,6 +110,7 @@
 	<header id="header" class="transparent-navbar spons_nav">
 		<!-- container -->
 		<div class="container">
+			<center>
 			<!-- navbar header -->
 			<div class="navbar-header">
 				<!-- Logo -->
@@ -215,6 +216,7 @@
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
+		<center>
 			<div class="row sponser_head">
 				<!-- section title -->
 				<div class="section-title">
@@ -293,12 +295,12 @@
 					</div>
 				</div>
 
-				<h1>Implementatin Partner</h1>
+				<h1>Implementation Partner</h1>
 				<div class="row">
 					<div class="col-md-3 col-sm-4 col-xs-6">
-						<p>Youth India Partner</p>
+						<p>Youth India Foundation</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/youthindiafoundation.jpeg" style="height:170px;width:170px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
@@ -374,7 +376,7 @@
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
-						<p>NTD Fever</p>
+						<p>NTD India</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;margin-top:30px" alt="">
 						</a>
@@ -393,6 +395,16 @@
 						<p>IMAX Studios</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/imaxstudios.png" alt="">
+						</a>
+					</div>
+				</div>
+				
+				<h1>Gifting Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>The Souled Store</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/thesouledstore.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -424,6 +436,7 @@
 				<!-- /section title -->
 			</div>
 			<!-- /row -->
+			</center>
 		</div>
 		<!-- /container -->
 	</div>
