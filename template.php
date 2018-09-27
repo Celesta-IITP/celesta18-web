@@ -10,7 +10,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Celesta 2k18</title>
+	<title>Event | Celesta 2k18</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -148,6 +148,7 @@
 					<li><a href="index.php#gallery">Gallery</a></li>
 					<li><a href="index.php#events">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
+					<li><a href="spons.php">Sponsors</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>
@@ -209,84 +210,40 @@
 	<!-- /event modal -->
 
 	<!-- /Common template for all pages -->
+<!-- background image -->
+<div class="section-bg" style="background-image:url(./img/background01.jpg);" data-stellar-background-ratio="0.5">
+			<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 3;"></div>
+			<div class="cn-overlay"></div>	
+		</div>
+		<!-- /background image -->
+	
 
 	<!-- Sponsors -->
 	<div id="sponsors" class="section">
 		<!-- container -->
 		<div class="container">
+		
 			<!-- row -->
-			<div class="row sponser_head">
+			
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
+					<h3 class="title"><span style = "color:white">Event: &nbsp;</span> <span style="color: #dd0a37;">Death Race</span></h3>
 				</div>
 				<!-- /section title -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
+				<div style="background-color:white;padding:1em;border-radius:5px;">
+					<h3>Date: &nbsp;<span style="color: #dd0a37;">October 27, 2018</span></h3>
+					<h3>Time: &nbsp;<span style="color: #dd0a37;">10.30 am</span></h3>
+					<h3>Venue: &nbsp;<span style="color: #dd0a37;">Volleyball court - II</span></h3>
+					<br>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					</p>
+					<br>
+					<h4>Organized by: &nbsp;<span style="color: #dd0a37;">Society of Mechanical Engineers (SCME)</span></h4>
+					<h4>For help: &nbsp;<span style="color: #dd0a37;">Amish Mittal (+91 9821481639)</span></h4>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-			</div>
+			
 			<!-- /row -->
 		</div>
 		<!-- /container -->
@@ -301,23 +258,7 @@
     </section>
 	
 	
-	<!-- Contact -->
-	<div id="contact" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Info</span></h3>
-				</div>
-				<!-- /section title -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Contact -->
+	
 
 	<!-- Footer -->
 	<footer id="footer" style="background: rgba(255,0,0,0.1);">
