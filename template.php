@@ -10,7 +10,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Event | Celesta 2k18</title>
+	<title>Event Name | Celesta 2k18</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -36,6 +36,11 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
+	<style>
+		h4 > span, h3 > span {
+			color: #dd0a37;
+		}
+	</style>
 </head>
 <body>
 	<!-- Common template for all pages -->
@@ -218,37 +223,34 @@
 		<!-- /background image -->
 	
 
-	<!-- Sponsors -->
-	<div id="sponsors" class="section">
+	<!-- Event -->
+	<div id="event" class="section">
 		<!-- container -->
 		<div class="container">
-		
 			<!-- row -->
-			
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span style = "color:white">Event: &nbsp;</span> <span style="color: #dd0a37;">Death Race</span></h3>
+					<h3 class="title"><span style = "color:white">Event: &nbsp;</span><span>Death Race</span></h3>
 				</div>
 				<!-- /section title -->
 				<div style="background-color:white;padding:1em;border-radius:5px;">
-					<h3>Date: &nbsp;<span style="color: #dd0a37;">October 27, 2018</span></h3>
-					<h3>Time: &nbsp;<span style="color: #dd0a37;">10.30 am</span></h3>
-					<h3>Venue: &nbsp;<span style="color: #dd0a37;">Volleyball court - II</span></h3>
+					<!-- <img id="poster" src="" alt="#"> -->
+					<h3 id="date">Date: &nbsp;<span>October 27, 2018</span></h3>
+					<h3 id="time">Time: &nbsp;<span>10.30 am</span></h3>
+					<h3 id="venue">Venue: &nbsp;<span>Volleyball court - II</span></h3>
 					<br>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					<p id="desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 					<br>
-					<h4>Organized by: &nbsp;<span style="color: #dd0a37;">Society of Mechanical Engineers (SCME)</span></h4>
-					<h4>For help: &nbsp;<span style="color: #dd0a37;">Amish Mittal (+91 9821481639)</span></h4>
+					<h4>Organized by: &nbsp;<span id="orgClub">Society of Mechanical Engineers (SCME)</span></h4>
+					<h4>For Queries Contact: &nbsp;<span class="orgContact">Amish Mittal (+91 9821481639)</span></h4>
 				</div>
-
-			
 			<!-- /row -->
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /Sponsors -->
+	<!-- /Event -->
 
 	<section class="upcoming-events-highlight " style="background-image:url(./img/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
       <div class="container">
