@@ -247,7 +247,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Ruban</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/ruban.png" alt="">
+							<img src="./images/sponsors/ruban.png" style = "height:150px;width:auto;" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -400,13 +400,13 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>NTD India</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;margin-top:30px" alt="">
+							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;width:auto;margin-top:30px" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>The College Fever</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/thecollegefever.png" alt="">
+							<img src="./images/sponsors/thecollegefever.png" style = "height:250px;width:auto;" alt="">
 						</a>
 					</div>
 				</div>
