@@ -404,7 +404,17 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>The Souled Store</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/thesouledstore.png" alt="">
+							<img src="./images/sponsors/thesouledstore.png" style="height:200px;width:auto;" alt="">
+						</a>
+					</div>
+				</div>
+
+				<h1>Online Learning Partner</h1>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>LearnCodeOnline</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/learncodeonline.png" style="height:150px;width:auto;" alt="">
 						</a>
 					</div>
 				</div>
@@ -412,6 +422,7 @@
 			<!-- /row -->
 		</div>
 		<!-- /container -->
+	</center>
 	</div>
 	<!-- /Sponsors -->
 
@@ -436,7 +447,6 @@
 				<!-- /section title -->
 			</div>
 			<!-- /row -->
-			</center>
 		</div>
 		<!-- /container -->
 	</div>
