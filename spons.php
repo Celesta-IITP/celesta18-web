@@ -116,9 +116,9 @@
 				<!-- Logo -->
 				<div class="navbar-brand">
 					<a class="logo" href="index.php">
-						<img src="./images/logo_50*50.png" alt="logo" id="logo">
-						<img class="logo-img" src="./img/logo.png" alt="logo">
-						<img class="logo-alt-img" src="./img/logo-alt.png" alt="logo">
+						<img src="./images/logo_50*50.png" alt="logo" id="logo" class ="center">
+						<img class="logo-img center" src="./img/logo.png" alt="logo">
+						<img class="logo-alt-img center" src="./img/logo-alt.png" alt="logo">
 					</a>
 				</div>
 				<!-- /Logo -->
@@ -244,7 +244,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Ruban</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/ruban.png" alt="">
+							<img src="./images/sponsors/ruban.png" alt="" class="center">
 						</a>
 					</div>
 				</div>
@@ -254,7 +254,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Classmate</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/classmate2.png" alt="">
+							<img src="./images/sponsors/classmate2.png" alt="" class="center">
 						</a>
 					</div>
 				</div>
@@ -264,7 +264,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Zebronics</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/zebronics.png" alt="">
+							<img src="./images/sponsors/zebronics.png" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -274,7 +274,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Radio Mirchi</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/radio2.jpg" alt="">
+							<img src="./images/sponsors/radio2.jpg" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -284,13 +284,13 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Jain Food Stall</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./imges/sponsor.png" alt="" class = "center">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Foodies</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./imges/sponsor.png" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -300,13 +300,13 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Youth India Foundation</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/youthindiafoundation.jpeg" style="height:170px;width:170px" alt="">
+							<img class = "center" src="./images/sponsors/youthindiafoundation.jpeg" style="height:170px;width:170px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Tech Prob Labz</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/techprolabz.jpeg" alt="">
+							<img src="./images/sponsors/techprolabz.jpeg" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -316,7 +316,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>ASAP</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/asap.png" style = "height:100px; width:100px" alt="">
+							<img src="./images/sponsors/asap.png" style = "height:100px; width:100px" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -326,7 +326,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>What After College</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/whataftercollege.png" alt="">
+							<img src="./images/sponsors/whataftercollege.png" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -352,7 +352,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>BlogAdda</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/blogadda2.png" style = "height:100px;width : 250px" alt="">
+							<img src="./images/sponsors/blogadda2.png" style = "height:100px;width : 250px" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -362,7 +362,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Scientific India Partner</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/scientificindia.png" style = "width:350px" alt="">
+							<img src="./images/sponsors/scientificindia.png" style = "width:350px" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -372,19 +372,19 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>FestPav</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/festpav.png" style = "margin-top:80px" alt="">
+							<img src="./images/sponsors/festpav.png" style = "margin-top:80px" alt="" class = "center">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>NTD India</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;margin-top:30px" alt="">
+							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;margin-top:30px" alt="" class = "center">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>The College Fever</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/thecollegefever.png" alt="">
+							<img src="./images/sponsors/thecollegefever.png" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -394,7 +394,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>IMAX Studios</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/imaxstudios.png" alt="">
+							<img src="./images/sponsors/imaxstudios.png" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -404,7 +404,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>The Souled Store</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/thesouledstore.png" style="height:200px;width:auto;" alt="">
+							<img src="./images/sponsors/thesouledstore.png" style="height:200px;width:auto;" alt="" class = "center">
 						</a>
 					</div>
 				</div>
@@ -414,7 +414,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>LearnCodeOnline</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/learncodeonline.png" style="height:150px;width:auto;" alt="">
+							<img src="./images/sponsors/learncodeonline.png" style="height:150px;width:auto;" alt="" class = "center">
 						</a>
 					</div>
 				</div>
