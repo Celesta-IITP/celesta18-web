@@ -112,7 +112,7 @@
     ?>  
     <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
-	<header id="header" class="transparent-navbar spons_nav">
+	<header id="header" class="transparent-navbar">
 		<!-- container -->
 		<div class="container">
 			<!-- navbar header -->
