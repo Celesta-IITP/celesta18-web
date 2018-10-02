@@ -306,8 +306,22 @@
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6"></div>
 				</div>
-
+				<h1>Training Partner</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>CertStore</p>
+						<br>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/certstore.png" alt="">
+						</a>
+						<br>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+				<br>
 				<h1>Implementation Partner</h1>
+				<br>
 				<div class="row">
 				<div class="col-md-3 col-sm-4 col-xs-6"></div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
@@ -322,13 +336,14 @@
 							<img src="./images/sponsors/techprolabz.jpeg" alt="">
 						</a>
 					</div>
+					<br>
 					<div class="col-md-3 col-sm-4 col-xs-6"></div>
 				</div>
-
+				<br>
 				<h1>Web and SMS Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
-					<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="col-md-4 col-sm-4 col-xs-6"><br>
 						<p>ASAP</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/asap.png" style = "height:100px; width:100px" alt="">
@@ -336,7 +351,7 @@
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-
+				<br>
 				<h1>Workshop Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -364,38 +379,41 @@
 						</a>
 					</div>
 				</div> -->
-
+				<br>
 				<h1>Blogger OutReach Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
+					<br>
 						<p>BlogAdda</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/blogadda2.png" style = "height:100px;width : 250px" alt="">
 						</a>
 					</div>
+					<br>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-
+<br>
 				<h1>Magazine Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
-					<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="col-md-4 col-sm-4 col-xs-6"><br>
 						<p>Scientific India Partner</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/scientificindia.png" style = "width:350px" alt="">
 						</a>
-					</div>
+					</div><br>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-
+<br>
 				<h1>Online Media Partner</h1>
-				<div class="row">
+				<div class="row"><br>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>FestPav</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/festpav.png" style = "margin-top:80px" alt="">
 						</a>
+						<br>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>NTD India</p>
