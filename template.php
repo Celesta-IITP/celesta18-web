@@ -199,7 +199,7 @@
 							<h4>Not registered in any.</h4>
 						</div>
 						<div class="col-sm-4">
-							<h3>Worshop</h3>
+							<h3>Workshop</h3>
 							<h4>Not registered in any.</h4>
 						</div>
 						<div class="col-sm-4">
