@@ -918,6 +918,12 @@ textarea.input {
   text-align: center;
 }
 
+.regbtn{
+  padding: 3px 15px 3px 15px;
+  margin: 5px 5px 15px 5px;
+  border-radius: 5px;
+}
+
 /*=========================================================
 	SPONSORS
 ===========================================================*/

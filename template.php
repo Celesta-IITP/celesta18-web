@@ -242,6 +242,8 @@
 					<p id="desc">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
+
+					<button class="btn-danger regbtn">REGISTER</button>
 					<br>
 					<h4>Organized by: &nbsp;<span id="orgClub">Society of Mechanical Engineers (SCME)</span></h4>
 					<h4>For Queries Contact: &nbsp;<span class="orgContact">Amish Mittal (+91 9821481639)</span></h4>
