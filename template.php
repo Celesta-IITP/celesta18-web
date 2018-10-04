@@ -40,6 +40,30 @@
 		h4 > span, h3 > span {
 			color: #dd0a37;
 		}
+		.button1{
+   display:inline-block;
+   padding:0.35em 1.2em;
+   border:0.1em solid black;
+   margin:0 0.3em 0.3em 0;
+   border-radius:0.12em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-family:'Roboto',sans-serif;
+   font-weight:300;
+   color:#FFFFFF;
+   text-align:center;
+   transition: all 0.2s;
+  }
+  .button1:hover{
+   color:#000000;
+   background-color:#f4d03e;
+  }
+  @media all and (max-width:30em){
+   .button1{
+    display:block;
+    margin:0.4em auto;
+   }
+}
 	</style>
 </head>
 <body>
@@ -245,10 +269,19 @@
 					<br>
 					<h4>Organized by: &nbsp;<span id="orgClub">Society of Mechanical Engineers (SCME)</span></h4>
 					<h4>For Queries Contact: &nbsp;<span class="orgContact">Amish Mittal (+91 9821481639)</span></h4>
+					<br><h4>
+					<a href="something" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+
+					<a href="something" class="button1" style = "margin-left : 2em;border:3px solid black; padding:0.4em;">Register</a>
+					</h4>
+					<br>
 				</div>
 			<!-- /row -->
+		
+		
 		</div>
 		<!-- /container -->
+		
 	</div>
 	<!-- /Event -->
 
