@@ -468,7 +468,7 @@
   function clicked(act){
 
   	<?php if($set==1){ ?>
-        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/celesta18/apiLe/?event_reg",
+        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/event_reg",
             {
                 id : "<?php echo $id; ?>",
                 event_id: event_id,
