@@ -1,4 +1,3 @@
-
 <?php 
 	session_start();
 ?>
@@ -11,7 +10,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Event | Celesta 2k18</title>
+	<title>Event Name | Celesta 2k18</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -37,8 +36,49 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
+	<style>
+		h4 > span, h3 > span {
+			color: #dd0a37;
+		}
+		.button1{
+   			display:inline-block;
+   			padding:0.35em 1.2em;
+   			border:0.1em solid black;
+   			margin:0 0.3em 0.3em 0;
+   			border-radius:0.12em;
+   			box-sizing: border-box;
+   			text-decoration:none;
+   			font-family:'Roboto',sans-serif;
+   			font-weight:300;
+   			color:#FFFFFF;
+   			text-align:center;
+   			transition: all 0.2s;
+  		}
+  		.button1:hover{
+  		 	color:#000000;
+   			background-color:#f4d03e;
+  		}
+  		@media all and (max-width:30em){
+  	  		.button1{
+    			display:block;
+    			margin:0.4em auto;
+   			}
+		}
+	</style>
+  <?php
+  	  $url = $_SERVER['REQUEST_URI'];
+      $param = explode("?",$url);
+      $event_id = $param[1];
+      $event_data = array();
+      $ok = 0;
+		if($str = file_get_contents("eventdata/". $event_id . ".json")){
+			$event_data = json_decode($str, true);
+			$ok = 1;
+		}
+  ?>
 </head>
 <body>
+
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 		<!-- <div class="loading-page">
@@ -68,6 +108,8 @@
 		$set = 0;
 		$isca = 0;
 		$error = "";
+		$unsub = 0;
+		$show = "Register";
 		$events_registered = array();
 		$events_registered['events'] = array();
 		$events_registered['workshop'] = array();
@@ -123,6 +165,10 @@
 						else if($eveID[0]=="2") $catag = 'workshop';
 						else $catag = 'exhibition';
 						array_push($events_registered[$catag], $row['eveName']);
+						if((string)$event_id == (string)$eveID){
+							$unsub = 1;
+							$show = "Cancel Registration";
+						}
 					}
 					if(empty($events_registered['events'])){
 						array_push($events_registered['events'], "Not registered in any.");
@@ -142,7 +188,7 @@
     ?>  
     <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
-	<header id="header" class="transparent-navbar spons_nav">
+	<header id="header" class="transparent-navbar">
 		<!-- container -->
 		<div class="container">
 			<!-- navbar header -->
@@ -214,16 +260,16 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-sm-6">
-								<h2 class="speaker-name"> <?php echo $_SESSION['name']; ?> </h2>
-							</div>
-							<div class="col-sm-6">
-								<h2>Celesta ID : CLST<?php echo $id; ?></h2>
-							</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-sm-6">
+							<h2 class="speaker-name"> <?php echo $_SESSION['name']; ?> </h2>
 						</div>
-						<div class="row events_content" id="reenter">
+						<div class="col-sm-6">
+							<h2>Celesta ID : CLST<?php echo $id; ?></h2>
+						</div>
+					</div>
+					<div class="row events_content" id="reenter">
 						<div class="col-sm-4">
 							<h3>Events</h3>
 							<?php foreach ($events_registered['events'] as $value)
@@ -256,27 +302,57 @@
 		<!-- /background image -->
 	
 
-	<!-- Sponsors -->
-	<div id="sponsors" class="section">
+	<!-- Event -->
+	<div id="event" class="section">
 		<!-- container -->
 		<div class="container">
-		
 			<!-- row -->
-			
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span style = "color:white">Title &nbsp;</span> <span style="color: #dd0a37;">Title</span></h3>
-				</div>
-				<!-- /section title -->
+				<?php if($ok==0){ ?>
+					<div class="section-title">
+						<h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span>Data not available</span></h3>
+					</div>
+				<?php }else{ ?>	
+					<!-- section title -->
+					<div class="section-title">
+						<h3 class="title"><span style = "color:white">Event: &nbsp;</span><span><?php echo $event_data['name']; ?></span></h3>
+					</div>
+					<!-- /section title -->
+					<div style="background-color:white;padding:1em;border-radius:5px;">
+						<!-- <img id="poster" src="" alt="#"> -->
+						<h3 id="date">Date: &nbsp;<span><?php echo $event_data['date']; ?></span></h3>
+						<h3 id="time">Time: &nbsp;<span><?php echo $event_data['time']; ?></span></h3>
+						<h3 id="venue">Venue: &nbsp;<span><?php echo $event_data['venue']; ?></span></h3>
+						<br>
+						<p id="desc">
+							<?php echo $event_data['about']; ?>
+						</p>
+						<br>
+						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
+						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
+						<h4>
+							<a href="<?php $echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
+						</h4><br>
+					</div>
+				<?php } ?>
 			<!-- /row -->
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /Sponsors -->
+	<!-- /Event -->
+
+	<section class="upcoming-events-highlight " style="background-image:url(./img/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+    </section>
+	
+	
 	
 
 	<!-- Footer -->
-	<footer id="footer" style="background: rgba(0,0,0,0.7); color: gray;">
+	<footer id="footer" style="background: rgba(255,0,0,0.1);">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
@@ -306,7 +382,7 @@
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3>Mail Us At</h3>
-						<a style="color: gray;" href="#">mpr@celesta.org.in</a>
+						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -365,7 +441,9 @@
 	<script type='text/javascript' src='./js/jquery.particleground.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script>
+
 	$(document).ready(function(){
+
 		$('#home .section-bg #particles').particleground({
               dotColor: 'rgba(255,255,0,0.42)',
               lineColor: 'rgba(255,0,0,0.37)',
@@ -373,6 +451,7 @@
               });
 		$(".home-wrapper").css("top","27%");
 	});
+
 	</script>
 	<!-- /Particle.js -->
 	<script src="assets/js/polyfills.js"></script>
@@ -380,7 +459,59 @@
 	<script src="assets/js/loading.js"></script>
 	<script src="assets/js/index.js"></script>
 	<!-- /Loading -->
+	<script>
+  $(document).ready(function() {
+
+  var parameters = location.search.substring(1).split("?");
+  var event_id = parameters[0];
+  
+  function clicked(act){
+
+  	<?php if($set==1){ ?>
+        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/event_reg",
+            {
+                id : "<?php echo $id; ?>",
+                event_id: event_id,
+                event_name : "<?php echo $event_data['name']; ?>",
+                unsub : act
+            },
+            function(data, status){
+              	console.log("Response");
+              	console.log("Data: " + data + "\nStatus: " + status);
+              	if(status=='success'){
+              	  	if(data["status"]==200){
+                		alert(data['message']);
+                		console.log("success");
+                		window.location = "event_.php?"+event_id;
+              		}else if(data['status']==409){
+              			alert(data['message']);
+              		}else{
+              			if(act==1){
+              				alert("Could not unregister.\nSorry for the inconvenience.");
+              			}else{
+                		alert("Could not register.\nSorry for the inconvenience.");
+                	  	}
+                	  	console.log("err");
+                	  	console.log(data);
+              		}
+              	}else{
+                  	console.log("Failed "+data);
+              	}
+            },"json");
+    <?php }else{ ?>
+      	window.location="http://celesta.org.in/login.php";
+    <?php } ?>
+  }
+
+  $("#register").click(function(e) {
+      clicked(<?php echo $unsub; ?>);
+      console.log("clicked");
+      e.preventDefault();
+  });
+});
+   
+</script>
+
 </body>
 
 </html>
-

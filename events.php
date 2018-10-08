@@ -36,6 +36,8 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<script src="assets/js/jquery.min.js"></script>
+	
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
 </head>
@@ -62,6 +64,24 @@
 	<!-- LOADING PART END ============================================================================== -->
 
 	<?php
+
+  	  	$url = $_SERVER['REQUEST_URI'];
+      	$param = explode("?",$url);
+      	$event_catagory = $param[1];
+      	if($event_catagory=='1'){
+      		$event_catagory_name = "Events";
+      	}elseif($event_catagory=='2'){
+      		$event_catagory_name = "Workshops";
+      	}elseif($event_catagory=='3'){
+      		$event_catagory_name = "Exhibitions";
+      	}else{
+    ?>
+    <script type="text/javascript"> 
+   		 	window.location = '404.html';
+    </script>
+    <?php
+    	}
+
 		include "apiLe/dbConfig.php";
 		$name = array();
 		$id = "";
@@ -69,6 +89,10 @@
 		$set = 0;
 		$isca = 0;
 		$error = "";
+		$events_registered = array();
+		$events_registered['events'] = array();
+		$events_registered['workshop'] = array();
+		$events_registered['exhibition'] = array();
 		// If the user is logged in -----------------------------------------------------------------
 		if(isset($_SESSION['uid'])){
             $name = explode(" ",$_SESSION['name']);
@@ -103,6 +127,37 @@
         		}else{
         			$error.= "Error Connetiong to db";
        		 	}
+       		// Events registered in by the user since he is logged in
+       		$error = "";
+			$sql = "SELECT * FROM eventreg WHERE uID='". $id ."'";
+        	if($link =mysqli_connect($servername, $username, $password, $dbname)){
+				$result = mysqli_query($link,$sql);
+				if(!$result || mysqli_num_rows($result)<1){
+					array_push($events_registered['events'], "Not registered in any.");
+					array_push($events_registered['workshop'], "Not registered in any.");
+					array_push($events_registered['exhibition'], "Not registered in any.");			
+				}else{
+					while($row = mysqli_fetch_assoc($result)){
+						$catag = "";
+						$eveID = (string)$row['eveID'];
+						if($eveID[0]=="1") $catag = 'events';
+						else if($eveID[0]=="2") $catag = 'workshop';
+						else $catag = 'exhibition';
+						array_push($events_registered[$catag], $row['eveName']);
+					}
+					if(empty($events_registered['events'])){
+						array_push($events_registered['events'], "Not registered in any.");
+					}
+					if(empty($events_registered['workshop'])){
+						array_push($events_registered['workshop'], "Not registered in any.");
+					}
+					if(empty($events_registered['exhibition'])){
+						array_push($events_registered['exhibition'], "Not registered in any.");
+					}
+        		}
+        	}else{
+        		$error.= "Error Connetiong to db";
+       		}
        	}
        	// /The user is logged in -------------------------------
 
@@ -147,10 +202,10 @@
 					<?php } ?>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
+					<li><a href="index.php#gallery">Gallery</a></li>
 					<li><a href="index.php#schedule">Schedule</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
-					<li><a href="spons.php">Sponsors</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="index.php#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>
 						<div class="user_nav_desk">
@@ -189,19 +244,23 @@
 								<h2>Celesta ID : CLST<?php echo $id; ?></h2>
 							</div>
 						</div>
-						<div class="row events_content">
+						<div class="row events_content" id="reenter">
 						<div class="col-sm-4">
 							<h3>Events</h3>
-							<h4>Not registered in any.</h4>
+							<?php foreach ($events_registered['events'] as $value)
+							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
 						<div class="col-sm-4">
-							<h3>Worshop</h3>
-							<h4>Not registered in any.</h4>
+							<h3>Workshop</h3>
+							<?php foreach ($events_registered['workshop'] as $value)
+							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
 						<div class="col-sm-4">
-							<h3>Exhibition</h3>
-							<h4>Not registered in any.</h4>
+							<h3>Exhibition</h3>	
+							<?php foreach ($events_registered['exhibition'] as $value)
+							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -220,255 +279,69 @@
 				<div class="row">
 					<!-- section title -->
 					<div class="section-title" style="margin-bottom: -50px;">
-						<h3 class="title"><span style="color: #dd0a37; padding-top: 50px;">Events</span></h3>
+						<h3 class="title"><span style="color: #dd0a37; padding-top: 50px;"><?php echo $event_catagory_name; ?></span></h3>
 					</div>
 					<!-- /section title -->
 					<div class="gallery_gds agileits-w3layouts">
-						<ul class="simplefilter">
-							<li class="active" data-filter="all">All</li>
-							<li data-filter="1">Category 1</li>
-							<li data-filter="2">Category 2</li>
-							<li data-filter="3">Category 3</li>
-							<li data-filter="4">Category 4</li>
+						<ul class="simplefilter" id="catagories">
+							<li class="active" id="reset_boxes" data-filter="all">All</li>
 						</ul>
-						<div class="filtr-container">
+						<div class="filtr-container" id="parent">
 							<?php
-								 
-								$event_id = ["10301","10401","10101","10201","10201","10301","10401","10401","10101","10201","10201","10301","10401"];
-								$iterator = 0;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
+								$directory = 'eventdata';
+    							if (!is_dir($directory)) {
+        							echo "<center><h1>Coming Soon</h1></center>";
+    							}else{
+								    $event_id = array();
+    								foreach (scandir($directory) as $file) {
+        								if ('.' === $file) continue;
+        								if ('..' === $file) continue;
+        								if($file[0]==$event_catagory){
+        									array_push($event_id, explode('.', $file)[0]);
+        								}
+    								}
+									foreach ($event_id as $value) {
+										if($str = file_get_contents("eventdata/". $value . ".json")){
+											$event_data = json_decode($str, true);
+											$ok = 1;
+											$event_name = $event_data['name'];
+											$catagory_name = $event_data['catagory'];
+											$Category = substr((string)$value,1,2);
+											if($Category[0]=='0'){
+												$Category = substr($Category, 1);
+											}
 							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Busy streets">
+									<script type="text/javascript">
+										$(document).ready(function(){
+											$.when(event_boxes("<?php echo $Category; ?>", "<?php echo $catagory_name; ?>", "<?php echo $value; ?>", "<?php echo (string)$event_name; ?>", "evebg.jpg")).done(function(){
+       											RESET_BOXES1()
+   											});
+										});
+									</script>
+							<?php
+										}	
+									}
+
+									if(empty($event_id)){
+										echo '<div class="section-title"><h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span style="color: red;">Data not available</span><br><span style="font-size:28px; color : white;">Will soon be updated. Stay tuned :)</span></h3></div>';
+									}
+								}
+
+							?>
+							<!-- <div class="col-sm-4 col-xs-6 filtr-item" data-category="" data-sort="Luminous night">
 								<div class="hover ehover14">
 									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
 										<img src="images/horiz.jpg" alt="" class="img-responsive" />
 										<div class="overlay">
 											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
+											<a id=""><div class="info nullbutton button">Show More</div></a>
 										</div>
 									</a>	
 								</div>
 							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-							<?php 
-								$iterator++;
-								$Category = substr($event_id[$iterator],1,2);
-								if($Category[0]=='0'){
-									$Category = substr($Category, 1);
-								}
-							?>
-							<div class="col-sm-4 col-xs-6 filtr-item" data-category="<?php echo $Category; ?>" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id="<?php echo $event_id[$iterator]; ?>"><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
+						 -->	
 							
+
 						   <div class="clearfix"> </div>
 						</div>
 					</div>
@@ -498,84 +371,9 @@
 	</div>
 	<!-- //testimonials -->
 
-		<!-- Footer -->
-		<footer id="footer" style="background: rgba(255,0,0,0.1);">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Reach To Us At</h3>
-						<p>
-						Indian Institute of Technology Patna
-						<p>Bihta</p>
-						<span>Patna-801106 (Bihar)</span>
-						</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Ring Us At</h3>
-						<p>+91 9955532583</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Mail Us At</h3>
-						<a href="#">mpr@celesta.org.in</a>
-					</div>
-				</div>
-				<!-- /contact -->
-				
-			<div class="row">
-				<!-- footer logo -->
-				<!-- <div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./imges/logo.png" alt="logo">
-						</a>
-					</div>
-				</div> -->
-				<!-- /footer logo -->
-
-				<!-- contact social -->
-				<div class="col-md-3 col-md-push-0">
-					<br><br>
-					<div class="contact-social">
-						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
-						<a href="https://twitter.com/celesta_iitp"><i class="fa fa-twitter"></i></a>
-						<!-- <a href="#"><i class="fa fa-google-plus"></i></a>
-						 --><a href="https://www.instagram.com/celestaiitp_official/"><i class="fa fa-instagram"></i></a>
-						<!-- <a href="#"><i class="fa fa-pinterest"></i></a>
-						 --><!-- <a href="#"><i class="fa fa fa-linkedin"></i></a> -->
-					</div>
-				</div>
-				<!-- /contact social -->
-
-				<!-- copyright -->
-				<!-- <div class="col-md-4 col-md-pull-8">
-					<span class="copyright"> --><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><!-- </span>
-				</div> -->
-				<!-- /copyright -->
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</footer>
-	<!-- /Footer -->
+	
 
 	<!-- jQuery Plugins -->
-	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.waypoints.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
@@ -592,7 +390,11 @@
     <script type="text/javascript">
         $(function() {
             //Initialize filterizr with default options
-            $('.filtr-container').filterizr();
+            $.when($('.filtr-container').filterizr()).done(function(){
+       			$.when(RESET_BOXES1()).done(function(){
+       			RESET_BOXES2() })
+   			});
+            					
         });
     </script>
 	<!--//gallery-->
@@ -674,6 +476,90 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
    	<!-- <script src="assets/js/bootstrap.js"></script> -->
+   	<script type="text/javascript">
+   		var catagories = new Array();
+   		var catag_not_found = 1;
+   		var second_child = 1;
+
+		function event_boxes(catag,catag_name,id,name,image){
+			catag_not_found = 1;
+			catagories.forEach(function(currentValue){
+				if(catag_name.localeCompare(currentValue)==0){
+					catag_not_found = 0;
+				}
+			});
+
+			if(catag_not_found == 1){
+				catagories.push(catag_name);
+				var li = document.createElement("li");
+				if(second_child==1){
+					li.setAttribute("id","second_child");
+					second_child=0;
+				}
+				li.setAttribute("data-filter", catag);
+				li.innerHTML = catag_name;
+				document.getElementById("catagories").appendChild(li);
+			}
+
+			var parent = document.getElementById("parent");
+			var div = document.createElement("div");
+			div.setAttribute("class", "col-sm-4 col-xs-6 filtr-item");
+			div.setAttribute("data-category", catag);
+			div.setAttribute("data-sort", "Luminous night");
+			parent.appendChild(div);
+
+			var div1 = document.createElement("div");
+			div1.setAttribute("class", "hover ");
+			div.appendChild(div1);
+			
+			var a = document.createElement("a");
+     		a.setAttribute("href", "template.php?"+ id);
+     		div1.appendChild(a);
+
+			var img = document.createElement("img");
+			img.setAttribute("class", "img-responsive");
+			img.setAttribute("src", "images/"+image);
+			a.appendChild(img);
+
+			var div2 = document.createElement("div");
+			div2.setAttribute("class", "overlay");
+     		a.appendChild(div2);
+
+			var h4 = document.createElement("h4");
+			h4.innerHTML = name;
+			div2.appendChild(h4);
+			
+			var a1 = document.createElement("a");
+			a1.setAttribute("id", id);
+			a1.setAttribute("href", "event_.php?"+ id);
+     		a1.setAttribute("target", "_blank");
+     		div2.appendChild(a1);
+
+			var div3 = document.createElement("div");
+     		div3.setAttribute("class", "info nullbutton button");
+     		div3.innerHTML = "Show More";
+			a1.appendChild(div3);
+  
+		}
+
+		function RESET_BOXES1(){
+			$("#second_child").trigger('click');
+		}
+
+		function RESET_BOXES2() {
+			$("#reset_boxes").trigger('click');
+		}
+
+		document.onreadystatechange = function () {
+  			var state = document.readyState
+  			if (state == 'interactive') {
+    		//document.getElementById('contents').style.visibility="hidden";
+  			}else if (state == 'complete') {
+  				$.when(RESET_BOXES1()).done(function(){
+       				RESET_BOXES2() })
+  			}
+		}
+	</script>
 </body>
 
 </html>

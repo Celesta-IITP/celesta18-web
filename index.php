@@ -69,6 +69,10 @@
 		$set = 0;
 		$isca = 0;
 		$error = "";
+		$events_registered = array();
+		$events_registered['events'] = array();
+		$events_registered['workshop'] = array();
+		$events_registered['exhibition'] = array();
 		// If the user is logged in -----------------------------------------------------------------
 		if(isset($_SESSION['uid'])){
             $name = explode(" ",$_SESSION['name']);
@@ -103,6 +107,37 @@
         		}else{
         			$error.= "Error Connetiong to db";
        		 	}
+       		// Events registered in by the user since he is logged in
+       		$error = "";
+			$sql = "SELECT * FROM eventreg WHERE uID='". $id ."'";
+        	if($link =mysqli_connect($servername, $username, $password, $dbname)){
+				$result = mysqli_query($link,$sql);
+				if(!$result || mysqli_num_rows($result)<1){
+					array_push($events_registered['events'], "Not registered in any.");
+					array_push($events_registered['workshop'], "Not registered in any.");
+					array_push($events_registered['exhibition'], "Not registered in any.");			
+				}else{
+					while($row = mysqli_fetch_assoc($result)){
+						$catag = "";
+						$eveID = (string)$row['eveID'];
+						if($eveID[0]=="1") $catag = 'events';
+						else if($eveID[0]=="2") $catag = 'workshop';
+						else $catag = 'exhibition';
+						array_push($events_registered[$catag], $row['eveName']);
+					}
+					if(empty($events_registered['events'])){
+						array_push($events_registered['events'], "Not registered in any.");
+					}
+					if(empty($events_registered['workshop'])){
+						array_push($events_registered['workshop'], "Not registered in any.");
+					}
+					if(empty($events_registered['exhibition'])){
+						array_push($events_registered['exhibition'], "Not registered in any.");
+					}
+        		}
+        	}else{
+        		$error.= "Error Connetiong to db";
+       		}
        	}
        	// /The user is logged in -------------------------------
 
@@ -190,18 +225,21 @@
 								<h2>Celesta ID : CLST<?php echo $id; ?></h2>
 							</div>
 						</div>
-						<div class="row events_content">
+						<div class="row events_content" id="reenter">
 						<div class="col-sm-4">
 							<h3>Events</h3>
-							<h4>Not registered in any.</h4>
+							<?php foreach ($events_registered['events'] as $value)
+							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
 						<div class="col-sm-4">
-							<h3>Worshop</h3>
-							<h4>Not registered in any.</h4>
+							<h3>Workshop</h3>
+							<?php foreach ($events_registered['workshop'] as $value)
+							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
 						<div class="col-sm-4">
-							<h3>Exhibition</h3>
-							<h4>Not registered in any.</h4>
+							<h3>Exhibition</h3>	
+							<?php foreach ($events_registered['exhibition'] as $value)
+							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
 					</div>
 				</div>
@@ -373,7 +411,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php">Go to Events Page</a>
+								<a href="events.php?1">Go to Events Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Events</h2>
@@ -392,7 +430,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#">Go to Workshops Page</a>
+								<a href="events.php?2">Go to Workshops Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Workshops</h2>
@@ -411,7 +449,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#">Go to Exhibitions Page</a>
+								<a href="events.php?3">Go to Exhibitions Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Exhibitions</h2>
