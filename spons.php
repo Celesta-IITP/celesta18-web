@@ -393,7 +393,7 @@
 					<br>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-<br>
+				<br>
 				<h1>Magazine Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -405,26 +405,34 @@
 					</div><br>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-<br>
+				<br>
 				<h1>Online Media Partner</h1>
 				<div class="row"><br>
-					<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>FestPav</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/festpav.png" style = "margin-top:80px" alt="">
+							<img src="./images/sponsors/festpav.png" style = "height:150px;width:350px;" alt="">
 						</a>
 						<br>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>NTD India</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/ntdindia.jpg" style = "height:200px;width:auto;margin-top:30px" alt="">
+							<img src="./images/sponsors/ntdindia.jpg" style = "height:150px;width:auto;" alt="">
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-6">
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>The College Fever</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/thecollegefever.png" style = "height:250px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<p>Ignite Engineers</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/igniteengineers.png" style = "height:150px;width:auto;" alt="">
 						</a>
 					</div>
 				</div>
@@ -460,6 +468,18 @@
 						<p>LearnCodeOnline</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/learncodeonline.png" style="height:150px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Official Savings Partner</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Grabon</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/grabon.png" style="height:150px;width:auto;" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
