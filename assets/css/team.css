@@ -1,0 +1,11 @@
+.member {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6);
+  background: white;
+  padding: 2em; 
+}
+
+.links{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6);
+  background: white;
+}
+
