@@ -36,6 +36,7 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/snackbar.css" />
 	<script src="assets/js/jquery.min.js"></script>
 	
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
@@ -271,6 +272,8 @@
 
 	<!-- /Common template for all pages -->
 
+	<div id="snackbar"><div id="close_snackbar">x</div> Posters of all the events will be updated soon...<br> Stay tuned :)</div>
+
 	<!-- testimonials -->
 	<div class="testimonials services jarallax">
 			<div class="container">
@@ -290,7 +293,7 @@
 							<?php
 								$directory = 'eventdata';
     							if (!is_dir($directory)) {
-        							echo "<center><h1>Coming Soon</h1></center>";
+        							echo "<center><h1 style='color: white; padding-top: 10px;'>Coming Soon</h1></center>";
     							}else{
 								    $event_id = array();
     								foreach (scandir($directory) as $file) {
@@ -556,9 +559,22 @@
     		//document.getElementById('contents').style.visibility="hidden";
   			}else if (state == 'complete') {
   				$.when(RESET_BOXES1()).done(function(){
-       				RESET_BOXES2() })
+       				RESET_BOXES2() });
+  				setTimeout(
+  					function() 
+  					{
+    					var x = document.getElementById("snackbar");
+    					// Add the "show" class to DIV
+    					x.className = "show";
+  					}, 500);
+  			  	//$when($("#snackbar").delay( 1000 )).fadeIn(400);
   			}
 		}
+
+		$("#close_snackbar").click(function(){
+			var x = document.getElementById("snackbar");
+    		x.className = x.className.replace("show", "hide");
+		});
 	</script>
 </body>
 

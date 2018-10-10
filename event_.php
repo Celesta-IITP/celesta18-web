@@ -311,7 +311,13 @@
 					<div class="section-title">
 						<h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span>Data not available</span></h3>
 					</div>
-				<?php }else{ ?>	
+				<?php }else{ 
+					foreach ($event_data as &$value) {
+						if($value==""){
+							$value = "(To be updated)";
+						}
+					}
+					?>	
 					<!-- section title -->
 					<div class="section-title">
 						<h3 class="title"><span style = "color:white">Event: &nbsp;</span><span><?php echo $event_data['name']; ?></span></h3>
@@ -330,7 +336,9 @@
 						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
 						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
 						<h4>
-							<a href="<?php $echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+							<!-- <a href="<?php /*echo $event_data['rules'];*/ ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+							 -->
+							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
 							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
 						</h4><br>
 					</div>
@@ -508,6 +516,16 @@
       console.log("clicked");
       e.preventDefault();
   });
+
+  $("#rules_button").click(function(e) {
+      show_alert();
+      console.log("clicked");
+      e.preventDefault();
+  });
+
+  function show_alert(){
+  		alert("To be uploaded soon.");
+  }
 });
    
 </script>
