@@ -295,7 +295,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Jain Food Stall</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/jainfoodstall.jpeg" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
