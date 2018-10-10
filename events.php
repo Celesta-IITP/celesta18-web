@@ -275,7 +275,7 @@
 	<div id="snackbar"><div id="close_snackbar">x</div> Posters of all the events will be updated soon...<br> Stay tuned :)</div>
 
 	<!-- testimonials -->
-	<div class="testimonials services jarallax">
+	<div class="testimonials services jarallax" style="overflow-y: hidden; min-height: 100vh;">
 			<div class="container">
 				<div class="cn-overlay_events"></div>
 				<!-- row -->
