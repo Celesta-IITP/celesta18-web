@@ -485,7 +485,8 @@
 				<!-- /speaker -->
 			</div>
 			<!-- /row -->
-								
+
+			<!-- TODO: Make separate pages of following things
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-4 col-sm-6">
@@ -499,7 +500,6 @@
 							</div>
 							<div class="speaker-content">
 								<h2>Pro Nites</h2>
-								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -515,12 +515,11 @@
 							</div>
 							<div class="speaker-content">
 								<h2>Guest Talks</h2>
-								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- /row -->
 		</div>
 		<!-- /container -->
