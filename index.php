@@ -419,14 +419,14 @@
 	<div id="events" class="section">
 		<!-- container -->
 		<div class="container">
+			<!-- section title -->
+			<div class="section-title">
+				<h3 class="title"><span>Celesta</span> <span style="color: #dd0a37;">Events</span></h3>
+			</div>
+			<!-- section title -->
+
 			<!-- row -->
 			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Celesta</span> <span style="color: #dd0a37;">Events</span></h3>
-				</div>
-				<!-- section title -->
-
 				<!-- speaker -->
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
@@ -445,7 +445,7 @@
 					</div>
 				</div>
 				<!-- /speaker -->
-
+			
 				<!-- speaker -->
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
@@ -483,6 +483,43 @@
 					</div>
 				</div>
 				<!-- /speaker -->
+			</div>
+			<!-- /row -->
+								
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 col-sm-6">
+					<div class="speaker" >
+						<div class="speaker-img">
+							<img src="./img/pronite.jpg" style="object-fit:cover;height:-webkit-fill-available;" alt="">
+						</div>
+						<div class="speaker-body">
+							<div class="speaker-social">
+								<a href="events.php?4">Go to Pro Nites page</a>
+							</div>
+							<div class="speaker-content">
+								<h2>Pro Nites</h2>
+								<!-- <span>Manager, CEO</span> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="speaker" >
+						<div class="speaker-img">
+							<img src="./img/guesttalk.jpg" style="object-fit:cover;height:-webkit-fill-available;" alt="">
+						</div>
+						<div class="speaker-body">
+							<div class="speaker-social">
+								<a href="events.php?5">Go to Guest Talks page</a>
+							</div>
+							<div class="speaker-content">
+								<h2>Guest Talks</h2>
+								<!-- <span>Manager, CEO</span> -->
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- /row -->
 		</div>
@@ -640,6 +677,7 @@
               density: 10000
               });
 		$(".home-wrapper").css("top","27%");
+		
 	});
 
 	$("#resend").on('click', function(){
