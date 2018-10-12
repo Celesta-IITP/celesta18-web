@@ -11,7 +11,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Event | Celesta 2k18</title>
+	<title>Team | Celesta 2k18</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">

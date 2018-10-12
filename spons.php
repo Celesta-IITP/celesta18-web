@@ -11,6 +11,29 @@
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
 	<title>Sponsors | Celesta 2k18</title>
+	<!-- Search Engine -->
+	<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="Celesta '18, IIT Patna">
+	<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Celesta '18, IIT Patna">
+	<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="twitter:site" content="@celesta_iitp">
+	<meta name="twitter:creator" content="@celesta_iitp">
+	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta name="og:title" content="Celesta '18, IIT Patna">
+	<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
+	<meta name="og:url" content="https://celesta.org.in">
+	<meta name="og:site_name" content="Celesta '18, IIT Patna">
+	<meta name="fb:admins" content="549099751772038">
+	<meta name="og:type" content="website">
+	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -223,6 +246,43 @@
 					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
 				</div>
 				<!-- /section title -->
+
+				<h1>Title Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Beltron</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/beltron.png" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Power Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Startup Bihar</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/startupbihar.png" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Associate Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Bihar Tourism</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/bihartourism.jpg" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
 				<h1>Coding Partner</h1>
 				<div class="row">
 				<div class="col-md-3 col-sm-4 col-xs-6"></div>
@@ -295,7 +355,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Jain Food Stall</p>
 						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+							<img src="./images/sponsors/jainfoodstall.jpeg" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
