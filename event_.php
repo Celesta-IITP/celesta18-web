@@ -26,24 +26,29 @@
 	<!-- Search Engine -->
 	<?php if ($ok && $event_data["about"]){ ?>
 		<meta name="description" content="<?php echo $event_data["about"]; ?>">
+		<meta itemprop="description" content="<?php echo $event_data["about"]; ?>">
+		<meta name="twitter:description" content="<?php echo $event_data["about"]; ?>">
+		<meta name="og:description" content="<?php echo $event_data["about"]; ?>">
 	<?php }else{ ?>
 		<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+		<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+		<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+			<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
 	<?php } ?>
 	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Schema.org for Google -->
-	<meta itemprop="name" content="Celesta '18, IIT Patna">
-	<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta itemprop="name" content="<?php if ($ok && $event_data["name"]) echo $event_data["name"]." | "; ?>Celesta '18, IIT Patna">
+
 	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Celesta '18, IIT Patna">
-	<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="twitter:title" content="<?php if ($ok && $event_data["name"]) echo $event_data["name"]." | "; ?>Celesta '18, IIT Patna">
 	<meta name="twitter:site" content="@celesta_iitp">
 	<meta name="twitter:creator" content="@celesta_iitp">
 	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-	<meta name="og:title" content="Celesta '18, IIT Patna">
-	<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="og:title" content="<?php if ($ok && $event_data["name"]) echo $event_data["name"]." | "; ?>Celesta '18, IIT Patna">
+
 	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
 	<meta name="og:url" content="https://celesta.org.in">
 	<meta name="og:site_name" content="Celesta '18, IIT Patna">
