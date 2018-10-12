@@ -330,7 +330,7 @@
 						<h3 id="venue">Venue: &nbsp;<span><?php echo $event_data['venue']; ?></span></h3>
 						<br>
 						<p id="desc">
-							<?php echo $event_data['about']; ?>
+							<?php echo $event_data['about']; ?><br><b>For more details see rules below</b>
 						</p>
 						<br>
 						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
