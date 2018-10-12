@@ -10,7 +10,12 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 	  <?php
-  	  $url = $_SERVER['REQUEST_URI'];
+		function clean($string) {
+		   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+
+		   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+		}
+	      $url = $_SERVER['REQUEST_URI'];
 	      $param = explode("?",$url);
 	      $event_id = $param[1];
 	      $event_data = array();
@@ -21,14 +26,14 @@
 			}
 		
 	  ?>
-	<title><?php if ($ok && $event_data["name"]) echo $event_data["name"]." | "; ?>Events | Celesta 2k18</title>
+	<title><?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Events | Celesta 2k18</title>
 
 	<!-- Search Engine -->
-	<?php if ($ok && $event_data["about"]){ ?>
-		<meta name="description" content="<?php echo $event_data["about"]; ?>">
-		<meta itemprop="description" content="<?php echo $event_data["about"]; ?>">
-		<meta name="twitter:description" content="<?php echo $event_data["about"]; ?>">
-		<meta name="og:description" content="<?php echo $event_data["about"]; ?>">
+	<?php if ($ok && $event_data["about"]){ $cAbout = clean($event_data["about"]) ?>
+		<meta name="description" content="<?php echo $cAbout; ?>">
+		<meta itemprop="description" content="<?php echo $cAbout; ?>">
+		<meta name="twitter:description" content="<?php echo $cAbout; ?>">
+		<meta name="og:description" content="<?php echo $cAbout; ?>">
 	<?php }else{ ?>
 		<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
 		<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
@@ -37,17 +42,17 @@
 	<?php } ?>
 	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Schema.org for Google -->
-	<meta itemprop="name" content="<?php if ($ok && $event_data["name"]) echo $event_data["name"]." | "; ?>Celesta '18, IIT Patna">
+	<meta itemprop="name" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
 
 	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="<?php if ($ok && $event_data["name"]) echo $event_data["name"]." | "; ?>Celesta '18, IIT Patna">
+	<meta name="twitter:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
 	<meta name="twitter:site" content="@celesta_iitp">
 	<meta name="twitter:creator" content="@celesta_iitp">
 	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-	<meta name="og:title" content="<?php if ($ok && $event_data["name"]) echo $event_data["name"]." | "; ?>Celesta '18, IIT Patna">
+	<meta name="og:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
 
 	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
 	<meta name="og:url" content="https://celesta.org.in">
