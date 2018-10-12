@@ -223,6 +223,43 @@
 					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
 				</div>
 				<!-- /section title -->
+
+				<h1>Title Sponser</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Beltron</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/beltron.png" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Power Sponser</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Startup Bihar</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/startupbihar.png" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Associate Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Bihar Tourism</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/bihartourism.jpg" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
 				<h1>Coding Partner</h1>
 				<div class="row">
 				<div class="col-md-3 col-sm-4 col-xs-6"></div>
