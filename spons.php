@@ -224,7 +224,7 @@
 				</div>
 				<!-- /section title -->
 
-				<h1>Title Sponser</h1>
+				<h1>Title Sponsor</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
@@ -236,7 +236,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 
-				<h1>Power Sponser</h1>
+				<h1>Power Sponsor</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
