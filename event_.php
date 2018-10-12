@@ -12,6 +12,30 @@
 
 	<title>Events | Celesta 2k18</title>
 
+	<!-- Search Engine -->
+	<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="Celesta '18, IIT Patna">
+	<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Celesta '18, IIT Patna">
+	<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="twitter:site" content="@celesta_iitp">
+	<meta name="twitter:creator" content="@celesta_iitp">
+	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta name="og:title" content="Celesta '18, IIT Patna">
+	<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
+	<meta name="og:url" content="https://celesta.org.in">
+	<meta name="og:site_name" content="Celesta '18, IIT Patna">
+	<meta name="fb:admins" content="549099751772038">
+	<meta name="og:type" content="website">
+	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
+	
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
