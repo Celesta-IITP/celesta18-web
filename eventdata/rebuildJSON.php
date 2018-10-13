@@ -1,5 +1,5 @@
 <?php
-include 'apiLe/defines.php';
+include '../apiLe/defines.php';
 $csvContents = file_get_contents($eventsSheetUtl);
 $csvContents  = explode("\n",$csvContents);
 
