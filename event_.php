@@ -511,7 +511,7 @@
 	<script>
   $(document).ready(function() {
 
-  var parameters = location.search.substring(1).split("?");
+  var parameters = location.search.substring(1).split("=");
   var event_id = parameters[0];
   
   function clicked(act){
