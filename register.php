@@ -249,7 +249,7 @@ function goBack() {
             return false;
         }
 
-        bcollege = check(college, collegeRegex);
+  /*      bcollege = check(college, collegeRegex);
         
         if(!bcollege){
 
@@ -257,7 +257,7 @@ function goBack() {
             $(".error")[1].style.display = "block";
 
             return false;
-        }
+        }*/
 
         bemail = check(email, emailRegex);
 
