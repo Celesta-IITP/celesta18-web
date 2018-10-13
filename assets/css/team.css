@@ -1,7 +1,173 @@
+
+/*Team Block*/
+.team-block {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /*Team Card*/
+  /*Hire Block*/
+  /*Section Number*/
+}
+
+.team-block [class*='col-'] {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+@media (max-width: 480px) {
+  .team-block [class*='col-']:nth-child(even) {
+    clear: left;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .team-block [class*='col-']:nth-child(4n+2) {
+    clear: left;
+  }
+}
+
+.team-block img {
+  height: 100%;
+  width: auto;
+}
+
+.team-block figcaption {
+  margin-top: 10px;
+}
+
+.team-block .heading-quinary {
+  text-transform: none;
+  font-size: 17px;
+  letter-spacing: 0;
+  color: #7d8183;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .team-block .heading-quinary {
+    white-space: normal;
+  }
+}
+
+.team-block .team-card {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.team-block .team-card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.team-block .team-card:hover .card-back {
+  transform: rotateY(0);
+}
+
+.team-block .team-card .card-front, .team-block .team-card .card-back {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: 0.3s;
+}
+
+.team-block .team-card .card-back {
+  overflow: hidden;
+  transform: rotateY(-180deg);
+}
+
+.team-block .team-card .card-back img {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.team-block .team-card .card-front img {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.team-block .hire-block {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.team-block .hire-block:hover {
+  opacity: .7;
+}
+
+.team-block .hire-block .hire-content {
+  bottom: 25px;
+  color: #fff;
+  display: block;
+  font-size: 1.3888888889em;
+  left: 15px;
+  position: absolute;
+  text-align: left;
+  z-index: 9;
+}
+
+@media (min-width: 768px) {
+  .team-block .hire-block .hire-content {
+    bottom: 30%;
+    font-size: 1.7777777778em;
+    left: 45px;
+  }
+}
+
+.team-block .hire-block .hire-content:after {
+  background: rgba(255, 255, 255, 0.3);
+  content: '';
+  display: block;
+  height: 15px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 480px) {
+  .team-block .hire-block .hire-content:after {
+    bottom: 2px;
+    height: 10px;
+  }
+}
+
+.team-block .section-number-wrap {
+  padding: 0 10px;
+  text-align: left;
+}
+
+@media (min-width: 1400px) {
+  .team-block .section-number-wrap .section-number {
+    top: 63px;
+  }
+}
+
 .member {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6);
   background: white;
-  padding: 2em; 
+  padding: 2em;
+  padding-top: 100px; 
 }
 
 .links{

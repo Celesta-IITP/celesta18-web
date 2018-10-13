@@ -485,41 +485,46 @@
 				<!-- /speaker -->
 			</div>
 			<!-- /row -->
-
 			<!-- TODO: Make separate pages of following things
-			<div class="row">
-				<div class="col-md-2"></div>
+				 row -->
+<!-- 			<div class="row"> -->
+				<!-- speaker -->
+<!-- 				<div class="col-md-2 col-sm-6"></div>
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
-							<img src="./img/pronite.jpg" style="object-fit:cover;height:-webkit-fill-available;" alt="">
+							<img src="./img/guest_wall.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?4">Go to Pro Nites page</a>
-							</div>
-							<div class="speaker-content">
-								<h2>Pro Nites</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="speaker" >
-						<div class="speaker-img">
-							<img src="./img/guesttalk.jpg" style="object-fit:cover;height:-webkit-fill-available;" alt="">
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-social">
-								<a href="events.php?5">Go to Guest Talks page</a>
+								<a href="events.php?eveCat=4">Go to Guest Talks Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Guest Talks</h2>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div> -->
+				</div> -->
+				<!-- /speaker -->
+			
+				<!-- speaker -->
+				<!-- <div class="col-md-4 col-sm-6">
+					<div class="speaker" >
+						<div class="speaker-img">
+							<img src="./img/pronite_wall.jpg" alt="">
+						</div>
+						<div class="speaker-body">
+							<div class="speaker-social">
+								<a href="events.php?eveCat=5">Go to ProNite Page</a>
+							</div>
+							<div class="speaker-content">
+								<h2>ProNite</h2>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- /speaker -->
+			<!-- </div> -->
 			<!-- /row -->
 		</div>
 		<!-- /container -->
