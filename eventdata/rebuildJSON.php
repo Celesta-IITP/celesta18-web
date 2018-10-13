@@ -5,9 +5,13 @@ $csvContents  = explode("\n",$csvContents);
 
 #fill different category IDs here
 $eveCatID = [
-        "Build IT"=>"01",
+        "Build IT!"=>"01",
         "Treasure Hunt"=>"02",
-        "Non Tech"=>"03"
+        "Non Tech"=>"03",
+        "Coding and Design"=>"04",
+        "Management"=>"05",
+        "Quiz"=>"06",
+        "Special Robotics"=>"07"
         // etc
 ];
 
@@ -22,7 +26,7 @@ foreach ($csvContents as $key => $value) {
     if ($key == 0)
         continue;
     echo $key."> ";
-    $row = explode(",",$value);
+    $row = str_getcsv($value);
     $jsonDataOut = [];
     for ($i=0; $i < 13; $i++) { 
         if ($row[$i] && $row[$i]!="")
