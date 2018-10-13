@@ -531,7 +531,7 @@
               	  	if(data["status"]==200){
                 		alert(data['message']);
                 		console.log("success");
-                		window.location = "event_.php?eveID"+event_id;
+                		window.location = "event_.php?eveID="+event_id;
               		}else if(data['status']==409){
               			alert(data['message']);
               		}else{
