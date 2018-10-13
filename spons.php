@@ -283,6 +283,18 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 
+				<h1>Beverage Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Coca Cola</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/coca.png" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
 				<h1>Coding Partner</h1>
 				<div class="row">
 				<div class="col-md-3 col-sm-4 col-xs-6"></div>
@@ -366,6 +378,19 @@
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6"></div>
 				</div>
+
+				<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-6"></div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<p>Genuine Broaster Chicken</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/chicken.jpeg" alt="">
+						</a>
+					</div>
+					
+				</div>
+
+				
 				<h1>Training Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -496,6 +521,14 @@
 						</a>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<p>Knowafest</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/knowafest.png" style = "width:250px;" alt="">
+						</a>
+					</div>
+				</div>
 
 				<h1>Printing Partner</h1>
 				<div class="row">
@@ -504,6 +537,18 @@
 						<p>IMAX Studios</p>
 						<a href="#" class="sponsor">
 							<img src="./images/sponsors/imaxstudios.png" alt="">
+						</a>
+					</div>
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Event Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>ICETL</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/icetl.png" alt="">
 						</a>
 					</div>
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
