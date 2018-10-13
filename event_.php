@@ -9,9 +9,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
+	  <?php
+		function clean($string) {
+		   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
 
-	<title>Event Name | Celesta 2k18</title>
+		   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+		}
+	      /*$url = $_SERVER['REQUEST_URI'];
+	      $param = explode("?",$url);*/
+	      $event_id = $_GET['eveID'];
+	      $event_data = array();
+	      $ok = 0;
+			if($str = file_get_contents("eventdata/". $event_id . ".json")){
+				$event_data = json_decode($str, true);
+				$ok = 1;
+			}
+		
+	  ?>
+	<title><?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Events | Celesta 2k18</title>
 
+	<!-- Search Engine -->
+	<?php if ($ok && $event_data["about"]){ $cAbout = clean($event_data["about"]) ?>
+		<meta name="description" content="<?php echo $cAbout; ?>">
+		<meta itemprop="description" content="<?php echo $cAbout; ?>">
+		<meta name="twitter:description" content="<?php echo $cAbout; ?>">
+		<meta name="og:description" content="<?php echo $cAbout; ?>">
+	<?php }else{ ?>
+		<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+		<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+		<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+			<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<?php } ?>
+	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
+
+	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
+	<meta name="twitter:site" content="@celesta_iitp">
+	<meta name="twitter:creator" content="@celesta_iitp">
+	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta name="og:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
+
+	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
+	<meta name="og:url" content="https://celesta.org.in">
+	<meta name="og:site_name" content="Celesta '18, IIT Patna">
+	<meta name="fb:admins" content="549099751772038">
+	<meta name="og:type" content="website">
+	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
+	
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
@@ -65,17 +114,7 @@
    			}
 		}
 	</style>
-  <?php
-  	  $url = $_SERVER['REQUEST_URI'];
-      $param = explode("?",$url);
-      $event_id = $param[1];
-      $event_data = array();
-      $ok = 0;
-		if($str = file_get_contents("eventdata/". $event_id . ".json")){
-			$event_data = json_decode($str, true);
-			$ok = 1;
-		}
-  ?>
+
 </head>
 <body>
 
@@ -311,7 +350,13 @@
 					<div class="section-title">
 						<h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span>Data not available</span></h3>
 					</div>
-				<?php }else{ ?>	
+				<?php }else{ 
+					foreach ($event_data as &$value) {
+						if($value==""){
+							$value = "(To be updated)";
+						}
+					}
+					?>	
 					<!-- section title -->
 					<div class="section-title">
 						<h3 class="title"><span style = "color:white">Event: &nbsp;</span><span><?php echo $event_data['name']; ?></span></h3>
@@ -324,13 +369,17 @@
 						<h3 id="venue">Venue: &nbsp;<span><?php echo $event_data['venue']; ?></span></h3>
 						<br>
 						<p id="desc">
-							<?php echo $event_data['about']; ?>
+							<?php echo $event_data['about']; ?><br><b>For more details see rules below</b>
 						</p>
 						<br>
 						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
 						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
 						<h4>
-							<a href="<?php $echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+						<?php if($event_data['rules']=="(To be updated)"){ ?>
+							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+						<?php }else{ ?>
+							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+						<?php } ?>
 							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
 						</h4><br>
 					</div>
@@ -508,6 +557,16 @@
       console.log("clicked");
       e.preventDefault();
   });
+
+  $("#rules_button").click(function(e) {
+      show_alert();
+      console.log("clicked");
+      e.preventDefault();
+  });
+
+  function show_alert(){
+  		alert("To be uploaded soon.");
+  }
 });
    
 </script>

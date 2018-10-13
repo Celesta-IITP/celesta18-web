@@ -1,3 +1,4 @@
+
 <?php 
 	session_start();
 ?>
@@ -10,8 +11,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Celesta 2k18</title>
-	
+	<title>Team | Celesta 2k18</title>
 	<!-- Search Engine -->
 	<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
 	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
@@ -35,7 +35,6 @@
 	<meta name="fb:admins" content="549099751772038">
 	<meta name="og:type" content="website">
 	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
-
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
@@ -51,8 +50,6 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="assets/css/style_home.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/style_event.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/index.css" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -60,13 +57,11 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/snackbar.css" />
-	<script src="assets/js/jquery.min.js"></script>
-	
+	<link rel="stylesheet" type="text/css" href="assets/css/team.css" />
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
 </head>
-<body>
+<body style="overflow-x: hidden;">
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 		<!-- <div class="loading-page">
@@ -89,25 +84,6 @@
 	<!-- LOADING PART END ============================================================================== -->
 
 	<?php
-
-  	  	/*$url = $_SERVER['REQUEST_URI'];
-      	$param = explode("?",$url);
-      	*/
-      	$event_catagory = (string)$_GET['eveCat'];
-      	if($event_catagory=='1'){
-      		$event_catagory_name = "Events";
-      	}elseif($event_catagory=='2'){
-      		$event_catagory_name = "Workshops";
-      	}elseif($event_catagory=='3'){
-      		$event_catagory_name = "Exhibitions";
-      	}else{
-    ?>
-    <script type="text/javascript"> 
-   		 	window.location = '404.html';
-    </script>
-    <?php
-    	}
-
 		include "apiLe/dbConfig.php";
 		$name = array();
 		$id = "";
@@ -186,11 +162,10 @@
        		}
        	}
        	// /The user is logged in -------------------------------
-
     ?>  
     <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
-	<header id="header" class="transparent-navbar">
+	<header id="header" class="transparent-navbar spons_nav">
 		<!-- container -->
 		<div class="container">
 			<!-- navbar header -->
@@ -229,10 +204,10 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
 					<li><a href="index.php#gallery">Gallery</a></li>
-					<li><a href="index.php#schedule">Schedule</a></li>
+					<li><a href="index.php#events">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
-					<li><a href="index.php#contact">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>
 						<div class="user_nav_desk">
@@ -288,7 +263,6 @@
 							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
 					</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -297,112 +271,147 @@
 	<!-- /event modal -->
 
 	<!-- /Common template for all pages -->
-
-	<div id="snackbar"><div id="close_snackbar">x</div> Posters of all the events will be updated soon...<br> Stay tuned :)</div>
-
-	<!-- testimonials -->
-	<div class="testimonials services jarallax" style="overflow-y: hidden; min-height: 100vh;">
-			<div class="container">
-				<div class="cn-overlay_events"></div>
-				<!-- row -->
-				<div class="row">
-					<!-- section title -->
-					<div class="section-title" style="margin-bottom: -50px;">
-						<h3 class="title"><span style="color: #dd0a37; padding-top: 50px;"><?php echo $event_catagory_name; ?></span></h3>
-					</div>
-					<!-- /section title -->
-					<div class="gallery_gds agileits-w3layouts">
-						<ul class="simplefilter" id="catagories">
-							<li class="active" id="reset_boxes" data-filter="all">All</li>
-						</ul>
-						<div class="filtr-container" id="parent">
-							<?php
-								$directory = 'eventdata';
-    							if (!is_dir($directory)) {
-        							echo "<center><h1 style='color: white; padding-top: 10px;'>Coming Soon</h1></center>";
-    							}else{
-								    $event_id = array();
-    								foreach (scandir($directory) as $file) {
-        								if ('.' === $file) continue;
-        								if ('..' === $file) continue;
-        								if($file[0]==$event_catagory){
-        									array_push($event_id, explode('.', $file)[0]);
-        								}
-    								}
-									foreach ($event_id as $value) {
-										if($str = file_get_contents("eventdata/". $value . ".json")){
-											$event_data = json_decode($str, true);
-											$ok = 1;
-											$event_name = $event_data['name'];
-											$catagory_name = $event_data['catagory'];
-											$Category = substr((string)$value,1,2);
-											if($Category[0]=='0'){
-												$Category = substr($Category, 1);
-											}
-							?>
-									<script type="text/javascript">
-										$(document).ready(function(){
-											$.when(event_boxes("<?php echo $Category; ?>", "<?php echo $catagory_name; ?>", "<?php echo $value; ?>", "<?php echo (string)$event_name; ?>", "evebg.jpg")).done(function(){
-       											RESET_BOXES1()
-   											});
-										});
-									</script>
-							<?php
-										}	
-									}
-
-									if(empty($event_id)){
-										echo '<div class="section-title"><h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span style="color: red;">Data not available</span><br><span style="font-size:28px; color : white;">Will soon be updated. Stay tuned :)</span></h3></div>';
-									}
-								}
-
-							?>
-							<!-- <div class="col-sm-4 col-xs-6 filtr-item" data-category="" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id=""><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-						 -->	
-							
-
-						   <div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-			</div>
-	<!-- <div id="portfolio" class="portfolio jarallax">
-				<div class="container">  
-					<div class="title">
-						<h3>Event Schedule</h3>
-						<p> The event Schedule is yet to be released. Stay tuned for further updates!</p>
-					</div>
-					<div class="testi-agileinfo services-row"> 
-						<div class="col-sm-1 about-grids about-grids2">
-						</div>
-						<div class="col-sm-10 about-text w3-agileits gallery_gds">
-							<a href="images/horiz.jpg" class="swipebox">
-								<img src="images/horiz.jpg" class="img-responsive" width="100%" height="100%" />
-							</a>
-						</div>
-						<div class="col-sm-1 about-grids about-grids2">	
-						</div>
-						<div class="clearfix"> </div>
-					</div>  
-				</div>
-			</div>
-	 -->
-	</div>
-	<!-- //testimonials -->
-
+<!-- background image -->
+<div class="section-bg" style="background-image:url(./img/background01.jpg); position: fixed; background-repeat: repeat-y;" data-stellar-background-ratio="0.5">
+			<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 3;"></div>
+			<div class="cn-overlay"></div>	
+		</div>
+		<!-- /background image -->
 	
 
+	<!-- Sponsors -->
+	<div class="section">
+
+	</div>
+	<!-- /Sponsors -->
+
+	<div class="container">
+		<div class="section-title">
+			<h3 class="title"><span style = "color:white">Core &nbsp;</span> <span style="color: #dd0a37;">Committee</span></h3>
+		</div>
+	</div>
+
+		<div class = "row" style = "padding:2em">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div class = "col-sm-4" >
+				</div>
+				<div class = "col-sm-4 member">
+					<center><h2 style="color: red;">Fest Coordinator</h2>
+					<img src = "img/avatar.png" style = "border-radius:50%;width:7em;height:7em">
+					<h2 style = "text-decoration:none">Parth Kulkarni</h2>
+					<h4 style="color: red;">Contact: <span style="color: black; padding-left: 5px;">+91 9876543210</span></h4>
+					<h4 style="color: red;">Email: <span style="color: black; padding-left: 5px;">abc@xyz.com</span></h4>
+				</center>
+				</div>
+				<div class = "col-sm-4">
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+
+		<div class = "row" style = " padding:2em">
+			<div class = "col-sm-6" style="margin-bottom: 15px;">
+				<div class = "col-sm-5">
+				</div>
+				<div class = "col-sm-7 member" >
+					<center><h2 style="color: red;">Stand-in Fest Coordinator</h2><img src = "img/avatar.png" style = "border-radius:50%;width:7em;height:7em">
+					<h2 style = "text-decoration:none">abcd</h2>
+					<h4  style="color: red;">Contact: <span style="color: black; padding-left: 5px;">+91 9876543210</span></h4>
+					<h4 style="color: red;">Email: <span style="color: black; padding-left: 5px;">abc@xyz.com</span></h4></center>
+				</div>
+				<div class = "col-sm-1">
+				</div>
+			</div>
+			<div class = "col-sm-6" style="margin-bottom: 15px;">
+				
+				<div class = "col-sm-7 member">
+					<center><h2 style="color: red;">Fest Convener</h2><img src = "img/avatar.png" style = "border-radius:50%;width:7em;height:7em">
+					<h2 style = "text-decoration:none">djdsjdj</h2>
+					<h4  style="color: red;">Contact: <span style="color: black; padding-left: 5px;">+91 9876543210</span></h4>
+					<h4 style="color: red;">Email: <span style="color: black; padding-left: 5px;">abc@xyz.com</span></h4>
+				</center>
+				</div>
+				<div class = "col-sm-6">
+				</div>
+			</div>
+		</div>
+		
+		<div class = "row" style = "padding:1em">
+			<div class = "col-sm-1">
+			</div>
+			<div class = "col-sm-10 links">
+				<?php 
+					$param = urlencode("data da");
+				?>
+				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
+			</div>
+			<div class = "col-sm-1">
+			</div>
+		</div>
+		<div class = "row" style = "padding:1em">
+			<div class = "col-sm-1">
+			</div>
+			<div class = "col-sm-10 links">
+				<?php 
+					$param = urlencode("");
+				?>
+				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
+			</div>
+			<div class = "col-sm-1">
+			</div>
+		</div>
+		<div class = "row" style = "padding:1em">
+			<div class = "col-sm-1">
+			</div>
+			<div class = "col-sm-10 links">
+				<?php 
+					$param = urlencode("");
+				?>
+				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
+			</div>
+			<div class = "col-sm-1">
+			</div>
+		</div>
+		<div class = "row" style = "padding:1em">
+			<div class = "col-sm-1">
+			</div>
+			<div class = "col-sm-10 links">
+				<?php 
+					$param = urlencode("");
+				?>
+				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
+			</div>
+			<div class = "col-sm-1">
+			</div>
+		</div>
+		<div class = "row" style = "padding:1em">
+			<div class = "col-sm-1">
+			</div>
+			<div class = "col-sm-10 links">
+				<?php 
+					$param = urlencode("");
+				?>
+				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
+			</div>
+			<div class = "col-sm-1">
+			</div>
+		</div>
+		<div class = "row" style = "padding:1em">
+			<div class = "col-sm-1">
+			</div>
+			<div class = "col-sm-10 links">
+				<?php 
+					$param = urlencode("");
+				?>
+				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
+			</div>
+			<div class = "col-sm-1">
+			</div>
+		</div>
+
 	<!-- jQuery Plugins -->
+	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.waypoints.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
@@ -411,197 +420,26 @@
 	<script src="assets/js/jquery.countdown.min.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
-	<script src="assets/js/polyfills.js"></script>
-
-	<script src="assets/js/jquery.filterizr.js"></script>
-    <script src="assets/js/controls.js"></script>
-    <!-- Kick off Filterizr -->
-    <script type="text/javascript">
-        $(function() {
-            //Initialize filterizr with default options
-            $.when($('.filtr-container').filterizr()).done(function(){
-       			$.when(RESET_BOXES1()).done(function(){
-       			RESET_BOXES2() })
-   			});
-            					
-        });
-    </script>
-	<!--//gallery-->
-	<!-- swipe box js -->
-	<script src="assets/js/jquery.swipebox.min.js"></script> 
-	<script type="text/javascript">
-			jQuery(function($) {
-				$(".swipebox").swipebox();
-			});
-	</script>
-	<!-- //swipe box js -->
-
-	<!-- banner Slider starts Here -->
-	<script src="assets/js/responsiveslides.min.js"></script>
+	<!-- Particle.js -->
+	<script type='text/javascript' src='./js/jquery.particleground.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script>
-		// You can also use "$(window).load(function() {"
-		$(function () {
-		  // Slideshow 3
-		  $("#slider3").responsiveSlides({
-			auto:false,
-			pager: true,
-			nav: false,
-			speed: 500,
-			namespace: "callbacks",
-			before: function () {
-			  $('.events').append("<li>before event fired.</li>");
-			},
-			after: function () {
-			  $('.events').append("<li>after event fired.</li>");
-			}
-		  });
+	$(document).ready(function(){
+		$('#home .section-bg #particles').particleground({
+              dotColor: 'rgba(255,255,0,0.42)',
+              lineColor: 'rgba(255,0,0,0.37)',
+              density: 10000
+              });
+		$(".home-wrapper").css("top","27%");
+	});
+	</script>
+	<script src="assets/js/polyfills.js"></script>
+	<!-- Loading -->
+	<script src="assets/js/loading.js"></script>
+	<script src="assets/js/index.js"></script>
+	<!-- /Loading -->
+	<script src="assets/js/jquery.csv.js"></script>
 	
-		});
-	</script>
-	<!-- //End-slider-script -->
-	<!-- jarallax -->  
-	<script src="assets/js/SmoothScroll.min.js"></script> 
-	<script src="assets/js/jarallax.js"></script> 
-	<script type="text/javascript">
-		/* init Jarallax */
-		$('.jarallax').jarallax({
-			speed: 0.5,
-			imgWidth: 1366,
-			imgHeight: 768
-		})
-	</script>  
-	<!-- //jarallax --> 
-	<!-- start-smooth-scrolling --> 
-	<script type="text/javascript" src="assets/js/move-top.js"></script>
-	<script type="text/javascript" src="assets/js/easing.js"></script>	
-	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-			
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-	</script>
-	<!-- //end-smooth-scrolling -->	 
-	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-			
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			
-		});
-	</script>
-	<!-- //smooth-scrolling-of-move-up -->    
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-   	<!-- <script src="assets/js/bootstrap.js"></script> -->
-   	<script type="text/javascript">
-   		var catagories = new Array();
-   		var catag_not_found = 1;
-   		var second_child = 1;
-
-		function event_boxes(catag,catag_name,id,name,image){
-			catag_not_found = 1;
-			catagories.forEach(function(currentValue){
-				if(catag_name.localeCompare(currentValue)==0){
-					catag_not_found = 0;
-				}
-			});
-
-			if(catag_not_found == 1){
-				catagories.push(catag_name);
-				var li = document.createElement("li");
-				if(second_child==1){
-					li.setAttribute("id","second_child");
-					second_child=0;
-				}
-				li.setAttribute("data-filter", catag);
-				li.innerHTML = catag_name;
-				document.getElementById("catagories").appendChild(li);
-			}
-
-			var parent = document.getElementById("parent");
-			var div = document.createElement("div");
-			div.setAttribute("class", "col-sm-4 col-xs-6 filtr-item");
-			div.setAttribute("data-category", catag);
-			div.setAttribute("data-sort", "Luminous night");
-			parent.appendChild(div);
-
-			var div1 = document.createElement("div");
-			div1.setAttribute("class", "hover ");
-			div.appendChild(div1);
-			
-			var a = document.createElement("a");
-     		a.setAttribute("href", "event_.php?eveID"+ id);
-     		div1.appendChild(a);
-
-			var img = document.createElement("img");
-			img.setAttribute("class", "img-responsive");
-			img.setAttribute("src", "images/"+image);
-			a.appendChild(img);
-
-			var div2 = document.createElement("div");
-			div2.setAttribute("class", "overlay");
-     		a.appendChild(div2);
-
-			var h4 = document.createElement("h4");
-			h4.innerHTML = name;
-			div2.appendChild(h4);
-			
-			var a1 = document.createElement("a");
-			a1.setAttribute("id", id);
-			a1.setAttribute("href", "event_.php?eveID="+ id);
-     		a1.setAttribute("target", "_blank");
-     		div2.appendChild(a1);
-
-			var div3 = document.createElement("div");
-     		div3.setAttribute("class", "info nullbutton button");
-     		div3.innerHTML = "Show More";
-			a1.appendChild(div3);
-  
-		}
-
-		function RESET_BOXES1(){
-			$("#second_child").trigger('click');
-		}
-
-		function RESET_BOXES2() {
-			$("#reset_boxes").trigger('click');
-		}
-
-		document.onreadystatechange = function () {
-  			var state = document.readyState
-  			if (state == 'interactive') {
-    		//document.getElementById('contents').style.visibility="hidden";
-  			}else if (state == 'complete') {
-  				$.when(RESET_BOXES1()).done(function(){
-       				RESET_BOXES2() });
-  				setTimeout(
-  					function() 
-  					{
-    					var x = document.getElementById("snackbar");
-    					// Add the "show" class to DIV
-    					x.className = "show";
-  					}, 500);
-  			  	//$when($("#snackbar").delay( 1000 )).fadeIn(400);
-  			}
-		}
-
-		$("#close_snackbar").click(function(){
-			var x = document.getElementById("snackbar");
-    		x.className = x.className.replace("show", "hide");
-		});
-	</script>
 </body>
 
 </html>

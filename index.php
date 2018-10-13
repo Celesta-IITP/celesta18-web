@@ -9,8 +9,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
-
 	<title>Celesta 2k18</title>
+	<!-- Open-Graph and Twitter Meta tags for SEO and Social Media -->
+	<!-- Search Engine -->
+	<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="Celesta '18, IIT Patna">
+	<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Celesta '18, IIT Patna">
+	<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="twitter:site" content="@celesta_iitp">
+	<meta name="twitter:creator" content="@celesta_iitp">
+	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta name="og:title" content="Celesta '18, IIT Patna">
+	<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
+	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
+	<meta name="og:url" content="https://celesta.org.in">
+	<meta name="og:site_name" content="Celesta '18, IIT Patna">
+	<meta name="fb:admins" content="549099751772038">
+	<meta name="og:type" content="website">
+	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
+
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -395,14 +419,14 @@
 	<div id="events" class="section">
 		<!-- container -->
 		<div class="container">
+			<!-- section title -->
+			<div class="section-title">
+				<h3 class="title"><span>Celesta</span> <span style="color: #dd0a37;">Events</span></h3>
+			</div>
+			<!-- section title -->
+
 			<!-- row -->
 			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Celesta</span> <span style="color: #dd0a37;">Events</span></h3>
-				</div>
-				<!-- section title -->
-
 				<!-- speaker -->
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
@@ -411,7 +435,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?1">Go to Events Page</a>
+								<a href="events.php?eveCat=1">Go to Events Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Events</h2>
@@ -421,7 +445,7 @@
 					</div>
 				</div>
 				<!-- /speaker -->
-
+			
 				<!-- speaker -->
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
@@ -430,7 +454,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?2">Go to Workshops Page</a>
+								<a href="events.php?eveCat=2">Go to Workshops Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Workshops</h2>
@@ -449,7 +473,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?3">Go to Exhibitions Page</a>
+								<a href="events.php?eveCat=3">Go to Exhibitions Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Exhibitions</h2>
@@ -460,6 +484,42 @@
 				</div>
 				<!-- /speaker -->
 			</div>
+			<!-- /row -->
+
+			<!-- TODO: Make separate pages of following things
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 col-sm-6">
+					<div class="speaker" >
+						<div class="speaker-img">
+							<img src="./img/pronite.jpg" style="object-fit:cover;height:-webkit-fill-available;" alt="">
+						</div>
+						<div class="speaker-body">
+							<div class="speaker-social">
+								<a href="events.php?4">Go to Pro Nites page</a>
+							</div>
+							<div class="speaker-content">
+								<h2>Pro Nites</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="speaker" >
+						<div class="speaker-img">
+							<img src="./img/guesttalk.jpg" style="object-fit:cover;height:-webkit-fill-available;" alt="">
+						</div>
+						<div class="speaker-body">
+							<div class="speaker-social">
+								<a href="events.php?5">Go to Guest Talks page</a>
+							</div>
+							<div class="speaker-content">
+								<h2>Guest Talks</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
 			<!-- /row -->
 		</div>
 		<!-- /container -->
@@ -616,6 +676,7 @@
               density: 10000
               });
 		$(".home-wrapper").css("top","27%");
+		
 	});
 
 	$("#resend").on('click', function(){
