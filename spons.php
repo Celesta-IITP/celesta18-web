@@ -542,7 +542,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>IMAX Studios</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/imaxstudios.png" style="height:150px;width:auto;" alt="">
+							<img src="#" style="height:150px;width:auto;" alt="">
 						</a>
 					</div>
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>

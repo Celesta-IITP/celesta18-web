@@ -266,7 +266,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
 					<li><a href="index.php#gallery">Gallery</a></li>
-					<li><a href="index.php#events">Events</a></li>
+					<li><a href="events.php">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -363,7 +363,11 @@
 					</div>
 					<!-- /section title -->
 					<div style="background-color:white;padding:1em;border-radius:5px;">
-						<!-- <img id="poster" src="" alt="#"> -->
+						<?php 
+							if(isset($event_data['img'])){
+								echo '<img id="poster" src='.$event_data['img'].' style="max-width:100%">';
+							}
+						?>
 						<h3 id="date">Date: &nbsp;<span><?php echo $event_data['date']; ?></span></h3>
 						<h3 id="time">Time: &nbsp;<span><?php echo $event_data['time']; ?></span></h3>
 						<h3 id="venue">Venue: &nbsp;<span><?php echo $event_data['venue']; ?></span></h3>
