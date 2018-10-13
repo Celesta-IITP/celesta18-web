@@ -368,9 +368,9 @@
 								echo '<img id="poster" src='.$event_data['img'].' style="max-width:100%">';
 							}
 						?>
-						<h3 id="date">Date: &nbsp;<span><?php echo $event_data['date']; ?></span></h3>
-						<h3 id="time">Time: &nbsp;<span><?php echo $event_data['time']; ?></span></h3>
-						<h3 id="venue">Venue: &nbsp;<span><?php echo $event_data['venue']; ?></span></h3>
+						<h3 id="date">Date: &nbsp;<span><?php echo isset($event_data['date'])?$event_data['date']:"(To be updated)"; ?></span></h3>
+						<h3 id="time">Time: &nbsp;<span><?php echo isset($event_data['time'])?$event_data['time']:"(To be updated)"; ?></span></h3>
+						<h3 id="venue">Venue: &nbsp;<span><?php echo isset($event_data['venue'])?$event_data['venue']:"(To be updated)"; ?></span></h3>
 						<br>
 						<p id="desc">
 							<?php echo $event_data['about']; ?><br><b>For more details see rules below</b>
@@ -379,7 +379,7 @@
 						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
 						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
 						<h4>
-						<?php if($event_data['rules']=="(To be updated)"){ ?>
+						<?php if(!isset($event_data['rules']) || $event_data['rules']=="(To be updated)"){ ?>
 							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
 						<?php }else{ ?>
 							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
