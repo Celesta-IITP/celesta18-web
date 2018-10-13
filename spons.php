@@ -396,14 +396,9 @@
 					</div>
 					<!-- <div class="col-md-3 col-sm-4 col-xs-6"></div> -->
 				</div>
-
-				<div class="row">
-				<div class="col-md-3 col-sm-4 col-xs-6"></div>
-					
-				</div>
-
-				
+				<br>
 				<h1>Training Partner</h1>
+				<br>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
@@ -449,6 +444,18 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 				<br>
+				<h1>Merchandise Partner</h1>
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6"><br>
+						<p>Awestruck</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/awestruck.jpeg" style = "height:160px; width:auto" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+				<br>
 				<h1>Workshop Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -461,21 +468,6 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 
-				<!-- <h1>Merchandise Partner</h1>
-				<div class="row">
-					<div class="col-md-3 col-sm-4 col-xs-6">
-						<p>Coding Ninjas</p>
-						<a href="#" class="sponsor">
-							<img src="./images/sponsor.png" alt="">
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-6">
-						<p>HackerEarth</p>
-						<a href="#" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
-						</a>
-					</div>
-				</div> -->
 				<br>
 				<h1>Blogger OutReach Partner</h1>
 				<div class="row">
@@ -519,6 +511,7 @@
 						</a>
 					</div>
 				</div>
+				<br><br>
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>The College Fever</p>
@@ -542,7 +535,7 @@
 						</a>
 					</div>
 				</div>
-
+				<br>
 				<h1>Printing Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -554,7 +547,7 @@
 					</div>
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-				
+				<br>
 				<h1>Gifting Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -566,7 +559,7 @@
 					</div>
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-
+				<br>
 				<h1>Online Learning Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -578,7 +571,7 @@
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-
+				<br>
 				<h1>Official Savings Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
