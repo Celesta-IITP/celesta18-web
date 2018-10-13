@@ -512,7 +512,7 @@
   $(document).ready(function() {
 
   var parameters = location.search.substring(1).split("=");
-  var event_id = parameters[0];
+  var event_id = parameters[1];
   
   function clicked(act){
 
@@ -531,7 +531,7 @@
               	  	if(data["status"]==200){
                 		alert(data['message']);
                 		console.log("success");
-                		window.location = "event_.php?"+event_id;
+                		window.location = "event_.php?eveID"+event_id;
               		}else if(data['status']==409){
               			alert(data['message']);
               		}else{
