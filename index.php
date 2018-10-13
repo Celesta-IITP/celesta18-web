@@ -435,7 +435,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?1">Go to Events Page</a>
+								<a href="events.php?eveCat=1">Go to Events Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Events</h2>
@@ -454,7 +454,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?2">Go to Workshops Page</a>
+								<a href="events.php?eveCat=2">Go to Workshops Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Workshops</h2>
@@ -473,7 +473,7 @@
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?3">Go to Exhibitions Page</a>
+								<a href="events.php?eveCat=3">Go to Exhibitions Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Exhibitions</h2>

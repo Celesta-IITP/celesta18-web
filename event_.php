@@ -15,9 +15,9 @@
 
 		   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
 		}
-	      $url = $_SERVER['REQUEST_URI'];
-	      $param = explode("?",$url);
-	      $event_id = $param[1];
+	      /*$url = $_SERVER['REQUEST_URI'];
+	      $param = explode("?",$url);*/
+	      $event_id = $_GET['eveID'];
 	      $event_data = array();
 	      $ok = 0;
 			if($str = file_get_contents("eventdata/". $event_id . ".json")){

@@ -90,9 +90,10 @@
 
 	<?php
 
-  	  	$url = $_SERVER['REQUEST_URI'];
+  	  	/*$url = $_SERVER['REQUEST_URI'];
       	$param = explode("?",$url);
-      	$event_catagory = $param[1];
+      	*/
+      	$event_catagory = (string)$_GET['eveCat'];
       	if($event_catagory=='1'){
       		$event_catagory_name = "Events";
       	}elseif($event_catagory=='2'){
@@ -300,7 +301,7 @@
 	<div id="snackbar"><div id="close_snackbar">x</div> Posters of all the events will be updated soon...<br> Stay tuned :)</div>
 
 	<!-- testimonials -->
-	<div class="testimonials services jarallax">
+	<div class="testimonials services jarallax" style="overflow-y: hidden; min-height: 100vh;">
 			<div class="container">
 				<div class="cn-overlay_events"></div>
 				<!-- row -->
@@ -541,7 +542,7 @@
 			div.appendChild(div1);
 			
 			var a = document.createElement("a");
-     		a.setAttribute("href", "event_.php?"+ id);
+     		a.setAttribute("href", "event_.php?eveID"+ id);
      		div1.appendChild(a);
 
 			var img = document.createElement("img");
@@ -559,7 +560,7 @@
 			
 			var a1 = document.createElement("a");
 			a1.setAttribute("id", id);
-			a1.setAttribute("href", "event_.php?"+ id);
+			a1.setAttribute("href", "event_.php?eveID="+ id);
      		a1.setAttribute("target", "_blank");
      		div2.appendChild(a1);
 
