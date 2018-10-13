@@ -11,30 +11,8 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Team | Celesta 2k18</title>
-	<!-- Search Engine -->
-	<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
-	<!-- Schema.org for Google -->
-	<meta itemprop="name" content="Celesta '18, IIT Patna">
-	<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Celesta '18, IIT Patna">
-	<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-	<meta name="twitter:site" content="@celesta_iitp">
-	<meta name="twitter:creator" content="@celesta_iitp">
-	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
-	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-	<meta name="og:title" content="Celesta '18, IIT Patna">
-	<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
-	<meta name="og:url" content="https://celesta.org.in">
-	<meta name="og:site_name" content="Celesta '18, IIT Patna">
-	<meta name="fb:admins" content="549099751772038">
-	<meta name="og:type" content="website">
-	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
+	<title>Event | Celesta 2k18</title>
+
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
@@ -58,6 +36,7 @@
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/team.css" />
+	<link rel="stylesheet" type="text/css" href="touse.css" />
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
 </head>
@@ -291,7 +270,7 @@
 		</div>
 	</div>
 
-		<div class = "row" style = "padding:2em">
+		<!-- <div class = "row" style = "padding:2em">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
 				<div class = "col-sm-4" >
@@ -336,80 +315,198 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class = "row" style = "padding:1em">
-			<div class = "col-sm-1">
+		 -->
+		<div class = "row" style = "padding:2em">
+			<div class="col-md-1 col-xs-3"></div>
+			<div class="col-md-10 col-xs-6">
+				<div class = "col-md-4" >
+				</div>
+				<div class = "col-md-4 member">
+				<center><div class="team-block bg-gray has-number number-counter">
+					<div class="text-center row">
+						<div class="section-number-wrap">
+							<span class="section-number"></span>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-8 col-xs-12">
+							<figure>
+								<div class="team-card">
+									<div class="card-front">
+										<img src="images/team/deepanjan.jpg" alt="Stefan Hartwig - Founder & Chief Creative Officer" >
+									</div>
+									<div class="card-back">
+										<img src="images/team/avatar.jpg" alt="Stefan Hartwig">
+									</div>
+								</div>
+								<figcaption>
+									<span class="heading-quaternary">Deepanjan Datta</span><br>
+									<span class="heading-quinary">Development Team - Sub-coordinator</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>		
+				</div></center>
+				</div>
+				<div class = "col-md-4">
+				</div>
 			</div>
-			<div class = "col-sm-10 links">
-				<?php 
-					$param = urlencode("data da");
-				?>
-				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
-			</div>
-			<div class = "col-sm-1">
-			</div>
-		</div>
-		<div class = "row" style = "padding:1em">
-			<div class = "col-sm-1">
-			</div>
-			<div class = "col-sm-10 links">
-				<?php 
-					$param = urlencode("");
-				?>
-				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
-			</div>
-			<div class = "col-sm-1">
-			</div>
-		</div>
-		<div class = "row" style = "padding:1em">
-			<div class = "col-sm-1">
-			</div>
-			<div class = "col-sm-10 links">
-				<?php 
-					$param = urlencode("");
-				?>
-				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
-			</div>
-			<div class = "col-sm-1">
-			</div>
-		</div>
-		<div class = "row" style = "padding:1em">
-			<div class = "col-sm-1">
-			</div>
-			<div class = "col-sm-10 links">
-				<?php 
-					$param = urlencode("");
-				?>
-				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
-			</div>
-			<div class = "col-sm-1">
-			</div>
-		</div>
-		<div class = "row" style = "padding:1em">
-			<div class = "col-sm-1">
-			</div>
-			<div class = "col-sm-10 links">
-				<?php 
-					$param = urlencode("");
-				?>
-				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
-			</div>
-			<div class = "col-sm-1">
-			</div>
-		</div>
-		<div class = "row" style = "padding:1em">
-			<div class = "col-sm-1">
-			</div>
-			<div class = "col-sm-10 links">
-				<?php 
-					$param = urlencode("");
-				?>
-				<center><h1><a href="team_.php?<?php echo $param; ?>" style="text-decoration: none; color: red;"> Team</h1></center>
-			</div>
-			<div class = "col-sm-1">
-			</div>
+			<div class="col-md-1 col-xs-3"></div>
 		</div>
 
+		<div class = "row" style = " padding:2em">
+			<div class = "col-md-6 col-xs-6" style="margin-bottom: 15px;">
+				<div class = "col-md-5">
+				</div>
+				<div class = "col-md-7 member" >
+				<center><div class="team-block bg-gray has-number number-counter">
+					<div class="text-center row">
+						<div class="section-number-wrap">
+							<span class="section-number"></span>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-8 col-xs-12">
+							<figure>
+								<div class="team-card">
+									<div class="card-front">
+										<img src="images/team/deepanjan.jpg" alt="Stefan Hartwig - Founder & Chief Creative Officer" >
+									</div>
+									<div class="card-back">
+										<img src="images/team/avatar.jpg" alt="Stefan Hartwig">
+									</div>
+								</div>
+								<figcaption>
+									<span class="heading-quaternary">Deepanjan Datta</span><br>
+									<span class="heading-quinary">Development Team - Sub-coordinator</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>		
+				</div></center>
+				</div>
+				<div class = "col-md-1">
+				</div>
+			</div>
+			<div class = "col-md-6 col-xs-6" style="margin-bottom: 15px;">
+				
+				<div class = "col-md-7 member">
+				<center><div class="team-block bg-gray has-number number-counter">
+					<div class="text-center row">
+						<div class="section-number-wrap">
+							<span class="section-number"></span>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-8 col-xs-12">
+							<figure>
+								<div class="team-card">
+									<div class="card-front">
+										<img src="images/team/deepanjan.jpg" alt="Stefan Hartwig - Founder & Chief Creative Officer" >
+									</div>
+									<div class="card-back">
+										<img src="images/team/avatar.jpg" alt="Stefan Hartwig">
+									</div>
+								</div>
+								<figcaption>
+									<span class="heading-quaternary">Deepanjan Datta</span><br>
+									<span class="heading-quinary">Development Team - Sub-coordinator</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>		
+				</div></center>
+				</div>
+				<div class = "col-md-6">
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- <div class = "row" style = " padding:2em">
+			<div class = "col-md-3 col-xs-4 member" style="margin-bottom: 15px;">
+				<center><div class="team-block bg-gray has-number number-counter">
+					<div class="text-center row">
+						<div class="section-number-wrap">
+							<span class="section-number"></span>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-8 col-xs-12">
+							<figure>
+								<div class="team-card">
+									<div class="card-front">
+										<img src="images/team/deepanjan.jpg" alt="Stefan Hartwig - Founder & Chief Creative Officer" >
+									</div>
+									<div class="card-back">
+										<img src="images/team/avatar.jpg" alt="Stefan Hartwig">
+									</div>
+								</div>
+								<figcaption>
+									<span class="heading-quaternary">Deepanjan Datta</span><br>
+									<span class="heading-quinary">Development Team - Sub-coordinator</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>		
+				</div></center>
+			</div>
+			<div class="col-md-1"></div>
+			<div class = "col-md-3 col-xs-4 member" style="margin-bottom: 15px;">
+				<center><div class="team-block bg-gray has-number number-counter">
+					<div class="text-center row">
+						<div class="section-number-wrap">
+							<span class="section-number"></span>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-8 col-xs-12">
+							<figure>
+								<div class="team-card">
+									<div class="card-front">
+										<img src="images/team/deepanjan.jpg" alt="Stefan Hartwig - Founder & Chief Creative Officer" >
+									</div>
+									<div class="card-back">
+										<img src="images/team/avatar.jpg" alt="Stefan Hartwig">
+									</div>
+								</div>
+								<figcaption>
+									<span class="heading-quaternary">Deepanjan Datta</span><br>
+									<span class="heading-quinary">Development Team - Sub-coordinator</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>		
+				</div></center>
+			</div>
+			<div class="col-md-1"></div>
+			<div class = "col-md-3 col-xs-4 member" style="margin-bottom: 15px;">
+				<center><div class="team-block bg-gray has-number number-counter">
+					<div class="text-center row">
+						<div class="section-number-wrap">
+							<span class="section-number"></span>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-8 col-xs-12">
+							<figure>
+								<div class="team-card">
+									<div class="card-front">
+										<img src="images/team/deepanjan.jpg" alt="Stefan Hartwig - Founder & Chief Creative Officer" >
+									</div>
+									<div class="card-back">
+										<img src="images/team/avatar.jpg" alt="Stefan Hartwig">
+									</div>
+								</div>
+								<figcaption>
+									<span class="heading-quaternary">Deepanjan Datta</span><br>
+									<span class="heading-quinary">Development Team - Sub-coordinator</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>		
+				</div></center>
+			</div>
+			
+		</div>
+		 -->
+
+			<!--Team Block-->
+	
 	<!-- jQuery Plugins -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -439,7 +536,118 @@
 	<script src="assets/js/index.js"></script>
 	<!-- /Loading -->
 	<script src="assets/js/jquery.csv.js"></script>
-	
+	<script src="assets/js/jquery.csv.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var data_coord, data;
+		$.when(
+			$.ajax({
+	  		type: "GET",  
+	  		url: "team/<?php echo $committee; ?>_coord.csv",
+	  		dataType: "text",       
+	  		success: function(response)  
+	  		{
+				data_coord = $.csv.toObjects(response);
+				team(data_coord,"Coordinators");
+	  		}   
+		})
+		).done($.ajax({
+	  				type: "GET",  
+	  				url: "team/<?php echo $committee; ?>.csv",
+	  				dataType: "text",       
+	  				success: function(resp)  
+	  				{
+						data = $.csv.toObjects(resp);
+						team(data,"Sub-Coordinators");	
+	  				}   
+				})
+		);
+		
+
+		
+
+		
+
+		function team(data,coord){
+			var number = data.length;
+			var parent = document.getElementById("parent");
+			var div0 = document.createElement("div");
+			div0.setAttribute("class", "row");
+			div0.setAttribute("style", "padding:2em; color: red; font-size: 1.5em;");
+			div0.innerHTML = coord;
+			parent.appendChild(div0);
+			if(number%2==0){
+				var i;
+				for(i=0;i<number;i+=2){
+					member_row(data,i,1);
+				}
+			}else{
+				var i;
+				for(i=0;i<number-1;i+=2){
+					member_row(data,i,1);
+				}
+				member_row(data,number-1,0);
+			}
+		}
+
+		function member_row(data, i, even){
+			var name = data[i]['Name'];
+			var image = data[i]['Image'];
+			var committee = data['Committee']
+			var mobile = data[i]['Phone No.'];
+			var email = data[i]['email'];
+			var fb = data[i]['fb url'];
+			var linked = data[i]['Linkedin url'];
+
+			var parent = document.getElementById("parent");
+			var div = document.createElement("div");
+			div.setAttribute("class", "row");
+			div.setAttribute("style", "padding:2em;");
+			parent.appendChild(div);
+
+			var div1 = document.createElement("div");
+			div1.setAttribute("class", "col-sm-2");
+			div.appendChild(div1);
+			
+			var img = document.createElement("img");
+			img.setAttribute("style", "border-radius:50%;width:7em;height:7em;");
+			img.setAttribute("src", "images/team/"+image);
+			div1.appendChild(img);
+
+			var div2 = document.createElement("div");
+			div2.setAttribute("class", "col-sm-4");
+     		div.appendChild(div2);
+
+			var h2 = document.createElement("h2");
+			h2.setAttribute("style", "text-decoration:none");
+			h2.innerHTML = name;
+			div2.appendChild(h2);
+			
+			var h4 = document.createElement("h4");
+			h4.setAttribute("style", "color: red;");
+			h4.innerHTML = "Contact: ";
+			div2.appendChild(h4);
+
+			var span = document.createElement("span");
+			span.setAttribute("style", "color: black; padding-left: 5px;");
+     		span.innerHTML = mobile;
+     		h4.appendChild(span);
+
+     		var h41 = document.createElement("h4");
+			h41.setAttribute("style", "color: red;");
+			h41.innerHTML = "Email: ";
+			div2.appendChild(h41);
+
+			var span_1 = document.createElement("span");
+			span_1.setAttribute("style", "color: black; padding-left: 5px;");
+     		span_1.innerHTML = email;
+     		h41.appendChild(span_1);  
+		}		
+
+		
+	});
+
+	</script>	
 </body>
 
 </html>
