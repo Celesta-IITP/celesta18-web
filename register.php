@@ -228,7 +228,7 @@ function goBack() {
 
         //match college
 
-        var collegeRegex = "^[a-zA-Z ]+$";
+        var collegeRegex = "^[a-zA-Z-.' ]+$";
 
         //match phone
 
