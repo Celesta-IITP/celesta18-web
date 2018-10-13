@@ -283,6 +283,30 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 
+				<h1>Beverage Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Coca Cola</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/coca.png" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Event Sponsor</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>ICETL</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/icetl.png" alt="">
+						</a>
+					</div>
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+				
 				<h1>Coding Partner</h1>
 				<div class="row">
 				<div class="col-md-3 col-sm-4 col-xs-6"></div>
@@ -343,7 +367,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Radio Mirchi</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/radio2.jpg" alt="">
+							<img src="./images/sponsors/radio2.jpg" style="height:170px;width:auto;" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -351,21 +375,34 @@
 
 				<h1>Food Partner</h1>
 				<div class="row">
-				<div class="col-md-3 col-sm-4 col-xs-6"></div>
-					<div class="col-md-3 col-sm-4 col-xs-6">
+					<!-- <div class="col-md-3 col-sm-4 col-xs-6"></div> -->
+					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Jain Food Stall</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/jainfoodstall.jpeg" alt="">
+							<img src="./images/sponsors/jainfoodstall.jpeg" style="height:170px;width:auto;" alt="">
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-4 col-xs-6">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Genuine Broaster Chicken</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/chicken.jpeg" style="height:170px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Foodies</p>
 						<a href="#" class="sponsor">
 							<img src="./imges/sponsor.png" alt="">
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-4 col-xs-6"></div>
+					<!-- <div class="col-md-3 col-sm-4 col-xs-6"></div> -->
 				</div>
+
+				<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-6"></div>
+					
+				</div>
+
+				
 				<h1>Training Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -496,6 +533,15 @@
 						</a>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6"></div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<p>Knowafest</p>
+						<a href="#" class="sponsor">
+							<img src="./images/sponsors/knowafest.png" style = "height:130px;width:auto;" alt="">
+						</a>
+					</div>
+				</div>
 
 				<h1>Printing Partner</h1>
 				<div class="row">
@@ -503,7 +549,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>IMAX Studios</p>
 						<a href="#" class="sponsor">
-							<img src="./images/sponsors/imaxstudios.png" alt="">
+							<img src="./images/sponsors/imaxstudios.png" style="height:150px;width:auto;" alt="">
 						</a>
 					</div>
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
