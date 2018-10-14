@@ -376,6 +376,7 @@
 							<?php echo $event_data['about']; ?><br><b>For more details see rules below</b>
 						</p>
 						<br>
+						<h4>Eligibility: &nbsp;<span><?php echo isset($event_data['elgbt'])?$event_data['elgbt']:"Open for all";?></span></h4>
 						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
 						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
 						<h4>

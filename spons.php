@@ -133,7 +133,6 @@
 	<header id="header" class="transparent-navbar spons_nav">
 		<!-- container -->
 		<div class="container">
-			<center>
 			<!-- navbar header -->
 			<div class="navbar-header">
 				<!-- Logo -->
@@ -372,7 +371,7 @@
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
-
+				<br>
 				<h1>Food Partner</h1>
 				<div class="row">
 					<!-- <div class="col-md-3 col-sm-4 col-xs-6"></div> -->
@@ -585,7 +584,6 @@
 				</div>
 			</div>
 			<!-- /row -->
-			</center>
 		</div>
 		<!-- /container -->
 	

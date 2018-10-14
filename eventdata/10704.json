@@ -1,1 +1,11 @@
-{"name":"Line Follower","catagory":"Special Robotics","date":"","time":"","venue":"","about":"Problem statement :<br> The challenge of the competition is to make a robot that can move on black lines on a white background and reach the finish as soon as possible. The competition area has is a special place defined for the robot&#39;s operation (hereafter COMPETITION FIELD). The participants must create an autonomous vehicle (hereafter ROBOT), that will move on the COMPETITION FIELD and do certain tasks. The ROBOT which will start on the START tile and reach the FINISH tile block by following the black lines in the shortest time will be nominated the winner.","organised":"Vivekanand Prasad","contact":"8568985531","rules":"https://drive.google.com/file/d/1qaMxf9W3JDRv3YaiCZnkzZBdw8SOC-k9/view?usp=sharing"}
+{
+    "name": "Line Follower",
+    "catagory": "Special Robotics",
+    "date": "",
+    "time": "",
+    "venue": "",
+    "about": "Problem statement :<br> The challenge of the competition is to make a robot that can move on black lines on a white background and reach the finish as soon as possible. The competition area has is a special place defined for the robot&#39;s operation (hereafter COMPETITION FIELD). The participants must create an autonomous vehicle (hereafter ROBOT), that will move on the COMPETITION FIELD and do certain tasks. The ROBOT which will start on the START tile and reach the FINISH tile block by following the black lines in the shortest time will be nominated the winner.",
+    "organised": "Vivekanand Prasad",
+    "contact": "8568985531",
+    "rules": "https://drive.google.com/file/d/1qaMxf9W3JDRv3YaiCZnkzZBdw8SOC-k9/view?usp=sharing"
+}
