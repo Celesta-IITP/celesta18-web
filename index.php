@@ -402,7 +402,7 @@
 				<!-- cta content -->
 				<div class="col-md-8 col-md-offset-2">
 					<div class="cta-content text-center">
-						<a class="video-play" href="Gallery/index.php">
+						<a class="video-play" href="gallery.php">
 							<i class="fa fa-play"></i>
 						</a>
 						<h2>Check out the complete gallery of Celesta</h2>
