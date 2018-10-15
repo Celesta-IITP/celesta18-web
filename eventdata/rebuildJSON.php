@@ -1,6 +1,8 @@
 <?php
 include '../apiLe/defines.php';
-$csvContents = file_get_contents($eventsSheetUtl);
+// $eventsSheetUtl
+// todo insert above variable as parameter in below function when things are ok.
+$csvContents = file_get_contents();
 $csvContents  = explode("\n",$csvContents);
 
 #fill different category IDs here
