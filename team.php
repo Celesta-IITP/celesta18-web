@@ -662,7 +662,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/avatar2.jpg">
+						<img src="/images/team/sahil.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -732,7 +732,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/avatar2.jpg">
+						<img src="/images/team/harsh.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -865,111 +865,111 @@
 	<script src="assets/js/jquery.csv.js"></script>
 	<script src="assets/js/jquery.csv.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function () {
-			var data_coord, data;
-			$.when(
-				$.ajax({
-					type: "GET",
-					url: "team/<?php echo $committee; ?>_coord.csv",
-					dataType: "text",
-					success: function (response) {
-						data_coord = $.csv.toObjects(response);
-						team(data_coord, "Coordinators");
-					}
-				})
-			).done($.ajax({
-				type: "GET",
-				url: "team/<?php echo $committee; ?>.csv",
-				dataType: "text",
-				success: function (resp) {
-					data = $.csv.toObjects(resp);
-					team(data, "Sub-Coordinators");
-				}
-			}));
+		// $(document).ready(function () {
+		// 	var data_coord, data;
+		// 	$.when(
+		// 		$.ajax({
+		// 			type: "GET",
+		// 			url: "team/<?php echo $committee; ?>_coord.csv",
+		// 			dataType: "text",
+		// 			success: function (response) {
+		// 				data_coord = $.csv.toObjects(response);
+		// 				team(data_coord, "Coordinators");
+		// 			}
+		// 		})
+		// 	).done($.ajax({
+		// 		type: "GET",
+		// 		url: "team/<?php echo $committee; ?>.csv",
+		// 		dataType: "text",
+		// 		success: function (resp) {
+		// 			data = $.csv.toObjects(resp);
+		// 			team(data, "Sub-Coordinators");
+		// 		}
+		// 	}));
 
 
 
 
 
 
-			function team(data, coord) {
-				var number = data.length;
-				var parent = document.getElementById("parent");
-				var div0 = document.createElement("div");
-				div0.setAttribute("class", "row");
-				div0.setAttribute("style", "padding:2em; color: red; font-size: 1.5em;");
-				div0.innerHTML = coord;
-				parent.appendChild(div0);
-				if (number % 2 == 0) {
-					var i;
-					for (i = 0; i < number; i += 2) {
-						member_row(data, i, 1);
-					}
-				} else {
-					var i;
-					for (i = 0; i < number - 1; i += 2) {
-						member_row(data, i, 1);
-					}
-					member_row(data, number - 1, 0);
-				}
-			}
+		// 	function team(data, coord) {
+		// 		var number = data.length;
+		// 		var parent = document.getElementById("parent");
+		// 		var div0 = document.createElement("div");
+		// 		div0.setAttribute("class", "row");
+		// 		div0.setAttribute("style", "padding:2em; color: red; font-size: 1.5em;");
+		// 		div0.innerHTML = coord;
+		// 		parent.appendChild(div0);
+		// 		if (number % 2 == 0) {
+		// 			var i;
+		// 			for (i = 0; i < number; i += 2) {
+		// 				member_row(data, i, 1);
+		// 			}
+		// 		} else {
+		// 			var i;
+		// 			for (i = 0; i < number - 1; i += 2) {
+		// 				member_row(data, i, 1);
+		// 			}
+		// 			member_row(data, number - 1, 0);
+		// 		}
+		// 	}
 
-			function member_row(data, i, even) {
-				var name = data[i]['Name'];
-				var image = data[i]['Image'];
-				var committee = data['Committee']
-				var mobile = data[i]['Phone No.'];
-				var email = data[i]['email'];
-				var fb = data[i]['fb url'];
-				var linked = data[i]['Linkedin url'];
+		// 	function member_row(data, i, even) {
+		// 		var name = data[i]['Name'];
+		// 		var image = data[i]['Image'];
+		// 		var committee = data['Committee']
+		// 		var mobile = data[i]['Phone No.'];
+		// 		var email = data[i]['email'];
+		// 		var fb = data[i]['fb url'];
+		// 		var linked = data[i]['Linkedin url'];
 
-				var parent = document.getElementById("parent");
-				var div = document.createElement("div");
-				div.setAttribute("class", "row");
-				div.setAttribute("style", "padding:2em;");
-				parent.appendChild(div);
+		// 		var parent = document.getElementById("parent");
+		// 		var div = document.createElement("div");
+		// 		div.setAttribute("class", "row");
+		// 		div.setAttribute("style", "padding:2em;");
+		// 		parent.appendChild(div);
 
-				var div1 = document.createElement("div");
-				div1.setAttribute("class", "col-sm-2");
-				div.appendChild(div1);
+		// 		var div1 = document.createElement("div");
+		// 		div1.setAttribute("class", "col-sm-2");
+		// 		div.appendChild(div1);
 
-				var img = document.createElement("img");
-				img.setAttribute("style", "border-radius:50%;width:7em;height:7em;");
-				img.setAttribute("src", "images/team/" + image);
-				div1.appendChild(img);
+		// 		var img = document.createElement("img");
+		// 		img.setAttribute("style", "border-radius:50%;width:7em;height:7em;");
+		// 		img.setAttribute("src", "images/team/" + image);
+		// 		div1.appendChild(img);
 
-				var div2 = document.createElement("div");
-				div2.setAttribute("class", "col-sm-4");
-				div.appendChild(div2);
+		// 		var div2 = document.createElement("div");
+		// 		div2.setAttribute("class", "col-sm-4");
+		// 		div.appendChild(div2);
 
-				var h2 = document.createElement("h2");
-				h2.setAttribute("style", "text-decoration:none");
-				h2.innerHTML = name;
-				div2.appendChild(h2);
+		// 		var h2 = document.createElement("h2");
+		// 		h2.setAttribute("style", "text-decoration:none");
+		// 		h2.innerHTML = name;
+		// 		div2.appendChild(h2);
 
-				var h4 = document.createElement("h4");
-				h4.setAttribute("style", "color: red;");
-				h4.innerHTML = "Contact: ";
-				div2.appendChild(h4);
+		// 		var h4 = document.createElement("h4");
+		// 		h4.setAttribute("style", "color: red;");
+		// 		h4.innerHTML = "Contact: ";
+		// 		div2.appendChild(h4);
 
-				var span = document.createElement("span");
-				span.setAttribute("style", "color: black; padding-left: 5px;");
-				span.innerHTML = mobile;
-				h4.appendChild(span);
+		// 		var span = document.createElement("span");
+		// 		span.setAttribute("style", "color: black; padding-left: 5px;");
+		// 		span.innerHTML = mobile;
+		// 		h4.appendChild(span);
 
-				var h41 = document.createElement("h4");
-				h41.setAttribute("style", "color: red;");
-				h41.innerHTML = "Email: ";
-				div2.appendChild(h41);
+		// 		var h41 = document.createElement("h4");
+		// 		h41.setAttribute("style", "color: red;");
+		// 		h41.innerHTML = "Email: ";
+		// 		div2.appendChild(h41);
 
-				var span_1 = document.createElement("span");
-				span_1.setAttribute("style", "color: black; padding-left: 5px;");
-				span_1.innerHTML = email;
-				h41.appendChild(span_1);
-			}
+		// 		var span_1 = document.createElement("span");
+		// 		span_1.setAttribute("style", "color: black; padding-left: 5px;");
+		// 		span_1.innerHTML = email;
+		// 		h41.appendChild(span_1);
+		// 	}
 
 
-		});
+		// });
 	</script>
 </body>
 
