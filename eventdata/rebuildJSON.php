@@ -35,9 +35,9 @@ foreach ($csvContents as $key => $value) {
     unset($jsonDataOut[""]);
     $fileName = "1".str_pad($eveCatID[$row[12]], 2, "0",STR_PAD_LEFT).str_pad($key, 2, "0",STR_PAD_LEFT).".json";
     print($fileName);
-    $fp = fopen( $fileName, 'w');
-    fwrite($fp, json_encode($jsonDataOut));
-    fclose($fp);
+    // $fp = fopen( $fileName, 'w');
+    // fwrite($fp, json_encode($jsonDataOut));
+    // fclose($fp);
 }
 
 ?>
