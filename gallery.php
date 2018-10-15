@@ -9,24 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
-	  <?php
-		function clean($string) {
-		   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
-
-		   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
-		}
-	      /*$url = $_SERVER['REQUEST_URI'];
-	      $param = explode("?",$url);*/
-	      $event_id = $_GET['eveID'];
-	      $event_data = array();
-	      $ok = 0;
-			if($str = file_get_contents("eventdata/". $event_id . ".json")){
-				$event_data = json_decode($str, true);
-				$ok = 1;
-			}
-		
-	  ?>
-	<title><?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Events | Celesta 2k18</title>
+	<title>Gallery | Celesta 2k18</title>
 
 	<!-- Search Engine -->
 	<?php if ($ok && $event_data["about"]){ $cAbout = clean($event_data["about"]) ?>
@@ -102,7 +85,7 @@
    			color:#FFFFFF;
    			text-align:center;
    			transition: all 0.2s;
-  		}
+		}
   		.button1:hover{
   		 	color:#000000;
    			background-color:#f4d03e;
@@ -112,6 +95,13 @@
     			display:block;
     			margin:0.4em auto;
    			}
+		}
+		#gallery{
+			background-color: #fff0f0;
+			padding: 10px 10px 10px 10px!important;
+		}
+		.img_pad{
+			margin:5px 0px 5px 0px;
 		}
 	</style>
 
@@ -265,7 +255,7 @@
 					<?php } ?>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
-					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="#">Gallery</a></li>
 					<li><a href="events.php">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
@@ -341,68 +331,40 @@
 		<!-- /background image -->
 	
 
-	<!-- Event -->
-	<div id="event" class="section">
-		<!-- container -->
+	<!-- Gallery -->
+	<!-- div.section -->
+	<div class="section">
 		<div class="container">
-			<!-- row -->
-				<?php if($ok==0){ ?>
-					<div class="section-title">
-						<h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span>Data not available</span></h3>
-					</div>
-				<?php }else{ 
-					foreach ($event_data as &$value) {
-						if($value==""){
-							$value = "(To be updated)";
+			<!-- section title -->
+			<div class="section-title">
+				<h3 class="title"><span style="color:white;">Celesta: &nbsp;</span> <span style="color: #dd0a37;">Gallery</span></h3>
+			</div>
+			<!-- section title -->
+				<!-- Parrallelism section -->
+			<section id="gallery">
+				<h2>Celesta 2017</h2>
+				<div class="row">
+					<?php
+						$dirname = "Gallery/gallery_pics/2017/";
+						$images = glob($dirname."*.JPG");
+						foreach($images as $image) {
+							echo "\n<div class=\"col-md-3 img_pad\">\n";
+							// echo $image;
+							// echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
+							echo "\t<img src=\"".$image."\" style=\"max-width:100%\">\n";
+							// echo '</a>';
+							echo "</div>\n";
 						}
-					}
-					?>	
-					<!-- section title -->
-					<div class="section-title">
-						<h3 class="title"><span style = "color:white">Event: &nbsp;</span><span><?php echo $event_data['name']; ?></span></h3>
-					</div>
-					<!-- /section title -->
-					<div style="background-color:white;padding:1em;border-radius:5px;">
-						<?php 
-							if(isset($event_data['img'])){
-								echo '<img id="poster" src='.$event_data['img'].' style="max-width:100%">';
-							}
-						?>
-						<h3 id="date">Date: &nbsp;<span><?php echo isset($event_data['date'])?$event_data['date']:"(To be updated)"; ?></span></h3>
-						<h3 id="time">Time: &nbsp;<span><?php echo isset($event_data['time'])?$event_data['time']:"(To be updated)"; ?></span></h3>
-						<h3 id="venue">Venue: &nbsp;<span><?php echo isset($event_data['venue'])?$event_data['venue']:"(To be updated)"; ?></span></h3>
-						<br>
-						<p id="desc">
-							<?php echo $event_data['about']; ?><br><b>For more details see rules below</b>
-						</p>
-						<br>
-						<h4>Eligibility: &nbsp;<span><?php echo isset($event_data['elgbt'])?$event_data['elgbt']:"Open for all";?></span></h4>
-						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
-						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
-						<h4>
-						<?php if(!isset($event_data['rules']) || $event_data['rules']=="(To be updated)"){ ?>
-							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
-						<?php }else{ ?>
-							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
-						<?php } ?>
-							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
-						</h4><br>
-					</div>
-				<?php } ?>
+					?>
+				</div>
+			</section>
+			<br>
 			<!-- /row -->
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /Event -->
+	<!-- /div.section -->
 
-	<section class="upcoming-events-highlight " style="background-image:url(./img/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
-      <div class="container">
-        <div class="row">
-        </div>
-      </div>
-    </section>
-	
-	
 	
 
 	<!-- Footer -->
@@ -515,6 +477,7 @@
 	<!-- /Loading -->
 	<script>
   $(document).ready(function() {
+
 
   var parameters = location.search.substring(1).split("=");
   var event_id = parameters[1];
