@@ -6,7 +6,6 @@ function SQLInjFilter(&$unfilteredString){
 		$unfilteredString = htmlentities($unfilteredString, ENT_QUOTES, 'UTF-8');
 		// return $unfilteredString;
 }
-
 	$directory = 'eventdata';
     if (!is_dir($directory)) {
        	echo "Could not find events.";
@@ -15,20 +14,23 @@ function SQLInjFilter(&$unfilteredString){
     	foreach(scandir($directory) as $file) {
        		if('.' === $file) continue;
        		if('..' === $file) continue;
-       		if($file[0]==$event_catagory){
        			array_push($event_id, explode('.', $file)[0]);
-       		}
     	}
     	if($link =mysqli_connect($servername, $username, $password, $dbname)){
 			foreach($event_id as $value) {
-				if($str = file_get_contents($directory."/". $value . ".json")){
+				if($str = file_get_contents("eventdata/". $value . ".json")){
 					$event_data = json_decode($str, true);
 					$ok = 1;
 					$event_name = $event_data['name'];
 					$catagory_name = $event_data['catagory'];
+
+    				SQLInjFilter($value);
+    				SQLInjFilter($event_name);
+    				SQLInjFilter($catagory_name);
 					$sql = "INSERT INTO `events` VALUES ('".$value."', '".$event_name."', '".$catagory_name."')";
 					$result = mysqli_query($link,$sql);
 					if($result){
+						echo "\ndone -> ".$value;
 						//successfully entered.
     				}else{
     					if(mysqli_errno($link)==1062){
