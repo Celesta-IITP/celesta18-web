@@ -282,7 +282,7 @@
 
 	<div class="container">
 		<div class="section-title">
-			<h3 class="title"><span style="color:white">Core &nbsp;</span> <span style="color: #dd0a37;">Committee</span></h3>
+			<h3 class="title"><span style="color:white">Core</span>&nbsp;<span style="color: #dd0a37;">Committee</span></h3>
 		</div>
 	</div>
 	<br><br><br><br>
@@ -292,20 +292,20 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="">
+						<img src="/images/team/parth.jpg">
 					</div>
 					<div class="box-inner">
 						
 						<h3 class="name">Parth Kulkarni</h3>
-						<h4 class="occupation">Overall Fest Coordinator</h4>
+						<h4 class="dept">Overall Fest Coordinator</h4>
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-facebook"></a></li>
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-dribbble"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
 						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -317,20 +317,20 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="">
+						<img src="/images/team/arunika.jpg">
 					</div>
 					<div class="box-inner">
 						
 						<h3 class="name">Arunika Yadav</h3>
-						<h4 class="occupation">Sponsorship Coordinator</h4>
+						<h4 class="dept">Sponsorship Coordinator</h4>
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-facebook"></a></li>
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
 						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
-						<li><a href="#" class="fa fa-twitter"></a></li>
+						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
 						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
-						<li><a href="#" class="fa fa-linkedin"></a></li>
+						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -339,20 +339,20 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="">
+						<img src="/images/team/sangeeth.jpg">
 					</div>
 					<div class="box-inner">
 						
 						<h3 class="name">Sangeeth Mukundan</h3>
-						<h4 class="occupation">Sponsorship Coordinator</h4>
+						<h4 class="dept">Sponsorship Coordinator</h4>
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-facebook"></a></li>
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-dribbble"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
 						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -361,20 +361,461 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="">
+						<img src="/images/team/anushree.jpg">
 					</div>
 					<div class="box-inner">
 						
 						<h3 class="name">Anushree Jain</h3>
-						<h4 class="occupation">Sponsorship Coordinator</h4>
+						<h4 class="dept">Sponsorship Coordinator</h4>
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-facebook"></a></li>
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-dribbble"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
 						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- mpr -->
+	<div class="row row-centered">
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/parth.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Parth Kulkarni</h3>
+						<h4 class="dept">Media and PR Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/rishabh.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Rishab Katiyar</h3>
+						<h4 class="dept">Media and PR Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/avatar2.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Navin Kumar</h3>
+						<h4 class="dept">Media and PR Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/avatar2.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Suraj Jha</h3>
+						<h4 class="dept">Media and PR Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- dev -->
+	<div class="row row-centered">
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/tameesh.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Tameesh Biswas</h3>
+						<h4 class="dept">Dev Team Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<li><a href="https://tameesh.in" class="fa fa-globe"></a></li>
+						<li><a href="https://www.facebook.com/tameeshB" class="fa fa-facebook"></a></li>
+						<li><a href="https://www.twitter.com/tameeshB" class="fa fa-twitter"></a></li>
+						<li><a href="mailto:me@tameesh.in" class="fa fa-envelope"></a></li>
+						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/manish.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Manish Kumar</h3>
+						<h4 class="dept">Dev Team Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- registration -->
+	<div class="row row-centered">
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/mayank.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Mayank Tripathi</h3>
+						<h4 class="dept">Registrations Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/aditya.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Aditya Keshari</h3>
+						<h4 class="dept">Registrations Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/harshika.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Harshika</h3>
+						<h4 class="dept">Registrations Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- management -->
+	<div class="row row-centered">
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/akshat.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Akshat Rahul</h3>
+						<h4 class="dept">Management & Planning Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/visnu.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Visnu P Kumarr</h3>
+						<h4 class="dept">Management & Planning Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/avatar2.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Prajjwal Arya</h3>
+						<h4 class="dept">Management & Planning Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/avatar2.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Sahil Singh</h3>
+						<h4 class="dept">Management & Planning Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Hospitality -->
+	<div class="row row-centered">
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/abhirav.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Abhirav Sati</h3>
+						<h4 class="dept">Hospitality Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/raj.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Raj</h3>
+						<h4 class="dept">Hospitality Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/avatar2.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Harsh Raj</h3>
+						<h4 class="dept">Hospitality Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Creatives -->
+	<div class="row row-centered">
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/avatar2.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Nookesh Pilli</h3>
+						<h4 class="dept">Creatives Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/avatar2.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Sagar J</h3>
+						<h4 class="dept">Creatives Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-3 col-centered">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="avatar">
+						<img src="/images/team/sohid.jpg">
+					</div>
+					<div class="box-inner">
+						
+						<h3 class="name">Sohid Ture</h3>
+						<h4 class="dept">Creatives Coordinator</h4>
+
+					</div>
+					<ul class="social-list">
+						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li> -->
 					</ul>
 				</div>
 			</div>
