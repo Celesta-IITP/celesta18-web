@@ -228,7 +228,7 @@
 			</div>
 		</div>
 	</div>
-	<?phphttp://www.bsedc.bihar.gov.in/ } ?>
+	<?php } ?>
 	<!-- /event modal -->
 
 	<!-- /Common template for all pages -->
