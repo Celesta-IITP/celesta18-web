@@ -546,7 +546,7 @@
 			div.appendChild(div1);
 			
 			var a = document.createElement("a");
-     		a.setAttribute("href", "event_.php?eveID"+ id);
+     		a.setAttribute("href", "event_.php?eveID="+ id);
      		div1.appendChild(a);
 
 			var img = document.createElement("img");
