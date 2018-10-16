@@ -426,50 +426,6 @@
 				</div>
 			</div>
 		</div>
-        <div class="col-md-3 col-centered">
-			<div class="box-wrapper">
-				<div class="box">
-					<div class="avatar">
-						<img src="/images/team/avatar2.jpg">
-					</div>
-					<div class="box-inner">
-						
-						<h3 class="name">Navin Kumar</h3>
-						<h4 class="dept">Media and PR Coordinator</h4>
-
-					</div>
-					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3 col-centered">
-			<div class="box-wrapper">
-				<div class="box">
-					<div class="avatar">
-						<img src="/images/team/avatar2.jpg">
-					</div>
-					<div class="box-inner">
-						
-						<h3 class="name">Suraj Jha</h3>
-						<h4 class="dept">Media and PR Coordinator</h4>
-
-					</div>
-					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
-					</ul>
-				</div>
-			</div>
-		</div>
 	</div>
 	<!-- dev -->
 	<div class="row row-centered">
@@ -754,50 +710,6 @@
 
 	<!-- Creatives -->
 	<div class="row row-centered">
-        <div class="col-md-3 col-centered">
-			<div class="box-wrapper">
-				<div class="box">
-					<div class="avatar">
-						<img src="/images/team/avatar2.jpg">
-					</div>
-					<div class="box-inner">
-						
-						<h3 class="name">Nookesh Pilli</h3>
-						<h4 class="dept">Creatives Coordinator</h4>
-
-					</div>
-					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
-					</ul>
-				</div>
-			</div>
-		</div>
-        <div class="col-md-3 col-centered">
-			<div class="box-wrapper">
-				<div class="box">
-					<div class="avatar">
-						<img src="/images/team/avatar2.jpg">
-					</div>
-					<div class="box-inner">
-						
-						<h3 class="name">Sagar J</h3>
-						<h4 class="dept">Creatives Coordinator</h4>
-
-					</div>
-					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
-					</ul>
-				</div>
-			</div>
-		</div>
         <div class="col-md-3 col-centered">
 			<div class="box-wrapper">
 				<div class="box">
