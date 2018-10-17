@@ -35,6 +35,7 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/snackbar.css" />
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
 </head>
@@ -247,6 +248,11 @@
 	<?php } ?>
 	<!-- /event modal -->
 
+	<!-- Change class from hide to show to show the snackbar notification. -->	
+	<div id="snackbar" class="hide"><div id="close_snackbar">x</div>
+	 	<!-- Write here -->
+	</div>
+
 	<!-- /Common template for all pages -->
 <!-- background image -->
 <div class="section-bg" style="background-image:url(./img/background01.jpg);" data-stellar-background-ratio="0.5">
@@ -380,6 +386,12 @@
 	<script src="assets/js/loading.js"></script>
 	<script src="assets/js/index.js"></script>
 	<!-- /Loading -->
+	<script type="text/javascript">
+		$("#close_snackbar").click(function(){
+			var x = document.getElementById("snackbar");
+    		x.className = x.className.replace("show", "hide");
+		});
+	</script>
 </body>
 
 </html>
