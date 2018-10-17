@@ -251,7 +251,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Beltron</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.bsedc.bihar.gov.in/" class="sponsor">
 							<img src="./images/sponsors/beltron.png" style = "height:180px;width:auto;" alt="">
 						</a>
 					</div>
@@ -263,7 +263,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Startup Bihar</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.startup.bihar.gov.in/" class="sponsor">
 							<img src="./images/sponsors/startupbihar.png" style = "height:180px;width:auto;" alt="">
 						</a>
 					</div>
@@ -275,7 +275,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Bihar Tourism</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.bihartourism.gov.in/" class="sponsor">
 							<img src="./images/sponsors/bihartourism.jpg" style = "height:180px;width:auto;" alt="">
 						</a>
 					</div>
@@ -287,7 +287,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Coca Cola</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.coca-colaindia.com/" class="sponsor">
 							<img src="./images/sponsors/coca.png" style = "height:180px;width:auto;" alt="">
 						</a>
 					</div>
@@ -299,7 +299,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>ICETL</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.icetl.com/" class="sponsor">
 							<img src="./images/sponsors/icetl.png" alt="">
 						</a>
 					</div>
@@ -311,13 +311,13 @@
 				<div class="col-md-3 col-sm-4 col-xs-6"></div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Coding Ninjas</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.codingninjas.in/" class="sponsor">
 							<img src="./images/sponsors/codingninjas.png" style = "width:300px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>HackerEarth</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.hackerearth.com/" class="sponsor">
 							<img src="./images/sponsors/hackerearth_new.png" style = "margin-top:40px;" alt="">
 						</a>
 					</div>
@@ -329,7 +329,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Ruban</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.rubanpatliputrahospital.com/" class="sponsor">
 							<img src="./images/sponsors/ruban.png" style = "height:150px;width:auto;" alt="">
 						</a>
 					</div>
@@ -341,7 +341,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Classmate</p>
-						<a href="#" class="sponsor">
+						<a href="http://classmatestationery.com/" class="sponsor">
 							<img src="./images/sponsors/classmate2.png" alt="">
 						</a>
 					</div>
@@ -353,7 +353,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Zebronics</p>
-						<a href="#" class="sponsor">
+						<a href="https://zebronics.com/" class="sponsor">
 							<img src="./images/sponsors/zebronics.png" alt="">
 						</a>
 					</div>
@@ -365,7 +365,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Radio Mirchi</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.radiomirchi.com/" class="sponsor">
 							<img src="./images/sponsors/radio2.jpg" style="height:170px;width:auto;" alt="">
 						</a>
 					</div>
@@ -377,19 +377,19 @@
 					<!-- <div class="col-md-3 col-sm-4 col-xs-6"></div> -->
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Jain Food Stall</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.justdial.com/Patna/Jain-Food-World-Below-SBI-Bank-Boring-Road/0612PX612-X612-170905112625-X8H1_BZDET" class="sponsor">
 							<img src="./images/sponsors/jainfoodstall.jpeg" style="height:170px;width:auto;" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Genuine Broaster Chicken</p>
-						<a href="#" class="sponsor">
+						<a href="http://broaster.com/" class="sponsor">
 							<img src="./images/sponsors/chicken.jpeg" style="height:170px;width:auto;" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Foodies</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.foodies.com/" class="sponsor">
 							<img src="./imges/sponsor.png" alt="">
 						</a>
 					</div>
@@ -403,7 +403,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>CertStore</p>
 						<br>
-						<a href="#" class="sponsor">
+						<a href="https://www.certstore.in/" class="sponsor">
 							<img src="./images/sponsors/certstore.png" alt="">
 						</a>
 						<br>
@@ -417,13 +417,13 @@
 				<div class="col-md-3 col-sm-4 col-xs-6"></div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Youth India Foundation</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.facebook.com/YouthIndiaGlobal/" class="sponsor">
 							<img src="./images/sponsors/youthindiafoundation.jpeg" style="height:170px;width:170px" alt="">
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-6">
 						<p>Tech Prob Labz</p>
-						<a href="#" class="sponsor">
+						<a href="http://techprolabz.com" class="sponsor">
 							<img src="./images/sponsors/techprolabz.jpeg" alt="">
 						</a>
 					</div>
@@ -436,7 +436,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6"><br>
 						<p>ASAP</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.asaphosting.in/" class="sponsor">
 							<img src="./images/sponsors/asap.png" style = "height:100px; width:100px" alt="">
 						</a>
 					</div>
@@ -448,7 +448,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6"><br>
 						<p>Awestruck</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.awestruck.clothing/" class="sponsor">
 							<img src="./images/sponsors/awestruck.jpeg" style = "height:160px; width:auto" alt="">
 						</a>
 					</div>
@@ -460,7 +460,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>What After College</p>
-						<a href="#" class="sponsor">
+						<a href="http://whataftercollege.com/" class="sponsor">
 							<img src="./images/sponsors/whataftercollege.png" alt="">
 						</a>
 					</div>
@@ -474,7 +474,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 					<br>
 						<p>BlogAdda</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.blogadda.com/" class="sponsor">
 							<img src="./images/sponsors/blogadda2.png" style = "height:100px;width : 250px" alt="">
 						</a>
 					</div>
@@ -487,7 +487,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6"><br>
 						<p>Scientific India Partner</p>
-						<a href="#" class="sponsor">
+						<a href="http://scind.org/" class="sponsor">
 							<img src="./images/sponsors/scientificindia.png" style = "width:350px" alt="">
 						</a>
 					</div><br>
@@ -498,14 +498,14 @@
 				<div class="row"><br>
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>FestPav</p>
-						<a href="#" class="sponsor">
+						<a href="http://festpav.com/" class="sponsor">
 							<img src="./images/sponsors/festpav.png" style = "height:150px;width:350px;" alt="">
 						</a>
 						<br>
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>NTD India</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.ntdin.tv/" class="sponsor">
 							<img src="./images/sponsors/ntdindia.jpg" style = "height:150px;width:auto;" alt="">
 						</a>
 					</div>
@@ -514,13 +514,13 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>The College Fever</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.thecollegefever.com/" class="sponsor">
 							<img src="./images/sponsors/thecollegefever.png" style = "height:250px;width:auto;" alt="">
 						</a>
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>Ignite Engineers</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.igniteengineers.com/" class="sponsor">
 							<img src="./images/sponsors/igniteengineers.png" style = "height:150px;width:auto;" alt="">
 						</a>
 					</div>
@@ -529,7 +529,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6"></div>
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<p>Knowafest</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.knowafest.com/college-fests/events" class="sponsor">
 							<img src="./images/sponsors/knowafest.png" style = "height:130px;width:auto;" alt="">
 						</a>
 					</div>
@@ -540,7 +540,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>IMAX Studios</p>
-						<a href="#" class="sponsor">
+						<a href="http://www.imaxstudios.in/" class="sponsor">
 							<img src="#" style="height:150px;width:auto;" alt="">
 						</a>
 					</div>
@@ -552,7 +552,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>The Souled Store</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.thesouledstore.com/" class="sponsor">
 							<img src="./images/sponsors/thesouledstore.png" style="height:200px;width:auto;" alt="">
 						</a>
 					</div>
@@ -564,7 +564,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>LearnCodeOnline</p>
-						<a href="#" class="sponsor">
+						<a href="https://learncodeonline.in/" class="sponsor">
 							<img src="./images/sponsors/learncodeonline.png" style="height:150px;width:auto;" alt="">
 						</a>
 					</div>
@@ -576,7 +576,7 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Grabon</p>
-						<a href="#" class="sponsor">
+						<a href="https://www.grabon.in/" class="sponsor">
 							<img src="./images/sponsors/grabon.png" style="height:150px;width:auto;" alt="">
 						</a>
 					</div>
