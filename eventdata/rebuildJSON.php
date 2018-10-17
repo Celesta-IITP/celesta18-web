@@ -2,21 +2,21 @@
 include '../apiLe/defines.php';
 // $eventsSheetUtl
 // todo insert above variable as parameter in below function when things are ok.
-$csvContents = file_get_contents();
-$csvContents  = explode("\n",$csvContents);
+$csvContents = file_get_contents($eventsSheetUtl);
+$csvContents  = explode(";;;",$csvContents);
 
 #fill different category IDs here
 $eveCatID = [
-        "Build IT!"=>"01",
-        "Treasure Hunt"=>"02",
-        "Non Tech"=>"03",
-        "Coding and Design"=>"04",
-        "Management"=>"05",
-        "Quiz"=>"06",
-        "Special Robotics"=>"07"
+        "Build IT!"=>1,
+        "Treasure Hunt"=>2,
+        "Non Tech"=>3,
+        "Coding and Design"=>4,
+        "Management"=>5,
+        "Quiz"=>6,
+        "Special Robotics"=>7
         // etc
 ];
-
+$eveIndex = [0,0,0,0,0,0,0,0];
 // $eligible = [
 //     "School level" => 0,
 //     "College level" => 1,
@@ -29,14 +29,17 @@ foreach ($csvContents as $key => $value) {
         continue;
     echo $key."> ";
     $row = str_getcsv($value);
+    if (!isset($row[12]))
+        continue;
     $jsonDataOut = [];
     for ($i=0; $i < 13; $i++) { 
         if ($row[$i] && $row[$i]!="")
             $jsonDataOut[$attr[$i]] = $row[$i];
     }
+    $eveIndex[$eveCatID[$row[12]]]++;
     unset($jsonDataOut[""]);
-    $fileName = "1".str_pad($eveCatID[$row[12]], 2, "0",STR_PAD_LEFT).str_pad($key, 2, "0",STR_PAD_LEFT).".json";
-    print($fileName);
+    $fileName = "1".str_pad($eveCatID[$row[12]], 2, "0",STR_PAD_LEFT).str_pad($eveIndex[$eveCatID[$row[12]]], 2, "0",STR_PAD_LEFT).".json";
+    print($fileName."\t".json_encode($row)."\t".$row[12]."\n");
     // $fp = fopen( $fileName, 'w');
     // fwrite($fp, json_encode($jsonDataOut));
     // fclose($fp);
