@@ -279,7 +279,7 @@
 	<div id="snackbar" class="show"><div id="close_snackbar">x</div>
 	 	NJATH is Live! Click 
 	 	<a style="text-decoration: underline;" href="http://njath.celesta.org.in">here</a>
-	 	to participate...<br>
+	 	<!--to participate...--><br>
 	</div>
 
 	<!-- /Common template for all pages -->
