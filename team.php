@@ -42,7 +42,7 @@
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
 </head>
 
-<body style="overflow-x: hidden;">
+<body style="background-image:url(./img/background01.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; overflow-x: hidden;">
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 	<!-- <div class="loading-page">
@@ -266,10 +266,8 @@
 
 	<!-- /Common template for all pages -->
 	<!-- background image -->
-	<div class="section-bg" style="background-image:url(./img/background01.jpg); position: fixed; background-repeat: repeat-y;"
-	 data-stellar-background-ratio="0.5">
-		<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 3;"></div>
-		<div class="cn-overlay"></div>
+	<div  class="section-bg" data-stellar-background-ratio="0.5">
+		<div class="cn-overlay" style="position: fixed !important;"></div>
 	</div>
 	<!-- /background image -->
 
@@ -292,7 +290,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/parth.jpg">
+						<img src="images/team/parth.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -301,11 +299,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -317,7 +314,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/arunika.jpg">
+						<img src="images/team/arunika.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -326,11 +323,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -339,7 +335,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/sangeeth.jpg">
+						<img src="images/team/sangeeth.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -348,11 +344,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -361,7 +356,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/anushree.jpg">
+						<img src="images/team/anushree.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -370,11 +365,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -386,7 +380,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/parth.jpg">
+						<img src="images/team/parth.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -395,11 +389,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -408,7 +401,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/rishabh.jpg">
+						<img src="images/team/rishabh.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -417,11 +410,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -433,7 +425,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/tameesh.jpg">
+						<img src="images/team/tameesh.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -456,7 +448,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/manish.jpg">
+						<img src="images/team/manish.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -465,11 +457,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -482,7 +473,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/mayank.jpg">
+						<img src="images/team/mayank.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -491,11 +482,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -504,7 +494,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/aditya.jpg">
+						<img src="images/team/aditya.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -513,11 +503,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -526,7 +515,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/harshika.jpg">
+						<img src="images/team/harshika.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -535,11 +524,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -552,7 +540,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/akshat.jpg">
+						<img src="images/team/akshat.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -561,11 +549,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -574,7 +561,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/visnu.jpg">
+						<img src="images/team/visnu.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -583,11 +570,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -596,7 +582,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/avatar2.jpg">
+						<img src="images/team/avatar2.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -605,11 +591,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -618,7 +603,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/sahil.jpg">
+						<img src="images/team/sahil.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -627,11 +612,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -644,7 +628,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/abhirav.jpg">
+						<img src="images/team/abhirav.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -653,11 +637,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -666,7 +649,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/raj.jpg">
+						<img src="images/team/raj.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -675,11 +658,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -688,7 +670,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/harsh.jpg">
+						<img src="images/team/harsh.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -697,11 +679,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -714,7 +695,7 @@
 			<div class="box-wrapper">
 				<div class="box">
 					<div class="avatar">
-						<img src="/images/team/sohid.jpg">
+						<img src="images/team/sohid.jpg">
 					</div>
 					<div class="box-inner">
 						
@@ -723,11 +704,10 @@
 
 					</div>
 					<ul class="social-list">
-						<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-globe"></a></li>
+						<li><a href="#" class="fa fa-facebook"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-pinterest"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -761,11 +741,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			$('#home .section-bg #particles').particleground({
-				dotColor: 'rgba(255,255,0,0.42)',
-				lineColor: 'rgba(255,0,0,0.37)',
-				density: 10000
-			});
 			$(".home-wrapper").css("top", "27%");
 		});
 	</script>

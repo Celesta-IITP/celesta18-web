@@ -66,7 +66,7 @@
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
 </head>
-<body>
+<body style="background-image:url(./img/background01.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; overflow-x: hidden; ">
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 		<!-- <div class="loading-page">
@@ -302,13 +302,17 @@
 
 	<!-- /Common template for all pages -->
 
-	<div id="snackbar"><div id="close_snackbar">x</div> Posters of all the events will be updated soon...<br> Stay tuned :)</div>
+	<div id="snackbar"><div id="close_snackbar">x</div> Posters of some of the events will be updated soon...<br> Stay tuned :)</div>
 
+	<div  class="section-bg" data-stellar-background-ratio="0.5">
+		<div class="cn-overlay" style="position: fixed !important;"></div>
+	</div>
+	
 	<!-- testimonials -->
 	<div class="testimonials services jarallax" style="overflow-y: hidden; min-height: 100vh;">
 			<div class="container">
-				<div class="cn-overlay_events"></div>
-				<!-- row -->
+				<!-- <div class="cn-overlay_events"></div>
+				 --><!-- row -->
 				<div class="row">
 					<!-- section title -->
 					<div class="section-title" style="margin-bottom: -50px;">
