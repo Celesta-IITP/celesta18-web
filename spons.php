@@ -348,7 +348,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 
-				<h1>Electronics Partner</h1>
+				<h1>Audio Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
@@ -496,18 +496,25 @@
 				<br>
 				<h1>Online Media Partner</h1>
 				<div class="row"><br>
-					<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="col-md-4 col-sm-4 col-xs-4">
 						<p>FestPav</p>
 						<a href="http://festpav.com/" class="sponsor">
 							<img src="./images/sponsors/festpav.png" style = "height:150px;width:350px;" alt="">
 						</a>
 						<br>
 					</div>
-					<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="col-md-4 col-sm-4 col-xs-4">
 						<p>NTD India</p>
 						<a href="http://www.ntdin.tv/" class="sponsor">
 							<img src="./images/sponsors/ntdindia.jpg" style = "height:150px;width:auto;" alt="">
 						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<p>The Bihar News</p>
+						<a href="http://www.thebiharnews.in/" class="sponsor">
+							<img src="./images/sponsors/The-Bihar-News.png" style = "height:150px;width:auto;" alt="">
+						</a>
+						<br>
 					</div>
 				</div>
 				<br><br>

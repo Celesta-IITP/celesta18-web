@@ -348,12 +348,12 @@
 											if($Category[0]=='0'){
 												$Category = substr($Category, 1);
 											}
-											$image_dir = "event/Events/". $event_name;
+											$image_dir = "event/". $event_catagory_name ."/". $event_name;
 											if(is_dir($image_dir)){
 												foreach(scandir($image_dir) as $file) {
         											if ('.' === $file) continue;
         											if ('..' === $file) continue;
-        											if(explode('.', $file)[1]=="jpg"){
+        											if(explode('.', $file)[1]=="jpg" || explode('.', $file)[1]=="jpeg" || explode('.', $file)[1]=="png"){
         												$image = $image_dir. "/" .$file;
         											}
         										}
