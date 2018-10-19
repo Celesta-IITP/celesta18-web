@@ -61,6 +61,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	
+	<link rel="stylesheet" type="text/css" href="assets/css/snackbar.css" />
+	
 </head>
 <body>
 	<!-- Common template for all pages -->
@@ -272,6 +274,13 @@
 	</div>
 	<?php } ?>
 	<!-- /event modal -->
+
+	<!-- Change class from hide to show to show the snackbar notification. -->
+	<div id="snackbar" class="show"><div id="close_snackbar">x</div>
+	 	NJATH is Live! Click 
+	 	<a style="text-decoration: underline;" href="http://njath.celesta.org.in">here</a>
+	 	<!--to participate...--><br>
+	</div>
 
 	<!-- /Common template for all pages -->
 
@@ -718,6 +727,13 @@
 	<script src="assets/js/loading.js"></script>
 	<script src="assets/js/index.js"></script>
 	<!-- /Loading -->
+
+	<script type="text/javascript">
+		$("#close_snackbar").click(function(){
+			var x = document.getElementById("snackbar");
+    		x.className = x.className.replace("show", "hide");
+		});
+	</script>
 </body>
 
 </html>

@@ -119,8 +119,8 @@ p {
     top: 0;
     right: 0;
     bottom: 0;
-    background:url(../../img/background01.jpg) no-repeat center ;
-    background-size: cover;
+    /*background:url(../../img/background01.jpg) no-repeat center ;
+    background-size: cover;*/
 }
 .cn-overlay_events{
   width: 100%;

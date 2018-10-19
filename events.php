@@ -66,7 +66,7 @@
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
 </head>
-<body>
+<body style="background-image:url(./img/background01.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; overflow-x: hidden; ">
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 		<!-- <div class="loading-page">
@@ -302,13 +302,17 @@
 
 	<!-- /Common template for all pages -->
 
-	<div id="snackbar"><div id="close_snackbar">x</div> Posters of all the events will be updated soon...<br> Stay tuned :)</div>
+	<div id="snackbar"><div id="close_snackbar">x</div> Posters of some of the events will be updated soon...<br> Stay tuned :)</div>
 
+	<div  class="section-bg" data-stellar-background-ratio="0.5">
+		<div class="cn-overlay" style="position: fixed !important;"></div>
+	</div>
+	
 	<!-- testimonials -->
 	<div class="testimonials services jarallax" style="overflow-y: hidden; min-height: 100vh;">
 			<div class="container">
-				<div class="cn-overlay_events"></div>
-				<!-- row -->
+				<!-- <div class="cn-overlay_events"></div>
+				 --><!-- row -->
 				<div class="row">
 					<!-- section title -->
 					<div class="section-title" style="margin-bottom: -50px;">
@@ -340,13 +344,24 @@
 											$event_name = $event_data['name'];
 											$catagory_name = $event_data['catagory'];
 											$Category = substr((string)$value,1,2);
+											$image = "images/evebg.jpg";
 											if($Category[0]=='0'){
 												$Category = substr($Category, 1);
 											}
+											$image_dir = "event/Events/". $event_name;
+											if(is_dir($image_dir)){
+												foreach(scandir($image_dir) as $file) {
+        											if ('.' === $file) continue;
+        											if ('..' === $file) continue;
+        											if(explode('.', $file)[1]=="jpg"){
+        												$image = $image_dir. "/" .$file;
+        											}
+        										}
+        									}									
 							?>
 									<script type="text/javascript">
 										$(document).ready(function(){
-											$.when(event_boxes("<?php echo $Category; ?>", "<?php echo $catagory_name; ?>", "<?php echo $value; ?>", "<?php echo (string)$event_name; ?>", "evebg.jpg")).done(function(){
+											$.when(event_boxes("<?php echo $Category; ?>", "<?php echo $catagory_name; ?>", "<?php echo $value; ?>", "<?php echo (string)$event_name; ?>", "<?php echo (string)$image; ?>")).done(function(){
        											RESET_BOXES1()
    											});
 										});
@@ -542,7 +557,11 @@
 			parent.appendChild(div);
 
 			var div1 = document.createElement("div");
-			div1.setAttribute("class", "hover ");
+			if(image=="images/evebg.jpg"){
+				div1.setAttribute("class", "hover");
+			}else{
+				div1.setAttribute("class", "hover ehover14");
+			}
 			div.appendChild(div1);
 			
 			var a = document.createElement("a");
@@ -551,7 +570,8 @@
 
 			var img = document.createElement("img");
 			img.setAttribute("class", "img-responsive");
-			img.setAttribute("src", "images/"+image);
+			img.setAttribute("src", image);
+			img.setAttribute("style", "width:390px; height:260px;");
 			a.appendChild(img);
 
 			var div2 = document.createElement("div");
