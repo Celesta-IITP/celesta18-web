@@ -299,12 +299,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook"></a></li>
-						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter" target="_blank"></a></li>
 						<li><a href="mailto:fc@celesta.org.in" class="fa fa-envelope"></a></li>
 						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -325,12 +325,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-						<li><a href="https://www.facebook.com/profile.php?id=100011814913814" class="fa fa-facebook"></a></li>
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+						<li><a href="https://www.facebook.com/profile.php?id=100011814913814" class="fa fa-facebook" target="_blank"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 						<li><a href="mailto:arunikayadav42@gmail.com" class="fa fa-envelope"></a></li>
 						<li><a href="tel:+917007508993" class="fa fa-mobile"></a></li>
-						<li><a href="https://www.linkedin.com/in/arunika-yadav-aa2572121/" class="fa fa-linkedin"></a></li>
+						<li><a href="https://www.linkedin.com/in/arunika-yadav-aa2572121/" class="fa fa-linkedin" target="_blank"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -348,12 +348,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 							<li><a href="mailto:sangeethkichu100@gmail.com" class="fa fa-envelope"></a></li>
 						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-							<li><a href="https://www.linkedin.com/in/sangeeth-mukundan-067680127" class="fa fa-linkedin"></a></li>
+							<li><a href="https://www.linkedin.com/in/sangeeth-mukundan-067680127" class="fa fa-linkedin" target="_blank"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -371,12 +371,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-						<li><a href="https://www.facebook.com/anushree.jain.9843" class="fa fa-facebook"></a></li>
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+						<li><a href="https://www.facebook.com/anushree.jain.9843" class="fa fa-facebook" target="_blank"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 						<li><a href="mailto:sponsorship@celesta.org.in" class="fa fa-envelope"></a></li>
 						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -397,12 +397,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook" class="fa fa-facebook"></a></li>
-						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook" target="_blank" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter" target="_blank"></a></li>
 						<li><a href="mailto:fc@celesta.org.in" class="fa fa-envelope"></a></li>
 						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -420,12 +420,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 							<li><a href="mailto:mpr@celesta.org.in" class="fa fa-envelope"></a></li>
 							<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -446,12 +446,12 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="https://tameesh.in" class="fa fa-globe"></a></li>
-						<li><a href="https://www.facebook.com/tameeshB" class="fa fa-facebook"></a></li>
-						<li><a href="https://www.twitter.com/tameeshB" class="fa fa-twitter"></a></li>
+						<li><a href="https://tameesh.in" class="fa fa-globe" target="_blank"></a></li>
+						<li><a href="https://www.facebook.com/tameeshB" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="https://www.twitter.com/tameeshB" class="fa fa-twitter" target="_blank"></a></li>
 						<li><a href="mailto:me@tameesh.in" class="fa fa-envelope"></a></li>
 						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -469,12 +469,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 							<li><a href="mailto:web@celesta.org.in" class="fa fa-envelope"></a></li>
 							<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -496,12 +496,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-						<li><a href="https://www.facebook.com/mayank.tripathi.507" class="fa fa-facebook"></a></li>
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+						<li><a href="https://www.facebook.com/mayank.tripathi.507" class="fa fa-facebook" target="_blank"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 						<li><a href="mailto:mayank.me16@gmail.com" class="fa fa-envelope"></a></li>
 						<li><a href="tel:+917977884481" class="fa fa-mobile"></a></li>
-						<li><a href="https://www.linkedin.com/in/mayank-tripathi-84b08b15a/" class="fa fa-linkedin"></a></li>
+						<li><a href="https://www.linkedin.com/in/mayank-tripathi-84b08b15a/" class="fa fa-linkedin" target="_blank"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -519,12 +519,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 <!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -542,12 +542,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 						<li><a href="mailto:harshika.cs16@iitp.ac.in" class="fa fa-envelope"></a></li>
 						<li><a href="tel:+919006338055" class="fa fa-mobile"></a></li>
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -569,12 +569,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 <!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -592,12 +592,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-						<li><a href="https://www.facebook.com/visnu.pkumarr" class="fa fa-facebook"></a></li>
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+						<li><a href="https://www.facebook.com/visnu.pkumarr" class="fa fa-facebook" target="_blank"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 						<li><a href="mailto:6vishnu.pk@gmail.com" class="fa fa-envelope"></a></li>
 						<li><a href="tel:+918547822137" class="fa fa-mobile"></a></li>
-						<li><a href="https://www.linkedin.com/in/visnu-p-kumarr/" class="fa fa-linkedin"></a></li>
+						<li><a href="https://www.linkedin.com/in/visnu-p-kumarr/" class="fa fa-linkedin" target="_blank"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -615,12 +615,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 <!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -638,12 +638,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 <!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -665,12 +665,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 <!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -688,12 +688,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 <!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -711,12 +711,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 <!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -738,12 +738,12 @@
 
 					</div>
 					<ul class="social-list">
-<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
-						<li><a href="https://www.facebook.com/sohidture7" class="fa fa-facebook"></a></li>
-<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
+						<li><a href="https://www.facebook.com/sohidture7" class="fa fa-facebook" target="_blank"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 						<li><a href="mailto:sohidture7@gmail.com" class="fa fa-envelope"></a></li>
 						<li><a href="tel:+917083433625" class="fa fa-mobile"></a></li>
-						<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -894,6 +894,7 @@
 
 		// });
 	</script>
+	<?php include 'gAnalytics.php'; ?>
 </body>
 
 </html>

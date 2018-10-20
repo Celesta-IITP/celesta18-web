@@ -735,6 +735,7 @@
     		x.className = x.className.replace("show", "hide");
 		});
 	</script>
+	<?php include 'gAnalytics.php'; ?>
 </body>
 
 </html>

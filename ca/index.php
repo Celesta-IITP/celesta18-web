@@ -544,6 +544,7 @@
 
 	<!--bootstrap working-->
 	<script src="js/bootstrap.min.js"></script>
+	<?php include 'gAnalytics.php'; ?>
 </body>
 
 </html>

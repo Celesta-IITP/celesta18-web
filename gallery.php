@@ -539,7 +539,7 @@
 });
    
 </script>
-
+<?php include 'gAnalytics.php'; ?>
 </body>
 
 </html>

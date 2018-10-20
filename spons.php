@@ -747,6 +747,7 @@
 	<script src="assets/js/loading.js"></script>
 	<script src="assets/js/index.js"></script>
 	<!-- /Loading -->
+	<?php include 'gAnalytics.php'; ?>
 </body>
 
 </html>

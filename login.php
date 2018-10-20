@@ -213,5 +213,6 @@ function goBack() {
   
 </script>
 </div>
+<?php include 'gAnalytics.php'; ?>
 </body>
 </html>

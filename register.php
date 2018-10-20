@@ -364,5 +364,6 @@ $("#submit").click(function(e) {
 </script>
 
 </div>
+<?php include 'gAnalytics.php'; ?>
 </body>
 </html>
