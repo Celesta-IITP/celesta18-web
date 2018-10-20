@@ -299,10 +299,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook"></a></li>
+						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter"></a></li>
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -323,10 +323,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+						<li><a href="https://www.facebook.com/profile.php?id=100011814913814" class="fa fa-facebook"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+						<li><a href="arunikayadav42@gmail.com" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -344,10 +344,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+						<li><a href="sangeethkichu100@gmail.com" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -365,10 +365,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+						<li><a href="https://www.facebook.com/anushree.jain.9843" class="fa fa-facebook"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -390,8 +390,8 @@
 					</div>
 					<ul class="social-list">
 						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook" class="fa fa-facebook"></a></li>
+						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter"></a></li>
 						<li><a href="#" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
@@ -410,10 +410,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -457,10 +457,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -482,10 +482,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+						<li><a href="https://www.facebook.com/mayank.tripathi.507" class="fa fa-facebook"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+						<li><a href="mayank.me16@gmail.com" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -524,10 +524,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+						<li><a href="harshika.cs16@iitp.ac.in" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -549,10 +549,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -570,10 +570,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+						<li><a href="https://www.facebook.com/visnu.pkumarr" class="fa fa-facebook"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+						<li><a href="6vishnu.pk@gmail.com" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -591,10 +591,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -612,10 +612,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -637,10 +637,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -658,10 +658,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -679,10 +679,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-facebook"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -704,10 +704,10 @@
 
 					</div>
 					<ul class="social-list">
-						<li><a href="#" class="fa fa-globe"></a></li>
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-envelope"></a></li>
+<!-- 						<li><a href="#" class="fa fa-globe"></a></li> -->
+						<li><a href="https://www.facebook.com/sohidture7" class="fa fa-facebook"></a></li>
+<!-- 						<li><a href="#" class="fa fa-twitter"></a></li> -->
+						<li><a href="sohidture7@gmail.com" class="fa fa-envelope"></a></li>
 					</ul>
 				</div>
 			</div>
