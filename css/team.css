@@ -50,6 +50,11 @@ body {
   box-sizing: border-box;
   padding-top: 65px;
 }
+@media only screen and (max-width: 850px) {
+  .box {
+      left: 30px;
+  }
+}
 .box-inner {
   padding: 10px;
   margin-top:60px;
