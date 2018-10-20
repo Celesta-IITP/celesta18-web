@@ -337,18 +337,6 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 
-				<h1>Stationary Partner</h1>
-				<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-6"></div>
-					<div class="col-md-4 col-sm-4 col-xs-6">
-						<p>Classmate</p>
-						<a href="http://classmatestationery.com/" class="sponsor">
-							<img src="./images/sponsors/classmate2.png" alt="">
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-4 col-xs-6"></div>
-				</div>
-
 				<h1>Audio Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
