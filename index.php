@@ -497,9 +497,9 @@
 			<!-- /row -->
 			<!-- TODO: Make separate pages of following things
 				 row -->
-<!-- 			<div class="row"> -->
+ 			<div class="row"> -->
 				<!-- speaker -->
-<!-- 				<div class="col-md-2 col-sm-6"></div>
+ 				<!-- <div class="col-md-2 col-sm-6"></div>
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
@@ -518,23 +518,23 @@
 				<!-- /speaker -->
 			
 				<!-- speaker -->
-				<!-- <div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
 							<img src="./img/pronite_wall.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?eveCat=5">Go to ProNite Page</a>
+								<a href="pronight.php">Go to ProNite Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>ProNite</h2>
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 				<!-- /speaker -->
-			<!-- </div> -->
+			</div>
 			<!-- /row -->
 		</div>
 		<!-- /container -->
