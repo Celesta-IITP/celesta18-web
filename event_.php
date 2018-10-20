@@ -229,7 +229,7 @@
 	<!-- Header -->
 	<header id="header" class="transparent-navbar">
 		<!-- container -->
-		<div class="container">
+		<div class="container" id="navigation">
 			<!-- navbar header -->
 			<div class="navbar-header">
 				<!-- Logo -->
@@ -269,6 +269,7 @@
 					<li><a href="index.php#events">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
+					<li><a href="team.php">Team</a></li>
 					<li><a href="index.php#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>

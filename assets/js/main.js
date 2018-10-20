@@ -12,6 +12,10 @@
 		$('.main-nav').toggleClass('open');
 	});
 
+	$('.main-nav').on('click', function(){
+			$('.main-nav').toggleClass('open');
+	});
+
 	// Fixed nav
 	$(window).on('scroll', function() {
 		var wScroll = $(this).scrollTop();
@@ -118,4 +122,7 @@
     + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
   	});
 })(jQuery);
+
+
+
 
