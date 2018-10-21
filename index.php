@@ -277,7 +277,7 @@
 	<!-- /event modal -->
 
 	<!-- Change class from hide to show to show the snackbar notification. -->
-	<div id="snackbar" class="show"><div id="close_snackbar">x</div>
+	<div id="snackbar" class="hide"><div id="close_snackbar">x</div>
 	 	NJATH is Live! Click 
 	 	<a style="text-decoration: underline;" href="http://njath.celesta.org.in">here</a>
 	 	<!--to participate...--><br>
