@@ -283,18 +283,6 @@
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 
-				<h1>Beverage Sponsor</h1>
-				<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-6"></div>
-					<div class="col-md-4 col-sm-4 col-xs-6">
-						<p>Coca Cola</p>
-						<a href="https://www.coca-colaindia.com/" class="sponsor">
-							<img src="./images/sponsors/coca.png" style = "height:180px;width:auto;" alt="">
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-4 col-xs-6"></div>
-				</div>
-
 				<h1>Event Sponsor</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
@@ -305,6 +293,18 @@
 						</a>
 					</div>
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+
+				<h1>Beverage Partner</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Coca Cola</p>
+						<a href="https://www.coca-colaindia.com/" class="sponsor">
+							<img src="./images/sponsors/coca.png" style = "height:180px;width:auto;" alt="">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 				
 				<h1>Coding Partner</h1>
