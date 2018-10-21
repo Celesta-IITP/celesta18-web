@@ -497,9 +497,10 @@
 			<!-- /row -->
 			<!-- TODO: Make separate pages of following things
 				 row -->
- 			<div class="row"> -->
+ 			<div class="row">
 				<!-- speaker -->
- 				<!-- <div class="col-md-2 col-sm-6"></div>
+ 				<div class="col-md-4 col-sm-6"></div>
+				<!--
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
