@@ -113,16 +113,16 @@
 
 // Countdown Home page --------------------------------------------------------------------- 
 
-	$('#date-countdown').countdown('2018/10/28', function(event) {
-  		var $this = $(this).html(event.strftime(''
-    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+  	$('#date-countdown').countdown({
+		date: 'October 27, 2018 10:00:00',
+		render: function(data) {
+			var el = $(this.el);
+	  		el.empty()
+	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.days,2)+'</span> days </span>')
+	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.hours,2)+'</span> hr </span>')
+	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.min, 2)+'</span> min </span>')
+	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.sec, 2)+'</span> sec</span>');
+	  		
+ 	  	}
   	});
 })(jQuery);
-
-
-
-
