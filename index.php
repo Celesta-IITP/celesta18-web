@@ -239,7 +239,7 @@
 
 	<!-- event modal -->
 	<?php if($set==1){ ?>
-	<div id="speaker-modal-1" class="speaker-modal modal fade" style="overflow:scroll;">
+	<div id="speaker-modal-1" class="speaker-modal modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
