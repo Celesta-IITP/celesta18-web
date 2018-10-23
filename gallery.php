@@ -256,7 +256,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
 					<li><a href="#">Gallery</a></li>
-					<li><a href="events.php">Events</a></li>
+					<li><a href="index.php#events">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
 					<li><a href="team.php">Team</a></li>
