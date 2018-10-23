@@ -749,8 +749,7 @@ textarea.input {
 
 .events_content{
     margin-top: 30px;
-    height: 100px;
-    overflow:scroll;
+    height: auto;
 }
 
 .speaker-modal .speaker-modal-content .speaker-job {
