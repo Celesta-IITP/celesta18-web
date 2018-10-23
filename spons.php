@@ -377,9 +377,9 @@
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
-						<p>Foodies</p>
-						<a href="https://www.foodies.com/" class="sponsor">
-							<img src="./imges/sponsor.png" alt="">
+						<p>Pizza Hut</p>
+						<a href="https://www.pizzahut.com" class="sponsor">
+							<img src="./images/sponsors/pizzahut.png" style="height:170px;width:auto;" alt="">
 						</a>
 					</div>
 					<!-- <div class="col-md-3 col-sm-4 col-xs-6"></div> -->
