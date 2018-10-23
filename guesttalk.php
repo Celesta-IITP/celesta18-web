@@ -61,6 +61,7 @@
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/snackbar.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pronight.css" />
 	<script src="assets/js/jquery.min.js"></script>
 	
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
@@ -89,25 +90,6 @@
 	<!-- LOADING PART END ============================================================================== -->
 
 	<?php
-
-  	  	/*$url = $_SERVER['REQUEST_URI'];
-      	$param = explode("?",$url);
-      	*/
-      	$event_catagory = (string)$_GET['eveCat'];
-      	if($event_catagory=='1'){
-      		$event_catagory_name = "Events";
-      	}elseif($event_catagory=='2'){
-      		$event_catagory_name = "Workshops";
-      	}elseif($event_catagory=='3'){
-      		$event_catagory_name = "Exhibitions";
-      	}else{
-    ?>
-    <script type="text/javascript"> 
-   		 	window.location = '404.html';
-    </script>
-    <?php
-    	}
-
 		include "apiLe/dbConfig.php";
 		$name = array();
 		$id = "";
@@ -299,99 +281,68 @@
 
 	<!-- /Common template for all pages -->
 
-	<div id="snackbar"><div id="close_snackbar">x</div> Posters of some of the events will be updated soon...<br> Stay tuned :)</div>
+	<div id="snackbar" class="show"><div id="close_snackbar">x</div> More coming soon...<br> Stay tuned :)</div>
 
 	<div  class="section-bg" data-stellar-background-ratio="0.5">
 		<div class="cn-overlay" style="position: fixed !important;"></div>
 	</div>
 	
 	<!-- testimonials -->
-	<div class="testimonials services jarallax" style="overflow-y: hidden; min-height: 100vh;">
-			<div class="container">
-				<!-- <div class="cn-overlay_events"></div>
-				 --><!-- row -->
-				<div class="row">
-					<!-- section title -->
-					<div class="section-title" style="margin-bottom: -50px;">
-						<h3 class="title"><span style="color: #dd0a37; padding-top: 50px;"><?php echo $event_catagory_name; ?></span></h3>
-					</div>
-					<!-- /section title -->
-					<div class="gallery_gds agileits-w3layouts">
-						<ul class="simplefilter" id="catagories">
-							<li class="active" id="reset_boxes" data-filter="all">All</li>
-						</ul>
-						<div class="filtr-container" id="parent">
-							<?php
-								$directory = 'eventdata';
-    							if (!is_dir($directory)) {
-        							echo "<center><h1 style='color: white; padding-top: 10px;'>Coming Soon</h1></center>";
-    							}else{
-								    $event_id = array();
-    								foreach (scandir($directory) as $file) {
-        								if ('.' === $file) continue;
-        								if ('..' === $file) continue;
-        								if($file[0]==$event_catagory){
-        									array_push($event_id, explode('.', $file)[0]);
-        								}
-    								}
-									foreach ($event_id as $value) {
-										if($str = file_get_contents("eventdata/". $value . ".json")){
-											$event_data = json_decode($str, true);
-											$ok = 1;
-											$event_name = $event_data['name'];
-											$catagory_name = $event_data['catagory'];
-											$Category = substr((string)$value,1,2);
-											$image = "images/evebg.jpg";
-											if($Category[0]=='0'){
-												$Category = substr($Category, 1);
-											}
-											$image_dir = "event/". $event_catagory_name ."/". $event_name;
-											if(is_dir($image_dir)){
-												foreach(scandir($image_dir) as $file) {
-        											if ('.' === $file) continue;
-        											if ('..' === $file) continue;
-        											if(explode('.', $file)[1]=="jpg" || explode('.', $file)[1]=="jpeg" || explode('.', $file)[1]=="png"){
-        												$image = $image_dir. "/" .$file;
-        											}
-        										}
-        									}									
-							?>
-									<script type="text/javascript">
-										$(document).ready(function(){
-											$.when(event_boxes("<?php echo $Category; ?>", "<?php echo $catagory_name; ?>", "<?php echo $value; ?>", "<?php echo (string)$event_name; ?>", "<?php echo (string)$image; ?>")).done(function(){
-       											RESET_BOXES1()
-   											});
-										});
-									</script>
-							<?php
-										}	
-									}
-
-									if(empty($event_id)){
-										echo '<div class="section-title"><h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span style="color: red;">Data not available</span><br><span style="font-size:28px; color : white;">Will soon be updated. Stay tuned :)</span></h3></div>';
-									}
-								}
-
-							?>
-							<!-- <div class="col-sm-4 col-xs-6 filtr-item" data-category="" data-sort="Luminous night">
-								<div class="hover ehover14">
-									<a href="images/horiz.jpg" class="swipebox" title="Coming Soon">
-										<img src="images/horiz.jpg" alt="" class="img-responsive" />
-										<div class="overlay">
-											<h4>Coming Soon</h4>
-											<a id=""><div class="info nullbutton button">Show More</div></a>
-										</div>
-									</a>	
-								</div>
-							</div>
-						 -->	
-							
-
-						   <div class="clearfix"> </div>
+	<div class="testimonials services jarallax" style="min-height: 100vh;">
+		<div class="section-title" style="margin-bottom: -60px;">
+			<h3 class="title"><span style="color: white; padding-top: 50px; font-size: 1.5em;">Guest</span><span style="color: #dd0a37;  padding-top: 50px; font-size: 1.5em;">Talks</span></h3>
+		</div>
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-5 col-md-5 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Guest Talks/hitesh.PNG"  alt="">
+						</div>
+						<div class="col-lg-7 col-md-7 banner-left">
+							<h6>Celesta 2k18 is glad to have</h6>
+							<h1>Hitesh Choudhary</h1>
+							<p>
+								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+							</p>
+							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div>					
+			</section><br>
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-5 col-md-5 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Guest Talks/AshishJain.jpeg"  alt="">
+						</div>
+						<div class="col-lg-7 col-md-7 banner-left">
+							<h6>Celesta 2k18 is glad to have</h6>
+							<h1>Ashish Jain</h1>
+							<p>
+								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+							</p>
+							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+						</div>
+					</div>
+				</div>					
+			</section>
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Pronight/proshow1.jpeg"  alt="">
+						</div>
+						<div class="col-lg-6 col-md-6 banner-left">
+							<h6>Celesta 2k18 is glad to have</h6>
+							<h1>Rahul Singh</h1>
+							<p>
+								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+							</p>
+							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+						</div>
+					</div>
+				</div>					
+			</section>
 	<!-- <div id="portfolio" class="portfolio jarallax">
 				<div class="container">  
 					<div class="title">
@@ -521,109 +472,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
    	<!-- <script src="assets/js/bootstrap.js"></script> -->
-   	<script type="text/javascript">
-   		var catagories = new Array();
-   		var catag_not_found = 1;
-   		var second_child = 1;
-
-		function event_boxes(catag,catag_name,id,name,image){
-			catag_not_found = 1;
-			catagories.forEach(function(currentValue){
-				if(catag_name.localeCompare(currentValue)==0){
-					catag_not_found = 0;
-				}
-			});
-
-			if(catag_not_found == 1){
-				catagories.push(catag_name);
-				var li = document.createElement("li");
-				if(second_child==1){
-					li.setAttribute("id","second_child");
-					second_child=0;
-				}
-				li.setAttribute("data-filter", catag);
-				li.innerHTML = catag_name;
-				document.getElementById("catagories").appendChild(li);
-			}
-
-			var parent = document.getElementById("parent");
-			var div = document.createElement("div");
-			div.setAttribute("class", "col-sm-4 col-xs-6 filtr-item");
-			div.setAttribute("data-category", catag);
-			div.setAttribute("data-sort", "Luminous night");
-			parent.appendChild(div);
-
-			var div1 = document.createElement("div");
-			if(image=="images/evebg.jpg"){
-				div1.setAttribute("class", "hover");
-			}else{
-				div1.setAttribute("class", "hover ehover14");
-			}
-			div.appendChild(div1);
-			
-			var a = document.createElement("a");
-     		a.setAttribute("href", "event_.php?eveID="+ id);
-     		div1.appendChild(a);
-
-			var img = document.createElement("img");
-			img.setAttribute("class", "img-responsive");
-			img.setAttribute("src", image);
-			img.setAttribute("style", "width:390px; height:260px;");
-			a.appendChild(img);
-
-			var div2 = document.createElement("div");
-			div2.setAttribute("class", "overlay");
-     		a.appendChild(div2);
-
-			var h4 = document.createElement("h4");
-			h4.innerHTML = name;
-			div2.appendChild(h4);
-			
-			var a1 = document.createElement("a");
-			a1.setAttribute("id", id);
-			a1.setAttribute("href", "event_.php?eveID="+ id);
-     		a1.setAttribute("target", "_blank");
-     		div2.appendChild(a1);
-
-			var div3 = document.createElement("div");
-     		div3.setAttribute("class", "info nullbutton button");
-     		div3.innerHTML = "Show More";
-			a1.appendChild(div3);
-  
-		}
-
-		function RESET_BOXES1(){
-			$("#second_child").trigger('click');
-		}
-
-		function RESET_BOXES2() {
-			$("#reset_boxes").trigger('click');
-		}
-
-		document.onreadystatechange = function () {
-  			var state = document.readyState
-  			if (state == 'interactive') {
-    		//document.getElementById('contents').style.visibility="hidden";
-  			}else if (state == 'complete') {
-  				$.when(RESET_BOXES1()).done(function(){
-       				RESET_BOXES2() });
-  				setTimeout(
-  					function() 
-  					{
-    					var x = document.getElementById("snackbar");
-    					// Add the "show" class to DIV
-    					x.className = "show";
-  					}, 500);
-  			  	//$when($("#snackbar").delay( 1000 )).fadeIn(400);
-  			}
-		}
-
+   	<script type="text/javascript">   		
 		$("#close_snackbar").click(function(){
 			var x = document.getElementById("snackbar");
     		x.className = x.className.replace("show", "hide");
 		});
 	</script>
-	<?php include 'gAnalytics.php'; ?>
 </body>
 
 </html>
