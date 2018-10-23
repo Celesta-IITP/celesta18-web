@@ -346,14 +346,14 @@
 				<h2>Celesta 2017</h2>
 				<div class="row">
 					<?php
-						$dirname = "Gallery/gallery_pics/2017/";
+						$dirname = "Gallery/gallery_pics/thumbs/";
 						$images = glob($dirname."*.JPG");
 						foreach($images as $image) {
 							echo "\n<div class=\"col-md-3 img_pad\">\n";
 							// echo $image;
-							// echo '<a href="'.substr($image, 0, -10).'.JPG"'.' class="image">';
-							echo "\t<img src=\"".$image."\" style=\"max-width:100%\">\n";
-							// echo '</a>';
+							echo "\t<a href=\"./Gallery/gallery_pics/2017/".substr($image, 28, -10).'.JPG"'.' class="image">';
+							echo "\n\t\t<img src=\"".$image."\" style=\"max-width:100%\">\n";
+							echo "\t</a>\n";
 							echo "</div>\n";
 						}
 					?>
