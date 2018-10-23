@@ -303,7 +303,7 @@
 						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook" target="_blank"></a></li>
 						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter" target="_blank"></a></li>
 						<li><a href="mailto:fc@celesta.org.in" class="fa fa-envelope"></a></li>
-						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
+						<li><a href="tel:+917303069559" class="fa fa-mobile"></a></li>
 						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
@@ -401,7 +401,7 @@
 						<li><a href="https://www.facebook.com/parth.kulkarni.980" class="fa fa-facebook" target="_blank" class="fa fa-facebook" target="_blank"></a></li>
 						<li><a href="https://twitter.com/ParthK_PK" class="fa fa-twitter" target="_blank"></a></li>
 						<li><a href="mailto:fc@celesta.org.in" class="fa fa-envelope"></a></li>
-						<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
+						 <li><a href="tel:+917303069559" class="fa fa-mobile"></a></li> 
 						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
@@ -472,8 +472,8 @@
 <!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
-							<li><a href="mailto:web@celesta.org.in" class="fa fa-envelope"></a></li>
-							<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
+							<li><a href="mailto:manishk16x@gmail.com" class="fa fa-envelope"></a></li>
+							 <li><a href="tel:+918935067180" class="fa fa-mobile"></a></li>
 						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
 					</ul>
 				</div>
@@ -522,9 +522,9 @@
 <!-- 						<li><a href="#" class="fa fa-globe" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li> -->
 <!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
-<!-- 						<li><a href="#" class="fa fa-envelope"></a></li> -->
-<!-- <li><a href="tel:+919876543210" class="fa fa-mobile"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
+ 						<li><a href="mailto:aditykk.mumbai@gmail.com" class="fa fa-envelope"></a></li> 
+<li><a href="tel:+919892363460" class="fa fa-mobile"></a></li>
+						 <li><a href="https://www.linkedin.com/in/aditya-keshari" class="fa fa-linkedin" target="_blank"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -547,7 +547,7 @@
 <!-- 						<li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
 						<li><a href="mailto:harshika.cs16@iitp.ac.in" class="fa fa-envelope"></a></li>
 						<li><a href="tel:+919006338055" class="fa fa-mobile"></a></li>
-						<!-- <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li> -->
+						<li><a href="https://www.linkedin.com/in/harshika-arya/" class="fa fa-linkedin" target="_blank"></a></li>
 					</ul>
 				</div>
 			</div>
