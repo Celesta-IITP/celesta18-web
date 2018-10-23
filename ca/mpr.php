@@ -257,6 +257,7 @@
                         sender: "<?php if(!isset($_SESSION['uid'])){echo "";}else{echo $_SESSION['uid']; }?>"
                     },
                     function(data, status){
+                        console.log("<?php echo $_SESSION['uid']; ?>")
                         console.log("Response");
                         console.log("Data: " + data + "\nStatus: " + status);
                         if(status=='success'){
