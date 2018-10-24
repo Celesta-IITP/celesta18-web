@@ -32,7 +32,7 @@ function SQLInjFilter(&$unfilteredString){
 						$event_name = $row['eveName'];
 						$hash1 = ((int)$event[$event_name] * 10000 ) + (int)$row['uID']; 
 						$hash = 10*$hash1;
-						$sql1 = "UPDATE `eventreg` SET eveID=". $event[$event_name] . ", hashIndex=". $hash ." WHERE regID=". $row['regID'];
+						$sql1 = "UPDATE `eventreg` SET eveID=". $event[$event_name] . ", hash=". $hash ." WHERE regID=". $row['regID'];
 						$result1 = mysqli_query($link,$sql1);
 						if($result1){
 							echo "done->". $hash1 ."<br>";
@@ -52,7 +52,7 @@ function SQLInjFilter(&$unfilteredString){
 					if(isset($event[(string)$row['eveName']])){
 						$event_name = $row['eveName'];
 						$hash = ((int)$event[$event_name] * 10000 ) + (int)$row['uID']; 
-						$sql1 = "UPDATE `eventreg` SET hashIndex=". $hash ." WHERE regID=". $row['regID'];
+						$sql1 = "UPDATE `eventreg` SET hash=". $hash ." WHERE regID=". $row['regID'];
 						$result1 = mysqli_query($link,$sql1);
 						if($result1){
 							echo "done again->". $hash1 ."<br>";
