@@ -144,7 +144,7 @@
 	<!-- Header -->
 	<header id="header" class="transparent-navbar spons_nav">
 		<!-- container -->
-		<div class="container">
+		<div class="container" id="navigation">
 			<!-- navbar header -->
 			<div class="navbar-header">
 				<!-- Logo -->
@@ -184,6 +184,7 @@
 					<li><a href="index.php#events">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
+					<li><a href="team.php">Team</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>
@@ -271,29 +272,57 @@
 
 	<div class="container">
 		<div class="section-title">
-			<h3 class="title"><span style = "color:white"><?php echo $committee; ?> &nbsp;</span> <span style="color: #dd0a37;">Committee</span></h3>
+			<h3 class="title"><span style = "color:white">DEV</span><span style="color: #dd0a37;">ELOPERS</span></h3>
 		</div>
 	</div>
 	
 	
 	<div class="container" id="parent" style = "background-color: white;border-radius: 5px;">
-		<!-- <div class = "row" style = "padding:2em">
+		
+		<div class = "row" style = "padding:2em">
+			<div class = "col-sm-3"></div>
 			<div class = "col-sm-2">
-				<img src = "img/avatar.png" style = "border-radius:50%;width:7em;height:7em">
+				<img src = "images/team/tameesh.jpg" style = "border-radius:50%;width:9em;height:9em;">
 			</div>
 			<div class = "col-sm-4">
-				<h2 style = "text-decoration:none">Deepanjan Datta</h2>
-				<h4  style="color: red;">Contact: <span style="color: black; padding-left: 5px;">+91 9876543210</span></h4>
+				<h2 style = "text-decoration:none; padding-top: 15px;" >Tameesh Biswas</h2>
+				<h4>Web Dev: Coordinator</h4>
+				<div class="socialteam">
+					<a href="https://tameesh.in" target="_blank"><i class="fa fa-globe"></i></a>
+					<a href="https://www.facebook.com/tameeshB" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.twitter.com/tameeshB" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="mailto:me@tameesh.in" target="_blank"><i class="fa fa-envelope"></i></a>
+				</div>
 			</div>
+			<div class = "col-sm-3"></div>
+			<br>
+		</div>
+		<div class = "row" style = "padding:2em">
 			<div class = "col-sm-2">
-				<img src = "img/avatar.png" style = "border-radius:50%;width:7em;height:7em;">
+				<img src = "images/team/deepanjan.jpg" style = "border-radius:50%;width:9em;height:9em">
 			</div>
 			<div class = "col-sm-4">
-				<h2 style = "text-decoration:none">Deepanjan Datta</h2>
-				<h4  style="color: red;">Contact: <span style="color: black; padding-left: 5px;">9876543210</span></h4>
+				<h2 style = "text-decoration:none; padding-top: 15px;" >Deepanjan Datta</h2>
+				<h4>Web Dev: Sub-Coordinator</h4>
+				<div class="socialteam">
+					<a href="https://www.facebook.com/deepanjan05" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="tel:+917044170063" target="_blank"><i class="fa fa-mobile"></i></a>
+					<a href="mailto:deepanjan052000@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+				</div>
+			</div>
+			<div class = "col-sm-2">
+				<img src = "images/team/piyush.jpg" style = "border-radius:50%;width:9em;height:9em;">
+			</div>
+			<div class = "col-sm-4">
+				<h2 style = "text-decoration:none; padding-top: 15px;" >Piyush Chauhan</h2>
+				<h4>Web Dev: Sub-Coordinator</h4>
+				<div class="socialteam">
+					<a href="https://www.facebook.com/piyushchauhaniitp" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/ErPiyushChauhan" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="mailto:chauhanpiyush@hotmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+				</div>
 			</div>
 		</div>
-		 -->
 	</div>
 
 	<!-- jQuery Plugins -->

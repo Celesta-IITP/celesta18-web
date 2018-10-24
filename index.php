@@ -615,7 +615,7 @@
 		<div class="container">
 			<!-- row -->
 			<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Reach To Us At</h3>
 						<p>
@@ -628,7 +628,7 @@
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Ring Us At</h3>
 						<p>+91 9955532583</p>
@@ -637,27 +637,26 @@
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Mail Us At</h3>
 						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
+				
+				<div class="col-sm-3">
+					<div class="contact">
+						<h3>More about us</h3>
+						<a href="team.php">Core Comittee</a>
+						<br>
+						<a href="team_.php">Developers</a>
+					</div>
+				</div>
+				
 				<!-- /contact -->
 				
 			<div class="row">
-				<!-- footer logo -->
-				<!-- <div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/logo.png" alt="logo">
-						</a>
-					</div>
-				</div> -->
-				<!-- /footer logo -->
-
-				<!-- contact social -->
-				<div class="col-md-3 col-md-push-0">
+				<div class="col-md-4" >
 					<br><br>
 					<div class="contact-social">
 						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
