@@ -55,7 +55,7 @@ function SQLInjFilter(&$unfilteredString){
 						$sql1 = "UPDATE `eventreg` SET hash=". $hash ." WHERE regID=". $row['regID'];
 						$result1 = mysqli_query($link,$sql1);
 						if($result1){
-							echo "done again->". $hash1 ."<br>";
+							echo "done again->". $hash ."<br>";
 							//successfully updated.
     					}else{
     						echo "\n could not update->".$row['hash'] ."<br>";
