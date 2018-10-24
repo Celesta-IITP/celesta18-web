@@ -340,11 +340,11 @@
 				<h1>Hospitality Partner</h1>
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
-					<div class="col-md-4 col-sm-4 col-xs-6">
-						<p>Gargee Grand</p>
-						<!-- <a href="#" class="sponsor">
-							<img src="./images/sponsors/sponsor.png" style = "height:150px;width:auto;" alt="">
-						</a> -->
+					<div class="col-md-4 col-sm-4 col-xs-6" style="background:grey;">
+						<p style="color:white;">Gargee Grand</p>
+						<a href="http://www.gargeehotels.com/" class="sponsor">
+							<img src="./images/sponsors/GargeeHotels.png" style = "height:150px;width:auto;" alt="">
+						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
