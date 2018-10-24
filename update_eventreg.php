@@ -31,7 +31,7 @@ function SQLInjFilter(&$unfilteredString){
 					if(isset($event[(string)$row['eveName']])){
 						$event_name = $row['eveName'];
 						$hash1 = ((int)$event[$event_name] * 10000 ) + (int)$row['uID']; 
-						$hash = 10*$hash1;
+						$hash = 1000000000+$hash1;	
 						$sql1 = "UPDATE `eventreg` SET eveID=". $event[$event_name] . ", hash=". $hash ." WHERE regID=". $row['regID'];
 						$result1 = mysqli_query($link,$sql1);
 						if($result1){
