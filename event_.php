@@ -17,7 +17,11 @@
 		}
 	      /*$url = $_SERVER['REQUEST_URI'];
 	      $param = explode("?",$url);*/
-	      $event_id = $_GET['eveID'];
+		  $event_id = $_GET['eveID'];
+		  $rulesormore = "Rules";
+		  if($event_id[0]=='2'){
+			  $rulesormore="More Details";
+		  }
 	      $event_data = array();
 	      $ok = 0;
 			if($str = file_get_contents("eventdata/". $event_id . ".json")){
@@ -374,7 +378,7 @@
 						<h3 id="venue">Venue: &nbsp;<span><?php echo isset($event_data['venue'])?$event_data['venue']:"(To be updated)"; ?></span></h3>
 						<br>
 						<p id="desc">
-							<?php echo $event_data['about']; ?><br><b>For more details see rules below</b>
+							<?php echo $event_data['about']; ?><br><b>For more details see rules/instructions below</b>
 						</p>
 						<br>
 						<h4>Eligibility: &nbsp;<span><?php echo isset($event_data['elgbt'])?$event_data['elgbt']:"Open for all";?></span></h4>
@@ -382,9 +386,9 @@
 						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
 						<h4>
 						<?php if(!isset($event_data['rules']) || $event_data['rules']=="(To be updated)"){ ?>
-							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $rulesormore; ?></a>
 						<?php }else{ ?>
-							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;">Rules</a>
+							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $rulesormore; ?></a>
 						<?php } ?>
 							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
 						</h4><br>
