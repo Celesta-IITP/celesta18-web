@@ -576,6 +576,21 @@
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
+			<div class="row" id="crowdfunding">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Crowdfunding</span></h3>
+				</div>
+				<!-- /section title -->
+				<div class="col-md-8 col-md-offset-2">
+							<div class="download-btn">
+								<a href="/crowdfunding.php" class="main-btn">Contribute!</a>
+							</div>
+						</div>
+			</div>
+			<!-- /row -->
+
+			<!-- row -->
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
