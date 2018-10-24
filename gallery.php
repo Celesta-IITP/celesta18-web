@@ -341,7 +341,25 @@
 				<h3 class="title"><span style="color:white;">Celesta: &nbsp;</span> <span style="color: #dd0a37;">Gallery</span></h3>
 			</div>
 			<!-- section title -->
-				<!-- Parrallelism section -->
+			<!-- Parrallelism section -->
+			<section id="gallery">
+				<h2>Ashray</h2>
+				<div class="row">
+					<?php
+						$dirname = "Gallery/gallery_pics/Ashraya/";
+						$images = glob($dirname."*.jpg");
+						foreach($images as $image) {
+							echo "\n<div class=\"col-md-3 img_pad\">\n";
+							// echo $image;
+							echo "\t<a href=\"".$image.' class="image">';
+							echo "\n\t\t<img src=\"".$image."\" style=\"max-width:100%\">\n";
+							echo "\t</a>\n";
+							echo "</div>\n";
+						}
+					?>
+				</div>
+			</section>
+			<br>
 			<section id="gallery">
 				<h2>Celesta 2017</h2>
 				<div class="row">
