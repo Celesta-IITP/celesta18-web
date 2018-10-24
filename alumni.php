@@ -298,7 +298,7 @@
 				<div class="box">
 					<div class="box-inner">
 						<div class="avatar">
-                            <img src="/images/gpay.jpg" aslt="">
+                            <img src="./images/gpay.jpg" alt="">
                         </div>
 						<h3 class="name">Google Pay</h3>
 						<h4 class="dept">9955541574</h4>
@@ -320,7 +320,7 @@
 				<div class="box">
 					<div class="box-inner">
 						<div class="avatar">
-                            <img src="/images/upi.jpg" aslt="">
+                            <img src="./images/upi.jpg" alt="">
                         </div>
 						<h3 class="name">UPI Address</h3>
 						<h4 class="dept">arunikayadav422@oksbi</h4>
