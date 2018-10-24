@@ -100,10 +100,6 @@
       		$event_catagory_name = "Workshops";
       	}elseif($event_catagory=='3'){
       		$event_catagory_name = "Exhibitions";
-      	}elseif($event_catagory=='4'){
-      		$event_catagory_name = "Guest Talks";
-      	}elseif($event_catagory=='5'){
-      		$event_catagory_name = "Pro Night";
       	}else{
     ?>
     <script type="text/javascript"> 

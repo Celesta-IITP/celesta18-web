@@ -9,41 +9,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
-	<title>Gallery | Celesta 2k18</title>
 
+	<title>Celesta 2k18</title>
+	
 	<!-- Search Engine -->
-	<?php if ($ok && $event_data["about"]){ $cAbout = clean($event_data["about"]) ?>
-		<meta name="description" content="<?php echo $cAbout; ?>">
-		<meta itemprop="description" content="<?php echo $cAbout; ?>">
-		<meta name="twitter:description" content="<?php echo $cAbout; ?>">
-		<meta name="og:description" content="<?php echo $cAbout; ?>">
-	<?php }else{ ?>
-		<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-		<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-		<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-			<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-	<?php } ?>
+	<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
 	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Schema.org for Google -->
-	<meta itemprop="name" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
-
+	<meta itemprop="name" content="Celesta '18, IIT Patna">
+	<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
 	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
+	<meta name="twitter:title" content="Celesta '18, IIT Patna">
+	<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
 	<meta name="twitter:site" content="@celesta_iitp">
 	<meta name="twitter:creator" content="@celesta_iitp">
 	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
 	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-	<meta name="og:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
-
+	<meta name="og:title" content="Celesta '18, IIT Patna">
+	<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
 	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
 	<meta name="og:url" content="https://celesta.org.in">
 	<meta name="og:site_name" content="Celesta '18, IIT Patna">
 	<meta name="fb:admins" content="549099751772038">
 	<meta name="og:type" content="website">
 	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
-	
+
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
@@ -59,6 +51,8 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="assets/css/style_home.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/style_event.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/index.css" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -66,48 +60,14 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/snackbar.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pronight.css" />
+	<script src="assets/js/jquery.min.js"></script>
+	
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
-	<style>
-		h4 > span, h3 > span {
-			color: #dd0a37;
-		}
-		.button1{
-   			display:inline-block;
-   			padding:0.35em 1.2em;
-   			border:0.1em solid black;
-   			margin:0 0.3em 0.3em 0;
-   			border-radius:0.12em;
-   			box-sizing: border-box;
-   			text-decoration:none;
-   			font-family:'Roboto',sans-serif;
-   			font-weight:300;
-   			color:#FFFFFF;
-   			text-align:center;
-   			transition: all 0.2s;
-		}
-  		.button1:hover{
-  		 	color:#000000;
-   			background-color:#f4d03e;
-  		}
-  		@media all and (max-width:30em){
-  	  		.button1{
-    			display:block;
-    			margin:0.4em auto;
-   			}
-		}
-		#gallery{
-			background-color: #fff0f0;
-			padding: 10px 10px 10px 10px!important;
-		}
-		.img_pad{
-			margin:5px 0px 5px 0px;
-		}
-	</style>
-
 </head>
-<body>
-
+<body style="background-image:url(./img/background01.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; overflow-x: hidden; ">
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 		<!-- <div class="loading-page">
@@ -137,8 +97,6 @@
 		$set = 0;
 		$isca = 0;
 		$error = "";
-		$unsub = 0;
-		$show = "Register";
 		$events_registered = array();
 		$events_registered['events'] = array();
 		$events_registered['workshop'] = array();
@@ -194,10 +152,6 @@
 						else if($eveID[0]=="2") $catag = 'workshop';
 						else $catag = 'exhibition';
 						array_push($events_registered[$catag], $row['eveName']);
-						if((string)$event_id == (string)$eveID){
-							$unsub = 1;
-							$show = "Cancel Registration";
-						}
 					}
 					if(empty($events_registered['events'])){
 						array_push($events_registered['events'], "Not registered in any.");
@@ -214,6 +168,7 @@
        		}
        	}
        	// /The user is logged in -------------------------------
+
     ?>  
     <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
@@ -255,12 +210,12 @@
 					<?php } ?>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="index.php#events">Events</a></li>
+					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="index.php#schedule">Schedule</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
 					<li><a href="team.php">Team</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="index.php#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>
 						<div class="user_nav_desk">
@@ -290,16 +245,16 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-sm-6">
-							<h2 class="speaker-name"> <?php echo $_SESSION['name']; ?> </h2>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<h2 class="speaker-name"> <?php echo $_SESSION['name']; ?> </h2>
+							</div>
+							<div class="col-sm-6">
+								<h2>Celesta ID : CLST<?php echo $id; ?></h2>
+							</div>
 						</div>
-						<div class="col-sm-6">
-							<h2>Celesta ID : CLST<?php echo $id; ?></h2>
-						</div>
-					</div>
-					<div class="row events_content" id="reenter">
+						<div class="row events_content" id="reenter">
 						<div class="col-sm-4">
 							<h3>Events</h3>
 							<?php foreach ($events_registered['events'] as $value)
@@ -316,6 +271,7 @@
 							 { echo "<h4>". $value ."</h4>"; } ?>
 						</div>
 					</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -324,128 +280,96 @@
 	<!-- /event modal -->
 
 	<!-- /Common template for all pages -->
-<!-- background image -->
-<div class="section-bg" style="background-image:url(./img/background01.jpg);" data-stellar-background-ratio="0.5">
-			<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 3;"></div>
-			<div class="cn-overlay"></div>	
-		</div>
-		<!-- /background image -->
-	
 
-	<!-- Gallery -->
-	<!-- div.section -->
-	<div class="section">
-		<div class="container">
-			<!-- section title -->
-			<div class="section-title">
-				<h3 class="title"><span style="color:white;">Celesta: &nbsp;</span> <span style="color: #dd0a37;">Gallery</span></h3>
-			</div>
-			<!-- section title -->
-				<!-- Parrallelism section -->
-			<section id="gallery">
-				<h2>Celesta 2017</h2>
-				<div class="row">
-					<?php
-						$dirname = "Gallery/gallery_pics/thumbs/";
-						$images = glob($dirname."*.JPG");
-						foreach($images as $image) {
-							echo "\n<div class=\"col-md-3 img_pad\">\n";
-							// echo $image;
-							echo "\t<a href=\"./Gallery/gallery_pics/2017/".substr($image, 28, -10).'.JPG"'.' class="image">';
-							echo "\n\t\t<img src=\"".$image."\" style=\"max-width:100%\">\n";
-							echo "\t</a>\n";
-							echo "</div>\n";
-						}
-					?>
-				</div>
-			</section>
-			<br>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
+	<div id="snackbar" class="show"><div id="close_snackbar">x</div> More coming soon...<br> Stay tuned :)</div>
+
+	<div  class="section-bg" data-stellar-background-ratio="0.5">
+		<div class="cn-overlay" style="position: fixed !important;"></div>
 	</div>
-	<!-- /div.section -->
+	
+	<!-- testimonials -->
+	<div class="testimonials services jarallax" style="min-height: 100vh;">
+		<div class="section-title" style="margin-bottom: -60px;">
+			<h3 class="title"><span style="color: white; padding-top: 50px; font-size: 1.5em;">Guest</span><span style="color: #dd0a37;  padding-top: 50px; font-size: 1.5em;">Talks</span></h3>
+		</div>
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-5 col-md-5 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Guest Talks/hitesh.PNG"  alt="">
+						</div>
+						<div class="col-lg-7 col-md-7 banner-left">
+							<h6>Celesta 2k18 is glad to have</h6>
+							<h1>Hitesh Choudhary</h1>
+							<p>
+								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+							</p>
+							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+						</div>
+					</div>
+				</div>					
+			</section><br>
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-5 col-md-5 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Guest Talks/AshishJain.jpeg"  alt="">
+						</div>
+						<div class="col-lg-7 col-md-7 banner-left">
+							<h6>Celesta 2k18 is glad to have</h6>
+							<h1>Ashish Jain</h1>
+							<p>
+								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+							</p>
+							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+						</div>
+					</div>
+				</div>					
+			</section>
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Pronight/proshow1.jpeg"  alt="">
+						</div>
+						<div class="col-lg-6 col-md-6 banner-left">
+							<h6>Celesta 2k18 is glad to have</h6>
+							<h1>Rahul Singh</h1>
+							<p>
+								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+							</p>
+							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+						</div>
+					</div>
+				</div>					
+			</section>
+	<!-- <div id="portfolio" class="portfolio jarallax">
+				<div class="container">  
+					<div class="title">
+						<h3>Event Schedule</h3>
+						<p> The event Schedule is yet to be released. Stay tuned for further updates!</p>
+					</div>
+					<div class="testi-agileinfo services-row"> 
+						<div class="col-sm-1 about-grids about-grids2">
+						</div>
+						<div class="col-sm-10 about-text w3-agileits gallery_gds">
+							<a href="images/horiz.jpg" class="swipebox">
+								<img src="images/horiz.jpg" class="img-responsive" width="100%" height="100%" />
+							</a>
+						</div>
+						<div class="col-sm-1 about-grids about-grids2">	
+						</div>
+						<div class="clearfix"> </div>
+					</div>  
+				</div>
+			</div>
+	 -->
+	</div>
+	<!-- //testimonials -->
 
 	
-
-	<!-- Footer -->
-	<footer id="footer" style="background: rgba(255,0,0,0.1);">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Reach To Us At</h3>
-						<p>
-						Indian Institute of Technology Patna
-						<p>Bihta</p>
-						<span>Patna-801106 (Bihar)</span>
-						</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Ring Us At</h3>
-						<p>+91 9955532583</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Mail Us At</h3>
-						<a href="#">mpr@celesta.org.in</a>
-					</div>
-				</div>
-				<!-- /contact -->
-				
-			<div class="row">
-				<!-- footer logo -->
-				<!-- <div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/logo.png" alt="logo">
-						</a>
-					</div>
-				</div> -->
-				<!-- /footer logo -->
-
-				<!-- contact social -->
-				<div class="col-md-3 col-md-push-0">
-					<br><br>
-					<div class="contact-social">
-						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
-						<a href="https://twitter.com/celesta_iitp"><i class="fa fa-twitter"></i></a>
-						<!-- <a href="#"><i class="fa fa-google-plus"></i></a>
-						 --><a href="https://www.instagram.com/celestaiitp_official/"><i class="fa fa-instagram"></i></a>
-						<!-- <a href="#"><i class="fa fa-pinterest"></i></a>
-						 --><!-- <a href="#"><i class="fa fa fa-linkedin"></i></a> -->
-					</div>
-				</div>
-				<!-- /contact social -->
-
-				<!-- copyright -->
-				<!-- <div class="col-md-4 col-md-pull-8">
-					<span class="copyright"> --><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><!-- </span>
-				</div> -->
-				<!-- /copyright -->
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</footer>
-	<!-- /Footer -->
 
 	<!-- jQuery Plugins -->
-	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.waypoints.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
@@ -454,92 +378,107 @@
 	<script src="assets/js/jquery.countdown.min.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
-	<!-- Particle.js -->
-	<script type='text/javascript' src='./js/jquery.particleground.min.js'></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-	<script>
-
-	$(document).ready(function(){
-
-		$('#home .section-bg #particles').particleground({
-              dotColor: 'rgba(255,255,0,0.42)',
-              lineColor: 'rgba(255,0,0,0.37)',
-              density: 10000
-              });
-		$(".home-wrapper").css("top","27%");
-	});
-
-	</script>
-	<!-- /Particle.js -->
 	<script src="assets/js/polyfills.js"></script>
-	<!-- Loading -->
-	<script src="assets/js/loading.js"></script>
-	<script src="assets/js/index.js"></script>
-	<!-- /Loading -->
+
+	<script src="assets/js/jquery.filterizr.js"></script>
+    <script src="assets/js/controls.js"></script>
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $.when($('.filtr-container').filterizr()).done(function(){
+       			$.when(RESET_BOXES1()).done(function(){
+       			RESET_BOXES2() })
+   			});
+            					
+        });
+    </script>
+	<!--//gallery-->
+	<!-- swipe box js -->
+	<script src="assets/js/jquery.swipebox.min.js"></script> 
+	<script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+	</script>
+	<!-- //swipe box js -->
+
+	<!-- banner Slider starts Here -->
+	<script src="assets/js/responsiveslides.min.js"></script>
 	<script>
-  $(document).ready(function() {
-
-
-  var parameters = location.search.substring(1).split("=");
-  var event_id = parameters[1];
-  
-  function clicked(act){
-
-  	<?php if($set==1){ ?>
-        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/event_reg",
-            {
-                id : "<?php echo $id; ?>",
-                event_id: event_id,
-                event_name : "<?php echo $event_data['name']; ?>",
-                unsub : act
-            },
-            function(data, status){
-              	console.log("Response");
-              	console.log("Data: " + data + "\nStatus: " + status);
-              	if(status=='success'){
-              	  	if(data["status"]==200){
-                		alert(data['message']);
-                		console.log("success");
-                		window.location = "event_.php?eveID="+event_id;
-              		}else if(data['status']==409){
-              			alert(data['message']);
-              		}else{
-              			if(act==1){
-              				alert("Could not unregister.\nSorry for the inconvenience.");
-              			}else{
-                		alert("Could not register.\nSorry for the inconvenience.");
-                	  	}
-                	  	console.log("err");
-                	  	console.log(data);
-              		}
-              	}else{
-                  	console.log("Failed "+data);
-              	}
-            },"json");
-    <?php }else{ ?>
-      	window.location="http://celesta.org.in/login.php";
-    <?php } ?>
-  }
-
-  $("#register").click(function(e) {
-      clicked(<?php echo $unsub; ?>);
-      console.log("clicked");
-      e.preventDefault();
-  });
-
-  $("#rules_button").click(function(e) {
-      show_alert();
-      console.log("clicked");
-      e.preventDefault();
-  });
-
-  function show_alert(){
-  		alert("To be uploaded soon.");
-  }
-});
-   
-</script>
-<?php include 'gAnalytics.php'; ?>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+		  // Slideshow 3
+		  $("#slider3").responsiveSlides({
+			auto:false,
+			pager: true,
+			nav: false,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+	
+		});
+	</script>
+	<!-- //End-slider-script -->
+	<!-- jarallax -->  
+	<script src="assets/js/SmoothScroll.min.js"></script> 
+	<script src="assets/js/jarallax.js"></script> 
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>  
+	<!-- //jarallax --> 
+	<!-- start-smooth-scrolling --> 
+	<script type="text/javascript" src="assets/js/move-top.js"></script>
+	<script type="text/javascript" src="assets/js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	 
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->    
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   	<!-- <script src="assets/js/bootstrap.js"></script> -->
+   	<script type="text/javascript">   		
+		$("#close_snackbar").click(function(){
+			var x = document.getElementById("snackbar");
+    		x.className = x.className.replace("show", "hide");
+		});
+	</script>
 </body>
 
 </html>
+

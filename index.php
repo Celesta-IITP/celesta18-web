@@ -277,7 +277,7 @@
 	<!-- /event modal -->
 
 	<!-- Change class from hide to show to show the snackbar notification. -->
-	<div id="snackbar" class="show"><div id="close_snackbar">x</div>
+	<div id="snackbar" class="hide"><div id="close_snackbar">x</div>
 	 	NJATH is Live! Click 
 	 	<a style="text-decoration: underline;" href="http://njath.celesta.org.in">here</a>
 	 	<!--to participate...--><br>
@@ -497,9 +497,10 @@
 			<!-- /row -->
 			<!-- TODO: Make separate pages of following things
 				 row -->
- 			<div class="row"> -->
+ 			<div class="row">
 				<!-- speaker -->
- 				<!-- <div class="col-md-2 col-sm-6"></div>
+ 				<div class="col-md-4 col-sm-6"></div>
+				<!--
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
