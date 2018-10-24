@@ -555,6 +555,18 @@
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
 				</div>
 				<br>
+				<h1>Voice Opinion Partner</h1>
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>Open Talk</p>
+						<a href="https://opentalk.to/tag/Celesta2018/ht-a42ae94ac26fc98c" class="sponsor">
+							<img src="./images/sponsors/opentalk.png" style="height:150px;width:auto;" alt="">
+						</a>
+					</div>
+				<div class="col-md-4 col-sm-4 col-xs-6"></div>
+				</div>
+				<br>
 				<h1>Gifting Partner</h1>
 				<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-6"></div>
