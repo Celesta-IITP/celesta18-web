@@ -38,7 +38,7 @@ function SQLInjFilter(&$unfilteredString){
 							echo "done->". $hash1 ."<br>";
 							//successfully updated.
     					}else{
-    						echo "\n could not update->".$row['hashIndex'] ."<br>";
+    						echo "\n could not update->".$row['hash'] ."<br>";
    	    				}
 					}
 				}
@@ -58,7 +58,7 @@ function SQLInjFilter(&$unfilteredString){
 							echo "done again->". $hash1 ."<br>";
 							//successfully updated.
     					}else{
-    						echo "\n could not update->".$row['hashIndex'] ."<br>";
+    						echo "\n could not update->".$row['hash'] ."<br>";
    	    				}
 					}else{
 						echo "Name did not match : eveID=". $row['eveID']. " AND uID=". $row['uID'] ."<br>";
