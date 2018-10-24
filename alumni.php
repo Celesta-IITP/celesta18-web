@@ -280,16 +280,14 @@
 
 	<div class="container">
 		<div class="section-title">
-			<h3 class="title"><span style="color:white">Alumni</span>&nbsp;<span style="color: #dd0a37;">Invite</span></h3>
+			<h3 class="title"><span style="color:white">Crowdfunding</span></h3>
 		</div>
 	</div>
 	<br>
 	<div class="container">
     <div class="row row-centered">
         <div class="col-md-6 col-centered" style="color:#fff">
-        <h3 style="color:#fff">As an alumni of IIT Patna, there's a lot you can do to support our ever-growing technical fest.</h3><br>
-        //Some more content
-        
+        <h3 style="color:#fff">There's a lot you can do to support our ever-growing technical fest.</h3><br>
 		</div>
 	</div>
     <div class="row row-centered" style="margin-top:60px">
