@@ -583,13 +583,15 @@
 				</div>
 				<!-- /section title -->
 				<div class="col-md-8 col-md-offset-2">
-							<div class="download-btn">
+							<div class="download-btn" style="margin-top:0px">
 								<a href="/crowdfunding.php" class="main-btn">Contribute!</a>
 							</div>
 						</div>
 			</div>
 			<!-- /row -->
-
+			<br>
+			<br>
+			<br>
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
