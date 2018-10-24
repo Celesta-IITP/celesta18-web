@@ -499,23 +499,21 @@
 				 row -->
  			<div class="row">
 				<!-- speaker -->
- 				<div class="col-md-4 col-sm-6"></div>
-				<!--
-				<div class="col-md-4 col-sm-6">
+ 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" >
 						<div class="speaker-img">
 							<img src="./img/guest_wall.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="events.php?eveCat=4">Go to Guest Talks Page</a>
+								<a href="guesttalk.php">Go to Guest Talks Page</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Guest Talks</h2>
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 				<!-- /speaker -->
 			
 				<!-- speaker -->

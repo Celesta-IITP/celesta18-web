@@ -118,10 +118,10 @@
 		render: function(data) {
 			var el = $(this.el);
 	  		el.empty()
-	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.days,2)+'</span> days </span>')
-	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.hours,2)+'</span> hr </span>')
-	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.min, 2)+'</span> min </span>')
-	  		.append('<span class="countdown-block"><span class="label">'+this.leadingZeros(data.sec, 2)+'</span> sec</span>');
+	  		.append('<span class="countdown-block"><span class="label">'+ this.leadingZeros(data.days,2)+'</span> days </span>')
+	  		.append('<span class="countdown-block"><span class="label">'+ this.leadingZeros(data.hours,2)+'</span> hr </span>')
+	  		.append('<span class="countdown-block"><span class="label">'+ this.leadingZeros(data.min, 2)+'</span> min </span>')
+	  		.append('<span class="countdown-block"><span class="label">'+ this.leadingZeros(data.sec, 2)+'</span> sec</span>');
 	  		
  	  	}
   	});

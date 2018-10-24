@@ -281,7 +281,7 @@
 
 	<!-- /Common template for all pages -->
 
-	<div id="snackbar" class="show"><div id="close_snackbar">x</div> More coming soon...<br> Stay tuned :)</div>
+	<div id="snackbar" class="hide"><div id="close_snackbar">x</div> More coming soon...<br> Stay tuned :)</div>
 
 	<div  class="section-bg" data-stellar-background-ratio="0.5">
 		<div class="cn-overlay" style="position: fixed !important;"></div>
@@ -295,20 +295,21 @@
 			<section class="banner-area">
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-between">
-						<div class="col-lg-5 col-md-5 banner-right d-flex align-self-end">
-							<img class="img-fluid" src="event/Guest Talks/hitesh.PNG"  alt="">
+						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Guest Talks/rahul.jpeg"  alt="">
 						</div>
-						<div class="col-lg-7 col-md-7 banner-left">
+						<div class="col-lg-6 col-md-6 banner-left">
 							<h6>Celesta 2k18 is glad to have</h6>
-							<h1>Hitesh Choudhary</h1>
+							<h1>Rahul Singh</h1>
 							<p>
-								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+								 IAS officer, Secretary cum Appellate Authority (Information Technology), Finance and IT Dept., Government of Bihar.
+
 							</p>
-							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+							<a href="https://www.linkedin.com/in/rahul-singh-688b7a3?originalSubdomain=in" target="_blank" class="primary-btn text-uppercase">more</a>
 						</div>
 					</div>
 				</div>					
-			</section><br>
+			</section>
 			<section class="banner-area">
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-between">
@@ -319,9 +320,15 @@
 							<h6>Celesta 2k18 is glad to have</h6>
 							<h1>Ashish Jain</h1>
 							<p>
-								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+								Ashish, an Industrial Designer, studied at MIT Institute of Design is
+currently working at LVPEI Center for Innovation, L V Prasad Eye Institute
+Hyderabad. As much as he loves to create experience focused product
+solutions, his primary interest lies in designing processes to develop,
+problem specific and user centric solutions.<br>Ashish and the LVPEI innovation team is currently involved in creating
+disruptive solutions in the domain of eye care focusing at scalable,
+accessible and equitable solutions.
 							</p>
-							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+							<a href="https://www.linkedin.com/in/ashish-jain-42a93646/" target="_blank" class="primary-btn text-uppercase">more</a>
 						</div>
 					</div>
 				</div>					
@@ -329,20 +336,21 @@
 			<section class="banner-area">
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-between">
-						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
-							<img class="img-fluid" src="event/Pronight/proshow1.jpeg"  alt="">
+						<div class="col-lg-5 col-md-5 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="event/Guest Talks/hitesh.jpeg"  alt="">
 						</div>
-						<div class="col-lg-6 col-md-6 banner-left">
+						<div class="col-lg-7 col-md-7 banner-left">
 							<h6>Celesta 2k18 is glad to have</h6>
-							<h1>Rahul Singh</h1>
+							<h1>Hitesh Choudhary</h1>
 							<p>
-								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
+								Founder and CEO of LearnCodeOnline. Renowned expert in Cybersecurity, popular YouTuber with 250K+ subscribers.
 							</p>
-							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+							<a href="https://www.hiteshchoudhary.com" target="_blank" class="primary-btn text-uppercase">more</a>
 						</div>
 					</div>
 				</div>					
-			</section>
+			</section><br>
+			
 	<!-- <div id="portfolio" class="portfolio jarallax">
 				<div class="container">  
 					<div class="title">
