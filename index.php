@@ -278,8 +278,8 @@
 
 	<!-- Change class from hide to show to show the snackbar notification. -->
 	<div id="snackbar" class="hide"><div id="close_snackbar">x</div>
-	 	NJATH is Live! Click 
-	 	<a style="text-decoration: underline;" href="http://njath.celesta.org.in">here</a>
+	 	CAD Maestro is Live! Deadline  12:15am 26th Oct'18
+	 	<a style="text-decoration:underline;" href="https://celesta.org.in/event_.php?eveID=10402">More details here</a>
 	 	<!--to participate...--><br>
 	</div>
 
