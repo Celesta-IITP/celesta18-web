@@ -568,7 +568,9 @@
 			var img = document.createElement("img");
 			img.setAttribute("class", "img-responsive");
 			img.setAttribute("src", image);
-			img.setAttribute("style", "width:390px; height:260px;");
+			<?php if($event_catagory!='2'){ ?>
+				img.setAttribute("style", "width:390px; height:260px;");
+			<?php } ?>
 			a.appendChild(img);
 
 			var div2 = document.createElement("div");
