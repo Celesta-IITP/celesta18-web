@@ -11,7 +11,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
 
-	<title>Event | Celesta 2k18</title>
+	<title>Hospitality | Celesta 2k18</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -260,8 +260,9 @@
 	<!-- /event modal -->
 
 	<!-- Change class from hide to show to show the snackbar notification. -->	
-	<div id="snackbar" class="hide"><div id="close_snackbar">x</div>
+	<div id="snackbar" class="show"><div id="close_snackbar">x</div>
 	 	<!-- Write here -->
+		 Scroll for Bus Route and Schedule
 	</div>
 
 	<!-- /Common template for all pages -->
@@ -298,7 +299,7 @@
 	</div>
 	<!-- /Sponsors -->
 	
-	<div class="section" style="display: none;">
+	<div class="section">
 		<!-- container -->
 		<div class="container" style="background: white;">
 		
@@ -306,10 +307,21 @@
 			
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Bus</span> <span style="color: #dd0a37;">Route</span></h3>
+					<h3 class="title"><span>Bus</span> <span style="color: #dd0a37;">Route and Schedule</span></h3>
 				</div>
-				<div >
-							
+				<div>
+					<br><b>Bus Route:</b>
+					<br>Gandhi Maidan --> Exhibition Road --> Patna Junction --> Mithapur Bus Stand --> GPO --> (Serpentine Road) --> (Bailey Road) --> IIT Patna Bihta Campus
+					<br>
+					<br>IIT Patna Bihta Campus --> (Bailey Road) --> (Serpentine Road) --> (GPO) --> Mithapur Bus Stand --> Patna Junction --> Exhibition Road --> Gandhi Maidan --> NIT Patna 
+					<br>
+					<br><b>27th October 2018</b>
+					<br>From Gandhi Maidan: 8:30 AM
+					<br>From IIT Patna: 6:45 PM
+					<br>
+					<br><b>28th October 2018</b>
+					<br>From Gandhi Maidan: 8 AM
+					<br>From IIT Patna: 7:30 PM
 				</div>
 				<!-- /section title -->
 			<!-- /row -->

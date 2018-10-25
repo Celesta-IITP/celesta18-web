@@ -646,7 +646,8 @@
 				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Hospitality and Accommodation</h3>
-						<a href="hospitality.php">Accomodation</a>
+						<p><a href="hospitality.php">Accomodation</a></p>
+						<p><a href="hospitality.php">Bus Route and Schedule</a></p>
 					</div>
 				</div>
 				
