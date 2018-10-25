@@ -390,7 +390,12 @@
 						<?php }else{ ?>
 							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $rulesormore; ?></a>
 						<?php } ?>
+						<?php if(isset($event_data['register'])){ ?>
+							<a id="register_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $show; ?></a>
+						<?php }else{ ?>
 							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
+						<?php } ?>
+							
 						</h4><br>
 					</div>
 				<?php } ?>
@@ -400,23 +405,13 @@
 	</div>
 	<!-- /Event -->
 
-	<section class="upcoming-events-highlight " style="background-image:url(./img/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
-      <div class="container">
-        <div class="row">
-        </div>
-      </div>
-    </section>
-	
-	
-	
-
 	<!-- Footer -->
-	<footer id="footer" style="background: rgba(255,0,0,0.1);">
+	<footer id="footer" style="background: rgb(254, 208, 208);">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Reach To Us At</h3>
 						<p>
@@ -429,7 +424,7 @@
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Ring Us At</h3>
 						<p>+91 9955532583</p>
@@ -438,27 +433,26 @@
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Mail Us At</h3>
 						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
+				
+				<div class="col-sm-3">
+					<div class="contact">
+						<h3>More about us</h3>
+						<a href="team.php">Core Comittee</a>
+						<br>
+						<a href="team_.php">Developers</a>
+					</div>
+				</div>
+				
 				<!-- /contact -->
 				
 			<div class="row">
-				<!-- footer logo -->
-				<!-- <div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/logo.png" alt="logo">
-						</a>
-					</div>
-				</div> -->
-				<!-- /footer logo -->
-
-				<!-- contact social -->
-				<div class="col-md-3 col-md-push-0">
+				<div class="col-md-4" >
 					<br><br>
 					<div class="contact-social">
 						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
@@ -563,19 +557,29 @@
   }
 
   $("#register").click(function(e) {
+      <?php if($event_id[0]=='2'){ ?>
+      		window.location = "https://www.thecollegefever.com/events/celesta-2018-yEYo3DFhwl";
+      <?php }else{ ?>
       clicked(<?php echo $unsub; ?>);
+  	  <?php } ?>
       console.log("clicked");
       e.preventDefault();
   });
 
   $("#rules_button").click(function(e) {
-      show_alert();
+      show_alert("To be uploaded soon.");
       console.log("clicked");
       e.preventDefault();
   });
 
-  function show_alert(){
-  		alert("To be uploaded soon.");
+  $("#register_button").click(function(e) {
+      show_alert("The event is completed.\nRegistrations for this event are over.\nThank You :)");
+      console.log("clicked");
+      e.preventDefault();
+  });
+
+  function show_alert(a){
+  	alert(a);
   }
 });
    
