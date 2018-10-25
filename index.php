@@ -582,6 +582,8 @@
 					<h3 class="title"><span>Crowdfunding</span></h3>
 				</div>
 				<!-- /section title -->
+				<!-- <div class="section-bg" style="background-image:url(./img/background02.jpg); height: 50px;" data-stellar-background-ratio="0.5"></div>
+			 -->
 				<div class="col-md-8 col-md-offset-2">
 							<div class="download-btn" style="margin-top:0px">
 								<a href="/crowdfunding.php" class="main-btn">Contribute!</a>
@@ -592,6 +594,7 @@
 			<br>
 			<br>
 			<br>
+			<hr style="border: solid 2px dimgrey !important;">
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
