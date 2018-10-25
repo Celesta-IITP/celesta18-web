@@ -1,3 +1,4 @@
+
 <?php 
 	session_start();
 ?>
@@ -9,62 +10,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="shortcut icon" href="./images/CLST_logo.ico">
-	  <?php
-		function clean($string) {
-		   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
 
-		   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
-		}
-	      /*$url = $_SERVER['REQUEST_URI'];
-	      $param = explode("?",$url);*/
-		  $event_id = $_GET['eveID'];
-		  $rulesormore = "Rules";
-		  if($event_id[0]=='2'){
-			  $rulesormore="More Details";
-		  }
-	      $event_data = array();
-	      $ok = 0;
-			if($str = file_get_contents("eventdata/". $event_id . ".json")){
-				$event_data = json_decode($str, true);
-				$ok = 1;
-			}
-		
-	  ?>
-	<title><?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Events | Celesta 2k18</title>
+	<title>Event | Celesta 2k18</title>
 
-	<!-- Search Engine -->
-	<?php if ($ok && $event_data["about"]){ $cAbout = clean($event_data["about"]) ?>
-		<meta name="description" content="<?php echo $cAbout; ?>">
-		<meta itemprop="description" content="<?php echo $cAbout; ?>">
-		<meta name="twitter:description" content="<?php echo $cAbout; ?>">
-		<meta name="og:description" content="<?php echo $cAbout; ?>">
-	<?php }else{ ?>
-		<meta name="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-		<meta itemprop="description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-		<meta name="twitter:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-			<meta name="og:description" content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.">
-	<?php } ?>
-	<meta name="image" content="https://celesta.org.in/img/background01.jpg">
-	<!-- Schema.org for Google -->
-	<meta itemprop="name" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
-
-	<meta itemprop="image" content="https://celesta.org.in/img/background01.jpg">
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
-	<meta name="twitter:site" content="@celesta_iitp">
-	<meta name="twitter:creator" content="@celesta_iitp">
-	<meta name="twitter:image:src" content="https://celesta.org.in/img/background01.jpg">
-	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-	<meta name="og:title" content="<?php if ($ok && $event_data["name"]) echo clean($event_data["name"])." | "; ?>Celesta '18, IIT Patna">
-
-	<meta name="og:image" content="https://celesta.org.in/img/background01.jpg">
-	<meta name="og:url" content="https://celesta.org.in">
-	<meta name="og:site_name" content="Celesta '18, IIT Patna">
-	<meta name="fb:admins" content="549099751772038">
-	<meta name="og:type" content="website">
-	<!-- /Open-Graph and Twitter Meta tags for SEO and Social Media -->
-	
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
@@ -87,41 +35,22 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/snackbar.css" />
 	<!-- <link type="text/css" rel="stylesheet" href="assets/css/loading_content.css" />
 	<link type="text/css" rel="stylesheet" href="assets/css/loading.css" />	 -->
-	<style>
-		h4 > span, h3 > span {
-			color: #dd0a37;
-		}
-		.button1{
-   			display:inline-block;
-   			padding:0.35em 1.2em;
-   			border:0.1em solid black;
-   			margin:0 0.3em 0.3em 0;
-   			border-radius:0.12em;
-   			box-sizing: border-box;
-   			text-decoration:none;
-   			font-family:'Roboto',sans-serif;
-   			font-weight:300;
-   			color:#FFFFFF;
-   			text-align:center;
-   			transition: all 0.2s;
-  		}
-  		.button1:hover{
-  		 	color:#000000;
-   			background-color:#f4d03e;
-  		}
-  		@media all and (max-width:30em){
-  	  		.button1{
-    			display:block;
-    			margin:0.4em auto;
-   			}
+
+	<style type="text/css">
+		@media only screen and (max-width: 460px){
+			.hospi span{
+				font-size: 70% !important;
+			}
+			.charges h2{
+				font-size: 25px !important;
+			}
 		}
 	</style>
-
 </head>
 <body>
-
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 		<!-- <div class="loading-page">
@@ -151,8 +80,6 @@
 		$set = 0;
 		$isca = 0;
 		$error = "";
-		$unsub = 0;
-		$show = "Register";
 		$events_registered = array();
 		$events_registered['events'] = array();
 		$events_registered['workshop'] = array();
@@ -208,10 +135,6 @@
 						else if($eveID[0]=="2") $catag = 'workshop';
 						else $catag = 'exhibition';
 						array_push($events_registered[$catag], $row['eveName']);
-						if((string)$event_id == (string)$eveID){
-							$unsub = 1;
-							$show = "Cancel Registration";
-						}
 					}
 					if(empty($events_registered['events'])){
 						array_push($events_registered['events'], "Not registered in any.");
@@ -231,7 +154,7 @@
     ?>  
     <script type="text/javascript"> console.log("<?php echo $error; ?>");</script>
 	<!-- Header -->
-	<header id="header" class="transparent-navbar">
+	<header id="header" class="transparent-navbar spons_nav">
 		<!-- container -->
 		<div class="container" id="navigation">
 			<!-- navbar header -->
@@ -269,12 +192,11 @@
 					<?php } ?>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php#about">About</a></li>
-					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="index.php#gallery">Gallery</a></li>
 					<li><a href="index.php#events">Events</a></li>
 					<li><a href="ca/index.php">Campus Ambassador</a></li>
 					<li><a href="spons.php">Sponsors</a></li>
-					<li><a href="team.php">Team</a></li>
-					<li><a href="#footer">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
 					<?php if($set==1){ ?>
 					<li id="show_desk" class="user_desk"><a href="#" class="fa fa-user" style="size: 20em;"><span class="fa fa-caret-right arrow_desk" style="padding-left: 5px;"></span></a>
 						<div class="user_nav_desk">
@@ -304,16 +226,16 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-sm-6">
-							<h2 class="speaker-name"> <?php echo $_SESSION['name']; ?> </h2>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<h2 class="speaker-name"> <?php echo $_SESSION['name']; ?> </h2>
+							</div>
+							<div class="col-sm-6">
+								<h2>Celesta ID : CLST<?php echo $id; ?></h2>
+							</div>
 						</div>
-						<div class="col-sm-6">
-							<h2>Celesta ID : CLST<?php echo $id; ?></h2>
-						</div>
-					</div>
-					<div class="row events_content" id="reenter">
+						<div class="row events_content" id="reenter">
 						<div class="col-sm-4">
 							<h3>Events</h3>
 							<?php foreach ($events_registered['events'] as $value)
@@ -337,6 +259,11 @@
 	<?php } ?>
 	<!-- /event modal -->
 
+	<!-- Change class from hide to show to show the snackbar notification. -->	
+	<div id="snackbar" class="hide"><div id="close_snackbar">x</div>
+	 	<!-- Write here -->
+	</div>
+
 	<!-- /Common template for all pages -->
 <!-- background image -->
 <div class="section-bg" style="background-image:url(./img/background01.jpg);" data-stellar-background-ratio="0.5">
@@ -345,65 +272,50 @@
 		</div>
 		<!-- /background image -->
 	
-
-	<!-- Event -->
-	<div id="event" class="section">
+	<br>
+	<!-- Sponsors -->
+	<div class="section">
 		<!-- container -->
-		<div class="container">
+		<div class="container" style="padding-top: 25px; background: white;">
 			<!-- row -->
-				<?php if($ok==0){ ?>
-					<div class="section-title">
-						<h3 class="title"><span style = "color:white">Sorry. &nbsp;</span><span>Data not available</span></h3>
-					</div>
-				<?php }else{ 
-					foreach ($event_data as &$value) {
-						if($value==""){
-							$value = "(To be updated)";
-						}
-					}
-					?>	
-					<!-- section title -->
-					<div class="section-title">
-						<h3 class="title"><span style = "color:white">Event: &nbsp;</span><span><?php echo $event_data['name']; ?></span></h3>
-					</div>
-					<!-- /section title -->
-					<div style="background-color:white;padding:1em;border-radius:5px;">
-						<?php 
-							if(isset($event_data['img'])){
-								echo '<img id="poster" src='.$event_data['img'].' style="max-width:100%">';
-							}
-						?>
-						<h3 id="date">Date: &nbsp;<span><?php echo isset($event_data['date'])?$event_data['date']:"(To be updated)"; ?></span></h3>
-						<h3 id="time">Time: &nbsp;<span><?php echo isset($event_data['time'])?$event_data['time']:"(To be updated)"; ?></span></h3>
-						<h3 id="venue">Venue: &nbsp;<span><?php echo isset($event_data['venue'])?$event_data['venue']:"(To be updated)"; ?></span></h3>
-						<br>
-						<p id="desc">
-							<?php echo $event_data['about']; ?><br><b>For more details see rules/instructions below</b>
-						</p>
-						<br>
-						<h4>Eligibility: &nbsp;<span><?php echo isset($event_data['elgbt'])?$event_data['elgbt']:"Open for all";?></span></h4>
-						<h4>Organized by: &nbsp;<span id="orgClub"><?php echo $event_data['organised']; ?></span></h4>
-						<h4>For Queries Contact: &nbsp;<span class="orgContact"><?php echo $event_data['contact']; ?></span></h4><br>
-						<h4>
-						<?php if(!isset($event_data['rules']) || $event_data['rules']=="(To be updated)"){ ?>
-							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $rulesormore; ?></a>
-						<?php }else{ ?>
-							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $rulesormore; ?></a>
-						<?php } ?>
-						<?php if(isset($event_data['register'])){ ?>
-							<a id="register_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $show; ?></a>
-						<?php }else{ ?>
-							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
-						<?php } ?>
-							
-						</h4><br>
-					</div>
-				<?php } ?>
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title hospi"><span>Accommodation</span> <span style="color: #dd0a37;">Charges</span></h3>
+				</div>
+				<div >
+					<div class="col-sm-6 charges">
+						<h2> One Day: Rs. 150 </h2>
+						<h2> Two Days: Rs. 300 </h2>
+						<h2> Three Days: Rs. 400 </h2>
+						<h2> Four Days: Rs. 500 </h2>
+						<br><br><br><br><br><br><br><br><br>
+					</div>					
+				</div>
+				<!-- /section title -->
 			<!-- /row -->
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /Event -->
+	<!-- /Sponsors -->
+	
+	<div class="section" style="display: none;">
+		<!-- container -->
+		<div class="container" style="background: white;">
+		
+			<!-- row -->
+			
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Bus</span> <span style="color: #dd0a37;">Route</span></h3>
+				</div>
+				<div >
+							
+				</div>
+				<!-- /section title -->
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
 
 	<!-- Footer -->
 	<footer id="footer" style="background: rgb(254, 208, 208);">
@@ -411,7 +323,6 @@
 		<div class="container">
 			<!-- row -->
 			<!-- contact -->
-			<div class="row">
 				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Reach To Us At</h3>
@@ -427,9 +338,8 @@
 				<!-- contact -->
 				<div class="col-sm-3">
 					<div class="contact">
-						<h3>Contact us</h3>
+						<h3>Ring Us At</h3>
 						<p>+91 9955532583</p>
-						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -437,8 +347,8 @@
 				<!-- contact -->
 				<div class="col-sm-3">
 					<div class="contact">
-						<h3>Hospitality and Accommodation</h3>
-						<a href="hospitality.php">Accomodation</a>
+						<h3>Mail Us At</h3>
+						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
 				
@@ -450,13 +360,13 @@
 						<a href="team_.php">Developers</a>
 					</div>
 				</div>
-			</div>	
-				<!-- /contact -->	
-			<div class="row" style="margin-top: 0;">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
+				
+				<!-- /contact -->
+				
+			<div class="row">
+				<div class="col-md-4" >
 					<br><br>
-					<div class="contact-social" style="text-align: center;">
+					<div class="contact-social">
 						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
 						<a href="https://twitter.com/celesta_iitp"><i class="fa fa-twitter"></i></a>
 						<!-- <a href="#"><i class="fa fa-google-plus"></i></a>
@@ -496,9 +406,7 @@
 	<script type='text/javascript' src='./js/jquery.particleground.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script>
-
 	$(document).ready(function(){
-
 		$('#home .section-bg #particles').particleground({
               dotColor: 'rgba(255,255,0,0.42)',
               lineColor: 'rgba(255,0,0,0.37)',
@@ -506,7 +414,6 @@
               });
 		$(".home-wrapper").css("top","27%");
 	});
-
 	</script>
 	<!-- /Particle.js -->
 	<script src="assets/js/polyfills.js"></script>
@@ -514,79 +421,14 @@
 	<script src="assets/js/loading.js"></script>
 	<script src="assets/js/index.js"></script>
 	<!-- /Loading -->
-	<script>
-  $(document).ready(function() {
-
-  var parameters = location.search.substring(1).split("=");
-  var event_id = parameters[1];
-  
-  function clicked(act){
-
-  	<?php if($set==1){ ?>
-        $.post("//<?php echo $_SERVER['HTTP_HOST']; ?>/apiLe/event_reg",
-            {
-                id : "<?php echo $id; ?>",
-                event_id: event_id,
-                event_name : "<?php echo $event_data['name']; ?>",
-                unsub : act
-            },
-            function(data, status){
-              	console.log("Response");
-              	console.log("Data: " + data + "\nStatus: " + status);
-              	if(status=='success'){
-              	  	if(data["status"]==200){
-                		alert(data['message']);
-                		console.log("success");
-                		window.location = "event_.php?eveID="+event_id;
-              		}else if(data['status']==409){
-              			alert(data['message']);
-              		}else{
-              			if(act==1){
-              				alert("Could not unregister.\nSorry for the inconvenience.");
-              			}else{
-                		alert("Could not register.\nSorry for the inconvenience.");
-                	  	}
-                	  	console.log("err");
-                	  	console.log(data);
-              		}
-              	}else{
-                  	console.log("Failed "+data);
-              	}
-            },"json");
-    <?php }else{ ?>
-      	window.location="http://celesta.org.in/login.php";
-    <?php } ?>
-  }
-
-  $("#register").click(function(e) {
-      <?php if($event_id[0]=='2'){ ?>
-      		window.location = "https://www.thecollegefever.com/events/celesta-2018-yEYo3DFhwl";
-      <?php }else{ ?>
-      clicked(<?php echo $unsub; ?>);
-  	  <?php } ?>
-      console.log("clicked");
-      e.preventDefault();
-  });
-
-  $("#rules_button").click(function(e) {
-      show_alert("To be uploaded soon.");
-      console.log("clicked");
-      e.preventDefault();
-  });
-
-  $("#register_button").click(function(e) {
-      show_alert("The event is completed.\nRegistrations for this event are over.\nThank You :)");
-      console.log("clicked");
-      e.preventDefault();
-  });
-
-  function show_alert(a){
-  	alert(a);
-  }
-});
-   
-</script>
-<?php include 'gAnalytics.php'; ?>
+	<script type="text/javascript">
+		$("#close_snackbar").click(function(){
+			var x = document.getElementById("snackbar");
+    		x.className = x.className.replace("show", "hide");
+		});
+	</script>
+	<?php include 'gAnalytics.php'; ?>
 </body>
 
 </html>
+

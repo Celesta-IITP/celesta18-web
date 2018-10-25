@@ -618,6 +618,7 @@
 		<div class="container">
 			<!-- row -->
 			<!-- contact -->
+			<div class="row">
 				<div class="col-sm-3">
 					<div class="contact">
 						<h3>Reach To Us At</h3>
@@ -633,8 +634,9 @@
 				<!-- contact -->
 				<div class="col-sm-3">
 					<div class="contact">
-						<h3>Ring Us At</h3>
+						<h3>Contact us</h3>
 						<p>+91 9955532583</p>
+						<a href="#">mpr@celesta.org.in</a>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -642,8 +644,8 @@
 				<!-- contact -->
 				<div class="col-sm-3">
 					<div class="contact">
-						<h3>Mail Us At</h3>
-						<a href="#">mpr@celesta.org.in</a>
+						<h3>Hospitality and Accommodation</h3>
+						<a href="hospitality.php">Accomodation</a>
 					</div>
 				</div>
 				
@@ -655,13 +657,13 @@
 						<a href="team_.php">Developers</a>
 					</div>
 				</div>
-				
-				<!-- /contact -->
-				
-			<div class="row">
-				<div class="col-md-4" >
+			</div>	
+				<!-- /contact -->	
+			<div class="row" style="margin-top: 0;">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
 					<br><br>
-					<div class="contact-social">
+					<div class="contact-social" style="text-align: center;">
 						<a href="https://www.facebook.com/CelestaIITP/"><i class="fa fa-facebook"></i></a>
 						<a href="https://twitter.com/celesta_iitp"><i class="fa fa-twitter"></i></a>
 						<!-- <a href="#"><i class="fa fa-google-plus"></i></a>
