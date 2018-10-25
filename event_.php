@@ -391,7 +391,7 @@
 							<a href="<?php echo $event_data['rules']; ?>" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $rulesormore; ?></a>
 						<?php } ?>
 						<?php if(isset($event_data['register'])){ ?>
-							<a id="rules_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $show; ?></a>
+							<a id="register_button" class="button1" style = "margin-left : 1em;border:3px solid black; padding:0.4em;"><?php echo $show; ?></a>
 						<?php }else{ ?>
 							<a class="button1" id="register" style = "margin-left : 2em;border:3px solid black; padding:0.4em; "><?php echo $show ?></a>
 						<?php } ?>
@@ -567,13 +567,19 @@
   });
 
   $("#rules_button").click(function(e) {
-      show_alert();
+      show_alert("To be uploaded soon.");
       console.log("clicked");
       e.preventDefault();
   });
 
-  function show_alert(){
-  	alert("To be uploaded soon.");
+  $("#register_button").click(function(e) {
+      show_alert("The event is completed.\nRegistrations for this event are over.\nThank You :)");
+      console.log("clicked");
+      e.preventDefault();
+  });
+
+  function show_alert(a){
+  	alert(a);
   }
 });
    
