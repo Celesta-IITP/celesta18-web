@@ -304,7 +304,8 @@
 							<p>
 								Jaspreet Singh, the renowned stand-up comedian, who will be present to crack you up and enrich the entire atmosphere. Jaspreet, a.k.a. Jassi, is a very innocent looking guy(but is he?😉) who derives most of his humor from the things happening in his house and...
 							</p>
-							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" class="primary-btn text-uppercase">more</a>
+							<a href="https://www.facebook.com/549099751772038/posts/2679726385376020/" target="_blank" class="primary-btn text-uppercase">more</a>
+							<a href="https://www.thecollegefever.com/events/celesta-2018-yEYo3DFhwl" target="_blank" class="primary-btn text-uppercase">Book Passes</a>
 						</div>
 					</div>
 				</div>					

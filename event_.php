@@ -557,7 +557,11 @@
   }
 
   $("#register").click(function(e) {
+      <?php if($event_id[0]=='2'){ ?>
+      		window.location = "https://www.thecollegefever.com/events/celesta-2018-yEYo3DFhwl";
+      <?php }else{ ?>
       clicked(<?php echo $unsub; ?>);
+  	  <?php } ?>
       console.log("clicked");
       e.preventDefault();
   });
