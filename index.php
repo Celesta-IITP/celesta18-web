@@ -557,7 +557,7 @@
 						<p class="lead">Download the schedule and plan the events you want to take part in accordingly.</p>
 						<div class="col-md-8 col-md-offset-2">
 							<div class="download-btn">
-								<a href="#" class="main-btn">Download Schedule</a>
+								<a href="./event/Celesta_Schedule.pdf" class="main-btn">Download Schedule</a>
 							</div>
 						</div>
 						<!-- <a href="#" class="main-btn">Download Schedule</a> -->
