@@ -586,14 +586,30 @@
 				<!-- <div class="section-bg" style="background-image:url(./img/background02.jpg); height: 50px;" data-stellar-background-ratio="0.5"></div>
 			 -->
 				<div class="col-md-8 col-md-offset-2">
-							<div class="download-btn" style="margin-top:0px">
-								<a href="/crowdfunding.php" class="main-btn">Contribute!</a>
-							</div>
-						</div>
+					<div class="download-btn" style="margin-top:0px">
+						<a href="/crowdfunding.php" class="main-btn">Contribute!</a>
+					</div>
+				</div>
 			</div>
 			<!-- /row -->
 			<br>
-			<br>
+			<hr style="border: solid 2px dimgrey !important;">
+
+			<div class="row" id="crowdfunding">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Rules and Regulations</span></h3>
+				</div>
+				<!-- /section title -->
+				<!-- <div class="section-bg" style="background-image:url(./img/background02.jpg); height: 50px;" data-stellar-background-ratio="0.5"></div>
+			 -->
+				<div class="col-md-8 col-md-offset-2">
+					<div class="download-btn" style="margin-top:0px">
+						<a href="Rules_and_Regulations_Celesta.pdf" class="main-btn">Download</a>
+					</div>
+				</div>
+			</div>
+			<!-- /row -->
 			<br>
 			<hr style="border: solid 2px dimgrey !important;">
 			<!-- row -->
