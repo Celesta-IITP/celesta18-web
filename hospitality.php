@@ -285,7 +285,6 @@
 						<h2> Two Days: Rs. 300 </h2>
 						<h2> Three Days: Rs. 400 </h2>
 						<h2> Four Days: Rs. 500 </h2>
-						<br><br><br><br><br><br><br><br><br>
 					</div>					
 				</div>
 				<!-- /section title -->
