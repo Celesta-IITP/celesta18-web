@@ -1,4 +1,3 @@
-
 <?php 
 	session_start();
 ?>
@@ -50,7 +49,7 @@
 		}
 	</style>
 </head>
-<body>
+<body style="background-image:url(./img/background01.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; overflow-x: hidden; ">
 	<!-- Common template for all pages -->
 	<!-- LOADING PART ================================================================================== -->
 		<!-- <div class="loading-page">
@@ -266,11 +265,8 @@
 	</div>
 
 	<!-- /Common template for all pages -->
-<!-- background image -->
-<div class="section-bg" style="background-image:url(./img/background01.jpg);" data-stellar-background-ratio="0.5">
-			<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 3;"></div>
-			<div class="cn-overlay"></div>	
-		</div>
+		<!-- background image -->
+			<div class="cn-overlay" style="position: fixed; z-index: -1;"></div>	
 		<!-- /background image -->
 	
 	<br>
@@ -302,9 +298,7 @@
 	<div class="section">
 		<!-- container -->
 		<div class="container" style="background: white;">
-		
-			<!-- row -->
-			
+			<!-- row -->			
 				<!-- section title -->
 				<div class="section-title">
 					<h3 class="title"><span>Bus</span> <span style="color: #dd0a37;">Route and Schedule</span></h3>
@@ -443,4 +437,3 @@
 </body>
 
 </html>
-
