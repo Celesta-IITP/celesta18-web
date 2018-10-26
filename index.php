@@ -277,11 +277,11 @@
 	<!-- /event modal -->
 
 	<!-- Change class from hide to show to show the snackbar notification. -->
-	<div id="snackbar" class="show"><div id="close_snackbar">x</div>
+	<div id="snackbar" class="hide"><div id="close_snackbar">x</div>
 	 	CAD Maestro is Live! Deadline  12:15am 26th Oct'18
 	 	<br><a style="text-decoration:underline;" href="https://celesta.org.in/event_.php?eveID=10402">More details here</a>
 	 	<!--to participate...--><br>
-		Send your entries to <a href='mailto:shirke.ce17@iitp.ac.in'>shirke.ce17@iitp.ac.in</a>
+		<!-- Send your entries to <a href='mailto:shirke.ce17@iitp.ac.in'>shirke.ce17@iitp.ac.in</a> -->
 	</div>
 
 	<!-- /Common template for all pages -->
