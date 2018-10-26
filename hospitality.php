@@ -315,6 +315,7 @@
 					<br><b>28th October 2018</b>
 					<br>From Gandhi Maidan: 8 AM
 					<br>From IIT Patna: 7:30 PM
+					<img src="./images/Bus_Time_Table.jpg" alt="">
 				</div>
 				<!-- /section title -->
 			<!-- /row -->

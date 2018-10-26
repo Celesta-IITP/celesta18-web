@@ -663,7 +663,7 @@
 					<div class="contact">
 						<h3>Hospitality and Accommodation</h3>
 						<p><a href="hospitality.php">Accomodation</a></p>
-						<p><a href="hospitality.php">Bus Route and Schedule</a></p>
+						<p><a href="hospitality.php"><a href="./images/Bus_Time_Table.jpg" target="_blank">Bus Route and Schedule</a></a></p>
 					</div>
 				</div>
 				
