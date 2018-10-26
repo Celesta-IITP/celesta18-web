@@ -355,7 +355,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<p>Zebronics</p>
 						<a href="https://zebronics.com/" class="sponsor">
-							<img src="./images/sponsors/zebronics.png" alt="">
+							<img src="./images/sponsors/zebronics2.png" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6"></div>
