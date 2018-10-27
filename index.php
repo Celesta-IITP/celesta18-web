@@ -345,17 +345,17 @@
 	<section class="upcoming-events-highlight " style="background-image:url(./img/background02.jpg); bottom: 0;" data-stellar-background-ratio="0.5" >
       <div class="container">
         <div class="row">
-          <div class="col-md-6 mb-3 element-animate">
-            <h2><a href="#">CELESTA 2K18 COMING IN</a></h2>
+          <div class="col-md-12 mb-3 element-animate">
+            <h2><a href="#">BEHOLD! CELESTA 2K18 HAS BEGUN</a></h2>
             <div class="events-meta">
-              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Saturday 27/10/2018 10:00 AM</span>
+              <span class="mr-2"><span class="fa fa-clock-o mr-2" style="margin-right: 4px;"></span>Saturday 27/10/2018 10:00 AM to Sunday 28/10/2018 7:30PM</span>
               <br>
               <span class="mr-2"><span class="fa fa-map-marker mr-2" style="margin-right: 4px;"></span>IIT Patna, Bihta</span>
             </div>
           </div>
-          <div class="col-md-6 element-animate">
+          <!-- <div class="col-md-6 element-animate">
             <div id="date-countdown"></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
