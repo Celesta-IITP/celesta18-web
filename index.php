@@ -282,8 +282,12 @@
 	 	<a style="text-decoration:underline;" href="./images/Bus_Time_Table.jpg" target="_blank">Bus Route and Schedule</a>
 	 	<!--to participate...--><br>
 		<!-- Send your entries to <a href='mailto:shirke.ce17@iitp.ac.in'>shirke.ce17@iitp.ac.in</a> -->
+		<br>
+	 	Tech Photography is live.
+	 	<a style="text-decoration:underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSd95bb3BykUsiMGoEvcusHLcxe4eGe5JV3qqzLeDevpx0I2Qg/viewform?usp=pp_url">Send your entries here</a>
+	 	<!--to participate...--><br>
+		<!-- Send your entries to <a href='mailto:shirke.ce17@iitp.ac.in'>shirke.ce17@iitp.ac.in</a> -->
 	</div>
-
 	<!-- /Common template for all pages -->
 
 	<!-- Home -->
