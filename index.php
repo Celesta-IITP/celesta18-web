@@ -278,7 +278,7 @@
 
 	<!-- Change class from hide to show to show the snackbar notification. -->
 	<div id="snackbar" class="show"><div id="close_snackbar">x</div>
-	 	Registeration open for ByteRace at
+	 	ByteRace is Live!!@
 	 	<a style="text-decoration:underline;" href="http://hck.re/b2183">http://hck.re/b2183</a>
 	</div>
 	<!-- /Common template for all pages -->
